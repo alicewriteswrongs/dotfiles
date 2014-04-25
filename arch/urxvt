@@ -1,0 +1,15 @@
+URxvt*scrollBar:false
+
+
+URxvt*perl-ext-common: default,matcher,-option-popup,-selection-popup,-realine,tabbedex
+URxvt*matcher.button: 1
+URxvt*urlLauncher: chromium
+!hide tab-bar when only one is open
+URxvt.tabbed.autohide: true
+!prevent closing last tab from closing terminal
+URxvt.tabbed.reopen-on-close: yes
+!prevent tabbedex from using its own keybinds
+URxvt.keysym.Control-t: perl:tabbedex:new_tab
+URxvt.keysym.Control-Tab: perl:tabbedex:next_tab
+URxvt.font: xft:inconsolata:size=10
+!URxvt.font: xft:DejaVu Sans Mono:size=10

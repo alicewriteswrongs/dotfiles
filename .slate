@@ -1,0 +1,41 @@
+#ben's .slate config, google the program for the user guide (on github I think)
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+ 
+# Resize Bindings
+#bind right:alt         resize +10% +0
+#bind left:alt          resize -10% +0
+#bind up:alt            resize +0   -10%
+#bind down:alt          resize +0   +10%
+#bind right:ctrl;alt    resize -10% +0 bottom-right
+#bind left:ctrl;alt     resize +10% +0 bottom-right
+#bind up:ctrl;alt       resize +0   +10% bottom-right
+#bind down:ctrl;alt     resize +0   -10% bottom-right
+ 
+# Push Bindings
+bind right:alt;cmd      push right bar-resize:screenSizeX/2 #pushes to right margin of the screen and resizes to 1/2 screen width
+bind left:alt;cmd       push left  bar-resize:screenSizeX/2 #same, but to the left
+bind up:alt;cmd         push up    bar-resize:screenSizeY/2 #pushes to top margin of the screen and resizes to 1/2 screen height
+bind down:alt;cmd       push down  bar-resize:screenSizeY/2
+ 
+# Nudge Bindings
+bind right:shift;alt    nudge +10% +0 #moves window to the right 10% of the screen width
+bind left:shift;alt     nudge -10% +0
+bind up:shift;alt	nudge +0   -10%
+bind down:shift;alt	nudge +0   +10%
+
+# Throw bindings
+bind 1:cmd;alt		throw 0 resize #throws window to monitor 0 (leftmost) and fullscreens
+bind 2:cmd;alt 		throw 1 resize #above, monitor 1 (2nd leftmost)
+bind 3:cmd;alt 		throw 2 resize #above, monitor 2
+bind right:ctrl;alt;cmd throw right resize #throws windows to monitor to right of current screen
+bind left:ctrl;alt;cmd  throw left resize
+bind up:ctrl;alt;cmd	throw up resize
+bind down:ctrl;alt;cmd  throw down resize
+
+# Corner bindings (lets you tile 4 windows, sending them to a corner of the screen and resizing to 1/2 width and height of screen)
+bind 1:ctrl;cmd		corner top-left resize:screenSizeX/2;screenSizeY/2
+bind 2:ctrl;cmd		corner top-right resize:screenSizeX/2;screenSizeY/2
+bind 3:ctrl;cmd		corner bottom-left resize:screenSizeX/2;screenSizeY/2
+bind 4:ctrl;cmd		corner bottom-right resize:screenSizeX/2;screenSizeY/2

@@ -1,0 +1,45 @@
+"my vimrc!
+"last edited 12-12-13
+
+"turn on filetype based indenting 
+filetype indent plugin on
+"syntax highlighting
+syntax enable
+"better command line completion
+set wildmenu
+"highlight searches
+set hlsearch
+"line numbers
+set number
+"stuff for solarized colorscheme
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
+"stuff for autoindentation
+set modeline
+"python friendliness
+"insert 4 spaces for tab
+set tabstop=4
+"block indent/unindent
+set shiftwidth=4
+"insert spaces instead of tabs
+set expandtab
+"still have delete remove 1 tab worth of spaces
+set softtabstop=4
+"newline matches indentation level of line above
+set autoindent
+
+
+"spellcheck!
+set spelllang=en_us
+
+
+"scripts installed:
+"	supertab
+"	vimlatex
+set grepprg=grep\ -nH\ $*
+let g:tex_flavor='latex'
+
+"vim syntax files installed
+"   sql.vim
+
