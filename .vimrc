@@ -19,7 +19,7 @@ Plugin 'gmarik/vundle'
 Plugin 'tpope/vim-sensible'
 Plugin 'ervandew/supertab'
 Plugin 'chrisbra/histwin.vim'
-"Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 Plugin 'ivanov/vim-ipython'
 Plugin 'majutsushi/tagbar'
 Plugin 'kien/ctrlp.vim'
@@ -31,6 +31,8 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'jpalardy/vim-slime'
 Plugin 'bling/vim-bufferline'
 Plugin 'tpope/vim-vinegar'
+Plugin 'klen/python-mode'
+Plugin 'mikewest/vimroom'
 
 
 
@@ -62,6 +64,7 @@ set softtabstop=4 "still have delete remove 1 tab worth of spaces
 set autoindent "newline matches indentation level of line above
 set spelllang=en_us "spellcheck is in US english
 set grepprg=grep\ -nH\ $*
+set foldmethod=syntax
 "mouse
 set ttyfast
 set mouse=a
