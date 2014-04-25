@@ -54,7 +54,3 @@ and it should be loaded correctly!
 
 -------------
 
-### Todo:
-
-* Eventually segregate linux/os x dotfiles
-* github it when feeling motivated
