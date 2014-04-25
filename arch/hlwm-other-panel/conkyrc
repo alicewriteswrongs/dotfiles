@@ -1,0 +1,70 @@
+# Florian Bruhin <me@the-compiler.org>
+
+use_xft yes
+xftfont profont:size=8
+override_utf8_locale yes
+
+update_interval 1
+total_run_times 0
+
+own_window yes
+own_window_type panel
+own_window_hints undecorated,sticky,skip_taskbar,skip_pager
+
+border_inner_margin 0
+border_outer_margin 0
+draw_borders no
+draw_graph_borders no
+
+background no
+
+# Eliminate flickering
+double_buffer yes 
+minimum_size 1050 8
+maximum_width 1050
+
+# Use KiB/MiB/... instead of just bytes
+format_human_readable yes
+# Print used memory with buffers
+no_buffers no
+# Display k, G, ... instead of kiB, GiB, ...
+short_units yes
+
+default_color d0d0d0
+own_window_colour 1c1c1c
+
+use_spacer left
+if_up_strictness address
+pad_percents 2
+
+alignment top_left
+gap_x 172
+gap_y 0
+
+default_graph_size 8 30
+color0 d0d0d0
+color1 afdf87
+
+TEXT
+${color1}cpu  1${color0} ${cpugraph cpu0 8,20 afdf87 afdf87}${goto 70}${freq_g 1} ${color1}2 ${color0} ${cpugraph cpu1 8,20 afdf87 afdf87} ${goto 144}${freq_g 2} ${color1}3${color0} ${cpugraph cpu2 8,20 afdf87 afdf87}${goto 212}${freq_g 3} ${goto 242}${color1}4${color0} ${cpugraph cpu3 8,20 afdf87 afdf87} ${freq_g 4}   \
+${color1}load${color0} ${loadavg}   \
+${color1}temp${color0}${hwmon 0 temp 1}/${hwmon 1 temp 1}°   \
+${goto 528}${color1}fan${color0}  ${ibm_fan}rpm   \
+${goto 628}${color1}mem${color0}  ${memperc}% (${mem}/${memmax})   \
+${goto 765}${color1}batt${color0} ${battery_short} (${battery_time})   \
+${goto 915}${color1}up${color0}${goto 985}${uptime_short} \
+
+${color1}disk${color0} \
+${color1}/${color0}${goto 76}${fs_used_perc /}%   \
+${goto 100}\
+${color1}/home${color0}${goto 148}${fs_used_perc /home}% \
+${if_mounted /mnt}${color1}/mnt${color0}${goto 218}${fs_used_perc /mnt}%  ${endif}\
+${if_up eth0}${goto 242}${color1}eth0${color0} ${addrs eth0} \
+${goto 528}${color1}up${color0}${offset -18}${upspeedf eth0} (${offset -6}${totalup eth0}) \
+${goto 628}${color1}down${color0}${offset -18}${downspeedf eth0} (${totaldown eth0})   ${endif}\
+${if_up wlan0}${goto 242}${color1}wlan0${color0} \
+${wireless_essid wlan0} (${offset -12}${wireless_link_qual_perc wlan0}%) ${addrs wlan0} \
+${goto 528}${color1}up${color0} ${offset -20}${upspeedf wlan0} (${totalup wlan0}) \
+${goto 628}${color1}down${color0}${goto 663}${downspeedf wlan0} (${totaldown wlan0})   ${endif}\
+${goto 766}${color1}time${color0}${goto 873}${time %R}   \
+${goto 915}${color1}date${color0} ${time %a %d.%m.%Y}   \
