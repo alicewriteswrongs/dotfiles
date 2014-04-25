@@ -144,4 +144,4 @@ nnoremap <Leader>ub :UB<cr>
 nnoremap <Leader>ip :IPython<cr>
 
 "open .vimrc
-nnoremap <Leader>vrc :e ~/Dropbox/dotfiles/.vimrc<cr>
+nnoremap <Leader>vrc :e ~/.vimrc<cr>
