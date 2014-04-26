@@ -86,6 +86,7 @@ for_window [title="Thunderbird Preferences"] floating enable
 for_window [title="Address Book"] floating enable
 for_window [title="Steam Guard*"] floating enable
 for_window [title="Install*"] floating enable
+for_window [title="Friends"] floating enable
 
 #change border styles
 bindsym $mod+t border normal
