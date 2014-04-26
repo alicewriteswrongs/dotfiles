@@ -84,8 +84,8 @@ new_float pixel 3
 for_window [title="Write: *"] floating enable
 for_window [title="Thunderbird Preferences"] floating enable
 for_window [title="Address Book"] floating enable
-for_window [title="Steam Guard*"] float enable
-for_window [title="Install - *"] float enable
+for_window [title="Steam Guard*"] floating enable
+for_window [title="Install*"] floating enable
 
 #change border styles
 bindsym $mod+t border normal
