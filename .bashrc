@@ -24,6 +24,7 @@ alias usb='sudo mount /dev/sdb1 /mnt/usb'
 #git commands
 alias pretty='git log --pretty=oneline' #get succinct git log information
 alias addall='git commit -a'		#add all changed files and commit
+alias format='git log --pretty=format:"%h - %an, %ar : %s"'
 
 #ssh aliases
 alias scc='ssh -X scc2.bu.edu -l benpote'
