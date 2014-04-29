@@ -98,6 +98,10 @@ let g:slime_target = "tmux"
 "set leader to space
 let mapleader = "\<Space>"
 
+"toggle search highlighting on/off
+let hlstate=0
+nnoremap <F4> :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=1-hlstate<cr>
+
 "common commands
 nnoremap <Leader>w :w<cr>
 nnoremap <Leader>q :q<cr>
