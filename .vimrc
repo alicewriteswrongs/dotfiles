@@ -31,8 +31,8 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'jpalardy/vim-slime'
 Plugin 'bling/vim-bufferline'
 Plugin 'tpope/vim-vinegar'
-Plugin 'klen/python-mode'
-Plugin 'mikewest/vimroom'
+"Plugin 'klen/python-mode'
+"Plugin 'mikewest/vimroom'
 
 
 
