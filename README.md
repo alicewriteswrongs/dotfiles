@@ -1,6 +1,11 @@
 # Dotfiles
 
-For the syncing of the dotfiles
+For the syncing of the dotfiles. For the sake of consistency try to always clone in:
+
+`~/Code/dotfiles`
+
+the setup is slightly dependent on this (mainly shortcut to open vimrc and bashrc)
+
 
 ------------------
 
