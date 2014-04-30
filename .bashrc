@@ -2,8 +2,10 @@
 #Aliases
 ################
 
-#edit bashrc!
+#edit some dotfiles!
 alias bashrc='vim ~/Code/dotfiles/.bashrc'
+alias vimrc='vim ~/Code/dotfiles/.vimrc'
+alias i3config='vim ~/Code/dotfiles/arch/i3config'
 
 #Commands and programs
 alias top='htop'			#use a better version of top instead
