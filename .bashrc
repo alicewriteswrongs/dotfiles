@@ -1,16 +1,9 @@
-#my bashrc file
-#last modified 12-12-13
 
-#colored terminal output!
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
-
-#autocomplete for git
-source ~/.git-completion.bash
 
 ################
 #Aliases
 ################
+
 
 #Commands and programs
 alias top='htop'			#use a better version of top instead
@@ -38,6 +31,22 @@ alias bioed='ssh benpote@bioed.bu.edu'
 
 #python aliases
 alias qtconsole='ipython qtconsole --pylab=inline'
+
+#common directory changes
+alias dotfiles='cd ~/Code/dotfiles/'    #get into dotfiles repo
+
+
+################
+#Other config
+################
+
+
+#colored terminal output!
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
+#autocomplete for git
+source ~/.git-completion.bash
 
 #for vcftools
 export PERL5LIB=/usr/local/Cellar/vcftools/0.1.11/lib/perl5/site_perl/
