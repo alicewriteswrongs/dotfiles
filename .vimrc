@@ -151,4 +151,4 @@ nnoremap <Leader>ub :UB<cr>
 nnoremap <Leader>ip :IPython<cr>
 
 "open .vimrc
-nnoremap <Leader>vrc :e ~/.vimrc<cr>
+nnoremap <Leader>vrc :e ~/Code/dotfiles/.vimrc<cr>
