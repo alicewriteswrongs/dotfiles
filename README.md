@@ -42,7 +42,7 @@ syntax: file (location to symlink) -notes
 * Edit files only in the dropbox/dotfiles directory!
 * Do the following:
 
-$ ln -s ~/Dropbox/dotfiles/.dotfile /path/to/.dotfile
+$ ln -s ~/Code/dotfiles/.dotfile /path/to/.dotfile
 
 and it should be loaded correctly!
 
