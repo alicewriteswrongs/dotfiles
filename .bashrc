@@ -4,6 +4,8 @@
 #Aliases
 ################
 
+#edit bashrc!
+alias bashrc='vim ~/Code/dotfiles/.bashrc'
 
 #Commands and programs
 alias top='htop'			#use a better version of top instead
