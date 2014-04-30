@@ -15,6 +15,7 @@ bindsym $mod+shift+x move workspace to LVDS1
 
 # start a terminal
 bindsym $mod+Return exec urxvt
+bindsym $mod+Shift+Return exec xterm
 
 # kill focused window
 bindsym $mod+q kill
