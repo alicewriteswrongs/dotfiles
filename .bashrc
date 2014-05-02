@@ -36,6 +36,7 @@ alias qtconsole='ipython qtconsole --pylab=inline'
 
 #common directory changes
 alias dotfiles='cd ~/Code/dotfiles/'    #get into dotfiles repo
+alias documents='cd ~/Dropbox/Documents/'
 
 
 ################
