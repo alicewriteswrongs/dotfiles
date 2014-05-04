@@ -89,6 +89,8 @@ for_window [title="Steam Guard*"] floating enable
 for_window [title="Install*"] floating enable
 for_window [title="Friends"] floating enable
 for_window [title="Calculator"] floating enable
+for_window [title="galculator"] floating enable
+for_window [title="Steam - Update News"] floating enable
 
 #change border styles
 bindsym $mod+t border normal
