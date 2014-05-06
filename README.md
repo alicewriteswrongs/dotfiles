@@ -4,7 +4,7 @@ For the syncing of the dotfiles. For the sake of consistency try to always clone
 
 `~/Code/dotfiles`
 
-the setup is slightly dependent on this (mainly shortcut to open vimrc and bashrc)
+the setup is slightly dependent on this (mainly alias to open vimrc and bashrc)
 
 
 ------------------
