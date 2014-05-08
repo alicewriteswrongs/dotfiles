@@ -55,8 +55,8 @@ source ~/.git-completion.bash
 #export Vim as my default editor
 export EDITOR="vim"
 
-#export ~/Dropbox/shellscripts
-export PATH=$PATH:~/Dropbox/shellscripts
+#export ~/Code/shellscripts
+export PATH=$PATH:~/Code/shellscripts
 
 #export ruby gems (esp sup)
 export PATH=$PATH:~/.gem/ruby/2.1.0/bin
