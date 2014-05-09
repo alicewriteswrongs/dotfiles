@@ -1,5 +1,5 @@
 ---
-:editor: vim
+:editor: vim -f -c 'set ft=mail' '+/^\s*\n/' '+nohl'
 :thread_by_subject: false
 :edit_signature: false
 :ask_for_from: true
