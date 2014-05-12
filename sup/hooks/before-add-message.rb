@@ -6,12 +6,33 @@ if subj.start_with? '[lpc-c]'
     message.add_label :LPC
 end
 
+if subj.start_with? 'Re: [lpc-c]'
+    message.add_label :LPC
+end
+
+
+if subj.start_with? '[Empowermentors]'
+    message.add_label :Empowermentors
+end
+
+if subj.start_with? '[GitHub]'
+    message.add_label :Github
+end
+
+if subj.start_with? '[Ns]'
+    message.add_label :NS
+end
+
+if subj.start_with? '[arch-announce]'
+    message.add_label :arch-announce
+end
+
 if subj.start_with? '[tonics]'
     message.add_label :Tonics
 end
 
 if subj.start_with? 'arch-general'
-    message.add_label :arch-general
+    message.add_label :archgeneral
 end
 
 if subj.start_with? '[sup-talk'
