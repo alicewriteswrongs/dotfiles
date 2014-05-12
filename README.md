@@ -54,8 +54,6 @@ and it should be loaded correctly!
 ### Remember to:
 
 * Install things like solarized colorscheme for vim
-* Only use -mac on os x!
-* Mirror changes between -mac and non (just delete the unchanged one and cp the new one)
 
 -------------
 
