@@ -73,5 +73,10 @@ if message.from.email.start_with? 'janeself123@gmail.com'
 end
 
 
+if message.from.email.start_with? 'notifications@myprewards.com'
+    message.remove_label :inbox
+end
+
+
 
 
