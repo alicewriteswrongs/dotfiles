@@ -23,7 +23,7 @@ alias format='git log --pretty=format:"%h - %an, %ar : %s"'
 alias pushom='git push origin master'
 alias gits='git status'
 alias gitc='git commit'
-alias last='git log -1 HEAD' #last commit
+alias glast='git log -1 HEAD' #last commit
 
 #ssh aliases
 alias scc='ssh -X scc2.bu.edu -l benpote'
