@@ -74,6 +74,8 @@ set mousemodel=extend
 
 """"""PLUGIN CONFIG""""""""
 
+"crtlp
+let g:ctrlp_extensions = ['buffertag']
 
 "Simplenote.vim
 source ~/.simplenoterc
@@ -153,3 +155,6 @@ nnoremap <Leader>ip :IPython<cr>
 
 "open .vimrc
 nnoremap <Leader>vrc :e ~/Code/dotfiles/.vimrc<cr>
+
+"crtlp
+nnoremap <Leader>p :CtrlPBufTag<cr>
