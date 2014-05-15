@@ -9,6 +9,7 @@ xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Timeout" 200
 xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 6 7 4 5
 #turn off the touchpad
 touchpad-toggle.sh
+ibus-daemon --xim -d &
 #start xscreensaver
 /usr/bin/xscreensaver -no-splash &
 #make keybinds (for thinkpad media keys, etc)
