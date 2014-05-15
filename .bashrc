@@ -45,6 +45,12 @@ alias documents='cd ~/Dropbox/Documents/'
 #Other config
 ################
 
+#ibus stuff
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
+export GTK_IM_MODULE_FILE=/etc/gtk-2.0/gtk.immodules
+
 
 #colored terminal output!
 export CLICOLOR=1
@@ -52,6 +58,9 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 #autocomplete for git
 source ~/.git-completion.bash
+
+#vim-anywhere
+export PATH=$PATH:~/.vim-anywhere/bin
 
 #export Vim as my default editor
 export EDITOR="vim"
