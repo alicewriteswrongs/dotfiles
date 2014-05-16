@@ -95,7 +95,9 @@ for_window [title="galculator"] floating enable
 for_window [title="Steam - Update News"] floating enable
 for_window [title="IBus Preferences"] floating enable
 for_window [title="Steam Login"] floating enable
-for_window [title="*(/tmp/vim-anywhere) - GVIM"] floating enable
+for_window [class="(?i)gvim"] floating enable
+for_window [class="(?i)gvim"] resize shrink width 800 px
+for_window [class="(?i)gvim"] resize shrink height 200 px
 
 #change border styles
 bindsym $mod+t border normal
