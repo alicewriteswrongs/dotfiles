@@ -1,23 +1,35 @@
 #Xresources file
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+
 #background image
 feh --bg-max ~/images/Edvard_Munch_-_Workers_on_their_Way_Home_-_Google_Art_Project.jpg
+
 #trackpoint config for thinkpad
 xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation" 1
 xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Button" 2
 xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Timeout" 200
 xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 6 7 4 5
+
 #turn off the touchpad
 touchpad-toggle.sh
-ibus-daemon --xim -d &
+
+#japanese input
+export GTK_IM_MODULE=ibus
+export XMODIFERS=@im=ibus
+export QT_IM_MODULE=ibus
+ibus-daemon -d -x &
+
 #start xscreensaver
 /usr/bin/xscreensaver -no-splash &
+
 #make keybinds (for thinkpad media keys, etc)
 xbindkeys
+
 #start gnome keyright (for networkmanager to work correctly)
 source /etc/X11/xinit/xinitrc.d/30-dbus
 eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
 export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT_INFO SSH_AUTH_SOCK
+
 #start i3wm
 exec i3
 

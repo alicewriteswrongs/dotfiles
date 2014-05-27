@@ -11,5 +11,5 @@ URxvt.tabbed.reopen-on-close: yes
 !prevent tabbedex from using its own keybinds
 URxvt.keysym.Control-t: perl:tabbedex:new_tab
 URxvt.keysym.Control-Tab: perl:tabbedex:next_tab
-URxvt.font: xft:inconsolata:size=10
-!URxvt.font: xft:DejaVu Sans Mono:size=10
+URxvt.font: xft:inconsolata:size=10, \
+            xft:otf-ipafont:size=10:antialias=true

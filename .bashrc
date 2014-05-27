@@ -49,8 +49,8 @@ alias documents='cd ~/Dropbox/Documents/'
 export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
-export GTK_IM_MODULE_FILE=/etc/gtk-2.0/gtk.immodules
-
+export XIM_PROGRAM=/usr/bin/ibus-daemon
+export GTK_IM_MODULE_FILE=/usr/lib/gtk-3.0/3.0.0/immodules.cache
 
 #colored terminal output!
 export CLICOLOR=1
