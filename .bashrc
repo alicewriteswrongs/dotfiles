@@ -29,10 +29,6 @@ alias gitl='git log -1 HEAD' #last commit
 alias scc='ssh -X scc2.bu.edu -l benpote'
 alias bioed='ssh benpote@bioed.bu.edu'
 
-#mysql aliases (mac os x)
-#alias mysql='/usr/local/mysql/bin/mysql'
-#alias mysqladmin='/usr/local/mysql/bin/mysqladmin'
-
 #python aliases
 alias qtconsole='ipython qtconsole --pylab=inline'
 
@@ -45,12 +41,12 @@ alias documents='cd ~/Dropbox/Documents/'
 #Other config
 ################
 
-#ibus stuff
-export GTK_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
-export QT_IM_MODULE=ibus
-export XIM_PROGRAM=/usr/bin/ibus-daemon
-export GTK_IM_MODULE_FILE=/usr/lib/gtk-3.0/3.0.0/immodules.cache
+# #ibus stuff
+# export GTK_IM_MODULE=ibus
+ export XMODIFIERS=@im=ibus
+# export QT_IM_MODULE=ibus
+ export XIM_PROGRAM=/usr/bin/ibus-daemon
+# export GTK_IM_MODULE_FILE=/usr/lib/gtk-3.0/3.0.0/immodules.cache
 
 #colored terminal output!
 export CLICOLOR=1
