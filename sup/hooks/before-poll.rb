@@ -1,2 +1,2 @@
 say "Running offlineimap..."
-system "offlineimap", "-o", "-u", "quiet"
+system "offlineimap", "-u", "quiet"
