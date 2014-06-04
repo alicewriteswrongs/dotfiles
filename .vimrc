@@ -1,6 +1,6 @@
 """"""""VIMRC""""""""""
 """Ben Pote
-"""Last updated 4.15.14
+"""Last updated 5.28.14
 
 """""""""""""""""""""""
 
@@ -34,6 +34,7 @@ Plugin 'tpope/vim-vinegar'
 Plugin 'vim-scripts/lbdbq'
 Plugin 'godlygeek/tabular'
 Plugin 'tpope/vim-fugitive'
+Plugin 'justinmk/vim-sneak'
 "Plugin 'klen/python-mode'
 "Plugin 'mikewest/vimroom'
 
@@ -73,6 +74,9 @@ set ttyfast
 set mouse=a
 set mousemodel=extend
 
+""""""FUNCTIONS""""""""""""
+
+   
 
 """"""PLUGIN CONFIG""""""""
 
