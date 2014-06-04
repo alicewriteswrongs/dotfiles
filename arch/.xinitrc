@@ -13,11 +13,14 @@ xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 6 7 4 5
 #turn off the touchpad
 touchpad-toggle.sh
 
-#japanese input
-#export GTK_IM_MODULE=ibus #this line doesn't seem to be necessary in i3?
-export XMODIFERS=@im=ibus
-export QT_IM_MODULE=ibus
-ibus-daemon -d -x &
+#japanese input stuff
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS="@im=fcitx"
+fcitx &
+
+#network manager
+nm-applet &
 
 #start xscreensaver
 /usr/bin/xscreensaver -no-splash &
