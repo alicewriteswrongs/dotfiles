@@ -36,6 +36,10 @@ alias qtconsole='ipython qtconsole --pylab=inline'
 alias dotfiles='cd ~/Code/dotfiles/'    #get into dotfiles repo
 alias documents='cd ~/Dropbox/Documents/'
 
+#notes related things
+alias notes='cd ~/notes'
+alias todo='vim ~/notes/todo'
+
 
 ################
 #Other config
