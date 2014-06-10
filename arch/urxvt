@@ -3,7 +3,7 @@ URxvt*scrollBar:false
 
 URxvt*perl-ext-common: default,matcher,-option-popup,-selection-popup,-realine,tabbedex
 URxvt*matcher.button: 1
-URxvt*urlLauncher: chromium
+URxvt.url-launcher: chromium
 !hide tab-bar when only one is open
 URxvt.tabbed.autohide: true
 !prevent closing last tab from closing terminal
