@@ -38,7 +38,7 @@ alias documents='cd ~/Dropbox/Documents/'
 
 #notes related things
 alias notes='cd ~/notes'
-alias todo='vim ~/notes/todo'
+alias todo='vim ~/notes/todo.markdown'
 
 
 ################
