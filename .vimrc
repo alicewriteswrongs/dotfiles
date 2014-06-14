@@ -35,6 +35,7 @@ Plugin 'vim-scripts/lbdbq'
 Plugin 'godlygeek/tabular'
 Plugin 'tpope/vim-fugitive'
 Plugin 'justinmk/vim-sneak'
+Plugin 'chrisbra/DistractFree'
 "Plugin 'klen/python-mode'
 "Plugin 'mikewest/vimroom'
 
