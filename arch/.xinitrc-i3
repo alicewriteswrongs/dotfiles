@@ -2,7 +2,7 @@
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
 #background image
-feh --bg-max ~/images/Edvard_Munch_-_Workers_on_their_Way_Home_-_Google_Art_Project.jpg
+feh --bg-max ~/images/christhousemarthemarry.jpg
 
 #trackpoint config for thinkpad
 xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation" 1
