@@ -165,3 +165,4 @@ nnoremap <Leader>vrc :e ~/Code/dotfiles/.vimrc<cr>
 
 "crtlp
 nnoremap <Leader>p :CtrlPBufTag<cr>
+nnoremap <Leader>P :CtrlPMRU<cr>
