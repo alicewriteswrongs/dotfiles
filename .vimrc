@@ -67,9 +67,12 @@ set shiftwidth=4 "block indent/unindent
 set expandtab "insert spaces instead of tabs
 set softtabstop=4 "still have delete remove 1 tab worth of spaces
 set autoindent "newline matches indentation level of line above
+set shiftwidth=4
 set spelllang=en_us "spellcheck is in US english
 set grepprg=grep\ -nH\ $*
 set foldmethod=syntax
+set nojoinspaces
+
 "mouse
 set ttyfast
 set mouse=a
