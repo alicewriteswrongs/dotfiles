@@ -45,6 +45,12 @@ alias todo='vim ~/notes/todo.markdown'
 #Other config
 ################
 
+#sup related ruby GC stuff
+export RUBY_GC_MALLOC_LIMIT=256000000
+export RUBY_HEAP_MIN_SLOTS=600000
+export RUBY_HEAP_SLOTS_INCREMENT=200000
+export RUBY_HEAP_FREE_MIN=100000
+
 #colored terminal output!
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
