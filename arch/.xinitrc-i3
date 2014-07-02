@@ -4,6 +4,9 @@
 #background image
 feh --bg-max ~/images/christhousemarthemarry.jpg
 
+#start mpd
+[ ! -s ~/.config/mpd/pid ] && mpd
+
 #trackpoint config for thinkpad
 xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation" 1
 xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Button" 2
