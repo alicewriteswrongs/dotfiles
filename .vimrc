@@ -36,6 +36,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'tpope/vim-fugitive'
 Plugin 'justinmk/vim-sneak'
 Plugin 'chrisbra/DistractFree'
+Plugin 'tpope/vim-unimpaired'
 "Plugin 'klen/python-mode'
 "Plugin 'mikewest/vimroom'
 
@@ -135,8 +136,6 @@ nnoremap <Leader>b4 :buffer4<cr>
 nnoremap <Leader>b5 :buffer5<cr>
 nnoremap <Leader>b6 :buffer6<cr>
 nnoremap <Leader>b7 :buffer7<cr>
-nnoremap <Leader>bn :bnext<cr>
-nnoremap <Leader>bp :bprev<cr>
 nnoremap <Leader>t  :enew<cr>
 nnoremap <Leader>bq :bd<cr>
 
