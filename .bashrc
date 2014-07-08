@@ -26,7 +26,7 @@ alias gitc='git commit'
 alias gitl='git log -1 HEAD' #last commit
 
 #ssh aliases
-alias scc='ssh -X scc2.bu.edu -l benpote'
+alias scc='ssh benpote@scc1.bu.edu'
 alias bioed='ssh benpote@bioed.bu.edu'
 
 #python aliases

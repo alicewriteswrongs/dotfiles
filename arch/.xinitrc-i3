@@ -6,6 +6,8 @@ feh --bg-max ~/images/christhousemarthemarry.jpg
 
 #start mpd
 [ ! -s ~/.config/mpd/pid ] && mpd
+#start scrobbling program
+[[ -z $(pgrep -xU $UID mpdas) ]] && mpdas &
 
 #trackpoint config for thinkpad
 xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation" 1
