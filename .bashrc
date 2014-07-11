@@ -40,6 +40,9 @@ alias documents='cd ~/Dropbox/Documents/'
 alias notes='cd ~/notes'
 alias todo='vim ~/notes/todo.markdown'
 
+#abcde (cd ripping program)
+alias abcdehighqual='abcde -o ogg:"-q 7"' #rips at ogg vorbis quality level 7
+
 
 ################
 #Other config
