@@ -13,9 +13,6 @@ export RUBY_HEAP_FREE_MIN=100000
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
-#autocomplete for git
-source ~/.git-completion.bash
-
 #export Vim as my default editor
 export EDITOR="vim"
 
