@@ -27,6 +27,8 @@ PROMPT="[%{$fg[green]%}%n%{$reset_color%}@%{$fg[blue]%}%m] %{$fg_no_bold[yellow]
 RPROMPT="[%{$fg_no_bold[cyan]%}%T%{$reset_color%}]"
 
 
+#git completion
+fpath=(~/.zsh $fpath)
 
 #####ALIASES
 
