@@ -17,4 +17,3 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 export EDITOR="vim"
 
 
-
