@@ -46,6 +46,8 @@ alias mkdir='mkdir -p -v'   #makes a directory and it's hierarchy, also verbose
 alias mv='mv -iv'           #makes it interactive and verbose
 alias usb='sudo mount /dev/sdb1 /mnt/usb' 
 
+#pacman
+alias orphans='sudo pacman -Qdt'
 
 #git commands
 alias pretty='git log --pretty=oneline' #get succinct git log information
