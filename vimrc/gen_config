@@ -7,7 +7,7 @@ set hlsearch "highlight searches
 set number "line numbers
 set background=dark "stuff for solarized colorscheme
 colorscheme solarized "solarized colorscheme (so tasty)
-"let g:solarized_termcolors=256 "necessary for terminal vim under mac os
+"let g:solarized_termcolors=256 "necessary for terminal vim with mac os terminal (not iterm)
 set modeline " autoindentation
 """"python friendliness
 set tabstop=8 "insert 4 spaces for tab (python standard)
