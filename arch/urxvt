@@ -12,4 +12,5 @@ URxvt.tabbed.reopen-on-close: yes
 URxvt.keysym.Control-t: perl:tabbedex:new_tab
 URxvt.keysym.Control-Tab: perl:tabbedex:next_tab
 URxvt.font: xft:inconsolata:size=10, \
+            xft:inconsolata for Powerline:size=10, \
             xft:otf-ipafont:size=10:antialias=true
