@@ -1,0 +1,5 @@
+source vundle_laptop
+source gen_config
+source laptop_plugin_config
+source common_keybinds
+source laptop_plugin_keybinds
