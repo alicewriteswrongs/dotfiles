@@ -2,6 +2,9 @@
 
 set $mod Mod1
 
+#set DPMS screen interval
+exec --no-startup-id xset dpms 600
+
 #font for window titles and bar
 #font pango:DejaVu Sans Mono 8
 font pango:inconsolata 10
