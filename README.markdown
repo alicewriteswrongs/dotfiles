@@ -4,7 +4,7 @@ For the syncing of the dotfiles. For the sake of consistency try to always clone
 
 `~/Code/dotfiles`
 
-the setup is slightly dependent on this (mainly alias to open vimrc and bashrc)
+the setup is dependent on this, for sourcing modular vimrc and zshrc files.
 
 
 ------------------
@@ -13,8 +13,14 @@ the setup is slightly dependent on this (mainly alias to open vimrc and bashrc)
 
 syntax: file (location to symlink) -notes
 
-* .vimrc (~/.vimrc)
-    * .vimrc-mac (~/.vimrc) -os x only
+* vimrc
+    * imac_vimrc (~/.vimrc)
+    * laptop_vimrc (~/.vimrc)
+* zsh
+    * imac_zshenv
+    * imac_zshrc
+    * laptop_zshenv
+    * laptop_zshrc
 * .slate (~/.slate) -os x only
 * .muttrc (~/.muttrc)
 * .bashrc (~/.bashrc)
