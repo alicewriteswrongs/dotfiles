@@ -9,6 +9,7 @@ nnoremap <F4> :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif 
 nnoremap <Leader>w :w<cr>
 nnoremap <Leader>q :q<cr>
 nnoremap <Leader>sp :setlocal spell<cr> 
+nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<CR>
 vmap <Leader>y "+y
 vmap <Leader>d "+d
 nmap <Leader>p "+p
