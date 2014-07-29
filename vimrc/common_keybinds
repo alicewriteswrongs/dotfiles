@@ -9,13 +9,19 @@ nnoremap <F4> :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif 
 nnoremap <Leader>w :w<cr>
 nnoremap <Leader>q :q<cr>
 nnoremap <Leader>sp :setlocal spell<cr> 
-nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<CR>
 vmap <Leader>y "+y
 vmap <Leader>d "+d
 nmap <Leader>p "+p
 nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
+
+"centered cursor
+nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<CR>
+
+"line and column highlighting
+nnoremap <Leader>cl :set cursorline!<CR>
+nnoremap <Leader>cc :set cursorcolumn!<CR>
 
 "buffers!
 nnoremap <Leader>bl :buffers<cr>
