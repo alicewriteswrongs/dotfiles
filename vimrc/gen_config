@@ -1,7 +1,6 @@
 
 filetype plugin indent on "filetype based indenting 
 syntax enable "syntax highlighting
-set relativenumber 
 set wildmenu "better command line completion
 set hlsearch "highlight searches
 set number "line numbers
