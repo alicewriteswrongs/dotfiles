@@ -1,0 +1,7 @@
+typeset -U path
+path=(/projectnb/mullenl/programs/ /projectnb/mullenl/programs2/rsem-1.2.15/ $path)
+
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
+export EDITOR="vim"

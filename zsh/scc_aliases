@@ -1,0 +1,5 @@
+alias jobs='qstat -u benpote'
+alias donejobs='qacct -d 7 -o benpote -j'
+alias space='pquota -u mullenl'
+alias mullenl='cd /projectnb/mullenl/'
+
