@@ -1,6 +1,5 @@
 
 #Commands and programs
-alias top='htop'			#use a better version of top instead
 alias la='ls -alh'			#show hidden files and attribute
 alias ls='ls --color=auto'  #colorize ls output
 alias grep='grep -n --color=auto' #colorize grep output and line numbers
