@@ -31,6 +31,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'justinmk/vim-sneak'
 Plugin 'chrisbra/DistractFree'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'davidhalter/jedi-vim'
 "Plugin 'klen/python-mode'
 "Plugin 'mikewest/vimroom'
 
