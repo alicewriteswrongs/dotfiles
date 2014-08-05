@@ -32,6 +32,7 @@ Plugin 'justinmk/vim-sneak'
 Plugin 'chrisbra/DistractFree'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'JuliaLang/julia-vim'
 "Plugin 'klen/python-mode'
 "Plugin 'mikewest/vimroom'
 

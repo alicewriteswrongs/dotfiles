@@ -8,13 +8,17 @@ nnoremap <F4> :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif 
 "common commands
 nnoremap <Leader>w :w<cr>
 nnoremap <Leader>q :q<cr>
-nnoremap <Leader>sp :setlocal spell<cr> 
+nnoremap <Leader>sp :setlocal spell<cr>
 vmap <Leader>y "+y
 vmap <Leader>d "+d
 nmap <Leader>p "+p
 nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
+
+"see whitepsace characters by hitting leader-l
+exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
+nnoremap <Leader>l :set list!<CR>
 
 "centered cursor
 nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<CR>
