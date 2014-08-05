@@ -1,6 +1,6 @@
-source ~/Code/dotfiles/vimrc/imac_vundle
-source ~/Code/dotfiles/vimrc/gen_config
-source ~/Code/dotfiles/vimrc/imac_plugin_config
-source ~/Code/dotfiles/vimrc/relative_number
-source ~/Code/dotfiles/vimrc/common_keybinds
-source ~/Code/dotfiles/vimrc/laptop_plugin_keybinds
+source ~/Code/dotfiles/vimrc/imac_vundle.vimrc
+source ~/Code/dotfiles/vimrc/gen_config.vimrc
+source ~/Code/dotfiles/vimrc/imac_plugin_config.vimrc
+source ~/Code/dotfiles/vimrc/relative_number.vimrc
+source ~/Code/dotfiles/vimrc/common_keybinds.vimrc
+source ~/Code/dotfiles/vimrc/laptop_plugin_keybinds.vimrc
