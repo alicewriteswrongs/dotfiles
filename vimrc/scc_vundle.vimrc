@@ -29,6 +29,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'justinmk/vim-sneak'
 Plugin 'chrisbra/DistractFree'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'benmills/vimux'
+Plugin 'julienr/vimux-pyutils'
 "Plugin 'klen/python-mode'
 "Plugin 'mikewest/vimroom'
 
