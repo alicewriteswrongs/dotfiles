@@ -42,7 +42,11 @@ nnoremap <Leader>bq :bd<cr>
 "splits!
 nnoremap <Leader>o :vsplit<cr>
 nnoremap <Leader>u :split<cr>
-nnoremap <Leader>j <C-W>w
-nnoremap <Leader>k <C-W>W
+nnoremap <Leader>j <C-W>j
+nnoremap <Leader>k <C-W>k
+nnoremap <Leader>h <C-W>h
+nnoremap <Leader>l <C-W>l
 
-
+"vimux and vimux-pyutils
+nnoremap <Leader>vip :VimuxRunCommand "ipython"<cr>
+nnoremap <Leader>hs :VimuxRunCommand "ghci"

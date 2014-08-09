@@ -1,7 +1,7 @@
 URxvt*scrollBar:false
 
 
-URxvt*perl-ext-common: default,matcher,-option-popup,-selection-popup,-realine,tabbedex
+URxvt*perl-ext-common: default,matcher,-option-popup,-selection-popup,-realine,tabbedex, osc-xterm-clipboard
 URxvt*matcher.button: 1
 URxvt.url-launcher: chromium
 !hide tab-bar when only one is open

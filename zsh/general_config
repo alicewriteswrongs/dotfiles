@@ -8,7 +8,8 @@ zstyle ':completion:*' max-errors 5
 zstyle ':completion:*' substitute 1
 zstyle :compinstall filename '/home/benpote/.zshrc'
 
-autoload -Uz compinit promptinit
+setopt AUTO_CD
+autoload -Uz compinit promptinit predict-on
 compinit
 promptinit
 # End of lines added by compinstall
