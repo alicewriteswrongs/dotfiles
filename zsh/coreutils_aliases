@@ -1,3 +1,4 @@
+#not actually solely coreutils, but commands I want on every machine
 
 #Commands and programs
 alias la='ls -alh'			#show hidden files and attribute
@@ -9,4 +10,7 @@ alias usb='sudo mount /dev/sdb1 /mnt/usb'
 alias howbig='du -hc | tail -n 1'
 alias fullpath='ls -d -1 $PWD/*.*'
 
-
+#tmux
+alias new='tmux new -s'
+alias sessions='tmux list-sessions'
+alias attach='tmux attach -t'
