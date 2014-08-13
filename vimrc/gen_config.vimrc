@@ -30,6 +30,7 @@ augroup vimrc_autocmds
 "mouse
 set ttyfast
 set mouse=a
+set ttymouse=xterm2
 set mousemodel=extend
 
 
