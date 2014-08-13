@@ -33,6 +33,7 @@ Plugin 'chrisbra/DistractFree'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'benmills/vimux'
 Plugin 'julienr/vimux-pyutils'
+Plugin 'Rykka/clickable.vim'
 "Plugin 'klen/python-mode'
 "Plugin 'mikewest/vimroom'
 

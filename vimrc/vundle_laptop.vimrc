@@ -37,6 +37,7 @@ Plugin 'benmills/vimux'
 "Plugin 'julienr/vimux-pyutils'
 Plugin 'julienr/vim-cellmode'
 Plugin 'jceb/vim-orgmode'
+Plugin 'Rykka/clickable.vim'
 "Plugin 'klen/python-mode'
 "Plugin 'mikewest/vimroom'
 
