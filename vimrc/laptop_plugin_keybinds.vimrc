@@ -14,7 +14,7 @@ nnoremap <Leader>sl :Simplenote -l<cr>
 nnoremap <Leader>ub :UB<cr>
 
 "vim-ipython (note that you need to have a .py open)
-nnoremap <Leader>ip :IPython<cr>
+"nnoremap <Leader>ip :IPython<cr>
 
 "open .vimrc
 nnoremap <Leader>vrc :e ~/Code/dotfiles/.vimrc<cr>
@@ -22,3 +22,15 @@ nnoremap <Leader>vrc :e ~/Code/dotfiles/.vimrc<cr>
 "crtlp
 nnoremap <Leader>p :CtrlPBufTag<cr>
 nnoremap <Leader>P :CtrlPMRU<cr>
+
+"vimux and vimux-pyutils
+nnoremap <Leader>ip :VimuxRunCommand "ipython"<cr>
+nnoremap <Leader>hs :VimuxRunCommand "ghci"<cr>
+nnoremap <Leader>sc :VimuxRunCommand "petite"<cr>
+
+function! VimuxSlime()
+    call VimuxSendText(@v)
+    call VimuxSendKeys("Enter")
+endfunction
+
+nnoremap <Leader>VT :call VimuxSlime()<cr>
