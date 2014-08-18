@@ -47,6 +47,4 @@ nnoremap <Leader>k <C-W>k
 nnoremap <Leader>h <C-W>h
 nnoremap <Leader>l <C-W>l
 
-"vimux and vimux-pyutils
-nnoremap <Leader>vip :VimuxRunCommand "ipython"<cr>
-nnoremap <Leader>hs :VimuxRunCommand "ghci"
+
