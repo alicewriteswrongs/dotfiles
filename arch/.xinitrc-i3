@@ -31,7 +31,10 @@ fcitx &
 /usr/bin/xscreensaver -no-splash &
 
 #make keybinds (for thinkpad media keys, etc)
-xbindkeys
+xbindkeys &
+
+#start redshift (color temperature thing)
+redshift -l 42:71 &
 
 #start gnome keyright (for networkmanager to work correctly)
 source /etc/X11/xinit/xinitrc.d/30-dbus
