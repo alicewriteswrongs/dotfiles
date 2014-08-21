@@ -18,7 +18,7 @@ vmap <Leader>P "+P
 
 "see whitepsace characters by hitting leader-l
 exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
-nnoremap <Leader>l :set list!<CR>
+nnoremap <Leader>ws :set list!<CR>
 
 "centered cursor
 nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<CR>
