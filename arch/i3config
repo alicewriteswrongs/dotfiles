@@ -72,16 +72,16 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # give workspaces names
-set $WS1 1-www
-set $WS2 2-term
-set $WS3 3-code
-set $WS4 4-mail
-set $WS5 5-chat
-set $WS6 6-tunes
-set $WS7 7-read
-set $WS8 8-write
-set $WS9 9-misc1
-set $WS10 10-misc2
+set $WS1 1
+set $WS2 2
+set $WS3 3
+set $WS4 4
+set $WS5 5
+set $WS6 6
+set $WS7 7
+set $WS8 8
+set $WS9 9
+set $WS10 10
 
 #set default border style
 new_window pixel 3
