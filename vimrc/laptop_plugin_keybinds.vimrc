@@ -1,4 +1,3 @@
-
 "nerdtree
 nnoremap <F2> :NERDTreeToggle<cr> 
 
@@ -34,3 +33,6 @@ function! VimuxSlime()
 endfunction
 
 nnoremap <Leader>VT :call VimuxSlime()<cr>
+
+"localleader for vim-orgmode
+let localleader = "\\"
