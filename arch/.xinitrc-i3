@@ -1,7 +1,7 @@
 #Xresources file
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
-#background image
+# #background image
 feh --bg-max ~/images/christhousemarthemarry.jpg
 
 #start mpd
@@ -10,36 +10,35 @@ feh --bg-max ~/images/christhousemarthemarry.jpg
 [[ -z $(pgrep -xU $UID mpdas) ]] && mpdas &
 
 #trackpoint config for thinkpad
-xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation" 1 & 
-xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Button" 2 & 
-xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Timeout" 200 & 
-xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 6 7 4 5 &
+xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation" 1
+xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Button" 2
+xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Timeout" 200
+xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 6 7 4 5
 
 #turn off the touchpad
-touchpad-toggle.sh & 
+#touchpad-toggle.sh
 
 #japanese input stuff
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
-fcitx &
+fcitx 
 
-#network manager
-#nm-applet &
+# #network manager
+# #nm-applet
 
-#start xscreensaver
-/usr/bin/xscreensaver -no-splash &
-xset +dpms &
+# #start xscreensaver
+xscreensaver -no-splash && xset +dpms &
 
 #make keybinds (for thinkpad media keys, etc)
-xbindkeys &
+xbindkeys
 
 #start redshift (color temperature thing)
 redshift -l 42:71 &
 
 #start gnome keyright (for networkmanager to work correctly)
-source /etc/X11/xinit/xinitrc.d/30-dbus &
-eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh) &
+source /etc/X11/xinit/xinitrc.d/30-dbus
+eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
 export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT_INFO SSH_AUTH_SOCK
 
 #start i3wm
