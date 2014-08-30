@@ -18,7 +18,11 @@ let g:airline#extensions#whitespace#enabled = 1
 let g:airline_powerline_fonts = 1
 
 "vim-slime
-let g:slime_target = "tmux"
+"let g:slime_target = "tmux"
+
+"tslime.vim
+let g:tsline_ensure_trailing_newlines = 1
+
 
 "haskellmode_vim
 au BufEnter *.hs compiler ghc
