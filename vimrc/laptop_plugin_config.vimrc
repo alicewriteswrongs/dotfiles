@@ -20,4 +20,6 @@ let g:airline_powerline_fonts = 1
 "vim-slime
 let g:slime_target = "tmux"
 
-
+"haskellmode_vim
+au BufEnter *.hs compiler ghc
+let g:haddock_browser="/usr/bin/chromium"
