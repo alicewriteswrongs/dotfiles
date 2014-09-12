@@ -10,6 +10,8 @@ alias usb='sudo mount /dev/sdb1 /mnt/usb'
 alias howbig='du -hc | tail -n 1'
 alias fullpath='ls -d -1 $PWD/*.*'
 
+alias bc='bc -l'
+
 #tmux
 alias new='tmux new -s'
 alias sessions='tmux list-sessions'
