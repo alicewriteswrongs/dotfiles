@@ -1,4 +1,4 @@
-#Xresources file
+eXresources file
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
 # #background image
@@ -34,7 +34,7 @@ xscreensaver -no-splash && xset +dpms &
 xbindkeys
 
 #start redshift (color temperature thing)
-redshift -l 42:71 &
+redshift &
 
 #start gnome keyright (for networkmanager to work correctly)
 source /etc/X11/xinit/xinitrc.d/30-dbus
