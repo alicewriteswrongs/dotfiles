@@ -24,7 +24,7 @@ if subj.start_with? '[Ns]'
 end
 
 if subj.start_with? '[arch-announce]'
-    message.add_label :arch-announce
+    message.add_label :archannounce
 end
 
 if subj.start_with? '[tonics]'
