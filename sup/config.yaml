@@ -13,7 +13,7 @@
 :jump_to_open_message: true
 :discard_snippets_from_encrypted_messages: false
 :load_more_threads_when_scrolling: true
-:default_attachment_save_dir: '/home/benpote/attachments'
+:default_attachment_save_dir: "/home/benpote/attachments"
 :sent_source: sup://sent
 :archive_sent: true
 :poll_interval: 150
