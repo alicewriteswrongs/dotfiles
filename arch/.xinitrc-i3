@@ -30,6 +30,9 @@ fcitx
 # #start xscreensaver
 xscreensaver -no-splash && xset +dpms &
 
+# get current time
+ntpd -q &
+
 #make keybinds (for thinkpad media keys, etc)
 xbindkeys
 
