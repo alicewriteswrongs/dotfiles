@@ -10,7 +10,8 @@ let g:SimplenoteFiletype='markdown'
 
 "vim-latexsuite
 let g:Tex_DefaultTargetFormat='pdf'
-let g:tex_flavor='latex'
+let g:Tex_Flavor='latex'
+let g:Tex_ViewRule_pdf='mupdf'
 
 "vim-airline
 let g:airline#extensions#tabline#enabled = 1
