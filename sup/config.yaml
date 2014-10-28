@@ -1,5 +1,5 @@
 ---
-:editor: vim -f -c '+/^\s*\n/' '+nohl'
+:editor: vim -f -c '+/^\s*\n/' '+nohl' '+HardPencil'
 :thread_by_subject: false
 :edit_signature: false
 :ask_for_from: true
