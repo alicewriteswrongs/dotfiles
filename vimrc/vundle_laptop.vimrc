@@ -42,6 +42,8 @@ Plugin 'eagletmt/neco-ghc'
 Plugin 'wlangstroth/vim-racket'
 Plugin 'vim-scripts/paredit.vim'
 Plugin 'sjl/tslime.vim'
+Plugin 'reedes/vim-pencil'
+Plugin 'junegunn/limelight.vim'
 "Plugin 'klen/python-mode'
 "Plugin 'mikewest/vimroom'
 
