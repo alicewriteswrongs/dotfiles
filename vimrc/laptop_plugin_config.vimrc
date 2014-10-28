@@ -18,11 +18,24 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#whitespace#enabled = 1
 let g:airline_powerline_fonts = 1
 
+let g:limelight_conceal_ctermfg = 'bg'
 "vim-slime
 "let g:slime_target = "tmux"
 
 "tslime.vim
 let g:tsline_ensure_trailing_newlines = 1
+
+"vim-pencil
+let g:pencil#wrapModeDefault = 'hard'
+let g:pencil#autoformat = 1
+let g:pencil#conceallevel = 0
+
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd call pencil#init()
+  autocmd FileType text         call pencil#init({'wrap': 'hard'})
+  autocmd FileType tex          call pencil#init({'wrap': 'hard'})
+augroup END
 
 
 "haskellmode_vim
