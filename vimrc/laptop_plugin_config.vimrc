@@ -37,6 +37,20 @@ augroup pencil
   autocmd FileType tex          call pencil#init({'wrap': 'hard'})
 augroup END
 
+let g:pencil#autoformat_blacklist = [
+    \ 'texsection$',
+    \ 'texarray$',
+    \ 'texproof$',
+    \ 'texdescription$',
+    \ 'texenumerate$',
+    \ 'texlist$',
+    \ 'texsection$',
+    \ 'texsection$',
+    \ 'texsection$',
+    \ 'texsection$',
+    \ 'texsection$',
+    \ 'texsection$',
+
 
 "haskellmode_vim
 au BufEnter *.hs compiler ghc

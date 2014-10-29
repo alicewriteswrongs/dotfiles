@@ -36,3 +36,6 @@ nnoremap <Leader>P :CtrlPMRU<cr>
 
 "localleader for vim-orgmode
 let localleader = "\\"
+
+"vim-pencil
+nnoremap <silent> <Leader>tp :TogglePencil<cr>
