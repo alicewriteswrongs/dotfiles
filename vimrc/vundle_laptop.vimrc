@@ -44,6 +44,7 @@ Plugin 'vim-scripts/paredit.vim'
 Plugin 'sjl/tslime.vim'
 Plugin 'reedes/vim-pencil'
 Plugin 'junegunn/limelight.vim'
+Plugin 'mattn/calendar-vim'
 "Plugin 'klen/python-mode'
 "Plugin 'mikewest/vimroom'
 
