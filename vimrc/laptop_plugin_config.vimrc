@@ -2,6 +2,9 @@
 "crtlp
 let g:ctrlp_extensions = ['buffertag']
 
+"incsearch
+let g:incsearch#auto_nohlsearch = 1
+
 "Simplenote.vim
 source ~/.simplenoterc
 let g:SimplenoteListHeight=55

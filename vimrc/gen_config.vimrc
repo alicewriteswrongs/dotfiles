@@ -2,12 +2,17 @@
 filetype plugin indent on "filetype based indenting 
 syntax enable "syntax highlighting
 set wildmenu "better command line completion
-set hlsearch "highlight searches
 set number "line numbers
 set background=dark "stuff for solarized colorscheme
 colorscheme solarized "solarized colorscheme (so tasty)
 "let g:solarized_termcolors=256 "necessary for terminal vim with mac os terminal (not iterm)
 set modeline " autoindentation
+
+""""search config
+set incsearch
+set ignorecase
+set smartcase
+set hlsearch "highlight searches
 
 """"python friendliness
 set tabstop=8 "insert 4 spaces for tab (python standard)
