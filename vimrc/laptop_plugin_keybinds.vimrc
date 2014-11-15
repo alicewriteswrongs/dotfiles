@@ -1,6 +1,11 @@
 "nerdtree
 nnoremap <F2> :NERDTreeToggle<cr> 
 
+"incsearch
+map / <Plug>(incsearch-forward)
+map ? <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
+
 "tagbar
 nnoremap <F10> :TagbarToggle<cr> 
 nnoremap <F8> :TagbarOpen [fj]<cr> 

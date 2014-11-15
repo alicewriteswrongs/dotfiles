@@ -45,6 +45,7 @@ Plugin 'sjl/tslime.vim'
 Plugin 'reedes/vim-pencil'
 Plugin 'junegunn/limelight.vim'
 Plugin 'mattn/calendar-vim'
+Plugin 'haya14busa/incsearch.vim'
 "Plugin 'klen/python-mode'
 "Plugin 'mikewest/vimroom'
 
