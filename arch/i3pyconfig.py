@@ -28,19 +28,22 @@ status.register("battery",
         status={
         "DIS": "↓",
         "CHR": "↑",
-        "FULL": "=",
+        "FULL": "",
     },)
 
 status.register("wireless",
         interface = "wlp3s0",
-        format_up = "{essid}",)
+        format_up = " {essid}",)
 
 #non 'hardware' related stuff below
 
-status.register("alsa")
+status.register("alsa",
+        format = " {volume}",
+        format_muted = " {volume}",)
+        
 
 status.register("mpd",
-    format="{status} {title}, {artist}",
+    format="[{status} {title}, {artist} ]",
     status={
         "pause": "▷",
         "play": "▶",
