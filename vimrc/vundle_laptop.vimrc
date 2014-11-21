@@ -4,8 +4,8 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 """plugins!
 " let Vundle manage Vundle, required
@@ -49,6 +49,7 @@ Plugin 'haya14busa/incsearch.vim'
 "Plugin 'klen/python-mode'
 "Plugin 'mikewest/vimroom'
 
+call vundle#end()
 
 
 
