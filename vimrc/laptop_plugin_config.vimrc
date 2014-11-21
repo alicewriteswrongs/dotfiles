@@ -6,10 +6,10 @@ let g:ctrlp_extensions = ['buffertag']
 let g:incsearch#auto_nohlsearch = 1
 
 "Simplenote.vim
-source ~/.simplenoterc
-let g:SimplenoteListHeight=55
-let g:SimplenoteVertical=0
-let g:SimplenoteFiletype='markdown'
+"source ~/.simplenoterc
+"let g:SimplenoteListHeight=55
+"let g:SimplenoteVertical=0
+"let g:SimplenoteFiletype='markdown'
 
 "vim-latexsuite
 let g:Tex_DefaultTargetFormat='pdf'
