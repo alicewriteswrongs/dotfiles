@@ -5,9 +5,9 @@ eXresources file
 #feh --bg-max ~/images/christhousemarthemarry.jpg
 
 #start mpd
-#[ ! -s ~/.config/mpd/pid ] && mpd
+[ ! -s ~/.config/mpd/pid ] && mpd
 #start scrobbling program
-#[[ -z $(pgrep -xU $UID mpdas) ]] && mpdas &
+[[ -z $(pgrep -xU $UID mpdas) ]] && mpdas &
 
 
 #turn off the touchpad
