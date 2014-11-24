@@ -12,6 +12,9 @@ alias fullpath='ls -d -1 $PWD/*.*'
 
 alias bc='bc -l'
 
+#shutdown
+alias shutdown='sudo shutdown -P now'
+
 #tmux
 alias new='tmux new -s'
 alias sessions='tmux list-sessions'
