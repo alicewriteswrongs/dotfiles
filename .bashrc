@@ -78,3 +78,4 @@ alias less='/usr/share/vim/vim74/macros/less.sh'
 
 #fix issue with vim-ipython (unmap ctrl-s)
 stty stop undef
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
