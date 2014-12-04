@@ -6,7 +6,8 @@ feh --bg-max ~/images/christhousemarthemarry.jpg
 
 #start mpd
 [ ! -s ~/.config/mpd/pid ] && mpd
-#start scrobbling program
+
+#start mpdas
 [[ -z $(pgrep -xU $UID mpdas) ]] && mpdas &
 
 #trackpoint config for thinkpad
