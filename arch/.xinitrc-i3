@@ -29,8 +29,8 @@ fcitx
 
 export XCURSOR_PATH=""
 
-# #network manager
-# #nm-applet
+#network manager
+nm-applet
 
 # #start xscreensaver
 xscreensaver -no-splash && xset +dpms &
