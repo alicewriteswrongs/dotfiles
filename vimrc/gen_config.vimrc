@@ -8,6 +8,11 @@ colorscheme solarized "solarized colorscheme (so tasty)
 "let g:solarized_termcolors=256 "necessary for terminal vim with mac os terminal (not iterm)
 set modeline " autoindentation
 
+"""line highlighting
+set cursorline
+autocmd WinEnter * setlocal cursorline
+autocmd WinLeave * setlocal nocursorline
+
 """"search config
 set incsearch
 set ignorecase
