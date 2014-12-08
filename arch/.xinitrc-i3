@@ -1,4 +1,4 @@
-eXresources file
+#Xresources file
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
 # #background image
@@ -30,16 +30,16 @@ fcitx
 export XCURSOR_PATH=""
 
 #network manager
-nm-applet
+nm-applet &
 
 # #start xscreensaver
 xscreensaver -no-splash && xset +dpms &
 
 # get current time
-ntpd -q &
+#ntpd -q &
 
 #make keybinds (for thinkpad media keys, etc)
-xbindkeys
+xbindkeys &
 
 #start redshift (color temperature thing)
 redshift &
