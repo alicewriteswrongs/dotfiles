@@ -15,8 +15,8 @@ promptinit
 # End of lines added by compinstall
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
-HISTSIZE=2000
-SAVEHIST=10000
+HISTSIZE=1000000000
+SAVEHIST=$HISTSIZE
 setopt appendhistory autocd extendedglob nomatch notify
 unsetopt beep
 bindkey -e
