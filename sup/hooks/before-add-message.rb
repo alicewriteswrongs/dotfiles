@@ -81,6 +81,10 @@ if message.from.email.start_with? 'notifications@myprewards.com'
     message.remove_label :inbox
 end
 
+if message.to.email.start_with? 'mlkdayboston'
+    message.remove_label :indox
+    message.add_label :MLKBoston
+end
 
 
 
