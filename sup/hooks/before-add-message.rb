@@ -19,6 +19,10 @@ if subj.start_with? '[GitHub]'
     message.add_label :Github
 end
 
+if subj.start_with? '[capital-group]'
+    message.add_label :Capital_group
+end
+
 if subj.start_with? '[Ns]'
     message.add_label :NS
 end
