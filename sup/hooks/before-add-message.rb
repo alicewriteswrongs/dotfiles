@@ -86,5 +86,9 @@ if message.to.email.start_with? 'mlkdayboston'
     message.add_label :MLKBoston
 end
 
+if message.subj.start_with? '[MLK Boston]'
+    message.add_label :MLKBoston
+end
+
 
 
