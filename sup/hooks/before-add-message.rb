@@ -83,6 +83,9 @@ end
 
 if message.to.email.start_with? 'mlkdayboston'
     message.remove_label :indox
+end
+
+if message.to.email.start_with? 'mlkdayboston'
     message.add_label :MLKBoston
 end
 
