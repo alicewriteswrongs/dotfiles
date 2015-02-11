@@ -6,6 +6,10 @@ if subj.start_with? '[lpc-c]'
     message.add_label :LPC
 end
 
+if subj.start_with? '[moonbats]'
+    message.add_label :AGstuff
+end
+
 if subj.start_with? 'Re: [lpc-c]'
     message.add_label :LPC
 end
