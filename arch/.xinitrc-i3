@@ -58,6 +58,9 @@ parcellite &
 #start unclutter! hide x cursor
 unclutter &
 
+#start the drop shadows
+compton -c &
+
 #start i3wm
 exec i3
 #exec gnome-session
