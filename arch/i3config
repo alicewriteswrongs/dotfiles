@@ -106,6 +106,15 @@ for_window [class="(?i)gvim"] floating enable
 for_window [class="(?i)gvim"] resize shrink width 800 px
 for_window [class="(?i)gvim"] resize shrink height 200 px
 
+#no borders
+for_window [class="^.*"] border pixel 0
+
+#gap size
+gaps inner 5
+
+#smart borders!
+smart_borders on
+
 #change border styles
 bindsym $mod+t border normal
 bindsym $mod+y border pixel 3
