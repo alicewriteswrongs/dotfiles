@@ -55,6 +55,10 @@ owncloud &
 #start that nice clipboard manager
 parcellite &
 
+#start unclutter! hide x cursor
+unclutter &
+
 #start i3wm
 exec i3
 #exec gnome-session
+#exec startxfce4
