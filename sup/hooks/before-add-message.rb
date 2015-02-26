@@ -6,7 +6,7 @@ if subj.start_with? '[lpc-c]'
     message.add_label :LPC
 end
 
-if subj.start_width? '[sup]'
+if subj.start_with? '[sup]'
     message.add_label :sup
 end
 
