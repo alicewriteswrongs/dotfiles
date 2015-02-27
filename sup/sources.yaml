@@ -3,15 +3,23 @@
   uri: maildir:/home/benpote/mail/personal/archive
   usual: true
   archived: false
-  sync_back: true
+  sync_back: false
   id: 1
   labels:
-  - gmail
+  - gmail_blp
+- !supmua.org,2006-10-01/Redwood/Maildir
+  uri: maildir:/home/benpote/mail/alice/archive
+  usual: true
+  archived: false
+  sync_back: false
+  id: 15
+  labels:
+  - gmail_alice
 - !supmua.org,2006-10-01/Redwood/Maildir
   uri: maildir:/home/benpote/mail/riseup/INBOX/
   usual: true
   archived: false
-  sync_back: true
+  sync_back: false
   id: 4
   labels:
   - riseup
@@ -19,21 +27,21 @@
   uri: maildir:/home/benpote/mail/riseup/LPC
   usual: true
   archived: false
-  sync_back: true
+  sync_back: false
   id: 5
   labels: []
 - !supmua.org,2006-10-01/Redwood/Maildir
   uri: maildir:/home/benpote/mail/riseup/Drafts/
   usual: true
   archived: false
-  sync_back: true
+  sync_back: false
   id: 6
   labels: []
 - !supmua.org,2006-10-01/Redwood/Maildir
   uri: maildir:/home/benpote/mail/hampshire/INBOX/
   usual: true
   archived: false
-  sync_back: true
+  sync_back: false
   id: 7
   labels:
   - hampshire
@@ -41,7 +49,7 @@
   uri: maildir:/home/benpote/mail/hampshire/Sent
   usual: true
   archived: false
-  sync_back: true
+  sync_back: false
   id: 9
   labels:
   - hampshire
@@ -49,7 +57,7 @@
   uri: maildir:/home/benpote/mail/hampshire/sent-mail
   usual: true
   archived: false
-  sync_back: true
+  sync_back: false
   id: 10
   labels:
   - hampshire
@@ -57,7 +65,7 @@
   uri: maildir:/home/benpote/mail/hampshire/sent-mail-dec-2009/
   usual: true
   archived: false
-  sync_back: true
+  sync_back: false
   id: 11
   labels:
   - hampshire
@@ -65,7 +73,7 @@
   uri: maildir:/home/benpote/mail/hampshire/sent-mail-mar-2010/
   usual: true
   archived: false
-  sync_back: true
+  sync_back: false
   id: 12
   labels:
   - hampshire
@@ -73,7 +81,7 @@
   uri: maildir:/home/benpote/mail/riseup/Sent/
   usual: true
   archived: false
-  sync_back: true
+  sync_back: false
   id: 13
   labels: []
 - !supmua.org,2006-10-01/Redwood/SentLoader {}
