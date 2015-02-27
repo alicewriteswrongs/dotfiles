@@ -18,6 +18,10 @@ if subj.start_with? 'Re: [lpc-c]'
     message.add_label :LPC
 end
 
+if message.subj.start_with? '[MLK Boston]'
+    message.add_label :MLKBoston
+    message.remove_label :inbox
+end
 
 if subj.start_with? '[Empowermentors]'
     message.add_label :Empowermentors
@@ -47,7 +51,7 @@ if subj.start_with? 'arch-general'
     message.add_label :archgeneral
 end
 
-if subj.start_with? '[sup-talk'
+if subj.start_with? '[sup-talk]'
     message.add_label :sup
 end
 
@@ -62,6 +66,14 @@ end
 
 if message.from.email.start_with? 'leocelo@gmail.com'
     message.add_label :friends
+end
+
+if message.from.email.start_with? 'kspilios@bu.edu'
+    message.add_label :BI108
+end
+
+if message.from.email.start_with? 'smullen@bu.edu'
+    message.add_label :BU
 end
 
 
@@ -89,10 +101,11 @@ if message.from.email.start_with? 'notifications@myprewards.com'
     message.remove_label :inbox
 end
 
-if message.subj.start_with? '[MLK Boston]'
-    message.add_label :MLKBoston
-    message.remove_label :inbox
+#recipient based labels
+if message.recipients.any? {'floodboston@googlegroups.com'}
+      message.add_label :floodboston
 end
 
-
-
+if message.recipients.any? {'mlkdayboston@googlegroups.com'}
+      message.add_label :MLKBoston
+end
