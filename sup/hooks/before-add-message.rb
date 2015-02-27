@@ -101,11 +101,4 @@ if message.from.email.start_with? 'notifications@myprewards.com'
     message.remove_label :inbox
 end
 
-#recipient based labels
-if message.recipients.any? {'floodboston@googlegroups.com'}
-      message.add_label :floodboston
-end
 
-if message.recipients.any? {'mlkdayboston@googlegroups.com'}
-      message.add_label :MLKBoston
-end
