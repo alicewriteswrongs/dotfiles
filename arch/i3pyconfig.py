@@ -37,7 +37,7 @@ status.register("wireless",
 
 #non 'hardware' related stuff below
 
-status.register("alsa",
+status.register("pulseaudio",
         format = " {volume}",
         format_muted = " {volume}",)
         
