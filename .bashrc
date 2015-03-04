@@ -7,6 +7,8 @@ alias bashrc='vim ~/Code/dotfiles/.bashrc'
 alias vimrc='vim ~/Code/dotfiles/.vimrc'
 alias i3config='vim ~/Code/dotfiles/arch/i3config'
 
+#test
+
 #Commands and programs
 alias top='htop'			#use a better version of top instead
 alias la='ls -al'			#show hidden files and attributes
