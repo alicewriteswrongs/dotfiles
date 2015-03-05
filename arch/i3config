@@ -94,6 +94,7 @@ new_float pixel 3
 for_window [title="Write: *"] floating enable
 for_window [title="Thunderbird Preferences"] floating enable
 for_window [title="Firefox Preferences"] floating enable
+for_window [title="Enigmail Key Management"] floating enable
 for_window [title="File Operation Progress"] floating enable
 for_window [title="Address Book"] floating enable
 for_window [title="Steam Guard*"] floating enable
