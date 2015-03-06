@@ -16,4 +16,6 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 #export Vim as my default editor
 export EDITOR="vim"
 
+#background environmental variable
+export BACKGROUND="~/images/Edvard_Munch_-_Workers_on_their_Way_Home_-_Google_Art_Project.jpg"
 
