@@ -2,7 +2,7 @@
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
 # #background image
-feh --bg-max ~/images/christhousemarthemarry.jpg
+wallpaperReset.sh
 
 #start mpd
 [ ! -s ~/.config/mpd/pid ] && mpd

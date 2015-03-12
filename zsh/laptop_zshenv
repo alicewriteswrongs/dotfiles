@@ -17,5 +17,5 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 export EDITOR="vim"
 
 #background environmental variable
-export BACKGROUND="~/images/Edvard_Munch_-_Workers_on_their_Way_Home_-_Google_Art_Project.jpg"
+export BACKGROUND="/home/benpote/images/Edvard_Munch_-_Workers_on_their_Way_Home_-_Google_Art_Project.jpg"
 
