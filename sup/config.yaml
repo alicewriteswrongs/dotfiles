@@ -28,10 +28,28 @@
   :default:
     :name: Ben Pote
     :email: ben.pote@gmail.com
-    :alternates:
-    - blp09@hampshire.edu
-    - axyridis@riseup.net
-    - alice.writes.wrongs@gmail.com
     :sendmail: msmtp -t --read-envelope-from
     :signature: "/home/benpote/.signature"
     :gpgkey: ''
+  :alice:
+    :name: Alice Riot
+    :email: alice.writes.wrongs@gmail.com
+    :sendmail: msmtp -t --read-envelope-from
+    :signature: "/home/benpote/.signature"
+    :gpgkey: ''
+  :hampshire:
+    :name: Ben Pote
+    :email: blp09@hampshire.edu
+    :sendmail: msmtp -t --read-envelope-from
+    :signature: "/home/benpote/.signature"
+    :gpgkey: ''
+  :riseup:
+    :name: ben p
+    :email: axyridis@riseup.net
+    :sendmail: msmtp -t --read-envelope-from
+    :signature: "/home/benpote/.signature"
+    :gpgkey: ''
+
+
+
+
