@@ -93,6 +93,7 @@ new_float pixel 3
 #some rules for various windows
 for_window [title="Write: *"] floating enable
 for_window [title="Thunderbird Preferences"] floating enable
+for_window [title="LPC - Register your shifts! - Chromium"] floating enable
 for_window [title="Firefox Preferences"] floating enable
 for_window [title="Enigmail Key Management"] floating enable
 for_window [title="File Operation Progress"] floating enable
