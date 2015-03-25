@@ -56,7 +56,8 @@ owncloud &
 parcellite &
 
 #start unclutter! hide x cursor
-unclutter &
+#unclutter &
+#sometimes it's annoying...
 
 #start the drop shadows
 compton -c &
