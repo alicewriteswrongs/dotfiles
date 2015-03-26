@@ -21,7 +21,8 @@ bindsym $mod+ctrl+v move workspace to VGA1
 
 # start a terminal
 bindsym $mod+Return exec urxvt
-bindsym $mod+Shift+Return exec xterm
+bindsym $mod+Shift+Return exec fakeurxvt
+#bindsym $mod+Shift+Return exec xterm
 
 # vim-anywhere
 bindsym $mod+v exec vim-anywhere
@@ -41,6 +42,8 @@ bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
+bindsym $mod+Shift+f focus floating
+bindsym $mod+Shift+t focus tiling
 
 # move focused window
 bindsym $mod+Shift+h move left
@@ -55,7 +58,7 @@ bindsym $mod+o split h
 bindsym $mod+u split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+Shift+f fullscreen
+bindsym $mod+ctrl+f fullscreen
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -108,6 +111,7 @@ for_window [title="Steam Login"] floating enable
 for_window [class="(?i)gvim"] floating enable
 for_window [class="(?i)gvim"] resize shrink width 800 px
 for_window [class="(?i)gvim"] resize shrink height 200 px
+for_window [title="fakeurxvt*"] floating enable
 
 #no borders
 for_window [class="^.*"] border pixel 0
