@@ -16,7 +16,7 @@ nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
 
-"see whitepsace characters by hitting leader-l
+"see whitepsace characters by hitting leader-ws
 exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
 nnoremap <Leader>ws :set list!<CR>
 
