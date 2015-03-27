@@ -44,7 +44,7 @@
     :signature: "/home/benpote/.signature"
     :gpgkey: ''
   :riseup:
-    :name: ben p
+    :name: AR
     :email: axyridis@riseup.net
     :sendmail: msmtp -t --read-envelope-from
     :signature: "/home/benpote/.signature"
