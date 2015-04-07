@@ -22,6 +22,7 @@ bindsym $mod+ctrl+v move workspace to VGA1
 # start a terminal
 bindsym $mod+Return exec urxvt
 bindsym $mod+Shift+Return exec fakeurxvt
+bindsym $mod+ctrl+Shift+l exec lockscreen.sh
 #bindsym $mod+Shift+Return exec xterm
 
 # vim-anywhere
