@@ -29,8 +29,7 @@ bindsym $mod+ctrl+Shift+l exec i3lock
 bindsym $mod+v exec vim-anywhere
 
 #pause and play mpd
-bindsym $mod+p exec mpc pause
-bindsym $mod+Shift+p exec mpc play
+bindsym $mod+p exec mpc toggle
 
 # kill focused window
 bindsym $mod+q kill
