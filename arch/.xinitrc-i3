@@ -33,7 +33,10 @@ export XCURSOR_PATH=""
 nm-applet &
 
 # #start xscreensaver
-xscreensaver -no-splash && xset +dpms &
+# xscreensaver -no-splash && xset +dpms &
+
+# dpms
+xset +dpms
 
 # get current time
 #ntpd -q &
