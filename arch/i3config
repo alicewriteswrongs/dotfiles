@@ -116,6 +116,8 @@ for_window [class="(?i)gvim"] floating enable
 for_window [class="(?i)gvim"] resize shrink width 800 px
 for_window [class="(?i)gvim"] resize shrink height 200 px
 for_window [title="fakeurxvt*"] floating enable
+for_window [title="[Untitled]-*"] floating enable
+for_window [title="GNU Image Manipulation Program"] floating enable
 
 #no borders
 for_window [class="^.*"] border pixel 0
