@@ -12,4 +12,6 @@ alias vlc='no-screensaver.sh && vlc'
 alias nodpms='xset dpms 0 0 0'
 alias yesdpms='xset dpms 400 1500 0'
 
+alias blog='cd ~/Code/Blog/alice_blog/'
+
 alias def='sdcv'
