@@ -31,9 +31,9 @@ status.register("battery",
         "FULL": "",
     },)
 
-status.register("wireless",
-        interface = "wlp3s0",
-        format_up = " {essid}",)
+# status.register("wireless",
+#         interface = "wlp3s0",
+#         format_up = " {essid}",)
 
 #non 'hardware' related stuff below
 
