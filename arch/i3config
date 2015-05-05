@@ -43,6 +43,8 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus [title="urxvt"] scratchpad show
 #show weechat
 bindsym $mod+plus [title="WeeChat*"] scratchpad show
+#show all scratchpad (usually won't need)
+bindsym $mod+ctrl+minus scratchpad show
 
 # change focus
 bindsym $mod+h focus left
