@@ -39,7 +39,10 @@ bindsym $mod+space exec dmenu_run
 
 #scratchpad (place to throw a window)
 bindsym $mod+Shift+minus move scratchpad
-bindsym $mod+minus scratchpad show
+#show the urxvt terminal (usually holding my [orgs] tmux session)
+bindsym $mod+minus [title="urxvt"] scratchpad show
+#show weechat
+bindsym $mod+plus [title="WeeChat*"] scratchpad show
 
 # change focus
 bindsym $mod+h focus left
