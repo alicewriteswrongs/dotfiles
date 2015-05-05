@@ -17,5 +17,5 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 export EDITOR="vim"
 
 #background environmental variable
-export BACKGROUND="/home/benpote/images/tarsands.jpg"
+export BACKGROUND="/home/alice/images/tarsands.jpg"
 
