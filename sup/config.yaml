@@ -38,7 +38,7 @@
     :signature: "/home/benpote/.signature"
     :gpgkey: ''
   :riseup:
-    :name: AR
+    :name: Alice
     :email: axyridis@riseup.net
     :sendmail: msmtp -t --read-envelope-from
     :signature: "/home/benpote/.signature"
