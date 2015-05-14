@@ -10,7 +10,7 @@ alias abcdehighqual='abcde -o ogg:"-q 7"' #rips at ogg vorbis quality level 7
 alias less='less -M'
 alias vlc='no-screensaver.sh && vlc'
 alias nodpms='xset dpms 0 0 0'
-alias yesdpms='xset dpms 400 1500 0'
+alias yesdpms='xset dpms 300 600 0'
 
 alias blog='cd ~/Code/Blog/alice_blog/'
 
