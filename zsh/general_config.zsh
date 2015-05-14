@@ -24,9 +24,10 @@ bindkey -e
 
 setopt completealiases
 autoload -U colors && colors
-PROMPT="[%{$fg[green]%}%n%{$reset_color%}@%{$fg[blue]%}%m] %{$fg_no_bold[yellow]%}%1~ %{$reset_color%}%# "
-RPROMPT="[%{$fg_no_bold[cyan]%}%t%{$reset_color%}]"
-
+PROMPT=" %{$fg[blue]%}%n%{$reset_color%} %{$fg[magenta]%}<3 %{$fg_no_bold[yellow]%}%1~ %{$reset_color%}"
+#PROMPT="[%{$fg[green]%}%n%{$reset_color%}@%{$fg[blue]%}%m] %{$fg_no_bold[yellow]%}%1~ %{$reset_color%}%# " #old version!
+RPROMPT="%{$fg_no_bold[blue]%}%t%{$reset_color%}"
+#♥
 
 #git completion
 fpath=(~/.zsh $fpath)
