@@ -110,6 +110,7 @@ for_window [title="Firefox Preferences"] floating enable
 for_window [title="Enigmail Key Management"] floating enable
 for_window [title="File Operation Progress"] floating enable
 for_window [title="Address Book"] floating enable
+for_window [title="Telegram"] floating enable
 for_window [title="Steam Guard*"] floating enable
 for_window [title="Friends"] floating enable
 for_window [title="Calculator"] floating enable
