@@ -127,6 +127,7 @@ for_window [class="(?i)gvim"] floating enable
 for_window [class="(?i)gvim"] resize shrink width 800 px
 for_window [class="(?i)gvim"] resize shrink height 200 px
 for_window [class="Pidgin"] floating enable
+for_window [class="Chromium"] floating disable
 for_window [title="fakeurxvt*"] floating enable
 for_window [title="GNU Image Manipulation Program"] floating enable
 for_window [title="Story Editor*"] floating enable
