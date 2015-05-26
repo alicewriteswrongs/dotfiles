@@ -45,6 +45,7 @@ bindsym $mod+minus [title="urxvt"] scratchpad show
 bindsym $mod+plus [title="WeeChat*"] scratchpad show
 #show telegram
 bindsym $mod+backslash [title="Telegram"] scratchpad show
+bindsym $mod+Shift+backslash [title="Zulip"] scratchpad show
 #show all scratchpad (usually won't need)
 bindsym $mod+ctrl+minus scratchpad show
 
@@ -106,6 +107,7 @@ new_float pixel 3
 
 #some rules for various windows
 for_window [title="Write: *"] floating enable
+for_window [title="Zulip"] floating enable
 for_window [title="Thunderbird Preferences"] floating enable
 for_window [title="LPC - Register your shifts! - Chromium"] floating enable
 for_window [title="Firefox Preferences"] floating enable
