@@ -43,5 +43,5 @@ augroup END
 
 
 "haskellmode_vim
-au BufEnter *.hs compiler ghc
-let g:haddock_browser="/usr/bin/chromium"
+"au BufEnter *.hs compiler ghc
+"let g:haddock_browser="/usr/bin/chromium"
