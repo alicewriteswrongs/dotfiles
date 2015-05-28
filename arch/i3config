@@ -45,7 +45,10 @@ bindsym $mod+minus [title="urxvt"] scratchpad show
 bindsym $mod+plus [title="WeeChat*"] scratchpad show
 #show telegram
 bindsym $mod+backslash [title="Telegram"] scratchpad show
+#zulip
 bindsym $mod+Shift+backslash [title="Zulip"] scratchpad show
+#pidgin
+bindsym $mod+Shift+plus [class="Pidgin"] scratchpad show
 #show all scratchpad (usually won't need)
 bindsym $mod+ctrl+minus scratchpad show
 
