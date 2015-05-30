@@ -8,4 +8,5 @@ source ~/Code/dotfiles/zsh/git_aliases.zsh
 source ~/Code/dotfiles/zsh/ssh_aliases.zsh
 source ~/Code/dotfiles/zsh/laptop_aliases.zsh
 source ~/Code/dotfiles/zsh/keybind_config.zsh
+source ~/Code/dotfiles/zsh/gpg_aliases.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
