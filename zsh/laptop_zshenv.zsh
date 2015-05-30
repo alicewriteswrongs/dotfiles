@@ -18,4 +18,3 @@ export EDITOR="vim"
 
 #background environmental variable
 export BACKGROUND="/home/alice/images/tarsands.jpg"
-
