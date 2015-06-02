@@ -14,4 +14,6 @@ alias yesdpms='xset dpms 300 600 0'
 
 alias blog='cd ~/Code/Blog/alice_blog/'
 
+alias changebackground='feh --bg-max'
+
 alias def='sdcv'
