@@ -16,4 +16,7 @@ alias blog='cd ~/Code/Blog/alice_blog/'
 
 alias changebackground='feh --bg-max'
 
+alias qemuload='qemu-system-x86_64'
+alias untar='tar -xvf'
+
 alias def='sdcv'
