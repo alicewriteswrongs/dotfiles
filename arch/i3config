@@ -28,8 +28,10 @@ bindsym $mod+ctrl+Shift+l exec i3lock.sh
 # vim-anywhere
 bindsym $mod+v exec vim-anywhere
 
-#pause and play mpd
+#pause and play mpd, next and previous song
 bindsym $mod+p exec mpc toggle
+bindsym $mod+comma exec mpc prev
+bindsym $mod+period exec mpc next
 
 # kill focused window
 bindsym $mod+q kill
