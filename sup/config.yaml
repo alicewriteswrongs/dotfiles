@@ -29,25 +29,21 @@
     :name: Alice Riot
     :email: alice.writes.wrongs@gmail.com
     :sendmail: msmtp -t --read-envelope-from
-    :signature: "/home/benpote/.signature"
     :gpgkey: ''
   :hampshire:
     :name: Alice Riot
     :email: blp09@hampshire.edu
     :sendmail: msmtp -t --read-envelope-from
-    :signature: "/home/benpote/.signature"
     :gpgkey: ''
   :riseup:
     :name: Alice
     :email: axyridis@riseup.net
     :sendmail: msmtp -t --read-envelope-from
-    :signature: "/home/benpote/.signature"
     :gpgkey: ''
   :Ben:
     :name: Ben Pote
     :email: ben.pote@gmail.com
     :sendmail: msmtp -t --read-envelope-from
-    :signature: "/home/benpote/.signature"
     :gpgkey: ''
 
 
