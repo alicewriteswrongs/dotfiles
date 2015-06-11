@@ -201,7 +201,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         #status_command      i3status --config ~/.i3status.conf
-        status_command      python ~/Code/dotfiles/arch/i3pyconfig.py
+        status_command      python ~/Code/dotfiles/i3/i3pyconfig.py
         position            top
         workspace_buttons   yes
 }
