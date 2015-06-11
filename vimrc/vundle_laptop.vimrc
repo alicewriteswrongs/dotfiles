@@ -7,13 +7,10 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-"""plugins!
-" let Vundle manage Vundle, required
-Plugin 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-sensible'
 Plugin 'ervandew/supertab'
 Plugin 'chrisbra/histwin.vim'
-"Plugin 'scrooloose/nerdtree'
 Plugin 'ivanov/vim-ipython'
 Plugin 'majutsushi/tagbar'
 Plugin 'kien/ctrlp.vim'
@@ -32,13 +29,10 @@ Plugin 'chrisbra/DistractFree'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'JuliaLang/julia-vim'
-"Plugin 'Shougo/vimproc.vim'
 Plugin 'julienr/vim-cellmode'
 Plugin 'jceb/vim-orgmode'
 Plugin 'Rykka/clickable.vim'
 Plugin 'tpope/vim-speeddating'
-"Plugin 'lukerandall/haskellmode-vim'
-"Plugin 'eagletmt/ghcmod-vim'
 Plugin 'eagletmt/neco-ghc'
 Plugin 'wlangstroth/vim-racket'
 Plugin 'vim-scripts/paredit.vim'
@@ -47,8 +41,7 @@ Plugin 'reedes/vim-pencil'
 Plugin 'junegunn/limelight.vim'
 Plugin 'mattn/calendar-vim'
 Plugin 'haya14busa/incsearch.vim'
-"Plugin 'klen/python-mode'
-"Plugin 'mikewest/vimroom'
+Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end()
 

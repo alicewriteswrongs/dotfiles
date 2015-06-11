@@ -1,5 +1,0 @@
-source ~/Code/dotfiles/vimrc/scc_vundle.vimrc
-source ~/Code/dotfiles/vimrc/gen_config.vimrc
-source ~/Code/dotfiles/vimrc/scc_plugin_config.vimrc
-source ~/Code/dotfiles/vimrc/common_keybinds.vimrc
-source ~/Code/dotfiles/vimrc/scc_plugin_keybinds.vimrc

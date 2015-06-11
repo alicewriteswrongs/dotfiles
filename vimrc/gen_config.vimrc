@@ -1,12 +1,12 @@
 
 filetype plugin indent on "filetype based indenting 
-syntax enable "syntax highlighting
 set wildmenu "better command line completion
 set number "line numbers
+set modeline " autoindentation
+
+syntax enable "syntax highlighting
 set background=dark "stuff for solarized colorscheme
 colorscheme solarized "solarized colorscheme (so tasty)
-"let g:solarized_termcolors=256 "necessary for terminal vim with mac os terminal (not iterm)
-set modeline " autoindentation
 
 """no goddamn folding
 set nofoldenable
