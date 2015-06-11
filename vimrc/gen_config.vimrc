@@ -1,12 +1,12 @@
 
 filetype plugin indent on "filetype based indenting 
+syntax enable "syntax highlighting
 set wildmenu "better command line completion
 set number "line numbers
-set modeline " autoindentation
 
-syntax enable "syntax highlighting
 set background=dark "stuff for solarized colorscheme
 colorscheme solarized "solarized colorscheme (so tasty)
+set modeline " autoindentation
 
 """no goddamn folding
 set nofoldenable
@@ -21,6 +21,7 @@ set incsearch
 set ignorecase
 set smartcase
 set hlsearch "highlight searches
+set smartindent
 
 """"python friendliness
 set tabstop=8 "insert 4 spaces for tab (python standard)
@@ -39,6 +40,12 @@ augroup vimrc_autocmds
     autocmd FileType python match Excess /\%79v.*/
     autocmd FileType python set nowrap
     augroup END
+
+""""c friendliness
+set cinoptions=1s
+" augroup vimrc_python
+"     autocmd!
+"     autocmd FileType c set tabstop=8
 
 "mouse
 set ttyfast

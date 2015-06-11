@@ -65,6 +65,9 @@ parcellite &
 #start the drop shadows
 compton -c &
 
+#test
+pcmanfm -d &
+
 #start i3wm
 exec i3
 #exec gnome-session
