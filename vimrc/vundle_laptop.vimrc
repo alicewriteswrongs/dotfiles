@@ -42,6 +42,8 @@ Plugin 'junegunn/limelight.vim'
 Plugin 'mattn/calendar-vim'
 Plugin 'haya14busa/incsearch.vim'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'rust-lang/rust.vim'
+Plugin 'rking/ag.vim'
 
 call vundle#end()
 
