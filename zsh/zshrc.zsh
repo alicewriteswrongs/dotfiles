@@ -6,7 +6,7 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' glob 1
 zstyle ':completion:*' max-errors 5
 zstyle ':completion:*' substitute 1
-zstyle :compinstall filename '/home/benpote/.zshrc'
+zstyle :compinstall filename '/home/alice/.zshrc'
 
 autoload -Uz compinit promptinit
 compinit
