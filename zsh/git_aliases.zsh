@@ -7,5 +7,6 @@ alias pushom='git push origin master'
 alias gits='git status'
 alias gitc='git commit'
 alias gitl='git log -1 HEAD' #last commit
+alias gitb='git branch'
 alias pullom='git pull origin master'
 alias gitgraph='git log --pretty=oneline --graph'
