@@ -12,6 +12,8 @@ alias vlc='no-screensaver.sh && vlc'
 alias nodpms='xset dpms 0 0 0'
 alias yesdpms='xset dpms 300 600 0'
 
+alias poetry='cd ~/ownCloud/Documents/writing/poetry'
+
 alias blog='cd ~/Code/Blog/alice_blog/'
 
 alias changebackground='feh --bg-max'
