@@ -4,6 +4,9 @@
 # #background image
 wallpaperReset.sh
 
+#start pulse
+pulseaudio &
+
 #start mpd
 [ ! -s ~/.config/mpd/pid ] && mpd
 
@@ -70,6 +73,7 @@ xrandr-align monitor --input="ELAN Touchscreen" &
 
 #test
 pcmanfm -d &
+
 
 #start i3wm
 exec i3
