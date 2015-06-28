@@ -65,6 +65,9 @@ parcellite &
 #start the drop shadows
 compton -c &
 
+#keep touchscreen aligned
+xrandr-align monitor --input="ELAN Touchscreen" &
+
 #test
 pcmanfm -d &
 
