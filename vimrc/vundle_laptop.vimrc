@@ -8,7 +8,10 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
+Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-sensible'
+Plugin 'tpope/vim-surround'
+Plugin 'townk/vim-autoclose'
 Plugin 'ervandew/supertab'
 Plugin 'chrisbra/histwin.vim'
 Plugin 'ivanov/vim-ipython'
