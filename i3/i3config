@@ -9,6 +9,11 @@ exec --no-startup-id xset dpms 600
 #font pango:DejaVu Sans Mono 8
 font pango:inconsolata, Icons 15
 
+#bindings for scrot
+bindsym $mod+s exec "scrot ~/images/screenshots/%Y-%m-%d-%T.png"
+bindsym $mod+shift+s exec "scrot -s ~/images/screenshots/%Y-%m-%d-%T.png"
+
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -76,7 +81,7 @@ bindsym $mod+u split v
 bindsym $mod+ctrl+f fullscreen
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+# bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
