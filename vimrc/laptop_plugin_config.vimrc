@@ -2,6 +2,9 @@
 "crtlp
 let g:ctrlp_extensions = ['buffertag']
 
+"emmet-vim (html macro-ey things)
+let g:user_emmet_leader_key='<C-a'
+
 "incsearch
 let g:incsearch#auto_nohlsearch = 1
 
