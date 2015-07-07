@@ -2,7 +2,7 @@
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
 # #background image
-wallpaperReset.sh
+feh --bg-max /home/alice/images/backgrounds/parkspins.jpg &
 
 #start pulse
 pulseaudio &
@@ -20,10 +20,6 @@ xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Timeout" 200
 xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 6 7 4 5
 xinput set-prop "TPPS/2 IBM TrackPoint" "Device Accel Constant Deceleration" 0.75
 
-
-# #turn off the touchpad
-# touchpad-toggle.sh
-
 #japanese input stuff
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
@@ -32,14 +28,9 @@ fcitx
 
 export XCURSOR_PATH=""
 
-#network manager
 nm-applet &
 
-# dpms
 xset dpms 300 600 0 &
-
-# get current time
-#ntpd -q &
 
 #make keybinds (for thinkpad media keys, etc)
 xbindkeys &
@@ -61,21 +52,11 @@ owncloud &
 #start that nice clipboard manager
 parcellite &
 
-#start unclutter! hide x cursor
-#unclutter &
-#sometimes it's annoying...
-
 #start the drop shadows
 compton -c &
 
 #keep touchscreen aligned
 xrandr-align monitor --input="ELAN Touchscreen" &
 
-#test
-pcmanfm -d &
-
-
 #start i3wm
 exec i3
-#exec gnome-session
-#exec startxfce4

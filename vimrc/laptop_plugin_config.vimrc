@@ -7,7 +7,7 @@ let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
 
 "autoclose
-let g:AutoClosePairs_del = "' { ( "
+let g:AutoClosePairs_del = "' { ["
 let g:AutoClosePairs_add = "<>"
 
 "incsearch
