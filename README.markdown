@@ -13,7 +13,7 @@ the setup is dependent on this, for sourcing modular vimrc and zshrc files.
 ### Included herein:
 
 Everything is in it's own folder now. `vimrc` and `zshrc` are modularized
-because I thought the single file was getting t0o complicated. If you want to
+because I thought the single file was getting too complicated. If you want to
 look through them for things the easiest way is with a tool like
 [`Ag`](https://github.com/ggreer/the_silver_searcher).
 
