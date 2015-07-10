@@ -14,6 +14,6 @@ URxvt.keysym.Control-equal: perl:font-size:increase
 URxvt.keysym.Control-minus: perl:font-size:decrease
 URxvt.keysym.F11: perl:fullscren:switch
 URxvt.keysym.Control-Tab: perl:tabbedex:next_tab
-URxvt.font: xft:inconsolata:size=18, \
-            xft:inconsolata for Powerline:size=18, \
-            xft:otf-ipafont:size=18:antialias=true
+URxvt.font: xft:inconsolata:size=20, \
+            xft:inconsolata for Powerline:size=20, \
+            xft:otf-ipafont:size=20:antialias=true
