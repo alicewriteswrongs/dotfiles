@@ -1,4 +1,6 @@
 #include "../urxvt/urxvt-config"
+#include "cursor"
+
 
 ! Solarized color scheme for the X Window System
 !
