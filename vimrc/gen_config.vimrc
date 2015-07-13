@@ -4,7 +4,7 @@ syntax enable "syntax highlighting
 set wildmenu "better command line completion
 set number "line numbers
 
-set background=dark "stuff for solarized colorscheme
+set background=light "stuff for solarized colorscheme
 colorscheme solarized "solarized colorscheme (so tasty)
 set modeline " autoindentation
 
