@@ -32,3 +32,6 @@ RPROMPT="%{$fg_no_bold[blue]%}%t%{$reset_color%} "
 #git completion
 fpath=(~/.zsh $fpath)
 
+#make gnome terminal work correctly?
+export TERM=screen-256color-bce
+
