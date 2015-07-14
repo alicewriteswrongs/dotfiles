@@ -1,5 +1,5 @@
 typeset -U path
-path=(~/.vim-anywhere/bin ~/Code/shellscripts ~/.gem/ruby/2.1.0/bin ~/.gem/ruby/2.2.0/bin ~/.cabal/bin ~/Code/ms/msdir $path)
+path=(~/.vim-anywhere/bin ~/bin ~/Code/shellscripts ~/.gem/ruby/2.1.0/bin ~/.gem/ruby/2.2.0/bin ~/.cabal/bin ~/Code/ms/msdir $path)
 
 stty stop undef
 
