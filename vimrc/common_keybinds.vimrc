@@ -19,9 +19,9 @@ vmap <Leader>P "+P
 exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
 nnoremap <Leader>ws :set list!<CR> 
 
-nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<CR> "centered cursor
-nnoremap <Leader>cl :set cursorline!<CR> "cursorline highlight
-nnoremap <Leader>cc :set cursorcolumn!<CR> "cursorcolumn highlight
+nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<CR> 
+nnoremap <Leader>cl :set cursorline!<CR> 
+nnoremap <Leader>cc :set cursorcolumn!<CR> 
 
 nnoremap <Leader>bl :buffers<cr> 
 nnoremap <Leader>b1 :buffer1<cr> 
@@ -34,9 +34,9 @@ nnoremap <Leader>b7 :buffer7<cr>
 nnoremap <Leader>t  :enew<cr> 
 nnoremap <Leader>bq :bd<cr> 
 
-nnoremap <Leader>o :vsplit<cr> "verti split
-nnoremap <Leader>u :split<cr> "horiz split
-nnoremap <Leader>j <C-W>j "split movement
-nnoremap <Leader>k <C-W>k "split movement
-nnoremap <Leader>h <C-W>h "split movement
-nnoremap <Leader>l <C-W>l "split movement
+nnoremap <Leader>o :vsplit<cr> 
+nnoremap <Leader>u :split<cr> 
+nnoremap <Leader>j <C-W>j 
+nnoremap <Leader>k <C-W>k
+nnoremap <Leader>h <C-W>h 
+nnoremap <Leader>l <C-W>l 
