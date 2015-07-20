@@ -13,6 +13,15 @@ let g:AutoClosePairs_add = "<>"
 "incsearch
 let g:incsearch#auto_nohlsearch = 1
 
+"tmuxline.vim
+let g:tmuxline_preset = {
+    \'a' : '#S',
+    \'win'  : '#I #W',
+    \'cwin'  : '#I #W',
+    \'y' : '%l:%M',
+    \'z' : '#h'}
+    
+
 "Simplenote.vim
 "source ~/.simplenoterc
 "let g:SimplenoteListHeight=55
