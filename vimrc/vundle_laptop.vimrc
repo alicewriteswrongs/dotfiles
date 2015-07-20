@@ -7,45 +7,36 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'gmarik/Vundle.vim'
+Plugin 'gmarik/Vundle.vim' 
 Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
-Plugin 'townk/vim-autoclose'
-Plugin 'ervandew/supertab'
-Plugin 'chrisbra/histwin.vim'
-Plugin 'majutsushi/tagbar'
-Plugin 'kien/ctrlp.vim'
-Plugin 'mrtazz/simplenote.vim'
-Plugin 'tpope/vim-rsi'
-Plugin 'tpope/vim-commentary'
-Plugin 'bling/vim-airline'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'bling/vim-bufferline'
-Plugin 'tpope/vim-vinegar'
-Plugin 'vim-scripts/lbdbq'
-Plugin 'godlygeek/tabular'
-Plugin 'tpope/vim-fugitive'
-Plugin 'justinmk/vim-sneak'
-Plugin 'chrisbra/DistractFree'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'davidhalter/jedi-vim'
-Plugin 'JuliaLang/julia-vim'
-Plugin 'julienr/vim-cellmode'
-Plugin 'jceb/vim-orgmode'
-Plugin 'Rykka/clickable.vim'
-Plugin 'tpope/vim-speeddating'
-Plugin 'eagletmt/neco-ghc'
-Plugin 'wlangstroth/vim-racket'
-Plugin 'vim-scripts/paredit.vim'
-Plugin 'sjl/tslime.vim'
-Plugin 'reedes/vim-pencil'
-Plugin 'junegunn/limelight.vim'
-Plugin 'mattn/calendar-vim'
-Plugin 'haya14busa/incsearch.vim'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'rust-lang/rust.vim'
-Plugin 'rking/ag.vim'
+Plugin 'majutsushi/tagbar' "press <F10> to get ctags from file
+Plugin 'kien/ctrlp.vim' "fuzzy search
+Plugin 'tpope/vim-rsi' "gives readline bindings
+Plugin 'tpope/vim-commentary' "gc to toggle comments
+Plugin 'bling/vim-airline' "pretty stuff! 
+Plugin 'terryma/vim-multiple-cursors' "sublime-like cursors
+"Plugin 'bling/vim-bufferline' "
+Plugin 'edkolev/tmuxline.vim' "makes tmux pretty
+Plugin 'tpope/vim-vinegar' "makes vim directory browser nicer
+Plugin 'vim-scripts/lbdbq' "formats mail headers more nicely
+Plugin 'tpope/vim-fugitive' "tpopes git wrapper
+Plugin 'tpope/vim-unimpaired' "adds some keybinds?
+Plugin 'jceb/vim-orgmode' "fake orgmode!
+Plugin 'Rykka/clickable.vim' "clicky links and things!
+Plugin 'tpope/vim-speeddating' "easy date formatting
+Plugin 'eagletmt/neco-ghc' "haskell thing???
+Plugin 'wlangstroth/vim-racket' "some stuff for racket-lang
+Plugin 'vim-scripts/paredit.vim' "lisp/racket S-expressions
+Plugin 'sjl/tslime.vim' "send text to a tmux pane
+Plugin 'reedes/vim-pencil' "soft/hard wraps for txt,md,email
+Plugin 'mattn/calendar-vim' "calendar thingy!
+Plugin 'haya14busa/incsearch.vim' "nice incremental search
+Plugin 'altercation/vim-colors-solarized' "solarized plugin
+Plugin 'rust-lang/rust.vim' "some rust stuff
+Plugin 'rking/ag.vim' "wrapper for ag
+Plugin 'valloric/youcompleteme' "the best completion ever
 
 call vundle#end()
 
