@@ -60,8 +60,6 @@ augroup pencil
   autocmd FileType tex          call pencil#init({'wrap': 'hard'})
 augroup END
 
-
-
 "haskellmode_vim
 "au BufEnter *.hs compiler ghc
 "let g:haddock_browser="/usr/bin/chromium"
