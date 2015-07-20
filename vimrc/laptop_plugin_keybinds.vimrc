@@ -27,18 +27,6 @@ nnoremap <Leader>vrc :e ~/Code/dotfiles/.vimrc<cr>
 nnoremap <Leader>p :CtrlPBufTag<cr>
 nnoremap <Leader>P :CtrlPMRU<cr>
 
-"vimux and vimux-pyutils
-" nnoremap <Leader>ip :VimuxRunCommand "ipython"<cr>
-" nnoremap <Leader>hs :VimuxRunCommand "ghci"<cr>
-" nnoremap <Leader>sc :VimuxRunCommand "petite"<cr>
-
-" function! VimuxSlime()
-"     call VimuxSendText(@v)
-"     call VimuxSendKeys("Enter")
-" endfunction
-
-" nnoremap <Leader>VT :call VimuxSlime()<cr>
-
 "localleader for vim-orgmode
 let localleader = "\\"
 

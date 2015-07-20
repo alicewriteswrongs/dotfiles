@@ -1,14 +1,9 @@
-
 "crtlp
 let g:ctrlp_extensions = ['buffertag']
 
 "emmet-vim (html macro-ey things)
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
-
-"autoclose
-let g:AutoClosePairs_del = "' { ["
-let g:AutoClosePairs_add = "<>"
 
 "incsearch
 let g:incsearch#auto_nohlsearch = 1
@@ -23,13 +18,6 @@ let g:tmuxline_preset = {
     \'options': {
         \'status-justify': 'left'}
     \}
-    
-
-"Simplenote.vim
-"source ~/.simplenoterc
-"let g:SimplenoteListHeight=55
-"let g:SimplenoteVertical=0
-"let g:SimplenoteFiletype='markdown'
 
 "vim-latexsuite
 let g:Tex_DefaultTargetFormat='pdf'
@@ -40,10 +28,6 @@ let g:Tex_ViewRule_pdf='mupdf'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#whitespace#enabled = 1
 let g:airline_powerline_fonts = 1
-
-let g:limelight_conceal_ctermfg = 'bg'
-"vim-slime
-"let g:slime_target = "tmux"
 
 "tslime.vim
 let g:tsline_ensure_trailing_newlines = 1
@@ -59,7 +43,3 @@ augroup pencil
   autocmd FileType text         call pencil#init({'wrap': 'hard'})
   autocmd FileType tex          call pencil#init({'wrap': 'hard'})
 augroup END
-
-"haskellmode_vim
-"au BufEnter *.hs compiler ghc
-"let g:haddock_browser="/usr/bin/chromium"
