@@ -1,18 +1,15 @@
-
 filetype plugin indent on "filetype based indenting 
 syntax enable "syntax highlighting
 set wildmenu "better command line completion
 set number "line numbers
-
+set relativenumber "relative line numbering
 set background=light "stuff for solarized colorscheme
 colorscheme solarized "solarized colorscheme (so tasty)
-set modeline " autoindentation
+set modeline "autoindentation
+set nofoldenable "no goddamn folding
 
-"""no goddamn folding
-set nofoldenable
 
-"""line highlighting
-set cursorline
+set cursorline "line highlighting
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
 
@@ -23,34 +20,38 @@ set smartcase
 set hlsearch "highlight searches
 set smartindent
 
-""""python friendliness
-set tabstop=8 "insert 4 spaces for tab (python standard)
-set shiftwidth=4 "block indent/unindent
-set expandtab "insert spaces instead of tabs
-set softtabstop=4 "still have delete remove 1 tab worth of spaces
-set autoindent "newline matches indentation level of line above
-set shiftwidth=4
-set spelllang=en_us "spellcheck is in US english
-set grepprg=grep\ -nH\ $*
-set foldmethod=syntax
-set nojoinspaces
-augroup vimrc_autocmds
-    autocmd!
+
+"filetype specific stuff
+augroup myfiletypes
+    autocmd! 
+    "python first
+    autocmd FileType python setlocal tabstop=8
+    autocmd FileType python setlocal shiftwidth=4
+    autocmd FileType python setlocal expandtab
+    autocmd FileType python setlocal softtabstop=4
+    autocmd FileType python setlocal autoindent
+    autocmd FileType python setlocal shiftwidth=4
+    autocmd FileType python setlocal autoindent
     autocmd FileType python highlight Excess ctermbg=Green
     autocmd FileType python match Excess /\%79v.*/
     autocmd FileType python set nowrap
-    augroup END
+    autocmd FileType python set nojoinspaces
+    "C
+    autocmd FileType C set cinoptions=1s
+    autocmd FileType C setlocal cindent
+    autocmd FileType C setlocal expandtab
+    autocmd FileType C setlocal autoindent
+    autocmd FileType C set shiftwidth=4
+    autocmd FileType C setlocal highlight Excess ctermbg=Green
+    autocmd FileType C setlocal match Excess /\%79v.*/
+augroup END
 
-""""c friendliness
-set cinoptions=1s
-" augroup vimrc_python
-"     autocmd!
-"     autocmd FileType c set tabstop=8
+set spelllang=en_us "spellcheck is in US english
+set grepprg=grep\ -nH\ $*
+set foldmethod=syntax
 
 "mouse
 set ttyfast
 set mouse=a
-set ttymouse=xterm2
+set ttymouse=sgr
 set mousemodel=extend
-
-

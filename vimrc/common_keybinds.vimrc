@@ -1,50 +1,42 @@
-"set leader to space
-let mapleader = "\<Space>"
 
-"toggle search highlighting on/off
-let hlstate=0
+let mapleader = "\<Space>" "set leader to space
+
+let hlstate=0 "toggle search highlighting on/off
 nnoremap <F4> :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=1-hlstate<cr>
 
-"common commands
-nnoremap <Leader>w :w<cr>
-nnoremap <Leader>q :q<cr>
-nnoremap <Leader>sp :setlocal spell<cr>
+imap <C-s> <esc>:w<cr> "easily quit and save from insert
+nnoremap <Leader>w :w<cr> "save
+nnoremap <Leader>q :q<cr> "quit
+nnoremap <Leader>sp :setlocal spell<cr> "turn on spellcheck
 vmap <Leader>y "+y
 vmap <Leader>d "+d
 nmap <Leader>p "+p
 nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
-
-"see whitepsace characters by hitting leader-ws
+ 
+"see whitespace
 exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
-nnoremap <Leader>ws :set list!<CR>
+nnoremap <Leader>ws :set list!<CR> 
 
-"centered cursor
-nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<CR>
+nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<CR> "centered cursor
+nnoremap <Leader>cl :set cursorline!<CR> "cursorline highlight
+nnoremap <Leader>cc :set cursorcolumn!<CR> "cursorcolumn highlight
 
-"line and column highlighting
-nnoremap <Leader>cl :set cursorline!<CR>
-nnoremap <Leader>cc :set cursorcolumn!<CR>
+nnoremap <Leader>bl :buffers<cr> "list buffers
+nnoremap <Leader>b1 :buffer1<cr> "switch to buffer1
+nnoremap <Leader>b2 :buffer2<cr> "switch to buffer2
+nnoremap <Leader>b3 :buffer3<cr> "switch to buffer3
+nnoremap <Leader>b4 :buffer4<cr> "switch to buffer4
+nnoremap <Leader>b5 :buffer5<cr> "switch to buffer5
+nnoremap <Leader>b6 :buffer6<cr> "switch to buffer6
+nnoremap <Leader>b7 :buffer7<cr> "switch to buffer7
+nnoremap <Leader>t  :enew<cr> "new buffer
+nnoremap <Leader>bq :bd<cr> "close buffer
 
-"buffers!
-nnoremap <Leader>bl :buffers<cr>
-nnoremap <Leader>b1 :buffer1<cr>
-nnoremap <Leader>b2 :buffer2<cr>
-nnoremap <Leader>b3 :buffer3<cr>
-nnoremap <Leader>b4 :buffer4<cr>
-nnoremap <Leader>b5 :buffer5<cr>
-nnoremap <Leader>b6 :buffer6<cr>
-nnoremap <Leader>b7 :buffer7<cr>
-nnoremap <Leader>t  :enew<cr>
-nnoremap <Leader>bq :bd<cr>
-
-"splits!
-nnoremap <Leader>o :vsplit<cr>
-nnoremap <Leader>u :split<cr>
-nnoremap <Leader>j <C-W>j
-nnoremap <Leader>k <C-W>k
-nnoremap <Leader>h <C-W>h
-nnoremap <Leader>l <C-W>l
-
-
+nnoremap <Leader>o :vsplit<cr> "verti split
+nnoremap <Leader>u :split<cr> "horiz split
+nnoremap <Leader>j <C-W>j "split movement
+nnoremap <Leader>k <C-W>k "split movement
+nnoremap <Leader>h <C-W>h "split movement
+nnoremap <Leader>l <C-W>l "split movement
