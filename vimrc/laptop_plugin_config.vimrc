@@ -19,7 +19,10 @@ let g:tmuxline_preset = {
     \'win'  : '#I #W',
     \'cwin'  : '#I #W',
     \'y' : '%l:%M',
-    \'z' : '#h'}
+    \'z' : '#h',
+    \'options': {
+        \'status-justify': 'left'}
+    \}
     
 
 "Simplenote.vim
