@@ -8,7 +8,6 @@ colorscheme solarized "solarized colorscheme (so tasty)
 set modeline "autoindentation
 set nofoldenable "no goddamn folding
 
-
 set cursorline "line highlighting
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
@@ -20,6 +19,10 @@ set smartcase
 set hlsearch "highlight searches
 set smartindent
 
+"defaults I want usually
+set tabstop=8
+set expandtab
+set shiftwidth=4
 
 "filetype specific stuff
 augroup myfiletypes
@@ -29,8 +32,6 @@ augroup myfiletypes
     autocmd FileType python setlocal shiftwidth=4
     autocmd FileType python setlocal expandtab
     autocmd FileType python setlocal softtabstop=4
-    autocmd FileType python setlocal autoindent
-    autocmd FileType python setlocal shiftwidth=4
     autocmd FileType python setlocal autoindent
     autocmd FileType python highlight Excess ctermbg=Green
     autocmd FileType python match Excess /\%79v.*/
@@ -49,6 +50,13 @@ augroup END
 set spelllang=en_us "spellcheck is in US english
 set grepprg=grep\ -nH\ $*
 set foldmethod=syntax
+
+" use silver searcher because is best!
+if executable('ag')
+    set grepprg=ag\ --nogroup\ --nocolor
+    let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+    let g:ctrlp_use_cashing = 0
+endif
 
 "mouse
 set ttyfast
