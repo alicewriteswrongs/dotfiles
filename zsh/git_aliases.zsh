@@ -10,3 +10,4 @@ alias gitl='git log -1 HEAD' #last commit
 alias gitb='git branch'
 alias pullom='git pull origin master'
 alias gitgraph='git log --pretty=oneline --graph'
+alias pullsubmod='git submodule init && git submodule update'
