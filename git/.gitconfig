@@ -1,0 +1,5 @@
+[user]
+	name = Alice Pote
+	email = alice.writes.wrongs@gmail.com
+[core]
+	excludesfile = /home/alice/Code/dotfiles/git/gitignore
