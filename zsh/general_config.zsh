@@ -12,6 +12,7 @@ setopt AUTO_CD
 autoload -Uz compinit promptinit predict-on
 compinit
 promptinit
+
 # End of lines added by compinstall
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -38,3 +39,6 @@ fpath=(~/.zsh $fpath)
 #make gnome terminal work correctly?
 export TERM=screen-256color-bce
 
+chpwd() {
+    ls -lrthG
+}
