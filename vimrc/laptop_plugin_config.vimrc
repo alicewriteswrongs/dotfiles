@@ -11,8 +11,8 @@ let g:incsearch#auto_nohlsearch = 1
 "tmuxline.vim
 let g:tmuxline_preset = {
     \'a' : '#S',
-    \'win'  : '#I #W',
-    \'cwin'  : '#I #W',
+    \'win'  : '#W',
+    \'cwin'  : '#W',
     \'y' : '%l:%M',
     \'z' : '#h',
     \'options': {
