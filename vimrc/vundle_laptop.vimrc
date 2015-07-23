@@ -37,6 +37,7 @@ Plugin 'altercation/vim-colors-solarized' "solarized plugin
 Plugin 'rust-lang/rust.vim' "some rust stuff
 Plugin 'rking/ag.vim' "wrapper for ag
 Plugin 'valloric/youcompleteme' "the best completion ever
+Plugin 'vim-scripts/Terminus'
 
 call vundle#end()
 
