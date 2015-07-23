@@ -7,6 +7,7 @@ set background=light "stuff for solarized colorscheme
 colorscheme solarized "solarized colorscheme (so tasty)
 set modeline "autoindentation
 set nofoldenable "no goddamn folding
+set paste
 
 set cursorline "line highlighting
 autocmd WinEnter * setlocal cursorline
