@@ -19,6 +19,8 @@ alias envon='source env/bin/activate'
 alias format='git log --pretty=format:"%h - %an, %ar : %s"'
 alias fullpath='ls -d -1 $PWD/*.*'
 alias gitb='git branch'
+alias gitd='git branch -D'
+alias check='git checkout'
 alias gitc='git commit'
 alias gitgraph='git log --pretty=oneline --graph'
 alias gitl='git log -1 HEAD' #last commit
