@@ -34,7 +34,6 @@ alias -g G='| grep'
 alias howbig='du -hc | tail -n 1'
 alias i3config='vim ~/Code/dotfiles/i3/i3config'
 alias imac='ssh benpote@cumm005-0b01-dhcp-062.bu.edu'
-alias ipython\ notebook='ipython notebook --pylab=inline'
 alias la='ls -alh'			#show hidden files and attribute
 alias less='less -M'
 alias ls='ls --color=auto'  #colorize ls output
