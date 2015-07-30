@@ -1,5 +1,6 @@
 alias abcdehighqual='abcde -o ogg:"-q 7"' #rips at ogg vorbis quality level 7
 alias aliases='vim ~/Code/dotfiles/zsh/aliases.zsh'
+alias purewheel='sudo python setup.py bdist_wheel'
 alias gitignore='vim ~/Code/dotfiles/git/gitignore'
 alias so='source ~/.zshrc'
 alias addall='git commit -a'		#add all changed files and commit
