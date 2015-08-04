@@ -1,4 +1,7 @@
 alias abcdehighqual='abcde -o ogg:"-q 7"' #rips at ogg vorbis quality level 7
+alias koantest='ruby path_to_enlightenment.rb'
+alias p='cd ~/Code/projects'
+alias chromesound='chromium --audio-buffer-size=2048'
 alias aliases='vim ~/Code/dotfiles/zsh/aliases.zsh'
 alias purewheel='sudo python setup.py bdist_wheel'
 alias gitignore='vim ~/Code/dotfiles/git/gitignore'
