@@ -9,6 +9,8 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim' 
 Plugin 'mattn/emmet-vim'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
 Plugin 'majutsushi/tagbar' "press <F10> to get ctags from file
@@ -19,6 +21,7 @@ Plugin 'bling/vim-airline' "pretty stuff!
 Plugin 'terryma/vim-multiple-cursors' "sublime-like cursors
 "Plugin 'bling/vim-bufferline' "
 Plugin 'edkolev/tmuxline.vim' "makes tmux pretty
+Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'tpope/vim-vinegar' "makes vim directory browser nicer
 Plugin 'vim-scripts/lbdbq' "formats mail headers more nicely
 Plugin 'tpope/vim-fugitive' "tpopes git wrapper
