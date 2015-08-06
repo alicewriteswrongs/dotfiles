@@ -9,6 +9,8 @@ export RUBY_GC_HEAD_INIT_SLOTS=600000
 export RUBY_HEAP_SLOTS_INCREMENT=200000
 export RUBY_HEAP_FREE_MIN=100000
 
+export KEYTIMEOUT=1
+
 #colored terminal output!
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced

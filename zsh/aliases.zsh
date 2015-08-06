@@ -1,4 +1,5 @@
 alias abcdehighqual='abcde -o ogg:"-q 7"' #rips at ogg vorbis quality level 7
+alias gdiff='git diff'
 alias koantest='ruby path_to_enlightenment.rb'
 alias p='cd ~/Code/projects'
 alias chromesound='chromium --audio-buffer-size=2048'
