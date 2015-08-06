@@ -6,7 +6,7 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' glob 1
 zstyle ':completion:*' max-errors 5
 zstyle ':completion:*' substitute 1
-zstyle :compinstall filename '/home/benpote/.zshrc'
+zstyle :compinstall filename '/home/alice/.zshrc'
 
 setopt AUTO_CD
 autoload -Uz compinit promptinit predict-on
@@ -20,7 +20,7 @@ HISTSIZE=1000000000
 SAVEHIST=$HISTSIZE
 setopt appendhistory autocd extendedglob nomatch notify
 unsetopt beep
-bindkey -e
+bindkey -v
 # End of lines configured by zsh-newuser-install
 
 setopt completealiases
