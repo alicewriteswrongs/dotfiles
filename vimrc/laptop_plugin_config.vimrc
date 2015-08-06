@@ -43,3 +43,14 @@ augroup pencil
   autocmd FileType text         call pencil#init({'wrap': 'hard'})
   autocmd FileType tex          call pencil#init({'wrap': 'hard'})
 augroup END
+
+"tmux navigator (best!)
+let g:tmux_navigator_save_on_switch = 1
+let g:tmux_navigator_no_mappings = 1
+
+nnoremap <silent> h :TmuxNavigateLeft<cr>
+nnoremap <silent> j :TmuxNavigateDown<cr>
+nnoremap <silent> k :TmuxNavigateUp<cr>
+nnoremap <silent> l :TmuxNavigateRight<cr>
+nnoremap <silent> \ :TmuxNavigateRight<cr>
+
