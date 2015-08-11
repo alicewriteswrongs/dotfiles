@@ -8,7 +8,7 @@ imap <C-s> <esc>:w<cr>
 nnoremap <Leader>w :w<cr>
 nnoremap <Leader>q :q<cr> 
 nnoremap <Leader>sp :setlocal spell<cr>
-nnoremap <Leader>pm :setlocal ft=python<cr>
+nnoremap <Leader>lp :setlocal ft=python<cr>
 nnoremap <Leader>md :setlocal ft=markdown<cr>
 vmap <Leader>y "+y
 vmap <Leader>d "+d
