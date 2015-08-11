@@ -5,7 +5,8 @@ set number "line numbers
 set relativenumber "relative line numbering
 set background=light "stuff for solarized colorscheme
 colorscheme solarized "solarized colorscheme (so tasty)
-set modeline "autoindentation
+set modeline 
+set modelines=5
 set nofoldenable "no goddamn folding
 
 set cursorline "line highlighting
