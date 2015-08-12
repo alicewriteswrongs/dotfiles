@@ -1,5 +1,6 @@
 alias abcdehighqual='abcde -o ogg:"-q 7"' #rips at ogg vorbis quality level 7
 alias litpush='Pweave -f pandoc *.mdw && git commit -a && git push origin master'
+alias fhere='nautilus .'
 alias gdiff='git diff'
 alias gapush='git commit -a && git push origin master'
 alias gpush='git commit && git push origin master'
@@ -63,7 +64,7 @@ alias quemudefault='qemu-system-i386  -m 512 -net nic -net user,hostfwd=tcp:127.
 alias scc='ssh -X benpote@scc2.bu.edu'
 alias sessions='tmux list-sessions'
 alias shutdown='sudo shutdown -P now'
-alias todo='vim ~/notes/todo.org'
+alias todo='cd ~/notes && vim ~/notes/todo.org'
 alias top='htop'			#use a better version of top instead
 alias untar='tar -xvf'
 alias usb='sudo mount /dev/sdb1 /mnt/usb' 

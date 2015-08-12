@@ -5,6 +5,7 @@ let hlstate=0 "toggle search highlighting on/off
 nnoremap <F4> :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=1-hlstate<cr>
 
 imap <C-s> <esc>:w<cr> 
+nnoremap <C-s> <esc>:w<cr>
 nnoremap <Leader>w :w<cr>
 nnoremap <Leader>q :q<cr> 
 nnoremap <Leader>sp :setlocal spell<cr>
