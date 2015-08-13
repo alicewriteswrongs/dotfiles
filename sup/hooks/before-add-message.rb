@@ -10,6 +10,14 @@ if subj.start_with? '[sup]'
     message.add_label :sup
 end
 
+if subj.start_with? '[tor-talk]'
+    message.add_label :tor
+end
+
+if subj.start_with? '[whispersystems]'
+    message.add_label :OWS
+end
+
 if subj.start_with? '[moonbats]'
     message.add_label :Moonbats
 end

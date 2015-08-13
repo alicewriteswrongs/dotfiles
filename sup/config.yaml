@@ -26,12 +26,12 @@
 :always_edit_async: false
 :accounts:
   :default:
-    :name: Alice Riot
+    :name: Alice Pote
     :email: alice.writes.wrongs@gmail.com
     :sendmail: msmtp -t --read-envelope-from
     :gpgkey: ''
   :hampshire:
-    :name: Alice Riot
+    :name: Alice Pote
     :email: blp09@hampshire.edu
     :sendmail: msmtp -t --read-envelope-from
     :gpgkey: ''
