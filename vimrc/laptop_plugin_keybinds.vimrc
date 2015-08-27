@@ -6,6 +6,9 @@ map / <Plug>(incsearch-forward)
 map ? <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 
+"YCM
+nnoremap <Leader>d :YcmCompleter GoToDefinition<cr>
+
 "tagbar
 nnoremap <F10> :TagbarToggle<cr> 
 nnoremap <F8> :TagbarOpen [fj]<cr> 
