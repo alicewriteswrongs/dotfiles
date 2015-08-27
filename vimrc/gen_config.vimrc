@@ -46,6 +46,12 @@ augroup myfiletypes
     autocmd FileType C set shiftwidth=4
     autocmd FileType C setlocal highlight Excess ctermbg=Green
     autocmd FileType C setlocal match Excess /\%79v.*/
+    "ruby
+    autocmd FileType ruby setlocal expandtab
+    autocmd FileType ruby setlocal autoindent
+    autocmd FileType ruby setlocal softtabstop=2
+    autocmd FileType ruby setlocal shiftwidth=2
+    autocmd FileType ruby setlocal expandtab
 augroup END
 
 set spelllang=en_us "spellcheck is in US english
