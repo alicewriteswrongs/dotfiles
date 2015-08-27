@@ -54,6 +54,11 @@ augroup myfiletypes
     autocmd FileType ruby setlocal expandtab
 augroup END
 
+"ruby stuff
+let ruby_operators = 1
+let ruby_space_errors = 1
+let ruby_no_expensive = 1
+
 set spelllang=en_us "spellcheck is in US english
 set grepprg=grep\ -nH\ $*
 set foldmethod=syntax
