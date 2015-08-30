@@ -1,6 +1,7 @@
 alias abcdehighqual='abcde -o ogg:"-q 7"' #rips at ogg vorbis quality level 7
 alias litpush='Pweave -f pandoc *.mdw && git commit -a && git push origin master'
 alias keypush='keybase dir sign && git add SIGNED.md && git commit && git push origin master'
+alias mc='make clean'
 alias fhere='nautilus .'
 alias gdiff='git diff'
 alias gapush='git commit -a && git push origin master'
