@@ -40,12 +40,3 @@
     :email: axyridis@riseup.net
     :sendmail: msmtp -t --read-envelope-from
     :gpgkey: ''
-  :Ben:
-    :name: Ben Pote
-    :email: ben.pote@gmail.com
-    :sendmail: msmtp -t --read-envelope-from
-    :gpgkey: ''
-
-
-
-
