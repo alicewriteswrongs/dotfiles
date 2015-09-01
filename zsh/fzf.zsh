@@ -1,20 +1,20 @@
 # Setup fzf
 # ---------
-if [[ ! "$PATH" =~ "/home/alice/Code/utility/fzf/bin" ]]; then
-  export PATH="$PATH:/home/alice/Code/utility/fzf/bin"
+if [[ ! "$PATH" =~ "/home/alice/Code/dotfiles/fzf/bin" ]]; then
+  export PATH="$PATH:/home/alice/Code/dotfiles/fzf/bin"
 fi
 
 # Man path
 # --------
-if [[ ! "$MANPATH" =~ "/home/alice/Code/utility/fzf/man" && -d "/home/alice/Code/utility/fzf/man" ]]; then
-  export MANPATH="$MANPATH:/home/alice/Code/utility/fzf/man"
+if [[ ! "$MANPATH" =~ "/home/alice/Code/dotfiles/fzf/man" && -d "/home/alice/Code/dotfiles/fzf/man" ]]; then
+  export MANPATH="$MANPATH:/home/alice/Code/dotfiles/fzf/man"
 fi
 
 # Auto-completion
 # ---------------
-[[ $- =~ i ]] && source "/home/alice/Code/utility/fzf/shell/completion.zsh" 2> /dev/null
+[[ $- =~ i ]] && source "/home/alice/Code/dotfiles/fzf/shell/completion.zsh" 2> /dev/null
 
 # Key bindings
 # ------------
-source "/home/alice/Code/utility/fzf/shell/key-bindings.zsh"
+source "/home/alice/Code/dotfiles/fzf/shell/key-bindings.zsh"
 
