@@ -1,5 +1,7 @@
 alias abcdehighqual='abcde -o ogg:"-q 7"' #rips at ogg vorbis quality level 7
 alias vssh='vagrant ssh'
+alias vup='vagrant up'
+alias vdestroy='vagrant destroy'
 alias dotsync='cd ~/Code/dotfiles && git pull origin master && git commit -a && git push origin master'
 alias envoff='deactivate'
 alias litpush='Pweave -f pandoc *.mdw && git commit -a && git push origin master'
