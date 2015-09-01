@@ -6,3 +6,4 @@ source ~/Code/dotfiles/zsh/keybind_config.zsh
 [ -f ~/Code/dotfiles/zsh/fzf.zsh ] && source ~/Code/dotfiles/zsh/fzf.zsh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
