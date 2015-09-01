@@ -15,3 +15,4 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 echo "run 'PluginInstall'"
 vim && python ~/.vim/bundle/youcompleteme/install.py
 ln -s ~/Code/dotfiles/tmux/tmux.conf ~/.tmux.conf
+rm ~/.gitconfig && ln -s ~/Code/dotfiles/git/.gitconfig ~/.gitconfig
