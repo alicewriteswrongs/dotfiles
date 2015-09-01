@@ -2,7 +2,7 @@
 
 #you can try to run this, or use it as a setup guide
 
-sudo apt-get install vim-gnome python-dev python3-dev tmux zsh build-essential cmake node-legacy npm
+sudo apt-get install vim-gnome python-dev python3-dev tmux zsh build-essential cmake node-legacy npm silversearcher-ag
 cd ~/Code/dotfiles && git submodule init && git submodule update
 cd ~/Code/dotfiles/
 rm ~/.vimrc
