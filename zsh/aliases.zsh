@@ -1,4 +1,5 @@
 alias abcdehighqual='abcde -o ogg:"-q 7"' #rips at ogg vorbis quality level 7
+alias s3down='aws s3 sync'
 alias vssh='vagrant ssh'
 alias vup='vagrant up'
 alias vdestroy='vagrant destroy'
@@ -75,7 +76,7 @@ alias todo='cd ~/notes && vim ~/notes/todo.org'
 alias top='htop'			#use a better version of top instead
 alias untar='tar -xvf'
 alias usb='sudo mount /dev/sdb1 /mnt/usb' 
-alias vimrc='vim ~/Code/dotfiles/.vimrc'
+alias vimrc='vim ~/Code/dotfiles/vimrc/vimrc'
 alias vlc='no-screensaver.sh && vlc'
 alias yesdpms='xset dpms 300 600 0'
 alias zshrc='vim ~/Code/dotfiles/.zshrc'
