@@ -1,5 +1,5 @@
 alias abcdehighqual='abcde -o ogg:"-q 7"' #rips at ogg vorbis quality level 7
-alias grebi='git checkout master && git pull origin master && git rebase -i master'
+alias grebi='git rebase -i master'
 alias s3down='aws s3 sync'
 alias vssh='vagrant ssh'
 alias vup='vagrant up'
@@ -64,7 +64,7 @@ alias notes='cd ~/notes'
 alias orphans='sudo pacman -Qdt'
 alias poetry='cd ~/ownCloud/Documents/writing/poetry'
 alias pretty='git log --pretty=oneline' #get succinct git log information
-alias pullom='git pull origin master'
+alias pullom='git checkout master && git pull origin master'
 alias pullsubmod='git submodule init && git submodule update'
 alias pushom='git push origin master'
 alias qemuload='qemu-system-x86_64'
