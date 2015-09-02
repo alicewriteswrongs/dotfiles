@@ -33,8 +33,6 @@ PROMPT=" %{$fg[blue]%}%n%{$reset_color%} %{$fg[magenta]%}<3 %{$fg_no_bold[yellow
 RPROMPT="%{$fg_no_bold[blue]%}%t%{$reset_color%} "
 #♥
 
-#git completion
-fpath=(~/Code/dotfiles/zsh/script $fpath)
 
 #make gnome terminal work correctly?
 export TERM=screen-256color-bce
