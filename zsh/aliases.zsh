@@ -1,4 +1,5 @@
 alias abcdehighqual='abcde -o ogg:"-q 7"' #rips at ogg vorbis quality level 7
+alias gdmaster='git diff master'
 alias vhalt='vagrant halt'
 alias gash='git stash'
 alias gsta='git stash apply'
