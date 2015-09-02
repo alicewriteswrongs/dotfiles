@@ -1,4 +1,7 @@
 alias abcdehighqual='abcde -o ogg:"-q 7"' #rips at ogg vorbis quality level 7
+alias gash='git stash'
+alias gsta='git stash apply'
+alias gad='git add'
 alias grebc='git rebase --continue'
 alias grebi='git rebase -i master'
 alias s3down='aws s3 sync'
@@ -39,7 +42,7 @@ alias format='git log --pretty=format:"%h - %an, %ar : %s"'
 alias fullpath='ls -d -1 $PWD/*.*'
 alias gitb='git branch'
 alias gitd='git branch -D'
-alias check='git checkout'
+alias gch='git checkout'
 alias gitc='git commit'
 alias gitgraph='git log --pretty=oneline --graph'
 alias gitl='git log -1 HEAD' #last commit
