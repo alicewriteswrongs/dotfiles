@@ -1,4 +1,5 @@
 alias abcdehighqual='abcde -o ogg:"-q 7"' #rips at ogg vorbis quality level 7
+alias grebc='git rebase --continue'
 alias grebi='git rebase -i master'
 alias s3down='aws s3 sync'
 alias vssh='vagrant ssh'
