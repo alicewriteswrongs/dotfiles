@@ -26,11 +26,14 @@ bindkey -v
 setopt completealiases
 autoload -U colors && colors
 
+setopt prompt_subst
+. ~/Code/dotfiles/zsh/script/git-prompt.sh
+
 ## MY PROMPT
 ## looks like alice <3 dir         current_time
 PROMPT=" %{$fg[blue]%}%n%{$reset_color%} %{$fg[magenta]%}<3 %{$fg_no_bold[yellow]%}%1~ %{$reset_color%}"
 #PROMPT="[%{$fg[green]%}%n%{$reset_color%}@%{$fg[blue]%}%m] %{$fg_no_bold[yellow]%}%1~ %{$reset_color%}%# " #old version!
-RPROMPT="%{$fg_no_bold[blue]%}%T%{$reset_color%} "
+RPROMPT=$'%{$fg_no_bold[yellow]%}$(__git_ps1 "%s") %{$fg_no_bold[blue]%}%T%{$reset_color%}'
 #♥
 
 
