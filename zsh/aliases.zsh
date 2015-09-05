@@ -1,3 +1,5 @@
+alias vprov='vagrant provision'
+alias lpcpush='git push lpc LPC_edits:master'
 alias abcdehighqual='abcde -o ogg:"-q 7"' #rips at ogg vorbis quality level 7
 alias gdmaster='git diff master'
 alias vhalt='vagrant halt'
