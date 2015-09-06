@@ -4,3 +4,4 @@ env
 *.pyc
 *.bin
 reponotes
+.vagrant/*
