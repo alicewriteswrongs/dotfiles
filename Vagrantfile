@@ -11,8 +11,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # install.sh isn't intended to provision VMs, but be run on
   # dev machines (laptops and so on) to set up the environment
   # correctly
-  config.vm.provision :shell, privileged: false, inline <<-SCRIPT
+  config.vm.provision :shell, privileged: false, inline: <<-SCRIPT
     cd /vagrant
+    mkdir ~/Code
     cp -R . ~/Code/dotfiles
   SCRIPT
 
