@@ -35,14 +35,15 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 echo "USER INTERVENTION: run 'PluginInstall'" && 
 vim && python ~/.vim/bundle/youcompleteme/install.py
 
+echo ""
 echo "generate an ssh keypair with"
 echo ""
 echo " ssh-keygen -t rsa -b 4096 -C 'email@domain.org'"
 echo ""
 echo "remember to add it to github!"
-
 echo ""
 echo "also, log in to keybase!"
-
-
+echo ""
+echo "gnome-terminal also needs some manual config :("
+echo ""
 echo "you're done!"
