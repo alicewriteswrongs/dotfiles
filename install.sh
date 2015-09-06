@@ -1,9 +1,9 @@
 #!/bin/sh
 
-echo "you can try to run this, or use it as a setup guide"
+echo "you can run this, or use it as a setup guide"
 echo "the dotfiles repo should already be cloned in ~/Code/dotfiles"
 echo "install packages"
-sudo apt-get install vim-gnome python-dev python3-dev tmux zsh build-essential cmake node-legacy npm silversearcher-ag htop chromium mpd git ruby rvm python-pip python3-pip
+sudo apt-get -y install vim-gnome python-dev python3-dev tmux zsh build-essential cmake nodejs-legacy npm silversearcher-ag htop chromium mpd git ruby rbenv python-pip python3-pip
 sudo npm install -g keybase
 
 echo "pull in git submodules"
