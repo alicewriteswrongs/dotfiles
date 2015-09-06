@@ -12,6 +12,15 @@ cd ~/Code/dotfiles && git submodule init && git submodule update
 echo "change shell to zsh"
 chsh $(whoami) &&
 
+echo "install solarized colors for gnome-terminal"
+cd ~/Code/dotfiles/gnome-terminal-colors-solarized/ && ./install.sh
+
+echo "install fzf"
+cd ~/Code/dotfiles/fzf && ./install
+
+echo "install fonts"
+cd ~/Code/dotfiles/fonts && ./install.sh
+
 echo "symlink dotfiles"
 rm ~/.vimrc
 ln -s ~/Code/dotfiles/vimrc/vimrc ~/.vimrc
@@ -25,9 +34,6 @@ echo "get vim plugins"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 echo "USER INTERVENTION: run 'PluginInstall'" && 
 vim && python ~/.vim/bundle/youcompleteme/install.py
-
-# install solarized colors for gnome-terminal
-cd ~/Code/dotfiles/gnome-terminal-colors-solarized/ && ./install.sh
 
 echo "generate an ssh keypair with"
 echo ""
