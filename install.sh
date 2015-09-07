@@ -3,6 +3,8 @@
 echo "you can run this, or use it as a setup guide"
 echo "the dotfiles repo should already be cloned in ~/Code/dotfiles"
 echo "install packages"
+sudo apt-get update
+sudo apt-get -y upgrade
 sudo apt-get -y install vim-gnome python-dev python3-dev tmux zsh build-essential cmake nodejs-legacy npm silversearcher-ag htop chromium mpd git ruby rbenv python-pip python3-pip exuberant-ctags
 sudo npm install -g keybase
 
