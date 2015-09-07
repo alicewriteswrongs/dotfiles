@@ -1,4 +1,5 @@
 alias vprov='vagrant provision'
+alias vstatus='vagrant global-status'
 alias glog='git log --pretty=format:"%h - %an - %ar - %s" -10'
 alias lpcpush='git push lpc LPC_edits:master'
 alias abcdehighqual='abcde -o ogg:"-q 7"' #rips at ogg vorbis quality level 7
