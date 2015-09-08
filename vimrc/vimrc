@@ -102,6 +102,8 @@ augroup myfiletypes
     autocmd FileType ruby setlocal softtabstop=2
     autocmd FileType ruby setlocal shiftwidth=2
     autocmd FileType ruby setlocal expandtab
+    autocmd FileType ruby setlocal re=1
+    autocmd FileType ruby setlocal norelativenumber
     autocmd BufRead,BufNewFile *.arb setfiletype ruby
 augroup END
 
