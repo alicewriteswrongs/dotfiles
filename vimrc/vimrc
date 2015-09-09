@@ -13,6 +13,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'mattn/emmet-vim'
 " Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-rails'
+Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
@@ -22,7 +23,6 @@ Plugin 'tpope/vim-rsi' "gives readline bindings
 Plugin 'tpope/vim-commentary' "gc to toggle comments
 Plugin 'bling/vim-airline' "pretty stuff! 
 Plugin 'terryma/vim-multiple-cursors' "sublime-like cursors
-"Plugin 'bling/vim-bufferline' "
 Plugin 'edkolev/tmuxline.vim' "makes tmux pretty
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'tpope/vim-vinegar' "makes vim directory browser nicer
@@ -102,8 +102,8 @@ augroup myfiletypes
     autocmd FileType ruby setlocal softtabstop=2
     autocmd FileType ruby setlocal shiftwidth=2
     autocmd FileType ruby setlocal expandtab
-    " autocmd FileType ruby setlocal re=1
     autocmd FileType ruby setlocal norelativenumber
+    autocmd FileType ruby setlocal lazyredraw
     autocmd BufRead,BufNewFile *.arb setfiletype ruby
 augroup END
 
