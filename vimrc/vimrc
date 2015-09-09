@@ -103,7 +103,7 @@ augroup myfiletypes
     autocmd FileType ruby setlocal shiftwidth=2
     autocmd FileType ruby setlocal expandtab
     autocmd FileType ruby setlocal norelativenumber
-    autocmd FileType ruby setlocal lazyredraw
+    autocmd FileType ruby setlocal nocursorline
     autocmd BufRead,BufNewFile *.arb setfiletype ruby
 augroup END
 
@@ -124,6 +124,7 @@ if executable('ag')
 endif
 
 "mouse
+set lazyredraw
 set ttyfast
 set mouse=a
 set ttymouse=sgr
