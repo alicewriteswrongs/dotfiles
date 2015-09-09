@@ -5,7 +5,7 @@ echo "the dotfiles repo should already be cloned in ~/Code/dotfiles"
 echo "install packages"
 sudo apt-get update
 sudo apt-get -y upgrade
-sudo apt-get -y install vim-gnome python-dev python3-dev tmux zsh build-essential cmake nodejs-legacy npm silversearcher-ag htop chromium mpd git ruby rbenv python-pip python3-pip exuberant-ctags golang-go
+sudo apt-get -y install vim-gnome python-dev python3-dev tmux zsh build-essential cmake nodejs-legacy npm silversearcher-ag htop chromium mpd git ruby rbenv python-pip python3-pip exuberant-ctags golang-go libreadline6-dev libyaml-dev libsqlite3-dev sqlite3 autoconf libgdbm-dev libncurses5-dev automake libtool bison pkg-config libffi-dev
 sudo npm install -g keybase
 
 echo "pull in git submodules"
@@ -22,6 +22,10 @@ cd ~/Code/dotfiles/fzf && ./install
 
 echo "install fonts"
 cd ~/Code/dotfiles/fonts && ./install.sh
+
+echo "get rvm!"
+gpg --keyserver hkp://pgp.mit.edu --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+\curl -sSL https://get.rvm.io | bash
 
 echo "symlink dotfiles"
 rm ~/.vimrc
