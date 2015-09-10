@@ -79,7 +79,6 @@ augroup myfiletypes
     autocmd FileType ruby setlocal expandtab
     autocmd FileType ruby setlocal norelativenumber
     autocmd FileType ruby setlocal nocursorline
-    autocmd FileType ruby setlocal ruby_no_expensive = 1
     autocmd BufRead,BufNewFile *.arb setfiletype ruby
 augroup END
 
@@ -105,10 +104,12 @@ set smartindent
 set tabstop=8
 set expandtab
 set shiftwidth=4
+set ruler
 
 " let ruby_operators = 1
 " let ruby_space_errors = 1
 
+" set laststatus=2
 set spelllang=en_us "spellcheck is in US english
 set grepprg=grep\ -nH\ $*
 set foldmethod=syntax
@@ -125,6 +126,9 @@ set ttyfast
 set mouse=a
 set ttymouse=sgr
 set mousemodel=extend
+
+"statusline
+" highlight StatusLine ctermfg=blue ctermbg=yellow
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 """Plugin Configuration
@@ -175,11 +179,17 @@ augroup pencil
   autocmd FileType tex          call pencil#init({'wrap': 'hard'})
 augroup END
 
+"laggy bye bye?
+set noesckeys
+set ttimeout
+set ttimeoutlen=1
+
 " "tmux navigator (best!)
 " let g:tmux_navigator_save_on_switch = 1
 " let g:tmux_navigator_no_mappings = 1
 
 " nnoremap <silent> h :TmuxNavigateLeft<cr>
+"
 " nnoremap <silent> j :TmuxNavigateDown<cr>
 " nnoremap <silent> k :TmuxNavigateUp<cr>
 " nnoremap <silent> l :TmuxNavigateRight<cr>
