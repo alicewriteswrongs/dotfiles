@@ -78,13 +78,14 @@ augroup myfiletypes
     autocmd BufRead,BufNewFile *.arb setfiletype ruby
 augroup END
 
-" "colorscheme
+"colorscheme
 colorscheme solarized 
 set background=light 
 syntax on
 
-" "random options
+"random options
 set lazyredraw
+set number
 set wildmenu "better command line completion
 set modeline 
 set nofoldenable "no goddamn folding
