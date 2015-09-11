@@ -4,6 +4,8 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+let mapleader = "\<Space>" "set leader to space
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -11,6 +13,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim' 
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-sensible'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-surround'
@@ -33,6 +36,7 @@ Plugin 'altercation/vim-colors-solarized' "solarized plugin
 Plugin 'rust-lang/rust.vim' "some rust stuff
 Plugin 'rking/ag.vim' "wrapper for ag
 Plugin 'valloric/youcompleteme' "the best completion ever
+Plugin 'blinq/vim-airline'
 " Plugin 'vim-scripts/Terminus'
 
 call vundle#end()
@@ -104,8 +108,9 @@ set mouse=a
 set ttymouse=sgr
 set mousemodel=extend
 set noesckeys
-set ttimeout
-set ttimeoutlen=1
+set timeout
+set timeoutlen=200
+set ttimeoutlen=2000
 " highlight StatusLine ctermfg=blue ctermbg=yellow
 if executable('ag')
     set grepprg=ag\ --nogroup\ --nocolor
@@ -135,6 +140,10 @@ let g:tsline_ensure_trailing_newlines = 1
 let g:pencil#wrapModeDefault = 'hard'
 let g:pencil#autoformat = 1
 let g:pencil#conceallevel = 0
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#whitespace#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:bufferline_echo = 0
 
 augroup pencil
   autocmd!
@@ -142,8 +151,6 @@ augroup pencil
   autocmd FileType text         call pencil#init({'wrap': 'hard'})
   autocmd FileType tex          call pencil#init({'wrap': 'hard'})
 augroup END
-
-"laggy bye bye?
 
 " "tmux navigator (best!)
 " let g:tmux_navigator_save_on_switch = 1
@@ -160,16 +167,11 @@ augroup END
 " """Keybinds
 " """""""""""""""""""""""""""""""""""""""""""""""""""
 
-let mapleader = "\<Space>" "set leader to space
 
-" "toggle search highlighting on/off
 let hlstate=0 
 nnoremap <F4> :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=1-hlstate<cr>
-
-"see whitespace
 exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
 nnoremap <Leader>ws :set list!<CR> 
-
 imap <C-s> <esc>:w<cr> 
 nnoremap <C-s> <esc>:w<cr>
 nnoremap <Leader>w :w<cr>
@@ -183,14 +185,11 @@ nmap <Leader>p "+p
 nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
-
-"highlighting and linenumbers
 nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<CR> 
 nnoremap <Leader>cl :set cursorline!<CR> 
 nnoremap <Leader>cc :set cursorcolumn!<CR> 
 nnoremap <Leader>ln :set number!<cr>
 nnoremap <Leader>rln :set relativenumber!<cr>
-
 nnoremap <Leader>bl :buffers<cr> 
 nnoremap <Leader>b1 :buffer1<cr> 
 nnoremap <Leader>b2 :buffer2<cr> 
@@ -201,28 +200,17 @@ nnoremap <Leader>b6 :buffer6<cr>
 nnoremap <Leader>b7 :buffer7<cr> 
 nnoremap <Leader>t  :enew<cr> 
 nnoremap <Leader>bq :bd<cr> 
-
 nnoremap <Leader>o :vsplit<cr> 
 nnoremap <Leader>u :split<cr> 
 nnoremap <Leader>j <C-W>j 
 nnoremap <Leader>k <C-W>k
 nnoremap <Leader>h <C-W>h 
 nnoremap <Leader>l <C-W>l 
-
-"incsearch
 map / <Plug>(incsearch-forward)
 map ? <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
-
-"YCM
 nnoremap <Leader>d :YcmCompleter GoToDefinition<cr>
-
-"crtlp
 nnoremap <Leader>p :CtrlPBufTag<cr>
 nnoremap <Leader>P :CtrlPMRU<cr>
-
-"localleader for vim-orgmode
 let localleader = "\\"
-
-"vim-pencil
 nnoremap <silent> <Leader>tp :TogglePencil<cr>
