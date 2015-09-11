@@ -84,6 +84,10 @@ set background=light
 syntax on
 
 "random options
+let ruby_operators=1
+let ruby_space_errors=1
+let ruby_no_expensive=1
+set hidden
 set lazyredraw
 set number
 set wildmenu "better command line completion
@@ -115,8 +119,9 @@ set ttimeoutlen=2000
 " highlight StatusLine ctermfg=blue ctermbg=yellow
 if executable('ag')
     set grepprg=ag\ --nogroup\ --nocolor
-    let g:ctrlp_user_command = 'ag %s -l  --hidden -g ""'
+    let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
     let g:ctrlp_use_cashing = 0
+    let g:CrtlSpaceglobCommand = 'ag %s -l --nocolor --hidden -g ""'
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
@@ -141,7 +146,7 @@ let g:tsline_ensure_trailing_newlines = 1
 let g:pencil#wrapModeDefault = 'hard'
 let g:pencil#autoformat = 1
 let g:pencil#conceallevel = 0
-let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 0
 let g:airline#extensions#whitespace#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:bufferline_echo = 0
@@ -213,5 +218,6 @@ map g/ <Plug>(incsearch-stay)
 nnoremap <Leader>d :YcmCompleter GoToDefinition<cr>
 nnoremap <Leader>p :CtrlPBufTag<cr>
 nnoremap <Leader>P :CtrlPMRU<cr>
+nnoremap <C-f> :CtrlPBuffer<cr>
 let localleader = "\\"
 nnoremap <silent> <Leader>tp :TogglePencil<cr>
