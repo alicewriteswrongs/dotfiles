@@ -1,78 +1,78 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""
 """Vundle
 """""""""""""""""""""""""""""""""""""""""""""""""""
-" set nocompatible              " be iMproved, required
-" filetype off                  " required
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-" " set the runtime path to include Vundle and initialize
-" set rtp+=~/.vim/bundle/Vundle.vim
-" call vundle#begin()
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-" Plugin 'gmarik/Vundle.vim' 
-" Plugin 'kchmck/vim-coffee-script'
-" Plugin 'tpope/vim-rails'
-" Plugin 'vim-ruby/vim-ruby'
-" Plugin 'tpope/vim-rake'
-" Plugin 'tpope/vim-surround'
-" Plugin 'kien/ctrlp.vim' "fuzzy search
-" Plugin 'tpope/vim-rsi' "gives readline bindings
-" Plugin 'tpope/vim-commentary' "gc to toggle comments
-" Plugin 'terryma/vim-multiple-cursors' "sublime-like cursors
-" Plugin 'edkolev/tmuxline.vim' "makes tmux pretty
-" Plugin 'christoomey/vim-tmux-navigator'
-" Plugin 'tpope/vim-vinegar' "makes vim directory browser nicer
-" Plugin 'vim-scripts/lbdbq' "formats mail headers more nicely
-" Plugin 'tpope/vim-fugitive' "tpopes git wrapper
-" Plugin 'tpope/vim-unimpaired' "adds some keybinds?
-" Plugin 'wlangstroth/vim-racket' "some stuff for racket-lang
-" Plugin 'vim-scripts/paredit.vim' "lisp/racket S-expressions
-" Plugin 'sjl/tslime.vim' "send text to a tmux pane
-" Plugin 'reedes/vim-pencil' "soft/hard wraps for txt,md,email
-" Plugin 'haya14busa/incsearch.vim' "nice incremental search
-" Plugin 'altercation/vim-colors-solarized' "solarized plugin
-" Plugin 'rust-lang/rust.vim' "some rust stuff
-" Plugin 'rking/ag.vim' "wrapper for ag
-" Plugin 'valloric/youcompleteme' "the best completion ever
-" " Plugin 'vim-scripts/Terminus'
+Plugin 'gmarik/Vundle.vim' 
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'tpope/vim-rails'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rake'
+Plugin 'tpope/vim-surround'
+Plugin 'kien/ctrlp.vim' "fuzzy search
+Plugin 'tpope/vim-rsi' "gives readline bindings
+Plugin 'tpope/vim-commentary' "gc to toggle comments
+Plugin 'terryma/vim-multiple-cursors' "sublime-like cursors
+Plugin 'edkolev/tmuxline.vim' "makes tmux pretty
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'tpope/vim-vinegar' "makes vim directory browser nicer
+Plugin 'vim-scripts/lbdbq' "formats mail headers more nicely
+Plugin 'tpope/vim-fugitive' "tpopes git wrapper
+Plugin 'tpope/vim-unimpaired' "adds some keybinds?
+Plugin 'wlangstroth/vim-racket' "some stuff for racket-lang
+Plugin 'vim-scripts/paredit.vim' "lisp/racket S-expressions
+Plugin 'sjl/tslime.vim' "send text to a tmux pane
+Plugin 'reedes/vim-pencil' "soft/hard wraps for txt,md,email
+Plugin 'haya14busa/incsearch.vim' "nice incremental search
+Plugin 'altercation/vim-colors-solarized' "solarized plugin
+Plugin 'rust-lang/rust.vim' "some rust stuff
+Plugin 'rking/ag.vim' "wrapper for ag
+Plugin 'valloric/youcompleteme' "the best completion ever
+" Plugin 'vim-scripts/Terminus'
 
-" call vundle#end()
-" filetype plugin indent on "filetype based indenting 
+call vundle#end()
+filetype plugin indent on "filetype based indenting 
 
 " """""""""""""""""""""""""""""""""""""""""""""""""""
 " """general configuration
 " """""""""""""""""""""""""""""""""""""""""""""""""""
 
-" "filetype specific stuff
-" augroup myfiletypes
-"     autocmd! 
-"     "python first
-"     autocmd FileType python setlocal tabstop=8
-"     autocmd FileType python setlocal shiftwidth=4
-"     autocmd FileType python setlocal expandtab
-"     autocmd FileType python setlocal softtabstop=4
-"     autocmd FileType python setlocal autoindent
-"     autocmd FileType python highlight Excess ctermbg=Green
-"     autocmd FileType python match Excess /\%79v.*/
-"     autocmd FileType python set nowrap
-"     autocmd FileType python set nojoinspaces
-"     "C
-"     autocmd FileType C set cinoptions=1s
-"     autocmd FileType C setlocal cindent
-"     autocmd FileType C setlocal expandtab
-"     autocmd FileType C setlocal autoindent
-"     autocmd FileType C set shiftwidth=4
-"     autocmd FileType C setlocal highlight Excess ctermbg=Green
-"     autocmd FileType C setlocal match Excess /\%79v.*/
-"     "ruby
-"     autocmd FileType ruby setlocal expandtab
-"     autocmd FileType ruby setlocal autoindent
-"     autocmd FileType ruby setlocal softtabstop=2
-"     autocmd FileType ruby setlocal shiftwidth=2
-"     autocmd FileType ruby setlocal expandtab
-"     autocmd FileType ruby setlocal norelativenumber
-"     autocmd FileType ruby setlocal nocursorline
-"     autocmd BufRead,BufNewFile *.arb setfiletype ruby
-" augroup END
+"filetype specific stuff
+augroup myfiletypes
+    autocmd! 
+    "python first
+    autocmd FileType python setlocal tabstop=8
+    autocmd FileType python setlocal shiftwidth=4
+    autocmd FileType python setlocal expandtab
+    autocmd FileType python setlocal softtabstop=4
+    autocmd FileType python setlocal autoindent
+    autocmd FileType python highlight Excess ctermbg=Green
+    autocmd FileType python match Excess /\%79v.*/
+    autocmd FileType python set nowrap
+    autocmd FileType python set nojoinspaces
+    "C
+    autocmd FileType C set cinoptions=1s
+    autocmd FileType C setlocal cindent
+    autocmd FileType C setlocal expandtab
+    autocmd FileType C setlocal autoindent
+    autocmd FileType C set shiftwidth=4
+    autocmd FileType C setlocal highlight Excess ctermbg=Green
+    autocmd FileType C setlocal match Excess /\%79v.*/
+    "ruby
+    autocmd FileType ruby setlocal expandtab
+    autocmd FileType ruby setlocal autoindent
+    autocmd FileType ruby setlocal softtabstop=2
+    autocmd FileType ruby setlocal shiftwidth=2
+    autocmd FileType ruby setlocal expandtab
+    autocmd FileType ruby setlocal norelativenumber
+    autocmd FileType ruby setlocal nocursorline
+    autocmd BufRead,BufNewFile *.arb setfiletype ruby
+augroup END
 
 " "colorscheme
 colorscheme solarized 
@@ -113,116 +113,116 @@ if executable('ag')
     let g:ctrlp_use_cashing = 0
 endif
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+"""Plugin Configuration
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ctrlp_extensions = ['buffertag']
+let g:incsearch#auto_nohlsearch = 1
+"tmuxline.vim
+let g:tmuxline_preset = {
+    \'a' : '#S',
+    \'win'  : '#W',
+    \'cwin'  : '#W',
+    \'y' : '%l:%M',
+    \'z' : '#h',
+    \'options': {
+        \'status-justify': 'left'}
+    \}
+let g:Tex_DefaultTargetFormat='pdf'
+let g:Tex_Flavor='latex'
+let g:Tex_ViewRule_pdf='mupdf'
+let g:tsline_ensure_trailing_newlines = 1
+let g:pencil#wrapModeDefault = 'hard'
+let g:pencil#autoformat = 1
+let g:pencil#conceallevel = 0
+
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd call pencil#init()
+  autocmd FileType text         call pencil#init({'wrap': 'hard'})
+  autocmd FileType tex          call pencil#init({'wrap': 'hard'})
+augroup END
+
+"laggy bye bye?
+
+" "tmux navigator (best!)
+" let g:tmux_navigator_save_on_switch = 1
+" let g:tmux_navigator_no_mappings = 1
+
+" nnoremap <silent> h :TmuxNavigateLeft<cr>
+"
+" nnoremap <silent> j :TmuxNavigateDown<cr>
+" nnoremap <silent> k :TmuxNavigateUp<cr>
+" nnoremap <silent> l :TmuxNavigateRight<cr>
+" nnoremap <silent> \ :TmuxNavigateRight<cr>
+
 " """""""""""""""""""""""""""""""""""""""""""""""""""
-" """Plugin Configuration
+" """Keybinds
 " """""""""""""""""""""""""""""""""""""""""""""""""""
-" let g:ctrlp_extensions = ['buffertag']
-" let g:incsearch#auto_nohlsearch = 1
-" "tmuxline.vim
-" let g:tmuxline_preset = {
-"     \'a' : '#S',
-"     \'win'  : '#W',
-"     \'cwin'  : '#W',
-"     \'y' : '%l:%M',
-"     \'z' : '#h',
-"     \'options': {
-"         \'status-justify': 'left'}
-"     \}
-" let g:Tex_DefaultTargetFormat='pdf'
-" let g:Tex_Flavor='latex'
-" let g:Tex_ViewRule_pdf='mupdf'
-" let g:tsline_ensure_trailing_newlines = 1
-" let g:pencil#wrapModeDefault = 'hard'
-" let g:pencil#autoformat = 1
-" let g:pencil#conceallevel = 0
 
-" augroup pencil
-"   autocmd!
-"   autocmd FileType markdown,mkd call pencil#init()
-"   autocmd FileType text         call pencil#init({'wrap': 'hard'})
-"   autocmd FileType tex          call pencil#init({'wrap': 'hard'})
-" augroup END
+let mapleader = "\<Space>" "set leader to space
 
-" "laggy bye bye?
+" "toggle search highlighting on/off
+let hlstate=0 
+nnoremap <F4> :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=1-hlstate<cr>
 
-" " "tmux navigator (best!)
-" " let g:tmux_navigator_save_on_switch = 1
-" " let g:tmux_navigator_no_mappings = 1
+"see whitespace
+exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
+nnoremap <Leader>ws :set list!<CR> 
 
-" " nnoremap <silent> h :TmuxNavigateLeft<cr>
-" "
-" " nnoremap <silent> j :TmuxNavigateDown<cr>
-" " nnoremap <silent> k :TmuxNavigateUp<cr>
-" " nnoremap <silent> l :TmuxNavigateRight<cr>
-" " nnoremap <silent> \ :TmuxNavigateRight<cr>
+imap <C-s> <esc>:w<cr> 
+nnoremap <C-s> <esc>:w<cr>
+nnoremap <Leader>w :w<cr>
+nnoremap <Leader>q :q<cr> 
+nnoremap <Leader>sp :setlocal spell<cr>
+nnoremap <Leader>lp :setlocal ft=python<cr>
+nnoremap <Leader>md :setlocal ft=markdown<cr>
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
 
-" " """""""""""""""""""""""""""""""""""""""""""""""""""
-" " """Keybinds
-" " """""""""""""""""""""""""""""""""""""""""""""""""""
+"highlighting and linenumbers
+nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<CR> 
+nnoremap <Leader>cl :set cursorline!<CR> 
+nnoremap <Leader>cc :set cursorcolumn!<CR> 
+nnoremap <Leader>ln :set number!<cr>
+nnoremap <Leader>rln :set relativenumber!<cr>
 
-" let mapleader = "\<Space>" "set leader to space
+nnoremap <Leader>bl :buffers<cr> 
+nnoremap <Leader>b1 :buffer1<cr> 
+nnoremap <Leader>b2 :buffer2<cr> 
+nnoremap <Leader>b3 :buffer3<cr> 
+nnoremap <Leader>b4 :buffer4<cr> 
+nnoremap <Leader>b5 :buffer5<cr> 
+nnoremap <Leader>b6 :buffer6<cr> 
+nnoremap <Leader>b7 :buffer7<cr> 
+nnoremap <Leader>t  :enew<cr> 
+nnoremap <Leader>bq :bd<cr> 
 
-" " "toggle search highlighting on/off
-" let hlstate=0 
-" nnoremap <F4> :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=1-hlstate<cr>
+nnoremap <Leader>o :vsplit<cr> 
+nnoremap <Leader>u :split<cr> 
+nnoremap <Leader>j <C-W>j 
+nnoremap <Leader>k <C-W>k
+nnoremap <Leader>h <C-W>h 
+nnoremap <Leader>l <C-W>l 
 
-" "see whitespace
-" exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
-" nnoremap <Leader>ws :set list!<CR> 
+"incsearch
+map / <Plug>(incsearch-forward)
+map ? <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
 
-" imap <C-s> <esc>:w<cr> 
-" nnoremap <C-s> <esc>:w<cr>
-" nnoremap <Leader>w :w<cr>
-" nnoremap <Leader>q :q<cr> 
-" nnoremap <Leader>sp :setlocal spell<cr>
-" nnoremap <Leader>lp :setlocal ft=python<cr>
-" nnoremap <Leader>md :setlocal ft=markdown<cr>
-" vmap <Leader>y "+y
-" vmap <Leader>d "+d
-" nmap <Leader>p "+p
-" nmap <Leader>P "+P
-" vmap <Leader>p "+p
-" vmap <Leader>P "+P
+"YCM
+nnoremap <Leader>d :YcmCompleter GoToDefinition<cr>
 
-" "highlighting and linenumbers
-" nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<CR> 
-" nnoremap <Leader>cl :set cursorline!<CR> 
-" nnoremap <Leader>cc :set cursorcolumn!<CR> 
-" nnoremap <Leader>ln :set number!<cr>
-" nnoremap <Leader>rln :set relativenumber!<cr>
+"crtlp
+nnoremap <Leader>p :CtrlPBufTag<cr>
+nnoremap <Leader>P :CtrlPMRU<cr>
 
-" nnoremap <Leader>bl :buffers<cr> 
-" nnoremap <Leader>b1 :buffer1<cr> 
-" nnoremap <Leader>b2 :buffer2<cr> 
-" nnoremap <Leader>b3 :buffer3<cr> 
-" nnoremap <Leader>b4 :buffer4<cr> 
-" nnoremap <Leader>b5 :buffer5<cr> 
-" nnoremap <Leader>b6 :buffer6<cr> 
-" nnoremap <Leader>b7 :buffer7<cr> 
-" nnoremap <Leader>t  :enew<cr> 
-" nnoremap <Leader>bq :bd<cr> 
+"localleader for vim-orgmode
+let localleader = "\\"
 
-" nnoremap <Leader>o :vsplit<cr> 
-" nnoremap <Leader>u :split<cr> 
-" nnoremap <Leader>j <C-W>j 
-" nnoremap <Leader>k <C-W>k
-" nnoremap <Leader>h <C-W>h 
-" nnoremap <Leader>l <C-W>l 
-
-" "incsearch
-" map / <Plug>(incsearch-forward)
-" map ? <Plug>(incsearch-backward)
-" map g/ <Plug>(incsearch-stay)
-
-" "YCM
-" nnoremap <Leader>d :YcmCompleter GoToDefinition<cr>
-
-" "crtlp
-" nnoremap <Leader>p :CtrlPBufTag<cr>
-" nnoremap <Leader>P :CtrlPMRU<cr>
-
-" "localleader for vim-orgmode
-" let localleader = "\\"
-
-" "vim-pencil
-" nnoremap <silent> <Leader>tp :TogglePencil<cr>
+"vim-pencil
+nnoremap <silent> <Leader>tp :TogglePencil<cr>
