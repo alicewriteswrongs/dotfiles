@@ -6,7 +6,13 @@ echo "install packages"
 echo "this will take a while"
 sudo apt-get update
 sudo apt-get -y upgrade
-sudo apt-get -y install vim-gnome python-dev python3-dev tmux zsh build-essential cmake nodejs-legacy npm silversearcher-ag htop chromium mpd git ruby rbenv python-pip python3-pip exuberant-ctags golang-go libreadline6-dev libyaml-dev libsqlite3-dev sqlite3 autoconf libgdbm-dev libncurses5-dev automake libtool bison pkg-config libffi-dev libpq-dev
+
+echo "we're going to make an ssh key, and install chromium."
+echo "add it to github before continuing!"
+ssh-keygen -t rsa -b 4096 -C 'alice.writes.wrongs@gmail.com'
+
+#chromium 
+sudo apt-get -y install vim-gnome python-dev python3-dev tmux zsh build-essential cmake nodejs-legacy npm silversearcher-ag htop mpd git ruby rbenv python-pip python3-pip exuberant-ctags golang-go libreadline6-dev libyaml-dev libsqlite3-dev sqlite3 autoconf libgdbm-dev libncurses5-dev automake libtool bison pkg-config libffi-dev libpq-dev
 sudo npm install -g keybase
 
 echo "pull in git submodules"
@@ -30,17 +36,21 @@ gpg --keyserver hkp://pgp.mit.edu --recv-keys 409B6B1796C275462A1703113804BB82D3
 
 echo "symlink dotfiles"
 rm ~/.vimrc
+rm ~/.zshrc
+rm ~/.zshenv
+rm ~/.gitconfig
 ln -s ~/Code/dotfiles/vimrc/vimrc ~/.vimrc
-rm ~/.zshrc && rm ~/.zshenv
 ln -s ~/Code/dotfiles/zsh/zshrc.zsh ~/.zshrc
 ln -s ~/Code/dotfiles/zsh/zshenv.zsh ~/.zshenv
 ln -s ~/Code/dotfiles/tmux/tmux.conf ~/.tmux.conf
-rm ~/.gitconfig && ln -s ~/Code/dotfiles/git/.gitconfig ~/.gitconfig
+ln -s ~/Code/dotfiles/git/.gitconfig ~/.gitconfig
 
 echo "get vim plugins"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 echo "USER INTERVENTION: run 'PluginInstall'" && 
 vim && python ~/.vim/bundle/youcompleteme/install.py
+
+source ~/.zshrc
 
 echo ""
 echo "generate an ssh keypair with"
