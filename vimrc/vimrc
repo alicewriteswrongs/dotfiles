@@ -20,7 +20,7 @@ Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-surround'
 Plugin 'kien/ctrlp.vim' "fuzzy search
 Plugin 'tpope/vim-rsi' "gives readline bindings
-" Plugin 'tpope/vim-commentary' "gc to toggle comments
+Plugin 'tpope/vim-commentary' "gc to toggle comments
 Plugin 'terryma/vim-multiple-cursors' "sublime-like cursors
 Plugin 'edkolev/tmuxline.vim' "makes tmux pretty
 Plugin 'christoomey/vim-tmux-navigator'

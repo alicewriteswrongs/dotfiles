@@ -6,8 +6,6 @@ For the syncing of the dotfiles. For the sake of consistency try to always clone
 
 the setup is dependent on this, for sourcing modular vimrc and zshrc files.
 
-
-
 ------------------
 
 ### Included herein:
