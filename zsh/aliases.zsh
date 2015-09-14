@@ -1,4 +1,5 @@
 alias vprov='vagrant provision'
+alias vvssh='vagrant up && vagrant ssh'
 alias vstatus='vagrant global-status'
 alias glog='git log --pretty=format:"%h - %an - %ar - %s" -10'
 alias lpcpush='git push lpc LPC_edits:master'
