@@ -11,6 +11,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim' 
+Plugin 'tpope/vim-commentary' "gc to toggle comments
 Plugin 'chriskempson/base16-vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-rails'
@@ -20,7 +21,6 @@ Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-surround'
 Plugin 'kien/ctrlp.vim' "fuzzy search
 Plugin 'tpope/vim-rsi' "gives readline bindings
-Plugin 'tpope/vim-commentary' "gc to toggle comments
 Plugin 'terryma/vim-multiple-cursors' "sublime-like cursors
 Plugin 'edkolev/tmuxline.vim' "makes tmux pretty
 Plugin 'christoomey/vim-tmux-navigator'
@@ -115,7 +115,7 @@ set ttymouse=sgr
 set mousemodel=extend
 set noesckeys
 set timeout
-set timeoutlen=200
+set timeoutlen=2000
 set ttimeoutlen=2000
 " highlight StatusLine ctermfg=blue ctermbg=yellow
 if executable('ag')
