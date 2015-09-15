@@ -1,3 +1,9 @@
-[submodule "fonts"]
-	path = fonts
+[submodule "extras/gnome-terminal-colors-solarized"]
+	path = extras/gnome-terminal-colors-solarized
+	url = git@github.com:Anthony25/gnome-terminal-colors-solarized.git
+[submodule "extras/fzf"]
+	path = extras/fzf
+	url = git@github.com:junegunn/fzf.git
+[submodule "extras/fonts"]
+	path = extras/fonts
 	url = git@github.com:powerline/fonts.git
