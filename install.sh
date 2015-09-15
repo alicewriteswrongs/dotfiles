@@ -22,13 +22,13 @@ echo "change shell to zsh"
 chsh -s "$(which zsh)"
 
 echo "install solarized colors for gnome-terminal"
-cd ~/Code/dotfiles/gnome-terminal-colors-solarized/ && ./install.sh
+cd ~/Code/dotfiles/extras/gnome-terminal-colors-solarized/ && ./install.sh
 
 echo "install fzf"
-cd ~/Code/dotfiles/fzf && ./install
+cd ~/Code/dotfiles/extras/fzf && ./install
 
 echo "install fonts"
-cd ~/Code/dotfiles/fonts && ./install.sh
+cd ~/Code/dotfiles/extras/fonts && ./install.sh
 
 echo "get rvm!"
 gpg --keyserver hkp://pgp.mit.edu --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
