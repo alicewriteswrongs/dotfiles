@@ -1,4 +1,5 @@
 alias vprov='vagrant provision'
+alias shellsync='cd ~/Code/dotfiles && git pull origin master && git commit -a && git push origin master'
 alias shellscripts='cd ~/Code/shellscripts && vim'
 alias vvssh='vagrant up && vagrant ssh'
 alias vstatus='vagrant global-status'
