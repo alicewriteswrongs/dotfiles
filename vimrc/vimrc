@@ -220,5 +220,6 @@ nnoremap <Leader>d :YcmCompleter GoToDefinition<cr>
 nnoremap <Leader>p :CtrlPBufTag<cr>
 nnoremap <Leader>P :CtrlPMRU<cr>
 nnoremap <C-f> :CtrlPBuffer<cr>
+nnoremap <C-F> :Ag 
 let localleader = "\\"
 nnoremap <silent> <Leader>tp :TogglePencil<cr>
