@@ -218,8 +218,8 @@ map ? <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 nnoremap <Leader>d :YcmCompleter GoToDefinition<cr>
 nnoremap <Leader>p :CtrlPBufTag<cr>
-nnoremap <Leader>P :CtrlPMRU<cr>
-nnoremap <C-f> :CtrlPBuffer<cr>
-nnoremap <C-F> :Ag 
+nnoremap <Leader>o :CtrlPMRU<cr>
+nnoremap <C-b> :CtrlPBuffer<cr>
+nnoremap <C-f> :Ag 
 let localleader = "\\"
 nnoremap <silent> <Leader>tp :TogglePencil<cr>
