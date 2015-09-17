@@ -8,3 +8,5 @@ source ~/Code/dotfiles/zsh/keybind_config.zsh
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 fpath=(~/.zsh $fpath)
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
