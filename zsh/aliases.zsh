@@ -73,7 +73,7 @@ alias mv='mv -iv'           #makes it interactive and verbose
 alias new='tmux new -s'
 alias node='nodejs'
 alias nodpms='xset dpms 0 0 0'
-alias notes='cd ~/notes'
+alias notes='cd ~/ownCloud/notes'
 alias orphans='sudo pacman -Qdt'
 alias poetry='cd ~/ownCloud/Documents/writing/poetry'
 alias pretty='git log --pretty=oneline' #get succinct git log information
