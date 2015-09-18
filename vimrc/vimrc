@@ -218,7 +218,7 @@ map ? <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 nnoremap <Leader>d :YcmCompleter GoToDefinition<cr>
 nnoremap <Leader>p :CtrlPBufTag<cr>
-nnoremap <Leader>o :CtrlPMRU<cr>
+nnoremap <C-o> :CtrlPMRU<cr>
 nnoremap <C-b> :CtrlPBuffer<cr>
 nnoremap <C-f> :Ag 
 let localleader = "\\"
