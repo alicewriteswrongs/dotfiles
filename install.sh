@@ -12,7 +12,7 @@ echo "add it to github before continuing!"
 ssh-keygen -t rsa -b 4096 -C 'alice.writes.wrongs@gmail.com'
 
 #chromium 
-sudo apt-get -y install vim-gnome python-dev python3-dev tmux zsh build-essential cmake nodejs-legacy npm silversearcher-ag htop mpd git ruby rbenv python-pip python3-pip exuberant-ctags golang-go libreadline6-dev libyaml-dev libsqlite3-dev sqlite3 autoconf libgdbm-dev libncurses5-dev automake libtool bison pkg-config libffi-dev libpq-dev virtualbox vagrant
+sudo apt-get -y install vim-gnome python-dev python3-dev tmux zsh build-essential cmake nodejs-legacy npm silversearcher-ag htop mpd git ruby rbenv python-pip python3-pip exuberant-ctags golang-go libreadline6-dev libyaml-dev libsqlite3-dev sqlite3 autoconf libgdbm-dev libncurses5-dev automake libtool bison pkg-config libffi-dev libpq-dev virtualbox vagrant mupdf
 sudo npm install -g keybase
 
 echo "pull in git submodules"
