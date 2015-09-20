@@ -23,7 +23,6 @@ Plugin 'kien/ctrlp.vim' "fuzzy search
 Plugin 'tpope/vim-rsi' "gives readline bindings
 Plugin 'terryma/vim-multiple-cursors' "sublime-like cursors
 Plugin 'edkolev/tmuxline.vim' "makes tmux pretty
-Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'tpope/vim-vinegar' "makes vim directory browser nicer
 Plugin 'vim-scripts/lbdbq' "formats mail headers more nicely
 Plugin 'tpope/vim-fugitive' "tpopes git wrapper
@@ -159,21 +158,9 @@ augroup pencil
   autocmd FileType tex          call pencil#init({'wrap': 'hard'})
 augroup END
 
-" "tmux navigator (best!)
-" let g:tmux_navigator_save_on_switch = 1
-" let g:tmux_navigator_no_mappings = 1
-
-" nnoremap <silent> h :TmuxNavigateLeft<cr>
-"
-" nnoremap <silent> j :TmuxNavigateDown<cr>
-" nnoremap <silent> k :TmuxNavigateUp<cr>
-" nnoremap <silent> l :TmuxNavigateRight<cr>
-" nnoremap <silent> \ :TmuxNavigateRight<cr>
-
 " """""""""""""""""""""""""""""""""""""""""""""""""""
 " """Keybinds
 " """""""""""""""""""""""""""""""""""""""""""""""""""
-
 
 let hlstate=0 
 nnoremap <F4> :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=1-hlstate<cr>
