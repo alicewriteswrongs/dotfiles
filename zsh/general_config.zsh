@@ -1,5 +1,3 @@
-
-
 zstyle ':completion:*' completer _complete _ignored
 zstyle ':completion:*' completions 1
 zstyle ':completion:*' menu select
@@ -35,6 +33,9 @@ PROMPT=" %{$fg[blue]%}%n%{$reset_color%} %{$fg[magenta]%}<3 %{$fg_no_bold[yellow
 #PROMPT="[%{$fg[green]%}%n%{$reset_color%}@%{$fg[blue]%}%m] %{$fg_no_bold[yellow]%}%1~ %{$reset_color%}%# " #old version!
 RPROMPT=$'%{$fg_no_bold[yellow]%}$(__git_ps1 "%s") %{$fg_no_bold[blue]%}%T%{$reset_color%}'
 #♥
+
+eval `dircolors ~/Code/dotfiles/zsh/dir_colors`
+alias ls='ls --color=auto'
 
 
 #make gnome terminal work correctly?
