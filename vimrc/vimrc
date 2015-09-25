@@ -72,10 +72,14 @@ augroup myfiletypes
     autocmd FileType ruby setlocal autoindent
     autocmd FileType ruby setlocal softtabstop=2
     autocmd FileType ruby setlocal shiftwidth=2
-    autocmd FileType ruby setlocal expandtab
     autocmd FileType ruby setlocal norelativenumber
     autocmd FileType ruby setlocal nocursorline
     autocmd BufRead,BufNewFile *.arb setfiletype ruby
+    "coffeescript
+    autocmd FileType coffee setlocal expandtab
+    autocmd FileType coffee setlocal autoindent
+    autocmd FileType coffee setlocal shiftwidth=2
+    autocmd FileType coffee setlocal softtabstop=2
 augroup END
 
 "colorscheme
