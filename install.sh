@@ -11,7 +11,22 @@ echo "we're going to make an ssh key, and install chromium."
 echo "add it to github before continuing!"
 ssh-keygen -t rsa -b 4096 -C 'alice.writes.wrongs@gmail.com'
 
-sudo apt-get -y install vim-gnome python-dev python3-dev tmux zsh build-essential cmake nodejs-legacy npm silversearcher-ag htop mpd git ruby rbenv python-pip python3-pip exuberant-ctags golang-go libreadline6-dev libyaml-dev libsqlite3-dev sqlite3 autoconf libgdbm-dev libncurses5-dev automake libtool bison pkg-config libffi-dev libpq-dev virtualbox vagrant mupdf python-virtualenv
+#userland stuff
+sudo apt-get -y install vim-gnome tmux zsh nodejs-legacy npm silversearcher-ag htop mpd git exuberant-ctags virtualbox vagrant mupdf 
+
+#go stuff
+sudo apt-get -y install golang-go
+
+#ruby things
+sudo apt-get -y install ruby rbenv
+
+#python things
+sudo apt-get -y install python3-dev python-pip python3-pip python-virtualenv python-setuptools python3-setuptools
+
+#libraries and build dependencies for C stuff
+sudo apt-get -y install build-essential autoconf libboost1.55-dev-all libboost1.55-dev libboost1.55-tools-dev scons libgdbm libgdbm-dev libncurses5 libncurses5-dev automake libtool bison pkg-config cmake libreadline6 libreadline6-dev libyaml libyaml-dev libsqlite3 libsqlite3-dev sqlite3 libffi libffi-dev libpq libpq-dev
+
+#gpg stuff
 sudo npm install -g keybase
 
 echo "pull in git submodules"
