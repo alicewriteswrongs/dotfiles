@@ -51,7 +51,7 @@
     },
     "poll":
     {
-        "interval": "60"
+        "interval": "0"
     },
     "attachment":
     {
