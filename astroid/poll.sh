@@ -1,0 +1,3 @@
+#!/bin/bash
+
+notmuch new
