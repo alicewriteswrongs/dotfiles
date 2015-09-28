@@ -12,7 +12,7 @@ echo "add it to github before continuing!"
 ssh-keygen -t rsa -b 4096 -C 'alice.writes.wrongs@gmail.com'
 
 #userland stuff
-sudo apt-get -y install vim-gnome tmux zsh nodejs-legacy npm silversearcher-ag htop mpd git exuberant-ctags virtualbox vagrant mupdf 
+sudo apt-get -y install vim-gnome tmux zsh nodejs-legacy npm silversearcher-ag htop mpd git exuberant-ctags virtualbox vagrant mupdf transmission-daemon
 
 #go stuff
 sudo apt-get -y install golang-go
