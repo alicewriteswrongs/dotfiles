@@ -73,7 +73,7 @@ augroup myfiletypes
     autocmd FileType ruby setlocal softtabstop=2
     autocmd FileType ruby setlocal shiftwidth=2
     autocmd FileType ruby setlocal norelativenumber
-    autocmd FileType ruby setlocal nocursorline
+    " autocmd FileType ruby setlocal nocursorline
     autocmd BufRead,BufNewFile *.arb setfiletype ruby
     "coffeescript
     autocmd FileType coffee setlocal expandtab
