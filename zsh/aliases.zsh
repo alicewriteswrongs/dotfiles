@@ -2,7 +2,7 @@ alias vprov='vagrant provision'
 alias wipc='git commit -a -m wip'
 alias shellsync='cd ~/Code/shellscripts && git pull origin master && git commit -a && git push origin master'
 alias shellscripts='cd ~/Code/shellscripts && vim'
-alias vssh='vagrant up && vagrant ssh'
+alias vssh='vagrant ssh'
 alias vreboot='vagrant halt && vagrant up'
 alias vreboothard='vagrant destroy && vagrant up'
 alias vstatus='vagrant global-status'
@@ -67,7 +67,7 @@ alias -g G='| grep'
 alias howbig='du -hc | tail -n 1'
 alias i3config='vim ~/Code/dotfiles/i3/i3config'
 alias imac='ssh benpote@cumm005-0b01-dhcp-062.bu.edu'
-alias la='ls -alh'			#show hidden files and attribute
+alias la='ls -alhF'			#show hidden files and attribute
 alias less='less -M'
 alias ls='ls --color=auto'  #colorize ls output
 alias mkdir='mkdir -p -v'   #makes a directory and it's hierarchy, also verbose
