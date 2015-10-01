@@ -1,4 +1,5 @@
 alias vprov='vagrant provision'
+alias gamend='git commit --amend'
 alias wipc='git commit -a -m wip'
 alias shellsync='cd ~/Code/shellscripts && git pull origin master && git commit -a && git push origin master'
 alias shellscripts='cd ~/Code/shellscripts && vim'
