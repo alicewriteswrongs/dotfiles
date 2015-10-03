@@ -8,6 +8,8 @@ the setup is dependent on this, for sourcing modular vimrc and zshrc files.
 
 ------------------
 
+###`install.sh`
+
 ### Included herein:
 
 Everything is in it's own folder now. `vimrc` and `zshrc` are modularized
