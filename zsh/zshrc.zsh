@@ -1,3 +1,6 @@
+source ~/Code/dotfiles/zsh/antigen/antigen.zsh
+
+
 zstyle ':completion:*' completer _complete _ignored
 zstyle ':completion:*' completions 1
 zstyle ':completion:*' menu select
@@ -35,8 +38,6 @@ RPROMPT=$'%{$fg_no_bold[yellow]%}$(__git_ps1 "%s") %{$fg_no_bold[blue]%}%T%{$res
 #♥
 
 eval `dircolors ~/Code/dotfiles/zsh/dir_colors`
-alias ls='ls --color=auto'
-
 
 #make gnome terminal work correctly?
 export TERM=screen-256color-bce

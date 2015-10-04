@@ -1,4 +1,5 @@
 alias vprov='vagrant provision'
+alias ls='ls --color=auto'
 alias vprune='vagrant global-status --prune'
 alias gamend='git commit --amend'
 alias wipc='git commit -a -m wip'
