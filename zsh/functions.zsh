@@ -11,11 +11,12 @@ function gs() {
 zle -N gs
 bindkey '^b' gs
 
-function wrebase() {
-    git commit -a -m 'wip'
+function rebase() {
+    git commit -a -m 'WIP'
     branch=$(git rev-parse --abbrev-ref HEAD)
     git checkout master
     git pull origin master
     git checkout $branch
     git rebase -i master
 }
+
