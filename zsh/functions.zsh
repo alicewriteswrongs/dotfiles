@@ -3,5 +3,6 @@ function selectbranch() {
 }
 
 function gs {
+    git commit -a -m "WIP"
     git checkout $(selectbranch)
 }
