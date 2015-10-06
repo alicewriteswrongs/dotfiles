@@ -11,7 +11,7 @@ function gs() { # use fzf to pick branches
 zle -N gs
 bindkey '^b' gs
 
-function prequest() {
+function pullrequest() {
     branch=$(git rev-parse --abbrev-ref HEAD)
     if [[ $1 == 'f' ]]; then
         echo "updating pull request for "$branch
@@ -48,7 +48,7 @@ function mergepr() {
     branch=$(git rev-parse --abbrev-ref HEAD)
     echo "merging "$branch" into master"
     rebase
-    prequest f
+    pullrequest f
     git checkout master
     git merge $branch
     git push origin master
