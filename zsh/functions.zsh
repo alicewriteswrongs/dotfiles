@@ -43,3 +43,19 @@ function rebase() {
     git checkout $branch
     git rebase -i master
 }
+
+function mergepr() {
+    branch=$(git rev-parse --abbrev-ref HEAD)
+    echo "merging "$branch" into master"
+    rebase
+    prequest f
+    git checkout master
+    git merge $branch
+    git push origin master
+    if [[ $1 == 'd' ]]; then
+        gbnuke $branch
+    fi
+}
+
+
+
