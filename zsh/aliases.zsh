@@ -1,4 +1,5 @@
 alias vprov='vagrant provision'
+alias gbranch='git checkout -b'
 alias zfunc='vim ~/Code/dotfiles/zsh/functions.zsh'
 alias ls='ls --color=auto'
 alias vprune='vagrant global-status --prune'
