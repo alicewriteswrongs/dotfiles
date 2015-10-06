@@ -11,6 +11,17 @@ function gs() { # use fzf to pick branches
 zle -N gs
 bindkey '^b' gs
 
+function prequest() {
+    branch=$(git rev-parse --abbrev-ref HEAD)
+    if [[ $1 == 'f' ]]; then
+        echo "updating pull request for "$branch
+        git push origin $branch -f
+    else
+        echo "creating pull request for "$branch
+        git push origin $branch
+    fi
+}
+
 function gbnuke() { # nuke the current branch or $1
     if [[ $1 ]]; then
         git checkout master
