@@ -1,4 +1,5 @@
 alias vprov='vagrant provision'
+alias zfunc='vim ~/Code/dotfiles/zsh/functions.zsh'
 alias ls='ls --color=auto'
 alias vprune='vagrant global-status --prune'
 alias gamend='git commit --amend'
