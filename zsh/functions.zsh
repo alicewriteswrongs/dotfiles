@@ -23,15 +23,17 @@ function pullrequest() {
 }
 
 function gbnuke() { # nuke the current branch or $1
-    if [[ $1 ]]; then
+    if [[ $1 && $1 != 'master' ]]; then
         git checkout master
         git branch -D $1
         git push origin :$1
     else
         branch=$(git rev-parse --abbrev-ref HEAD)
-        git checkout master
-        git branch -D $branch
-        git push origin :$branch
+        if [[ $branch != 'master' ]]; then
+            git checkout master
+            git branch -D $branch
+            git push origin :$branch
+        fi
     fi
 }
 
@@ -57,5 +59,8 @@ function mergepr() {
     fi
 }
 
-
-
+function rebdiff() { # rebase and reload diff
+    git commit -a -m 'WIP'
+    git rebase master
+    git diff master
+}
