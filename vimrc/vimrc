@@ -81,13 +81,16 @@ augroup myfiletypes
     autocmd FileType coffee setlocal autoindent
     autocmd FileType coffee setlocal shiftwidth=2
     autocmd FileType coffee setlocal softtabstop=2
+    "html
     autocmd FileType html setlocal expandtab
     autocmd FileType html setlocal autoindent
     autocmd FileType html setlocal shiftwidth=2
     autocmd FileType html setlocal softtabstop=2
-augroup END
-
-
+    "scss
+    autocmd FileType scss setlocal expandtab
+    autocmd FileType scss setlocal autoindent
+    autocmd FileType scss setlocal shiftwidth=2
+    autocmd FileType scss setlocal softtabstop=2
 augroup END
 
 "colorscheme
