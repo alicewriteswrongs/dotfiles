@@ -46,7 +46,7 @@ function rebase() {
     git rebase -i master
 }
 
-function mergepr() {
+function mergepr() { # merge a branch into master and push
     branch=$(git rev-parse --abbrev-ref HEAD)
     echo "merging "$branch" into master"
     rebase
