@@ -56,6 +56,3 @@ function mergepr() {
         gbnuke $branch
     fi
 }
-
-
-
