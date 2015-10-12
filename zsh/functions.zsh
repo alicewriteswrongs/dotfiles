@@ -11,6 +11,19 @@ function gs() { # use fzf to pick branches
 zle -N gs
 bindkey '^b' gs
 
+function crun() {
+    if [[ ! $1 ]]; then
+        echo "no target supplied, just building"
+        make
+    else
+        if [[ -f $1 ]]; then
+            rm $1
+        fi
+        make $1
+        ./$1
+    fi
+}
+
 function pullrequest() {
     branch=$(git rev-parse --abbrev-ref HEAD)
     if [[ $1 == 'f' ]]; then
