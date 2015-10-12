@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo "you can run this, or use it as a setup guide"
-echo "the dotfiles repo should already be cloned in ~/Code/dotfiles"
+echo "the dotfiles repo should already be cloned in ~/dotfiles"
 echo "install packages"
 echo "this will take a while"
 sudo apt-get update
@@ -30,19 +30,19 @@ sudo apt-get -y install build-essential autoconf libboost1.55-dev-all libboost1.
 sudo npm install -g keybase
 
 echo "pull in git submodules"
-cd ~/Code/dotfiles && git submodule init && git submodule update
+cd ~/dotfiles && git submodule init && git submodule update
 
 echo "change shell to zsh"
 chsh -s "$(which zsh)"
 
 echo "install solarized colors for gnome-terminal"
-cd ~/Code/dotfiles/extras/gnome-terminal-colors-solarized/ && ./install.sh
+cd ~/dotfiles/extras/gnome-terminal-colors-solarized/ && ./install.sh
 
 echo "install fzf"
-cd ~/Code/dotfiles/extras/fzf && ./install
+cd ~/dotfiles/extras/fzf && ./install
 
 echo "install fonts"
-cd ~/Code/dotfiles/extras/fonts && ./install.sh
+cd ~/dotfiles/extras/fonts && ./install.sh
 
 echo "get rvm!"
 gpg --keyserver hkp://pgp.mit.edu --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
@@ -53,11 +53,11 @@ rm ~/.vimrc
 rm ~/.zshrc
 rm ~/.zshenv
 rm ~/.gitconfig
-ln -s ~/Code/dotfiles/vimrc/vimrc ~/.vimrc
-ln -s ~/Code/dotfiles/zsh/zshrc.zsh ~/.zshrc
-ln -s ~/Code/dotfiles/zsh/zshenv.zsh ~/.zshenv
-ln -s ~/Code/dotfiles/tmux/tmux.conf ~/.tmux.conf
-ln -s ~/Code/dotfiles/git/.gitconfig ~/.gitconfig
+ln -s ~/dotfiles/vimrc/vimrc ~/.vimrc
+ln -s ~/dotfiles/zsh/zshrc.zsh ~/.zshrc
+ln -s ~/dotfiles/zsh/zshenv.zsh ~/.zshenv
+ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
+ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
 
 echo "get vim plugins"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
