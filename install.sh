@@ -61,8 +61,8 @@ ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
 
 echo "get vim plugins"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-echo "USER INTERVENTION: run 'PluginInstall'" && 
-vim && python ~/.vim/bundle/youcompleteme/install.py
+echo "install vim pluings"
+vim +PluginInstall +qall && python ~/.vim/bundle/youcompleteme/install.py
 
 source ~/.zshrc
 
