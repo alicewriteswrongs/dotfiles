@@ -1,4 +1,4 @@
-source ~/Code/dotfiles/zsh/antigen/antigen.zsh
+source ~/dotfiles/zsh/antigen/antigen.zsh
 
 
 zstyle ':completion:*' completer _complete _ignored
@@ -28,7 +28,7 @@ setopt completealiases
 autoload -U colors && colors
 
 setopt prompt_subst
-. ~/Code/dotfiles/zsh/script/git-prompt.sh
+. ~/dotfiles/zsh/script/git-prompt.sh
 
 ## MY PROMPT
 ## looks like alice <3 dir         current_time
@@ -37,7 +37,7 @@ PROMPT=" %{$fg[blue]%}%n%{$reset_color%} %{$fg[magenta]%}<3 %{$fg_no_bold[yellow
 RPROMPT=$'%{$fg_no_bold[yellow]%}$(__git_ps1 "%s") %{$fg_no_bold[blue]%}%T%{$reset_color%}'
 #♥
 
-eval `dircolors ~/Code/dotfiles/zsh/dir_colors`
+eval `dircolors ~/dotfiles/zsh/dir_colors`
 
 #make gnome terminal work correctly?
 export TERM=screen-256color-bce
@@ -46,8 +46,8 @@ chpwd() {
     ls -lrthG
 }
 
-source ~/Code/dotfiles/zsh/aliases.zsh
-source ~/Code/dotfiles/zsh/functions.zsh
+source ~/dotfiles/zsh/aliases.zsh
+source ~/dotfiles/zsh/functions.zsh
 
 typeset -A key
 
@@ -91,7 +91,7 @@ if (( ${+terminfo[smkx]} )) && (( ${+terminfo[rmkx]} )); then
     zle -N zle-line-finish
 fi
 
-[ -f ~/Code/dotfiles/zsh/fzf.zsh ] && source ~/Code/dotfiles/zsh/fzf.zsh
+[ -f ~/dotfiles/zsh/fzf.zsh ] && source ~/dotfiles/zsh/fzf.zsh
 export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
 export PATH="$HOME/root/bin:$PATH" # for user libs
 fpath=(~/.zsh $fpath)

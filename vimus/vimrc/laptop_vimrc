@@ -1,6 +1,6 @@
-source ~/Code/dotfiles/vimrc/vundle_laptop.vimrc
-source ~/Code/dotfiles/vimrc/gen_config.vimrc
-source ~/Code/dotfiles/vimrc/relative_number.vimrc
-source ~/Code/dotfiles/vimrc/laptop_plugin_config.vimrc
-source ~/Code/dotfiles/vimrc/common_keybinds.vimrc
-source ~/Code/dotfiles/vimrc/laptop_plugin_keybinds.vimrc
+source ~/dotfiles/vimrc/vundle_laptop.vimrc
+source ~/dotfiles/vimrc/gen_config.vimrc
+source ~/dotfiles/vimrc/relative_number.vimrc
+source ~/dotfiles/vimrc/laptop_plugin_config.vimrc
+source ~/dotfiles/vimrc/common_keybinds.vimrc
+source ~/dotfiles/vimrc/laptop_plugin_keybinds.vimrc

@@ -2,7 +2,7 @@
 
 For the syncing of the dotfiles. For the sake of consistency try to always clone in:
 
-`~/Code/dotfiles`
+`~/dotfiles`
 
 the setup is dependent on this, for sourcing modular vimrc and zshrc files.
 
@@ -33,6 +33,6 @@ and then run `PluginInstall` within Vim.
 
 Everything else should just be a symlink away! Remember that's:
 
-    ln -s ~/Code/dotfiles/blahprogram/blahrc ~/.blahrc
+    ln -s ~/dotfiles/blahprogram/blahrc ~/.blahrc
 
 Happy configuring!
