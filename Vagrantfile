@@ -14,7 +14,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :shell, privileged: false, inline: <<-SCRIPT
     cd /vagrant
     mkdir ~/Code
-    cp -R . ~/Code/dotfiles
+    cp -R . ~/dotfiles
   SCRIPT
 
 end
