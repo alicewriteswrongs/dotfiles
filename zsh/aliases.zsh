@@ -15,7 +15,7 @@ alias vstatus='vagrant global-status'
 alias glog='git log --pretty=format:"%h - %an - %ar - %s" -10'
 alias lpcpush='git push lpc LPC_edits:master'
 alias abcdehighqual='abcde -o ogg:"-q 7"' #rips at ogg vorbis quality level 7
-alias gdmaster='git diff master'
+alias gdmaster='git fetch origin && git diff origin/master'
 alias vhalt='vagrant halt'
 alias gash='git stash'
 alias gsta='git stash apply'
