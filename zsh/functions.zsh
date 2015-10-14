@@ -71,6 +71,6 @@ function mergepr() { # merge a branch into master and push
 
 function rebdiff() { # rebase and reload diff
     git commit -a -m 'WIP'
-    git rebase master
-    git diff master
+    git rebase origin/master
+    git diff origin/master
 }
