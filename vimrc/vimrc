@@ -38,6 +38,7 @@ Plugin 'rust-lang/rust.vim' "some rust stuff
 Plugin 'rking/ag.vim' "wrapper for ag
 Plugin 'valloric/youcompleteme' "the best completion ever
 Plugin 'bling/vim-airline'
+" Plugin 'lokaltog/vim-powerline'
 " Plugin 'vim-scripts/Terminus'
 
 call vundle#end()
@@ -98,6 +99,9 @@ colorscheme solarized
 set background=light 
 syntax on
 
+"powerline
+" let g:Powerline_symbols = 'fancy'
+
 "random options
 let ruby_operators=1
 let ruby_space_errors=1
@@ -124,6 +128,7 @@ set ruler
 set spelllang=en_us "spellcheck is in US english
 set grepprg=grep\ -nH\ $*
 set laststatus=2
+set noshowmode
 set ttyfast
 set mouse=a
 set ttymouse=sgr
