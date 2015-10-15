@@ -7,10 +7,6 @@ echo "this will take a while"
 sudo apt-get update
 sudo apt-get -y upgrade
 
-echo "we're going to make an ssh key, and install chromium."
-echo "add it to github before continuing!"
-ssh-keygen -t rsa -b 4096 -C 'alice.writes.wrongs@gmail.com'
-
 #userland stuff
 sudo apt-get -y install vim-gnome tmux zsh nodejs-legacy npm silversearcher-ag htop mpd git exuberant-ctags virtualbox vagrant mupdf transmission-daemon redshift-gtk
 
@@ -66,14 +62,7 @@ vim +PluginInstall +qall && python ~/.vim/bundle/youcompleteme/install.py
 
 source ~/.zshrc
 
-echo ""
-echo "generate an ssh keypair with"
-echo ""
-echo " ssh-keygen -t rsa -b 4096 -C 'email@domain.org'"
-echo ""
-echo "remember to add it to github!"
-echo ""
-echo "also, log in to keybase!"
+echo "now, log in to keybase!"
 echo ""
 echo "gnome-terminal also needs some manual config :("
 echo ""
