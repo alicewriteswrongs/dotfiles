@@ -137,6 +137,9 @@ set noesckeys
 set timeout
 set timeoutlen=2000
 set ttimeoutlen=2000
+
+exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
+set list!
 " highlight StatusLine ctermfg=blue ctermbg=yellow
 if executable('ag')
     set grepprg=ag\ --nogroup\ --nocolor
@@ -185,7 +188,6 @@ augroup END
 
 let hlstate=0 
 nnoremap <F4> :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=1-hlstate<cr>
-exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
 nnoremap <Leader>ws :set list!<CR> 
 imap <C-s> <esc>:w<cr> 
 nnoremap <C-s> <esc>:w<cr>
