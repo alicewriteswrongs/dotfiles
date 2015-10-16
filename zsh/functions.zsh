@@ -67,14 +67,16 @@ function rebase {
 
 function mergepr() { # merge a branch into master and push
     branch=$(git rev-parse --abbrev-ref HEAD)
-    echo "merging "$branch" into master"
-    rebase
-    pullrequest f
-    git checkout master
-    git merge $branch
-    git push origin master
-    if [[ $1 == 'd' ]]; then
-        gbnuke $branch
+    if [[ $branch != 'master' ]]; then
+        echo "merging "$branch" into master"
+        rebase
+        pullrequest f
+        git checkout master
+        git merge $branch
+        git push origin master
+        if [[ $1 == 'd' ]]; then
+            gbnuke $branch
+        fi
     fi
 }
 
