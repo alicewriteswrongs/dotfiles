@@ -1,4 +1,5 @@
 alias vprov='vagrant provision'
+alias tmptest='mkdir /tmp/test && cd /tmp/test'
 alias ca='cd ~/ownCloud/Code'
 alias gbranch='git checkout -b'
 alias zfunc='vim ~/dotfiles/zsh/functions.zsh'
