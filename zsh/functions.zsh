@@ -33,12 +33,14 @@ function crun() {
 
 function pullrequest() {
     branch=$(git rev-parse --abbrev-ref HEAD)
-    if [[ $1 == 'f' ]]; then
-        echo "updating pull request for "$branch
-        git push origin $branch -f
-    else
-        echo "creating pull request for "$branch
-        git push origin $branch
+    if [[ $branch != 'master' ]]; then 
+        if [[ $1 == 'f' ]]; then
+            echo "updating pull request for "$branch
+            git push origin $branch -f
+        else
+            echo "creating pull request for "$branch
+            git push origin $branch
+        fi
     fi
 }
 
