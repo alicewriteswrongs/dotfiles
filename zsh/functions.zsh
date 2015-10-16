@@ -15,6 +15,13 @@ function crun() {
     if [[ ! $1 ]]; then
         echo "no target supplied, just building"
         make
+    elif [[ -f $1 && $1 = *.c ]]; then
+        target=$(echo $1 | sed 's/\(.*\)\..*/\1/')
+        if [[ -f $target ]]; then
+            rm $target
+        fi
+        make $target
+        ./$target
     else
         if [[ -f $1 ]]; then
             rm $1
