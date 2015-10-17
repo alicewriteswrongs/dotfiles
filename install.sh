@@ -8,7 +8,7 @@ sudo apt-get update
 sudo apt-get -y upgrade
 
 #userland stuff
-sudo apt-get -y install vim-gnome tmux zsh nodejs-legacy npm silversearcher-ag htop mpd git exuberant-ctags virtualbox vagrant mupdf transmission-daemon redshift-gtk
+sudo apt-get -y install vim-gnome tmux zsh nodejs-legacy npm silversearcher-ag htop mpd git exuberant-ctags virtualbox vagrant mupdf transmission-daemon redshift-gtk scrot
 
 #go stuff
 sudo apt-get -y install golang-go
