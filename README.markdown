@@ -20,6 +20,8 @@ Do something like:
 ```
 sudo apt-get install chromium
 ssh-keygen -t ecdsa -b 521 -C 'your_email@foo.bar'
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ecdsa
 ```
 
 then add your shiny new ssh key to Github, and do:
