@@ -34,6 +34,7 @@ function crun() {
 function pullrequest() {
     branch=$(git rev-parse --abbrev-ref HEAD)
     if [[ $branch != 'master' ]]; then 
+        rebase
         if [[ $1 == 'f' ]]; then
             echo "updating pull request for "$branch
             git push origin $branch -f
