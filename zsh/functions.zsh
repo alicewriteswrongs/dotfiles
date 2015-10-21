@@ -11,6 +11,14 @@ function gs() { # use fzf to pick branches
 zle -N gs
 bindkey '^b' gs
 
+function gd() {
+    if [[ ! $1 ]]; then
+        git diff $1
+    else
+        git diff $(selectbranch)
+    fi
+}
+
 function crun() {
     if [[ ! $1 ]]; then
         echo "no target supplied, just building"
