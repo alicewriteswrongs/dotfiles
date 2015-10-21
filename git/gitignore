@@ -5,3 +5,4 @@ env
 *.bin
 reponotes
 .vagrant/*
+common_words.txt
