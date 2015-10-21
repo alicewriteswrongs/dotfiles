@@ -12,7 +12,7 @@ zle -N gs
 bindkey '^b' gs
 
 function gd() {
-    if [[ ! $1 ]]; then
+    if [[ $1 ]]; then
         git diff $1
     else
         git diff $(selectbranch)
