@@ -2,6 +2,10 @@ function selectbranch() {
     git branch | fzf
 }
 
+function vdo() {
+    vagrant ssh -c '$1'
+}
+
 function gs() { # use fzf to pick branches
     git commit -a -m "WIP"
     git checkout $(selectbranch)
