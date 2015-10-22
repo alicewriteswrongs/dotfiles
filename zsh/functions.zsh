@@ -54,6 +54,8 @@ function pullrequest() {
             echo "creating pull request for "$branch
             git push origin $branch
         fi
+    else
+        echo "not on master doofus!"
     fi
 }
 
@@ -82,9 +84,9 @@ function mergepr() { # merge a branch into master and push
     branch=$(git rev-parse --abbrev-ref HEAD)
     if [[ $branch != 'master' ]]; then
         echo "merging "$branch" into master"
-        rebase
         pullrequest f
         git checkout master
+        git pull origin master
         git merge $branch
         git push origin master
         if [[ $1 == 'd' ]]; then
