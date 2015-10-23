@@ -1,3 +1,5 @@
+# fzf functions
+
 function selectbranch() {
     git branch | fzf
 }
@@ -18,6 +20,20 @@ function find_within_files() {
 
 zle -N find_within_files
 bindkey '^f' find_within_files
+
+function fda() {
+    local dir
+    dir=$(find ${1:-.} -type d 2> /dev/null | fzf +m) && cd "$dir"
+}
+
+fkill() {
+  pid=$(ps -ef | sed 1d | fzf -m | awk '{print $2}')
+
+  if [ "x$pid" != "x" ]
+  then
+    kill -${1:-9} $pid
+  fi
+}
 
 function vdo() {
     vagrant ssh -c '$1'
