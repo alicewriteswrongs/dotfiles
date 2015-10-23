@@ -2,10 +2,6 @@ function selectbranch() {
     git branch | fzf
 }
 
-function vdo() {
-    vagrant ssh -c '$1'
-}
-
 function gs() { # use fzf to pick branches
     git commit -a -m "WIP"
     git checkout $(selectbranch)
@@ -14,6 +10,18 @@ function gs() { # use fzf to pick branches
 
 zle -N gs
 bindkey '^b' gs
+
+function find_within_files() {
+    ag --nobreak --noheading . | fzf
+    zle redisplay
+}
+
+zle -N find_within_files
+bindkey '^f' find_within_files
+
+function vdo() {
+    vagrant ssh -c '$1'
+}
 
 function gd() {
     if [[ $1 ]]; then
@@ -100,3 +108,4 @@ function rebdiff() { # rebase and reload diff
     git rebase origin/master
     git diff origin/master
 }
+
