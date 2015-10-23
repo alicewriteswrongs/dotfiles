@@ -42,6 +42,13 @@ fcommit() {
   git checkout $(echo "$commit" | sed "s/ .*//")
 }
 
+fhash() {
+  local commits commit
+  commits=$(git log --color=always --pretty=oneline --abbrev-commit --reverse) &&
+  commit=$(echo "$commits" | fzf --tac +s +m -e --ansi --reverse) &&
+  echo -n $(echo "$commit" | sed "s/ .*//")
+}
+
 function vdo() {
     vagrant ssh -c '$1'
 }
