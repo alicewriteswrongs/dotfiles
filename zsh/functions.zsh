@@ -1,10 +1,10 @@
 # fzf functions
 
 function selectbranch() {
-    git branch | fzf
+    git branch | fzf-tmux
 }
 
-function gs() { # use fzf to pick branches
+function gs() { # use fzf-tmux to pick branches
     git commit -a -m "WIP"
     git checkout $(selectbranch)
     zle redisplay
@@ -14,7 +14,7 @@ zle -N gs
 bindkey '^b' gs
 
 function find_within_files() {
-    ag --nobreak --noheading . | fzf
+    ag --nobreak --noheading . | fzf-tmux
     zle redisplay
 }
 
@@ -23,11 +23,11 @@ bindkey '^f' find_within_files
 
 function fda() {
     local dir
-    dir=$(find ${1:-.} -type d 2> /dev/null | fzf +m) && cd "$dir"
+    dir=$(find ${1:-.} -type d 2> /dev/null | fzf-tmux +m) && cd "$dir"
 }
 
 fkill() {
-  pid=$(ps -ef | sed 1d | fzf -m | awk '{print $2}')
+  pid=$(ps -ef | sed 1d | fzf-tmux -m | awk '{print $2}')
 
   if [ "x$pid" != "x" ]
   then
@@ -38,14 +38,14 @@ fkill() {
 fcommit() {
   local commits commit
   commits=$(git log --pretty=oneline --abbrev-commit --reverse) &&
-  commit=$(echo "$commits" | fzf --tac +s +m -e) &&
+  commit=$(echo "$commits" | fzf-tmux --tac +s +m -e) &&
   git checkout $(echo "$commit" | sed "s/ .*//")
 }
 
 fhash() {
   local commits commit
   commits=$(git log --color=always --pretty=oneline --abbrev-commit --reverse) &&
-  commit=$(echo "$commits" | fzf --tac +s +m -e --ansi --reverse) &&
+  commit=$(echo "$commits" | fzf-tmux --tac +s +m -e --ansi --reverse) &&
   echo -n $(echo "$commit" | sed "s/ .*//")
 }
 
