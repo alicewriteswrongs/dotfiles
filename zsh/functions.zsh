@@ -1,8 +1,10 @@
+# fzf functions
+
 function selectbranch() {
-    git branch | fzf
+    git branch | fzf-tmux
 }
 
-function gs() { # use fzf to pick branches
+function gs() { # use fzf-tmux to pick branches
     git commit -a -m "WIP"
     git checkout $(selectbranch)
     zle redisplay
@@ -10,6 +12,54 @@ function gs() { # use fzf to pick branches
 
 zle -N gs
 bindkey '^b' gs
+
+function find_within_files() {
+    ag --nobreak --noheading . | fzf-tmux
+    zle redisplay
+}
+
+zle -N find_within_files
+bindkey '^f' find_within_files
+
+function fda() {
+    local dir
+    dir=$(find ${1:-.} -type d 2> /dev/null | fzf-tmux +m) && cd "$dir"
+}
+
+fkill() {
+  pid=$(ps -ef | sed 1d | fzf-tmux -m | awk '{print $2}')
+
+  if [ "x$pid" != "x" ]
+  then
+    kill -${1:-9} $pid
+  fi
+}
+
+fcommit() {
+  local commits commit
+  commits=$(git log --pretty=oneline --abbrev-commit --reverse) &&
+  commit=$(echo "$commits" | fzf-tmux --tac +s +m -e) &&
+  git checkout $(echo "$commit" | sed "s/ .*//")
+}
+
+fhash() {
+  local commits commit
+  commits=$(git log --color=always --pretty=oneline --abbrev-commit --reverse) &&
+  commit=$(echo "$commits" | fzf-tmux --tac +s +m -e --ansi --reverse) &&
+  echo -n $(echo "$commit" | sed "s/ .*//")
+}
+
+function vdo() {
+    vagrant ssh -c '$1'
+}
+
+function gd() {
+    if [[ $1 ]]; then
+        git diff $1
+    else
+        git diff $(selectbranch)
+    fi
+}
 
 function crun() {
     if [[ ! $1 ]]; then
@@ -34,6 +84,7 @@ function crun() {
 function pullrequest() {
     branch=$(git rev-parse --abbrev-ref HEAD)
     if [[ $branch != 'master' ]]; then 
+        rebase
         if [[ $1 == 'f' ]]; then
             echo "updating pull request for "$branch
             git push origin $branch -f
@@ -41,6 +92,8 @@ function pullrequest() {
             echo "creating pull request for "$branch
             git push origin $branch
         fi
+    else
+        echo "not on master doofus!"
     fi
 }
 
@@ -69,9 +122,9 @@ function mergepr() { # merge a branch into master and push
     branch=$(git rev-parse --abbrev-ref HEAD)
     if [[ $branch != 'master' ]]; then
         echo "merging "$branch" into master"
-        rebase
         pullrequest f
         git checkout master
+        git pull origin master
         git merge $branch
         git push origin master
         if [[ $1 == 'd' ]]; then
@@ -85,3 +138,4 @@ function rebdiff() { # rebase and reload diff
     git rebase origin/master
     git diff origin/master
 }
+
