@@ -1,23 +1,37 @@
 #!/bin/sh
 
-echo "you can run this, or use it as a setup guide"
-echo "the dotfiles repo should already be cloned in ~/dotfiles"
-echo "install packages"
-echo "this will take a while"
-sudo apt-get update
-sudo apt-get -y upgrade
+function help () {
+    echo "you can run this, or use it as a setup guide"
+    echo "the dotfiles repo should already be cloned in ~/dotfiles"
+    echo "install packages"
+    echo "this will take a while"
+}
 
-#userland stuff
+function update() {
+    sudo apt-get update
+    sudo apt-get -y upgrade
+}
+
+## installation functions
+## each installs a group of packages, then does any needed manual setup
+
+function install 
 sudo apt-get -y install vim-gnome tmux zsh nodejs-legacy npm silversearcher-ag htop mpd git exuberant-ctags virtualbox vagrant mupdf transmission-daemon redshift-gtk scrot
 
 #go stuff
-sudo apt-get -y install golang-go
+function install_go() {
+    sudo apt-get -y install golang-go
+}
 
 #ruby things
-sudo apt-get -y install ruby rbenv
+function install_ruby() {
+    sudo apt-get -y install ruby rbenv
+}
 
 #python things
-sudo apt-get -y install python3-dev python-pip python3-pip python-virtualenv python-setuptools python3-setuptools
+function install_python() {
+    sudo apt-get -y install python3-dev python-pip python3-pip python-virtualenv python-setuptools python3-setuptools
+}
 
 #libraries and build dependencies for C stuff
 sudo apt-get -y install build-essential autoconf libboost1.55-dev-all libboost1.55-dev libboost1.55-tools-dev scons libgdbm libgdbm-dev libncurses5 libncurses5-dev automake libtool bison pkg-config cmake libreadline6 libreadline6-dev libyaml libyaml-dev libsqlite3 libsqlite3-dev sqlite3 libffi libffi-dev libpq libpq-dev notmuch libnotmuch3 libnotmuch-dev libglibmm-2.4-dev libgtkmm-3.0-1 libgtkmm-3.0-dev libgmime-2.6-0 libgmime-2.6-dev libwebkitgtk-3.0-0 libwebkitgtk-3.0-dev libwebkit-dev g++
