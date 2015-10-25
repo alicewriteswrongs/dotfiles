@@ -39,6 +39,12 @@ function install_tools() {
     sudo apt-get -y install vim-gnome tmux zsh nodejs-legacy npm silversearcher-ag htop mpd git exuberant-ctags virtualbox vagrant mupdf transmission-daemon redshift-gtk scrot
 }
 
+function install_vagrant() {
+    sudo apt-get install virtualbox vagrant nfs-common nfs-kernel-server portmap 
+    sudo service rpcbind start
+    sudo service nfs-kernel-server start
+}
+
 #go stuff
 function install_go() {
     sudo apt-get -y install golang-go
@@ -69,7 +75,6 @@ function install_security_tools() {
 }
 
 function symlink_dotfiles() { # does a bit more, besides!
-
     echo "pull in git submodules"
     cd ~/dotfiles && git submodule init && git submodule update
 
@@ -102,6 +107,7 @@ function symlink_dotfiles() { # does a bit more, besides!
     vim +PluginInstall +qall && python ~/.vim/bundle/youcompleteme/install.py
 
     source ~/.zshrc
+}
 
 echo "now, log in to keybase!"
 echo ""
