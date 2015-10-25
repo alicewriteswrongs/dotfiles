@@ -3,8 +3,17 @@
 function help () {
     echo "you can run this, or use it as a setup guide"
     echo "the dotfiles repo should already be cloned in ~/dotfiles"
-    echo "install packages"
-    echo "this will take a while"
+    echo ""
+    echo "I've defined a bunch of package groups"
+    echo "after you source the file you can do"
+    echo "\tinstall_tools"
+    echo "\tinstall_python"
+    echo "\tinstall_ruby"
+    echo "\tinstall_go"
+    echo "\tinstall_c_tools"
+    echo "\nthere's also tools for getting set up:"
+    echo "\tgenerate_ssh_key"
+    echo "\tsymlink_dotfiles"
 }
 
 function update() {
@@ -15,8 +24,20 @@ function update() {
 ## installation functions
 ## each installs a group of packages, then does any needed manual setup
 
-function install 
-sudo apt-get -y install vim-gnome tmux zsh nodejs-legacy npm silversearcher-ag htop mpd git exuberant-ctags virtualbox vagrant mupdf transmission-daemon redshift-gtk scrot
+function generate_ssh_key() {
+    if [[ $1 ]]; then
+        ssh-keygen -t ecdsa -b 521 -C $1
+        eval "$(ssh-agent -s)"
+        ssh-add ~/.ssh/id_ecdsa
+    else
+        echo "provide an email to use"
+    fi
+}
+
+#common userspace tools
+function install_tools() {
+    sudo apt-get -y install vim-gnome tmux zsh nodejs-legacy npm silversearcher-ag htop mpd git exuberant-ctags virtualbox vagrant mupdf transmission-daemon redshift-gtk scrot
+}
 
 #go stuff
 function install_go() {
@@ -25,6 +46,9 @@ function install_go() {
 
 #ruby things
 function install_ruby() {
+    gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+    gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+    \curl -sSL https://get.rvm.io | bash -s stable
     sudo apt-get -y install ruby rbenv
 }
 
@@ -34,47 +58,50 @@ function install_python() {
 }
 
 #libraries and build dependencies for C stuff
-sudo apt-get -y install build-essential autoconf libboost1.55-dev-all libboost1.55-dev libboost1.55-tools-dev scons libgdbm libgdbm-dev libncurses5 libncurses5-dev automake libtool bison pkg-config cmake libreadline6 libreadline6-dev libyaml libyaml-dev libsqlite3 libsqlite3-dev sqlite3 libffi libffi-dev libpq libpq-dev notmuch libnotmuch3 libnotmuch-dev libglibmm-2.4-dev libgtkmm-3.0-1 libgtkmm-3.0-dev libgmime-2.6-0 libgmime-2.6-dev libwebkitgtk-3.0-0 libwebkitgtk-3.0-dev libwebkit-dev g++
+function install_c_tools() {
+    sudo apt-get -y install build-essential autoconf libboost1.55-dev-all libboost1.55-dev libboost1.55-tools-dev scons libgdbm libgdbm-dev libncurses5 libncurses5-dev automake libtool bison pkg-config cmake libreadline6 libreadline6-dev libyaml libyaml-dev libsqlite3 libsqlite3-dev sqlite3 libffi libffi-dev libpq libpq-dev notmuch libnotmuch3 libnotmuch-dev libglibmm-2.4-dev libgtkmm-3.0-1 libgtkmm-3.0-dev libgmime-2.6-0 libgmime-2.6-dev libwebkitgtk-3.0-0 libwebkitgtk-3.0-dev libwebkit-dev g++
+}
 
 #gpg stuff
-sudo npm install -g keybase
+function install_security_tools() {
+    sudo npm install -g keybase
+    sudo apt-get install tor torbrowser-launcher
+}
 
-echo "pull in git submodules"
-cd ~/dotfiles && git submodule init && git submodule update
+function symlink_dotfiles() { # does a bit more, besides!
 
-echo "change shell to zsh"
-chsh -s "$(which zsh)"
+    echo "pull in git submodules"
+    cd ~/dotfiles && git submodule init && git submodule update
 
-echo "install solarized colors for gnome-terminal"
-cd ~/dotfiles/extras/gnome-terminal-colors-solarized/ && ./install.sh
+    echo "change shell to zsh"
+    chsh -s "$(which zsh)"
 
-echo "install fzf"
-cd ~/dotfiles/extras/fzf && ./install
+    echo "install solarized colors for gnome-terminal"
+    cd ~/dotfiles/extras/gnome-terminal-colors-solarized/ && ./install.sh
 
-echo "install fonts"
-cd ~/dotfiles/extras/fonts && ./install.sh
+    echo "install fzf"
+    cd ~/dotfiles/extras/fzf && ./install
 
-echo "get rvm!"
-gpg --keyserver hkp://pgp.mit.edu --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-\curl -sSL https://get.rvm.io | bash
+    echo "install fonts"
+    cd ~/dotfiles/extras/fonts && ./install.sh
 
-echo "symlink dotfiles"
-rm ~/.vimrc
-rm ~/.zshrc
-rm ~/.zshenv
-rm ~/.gitconfig
-ln -s ~/dotfiles/vimrc/vimrc ~/.vimrc
-ln -s ~/dotfiles/zsh/zshrc.zsh ~/.zshrc
-ln -s ~/dotfiles/zsh/zshenv.zsh ~/.zshenv
-ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
-ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
+    echo "symlink dotfiles"
+    rm ~/.vimrc
+    rm ~/.zshrc
+    rm ~/.zshenv
+    rm ~/.gitconfig
+    ln -s ~/dotfiles/vimrc/vimrc ~/.vimrc
+    ln -s ~/dotfiles/zsh/zshrc.zsh ~/.zshrc
+    ln -s ~/dotfiles/zsh/zshenv.zsh ~/.zshenv
+    ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
+    ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
 
-echo "get vim plugins"
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-echo "install vim pluings"
-vim +PluginInstall +qall && python ~/.vim/bundle/youcompleteme/install.py
+    echo "get vim plugins"
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    echo "install vim pluings"
+    vim +PluginInstall +qall && python ~/.vim/bundle/youcompleteme/install.py
 
-source ~/.zshrc
+    source ~/.zshrc
 
 echo "now, log in to keybase!"
 echo ""
