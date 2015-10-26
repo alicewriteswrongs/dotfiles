@@ -36,10 +36,17 @@ function generate_ssh_key() {
 
 #common userspace tools
 function install_tools() {
+    update
     sudo apt-get -y install vim-gnome tmux zsh nodejs-legacy npm silversearcher-ag htop mpd git exuberant-ctags virtualbox vagrant mupdf transmission-daemon redshift-gtk scrot
 }
 
+function install_i3() {
+    update
+    sudo apt-get install i3-wm suckless-tools
+}
+
 function install_vagrant() {
+    update
     sudo apt-get install virtualbox vagrant nfs-common nfs-kernel-server portmap 
     sudo service rpcbind start
     sudo service nfs-kernel-server start
@@ -47,11 +54,13 @@ function install_vagrant() {
 
 #go stuff
 function install_go() {
+    update
     sudo apt-get -y install golang-go
 }
 
 #ruby things
 function install_ruby() {
+    update
     gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
     gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
     \curl -sSL https://get.rvm.io | bash -s stable
@@ -60,16 +69,19 @@ function install_ruby() {
 
 #python things
 function install_python() {
+    update
     sudo apt-get -y install python3-dev python-pip python3-pip python-virtualenv python-setuptools python3-setuptools
 }
 
 #libraries and build dependencies for C stuff
 function install_c_tools() {
+    update
     sudo apt-get -y install build-essential autoconf libboost1.55-dev-all libboost1.55-dev libboost1.55-tools-dev scons libgdbm libgdbm-dev libncurses5 libncurses5-dev automake libtool bison pkg-config cmake libreadline6 libreadline6-dev libyaml libyaml-dev libsqlite3 libsqlite3-dev sqlite3 libffi libffi-dev libpq libpq-dev notmuch libnotmuch3 libnotmuch-dev libglibmm-2.4-dev libgtkmm-3.0-1 libgtkmm-3.0-dev libgmime-2.6-0 libgmime-2.6-dev libwebkitgtk-3.0-0 libwebkitgtk-3.0-dev libwebkit-dev g++
 }
 
 #gpg stuff
 function install_security_tools() {
+    update
     sudo npm install -g keybase
     sudo apt-get install tor torbrowser-launcher
 }
