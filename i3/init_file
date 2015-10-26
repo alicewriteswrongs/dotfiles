@@ -7,6 +7,6 @@ nm-applet &
 
 compton -c &
 
-redshift &
+redshift -l 42:-71 &
 
 xautolock &
