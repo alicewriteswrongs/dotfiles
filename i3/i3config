@@ -1,9 +1,11 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 # startup section
-exec compton -c
-exec feh --bg-max /home/alice/Pictures/parkspins.jpg
-exec redshift -l 42:-71
+exec --no-startup-id "compton -c"
+exec --no-startup-id "feh --bg-max /home/alice/Pictures/parkspins.jpg"
+exec --no-startup-id "xset dpms 300 600 0"
+exec --no-startup-id "redshift -l 42:-71"
+exec --no-startup-id "eval `keychain --eval id_rsa 29207A51`"
 
 set $mod Mod1
 
@@ -12,7 +14,7 @@ exec --no-startup-id xset dpms 600
 
 #font for window titles and bar
 #font pango:DejaVu Sans Mono 8
-font pango:inconsolata, Icons 10 
+font pango:inconsolata, Icons 10
 
 #bindings for scrot
 bindsym $mod+s exec "scrot ~/images/screenshots/%Y-%m-%d-%T.png"

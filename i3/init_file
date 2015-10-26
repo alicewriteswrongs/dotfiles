@@ -1,0 +1,10 @@
+# this is for use with i3-gnome
+[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+
+feh --bg-max /home/alice/Pictures/parkspins.jpg &
+
+# nm-applet &
+
+compton -c &
+
+exec i3
