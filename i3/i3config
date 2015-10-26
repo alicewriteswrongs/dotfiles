@@ -47,10 +47,8 @@ bindsym $mod+space exec dmenu_run
 
 #scratchpad (place to throw a window)
 bindsym $mod+Shift+minus move scratchpad
-#show the urxvt terminal (usually holding my [orgs] tmux session)
-bindsym $mod+minus [title="urxvt"] scratchpad show
 bindsym $mod+plus [title="Spotify*"] scratchpad show
-bindsym $mod+backslash [title="BookBub - Slack"] scratchpad show
+bindsym $mod+minus [title="BookBub - Slack"] scratchpad show
 
 #show all scratchpad (usually won't need)
 bindsym $mod+ctrl+minus scratchpad show
