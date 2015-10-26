@@ -5,6 +5,8 @@ feh --bg-max /home/alice/Pictures/parkspins.jpg &
 
 nm-applet &
 
-redshift & 
+compton -c &
 
-xautolock 
+redshift &
+
+xautolock &
