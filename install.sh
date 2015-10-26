@@ -52,6 +52,7 @@ function install_i3() {
     sudo make install
     mkdir ~/.i3
     ln -s ~/dotfiles/i3/i3config ~/.i3/config
+    ln -s ~/dotfiles/i3/init_file ~/.i3-gnome
     sudo pip install i3pystatus colour psutil
 
     # todo:
