@@ -1,5 +1,10 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+# startup section
+exec compton -c
+exec feh --bg-max /home/alice/Pictures/parkspins.jpg
+exec redshift -l 42:-71
+
 set $mod Mod1
 
 #set DPMS screen interval
