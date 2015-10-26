@@ -16,6 +16,7 @@ function help () {
     echo "\tsymlink_dotfiles"
 }
 
+# this should write an environmental variable
 function update() {
     sudo apt-get update
     sudo apt-get -y upgrade
@@ -43,6 +44,8 @@ function install_tools() {
 function install_i3() {
     update
     sudo apt-get install i3-wm suckless-tools
+    mkdir ~/.i3
+    ln -s ~/dotfiles/i3/i3config ~/.i3/config
 }
 
 function install_vagrant() {
@@ -84,6 +87,10 @@ function install_security_tools() {
     update
     sudo npm install -g keybase
     sudo apt-get install tor torbrowser-launcher
+    sudo apt-get install openssl libcurl3 libxml2 libssl-dev libxml2-dev libcurl4-openssl-dev pinentry-curses xclip
+    git clone git@github.com:lastpass/lastpass-cli.git ~/Code/
+    cd ~/Code/lastpass-cli && make && sudo make install
+    echo "now login to lastpass and keybase!"
 }
 
 function symlink_dotfiles() { # does a bit more, besides!
