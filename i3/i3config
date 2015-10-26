@@ -7,7 +7,7 @@ exec --no-startup-id xset dpms 600
 
 #font for window titles and bar
 #font pango:DejaVu Sans Mono 8
-font pango:inconsolata, Icons 15
+font pango:inconsolata, Icons 10 
 
 #bindings for scrot
 bindsym $mod+s exec "scrot ~/images/screenshots/%Y-%m-%d-%T.png"
@@ -50,11 +50,13 @@ bindsym $mod+Shift+minus move scratchpad
 #show the urxvt terminal (usually holding my [orgs] tmux session)
 bindsym $mod+minus [title="urxvt"] scratchpad show
 #show weechat
-bindsym $mod+plus [title="WeeChat*"] scratchpad show
+# bindsym $mod+plus [title="WeeChat*"] scratchpad show
 #show telegram
 bindsym $mod+backslash [title="Telegram"] scratchpad show
 #pidgin
 bindsym $mod+Shift+plus [class="Pidgin"] scratchpad show
+#slack
+bindsym $mod+plus [title="*Slack"] scratchpad show
 #show all scratchpad (usually won't need)
 bindsym $mod+ctrl+minus scratchpad show
 
@@ -205,7 +207,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         #status_command      i3status --config ~/.i3status.conf
-        status_command      python ~/dotfiles/i3/i3pyconfig.py
+        status_command      python3 ~/dotfiles/i3/i3pyconfig.py
         position            top
         workspace_buttons   yes
 }
