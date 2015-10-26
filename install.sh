@@ -43,7 +43,13 @@ function install_tools() {
 
 function install_i3() {
     update
-    sudo apt-get install i3-wm suckless-tools
+    sudo apt-get install suckless-tools i3-wm
+
+    git clone https://github.com/Airblader/i3.wiki.git ~/Code/
+    cd ~/Code/i3-gaps
+    git checkout gaps && git pull
+    make
+    sudo make install
     mkdir ~/.i3
     ln -s ~/dotfiles/i3/i3config ~/.i3/config
 }
