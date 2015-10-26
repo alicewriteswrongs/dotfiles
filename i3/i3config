@@ -25,9 +25,10 @@ bindsym $mod+ctrl+l move workspace to LVDS1
 bindsym $mod+ctrl+v move workspace to VGA1
 
 # start a terminal
-bindsym $mod+Return exec urxvt
-bindsym $mod+Shift+Return exec fakeurxvt
+# bindsym $mod+Return exec urxvt
+# bindsym $mod+Shift+Return exec fakeurxvt
 bindsym $mod+ctrl+Shift+l exec i3lock.sh
+bindsym $mod+Return exec gnome-terminal
 #bindsym $mod+Shift+Return exec xterm
 
 # vim-anywhere
@@ -41,7 +42,7 @@ bindsym $mod+period exec mpc next
 # kill focused window
 bindsym $mod+q kill
 
-# start dmenu 
+# start dmenu
 bindsym $mod+space exec dmenu_run
 
 #scratchpad (place to throw a window)
@@ -144,7 +145,7 @@ for_window [title="Story Editor*"] floating enable
 for_window [class="^.*"] border pixel 0
 
 #gap size
-gaps inner 5
+# gaps inner 5
 
 #smart borders!
 smart_borders on
