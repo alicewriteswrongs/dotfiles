@@ -44,7 +44,7 @@ function install_tools() {
 
 function install_i3() {
     update
-    sudo apt-get install suckless-tools i3-wm i3 i3-wm-debug feh nm-applet parcellite compton xautolock
+    sudo apt-get install suckless-tools i3-wm i3 i3-wm-debug feh nm-applet parcellite compton xautolock xscreensaver
     sudo apt-get install libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev
     git clone git@github.com:Airblader/i3.git ~/Code/i3-gaps
     cd ~/Code/i3-gaps
