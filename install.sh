@@ -7,6 +7,7 @@ function help () {
     echo "I've defined a bunch of package groups"
     echo "after you source the file you can do"
     echo "\tinstall_tools"
+    echo "\tinstall_i3"
     echo "\tinstall_python"
     echo "\tinstall_ruby"
     echo "\tinstall_go"
@@ -38,7 +39,7 @@ function generate_ssh_key() {
 #common userspace tools
 function install_tools() {
     update
-    sudo apt-get -y install vim-gnome tmux zsh nodejs-legacy npm silversearcher-ag htop mpd git exuberant-ctags virtualbox vagrant mupdf transmission-daemon redshift-gtk scrot redshift
+    sudo apt-get -y install vim-gnome tmux zsh nodejs-legacy npm silversearcher-ag htop mpd git exuberant-ctags virtualbox vagrant mupdf transmission-daemon redshift-gtk scrot redshift ssh-askpass keychain gpg_agent ssh-askpass-gnome
 }
 
 function install_i3() {
