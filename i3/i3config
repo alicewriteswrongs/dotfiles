@@ -25,10 +25,8 @@ bindsym $mod+shift+s exec "scrot -s ~/images/screenshots/%Y-%m-%d-%T.png"
 floating_modifier $mod
 
 #send a workspace to one of the connected screens (for thinkpad screens)
-#bindsym $mod+x move workspace to HDMI1
-#bindsym $mod+shift+x move workspace to LVDS1
 bindsym $mod+ctrl+h move workspace to HDMI1
-bindsym $mod+ctrl+l move workspace to LVDS1
+bindsym $mod+ctrl+l move workspace to eDP1
 bindsym $mod+ctrl+v move workspace to VGA1
 
 # start a terminal

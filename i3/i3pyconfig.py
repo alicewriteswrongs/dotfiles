@@ -40,14 +40,14 @@ status.register("battery",
 status.register("pulseaudio",
         format = " {volume}",
         format_muted = " {volume}",)
-        
 
-status.register("mpd",
-    format="[{status} {title}, {artist} ]",
-    status={
-        "pause": "▷",
-        "play": "▶",
-        "stop": "◾",
-    },)
+
+# status.register("mpd",
+#     format="[{status} {title}, {artist} ]",
+#     status={
+#         "pause": "▷",
+#         "play": "▶",
+#         "stop": "◾",
+#     },)
 
 status.run()
