@@ -142,6 +142,7 @@ for_window [class="Chromium"] floating disable
 for_window [title="fakeurxvt*"] floating enable
 for_window [title="GNU Image Manipulation Program"] floating enable
 for_window [title="Story Editor*"] floating enable
+for_window [title="Open File"] floating enable
 
 #no borders
 for_window [class="^.*"] border pixel 0
