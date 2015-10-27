@@ -6,6 +6,7 @@ exec --no-startup-id "feh --bg-max /home/alice/Pictures/parkspins.jpg"
 exec --no-startup-id "xset dpms 300 600 0"
 exec --no-startup-id "redshift -l 42:-71"
 exec --no-startup-id "eval `keychain --eval id_rsa 29207A51`"
+exec --no-startup-id "xscreensaver"
 
 set $mod Mod1
 
@@ -26,13 +27,14 @@ floating_modifier $mod
 
 #send a workspace to one of the connected screens (for thinkpad screens)
 bindsym $mod+ctrl+h move workspace to HDMI1
-bindsym $mod+ctrl+l move workspace to eDP1
+bindsym $mod+ctrl+i move workspace to eDP1
 bindsym $mod+ctrl+v move workspace to VGA1
 
 # start a terminal
 # bindsym $mod+Return exec urxvt
 # bindsym $mod+Shift+Return exec fakeurxvt
-bindsym $mod+ctrl+Shift+l exec i3lock.sh
+# bindsym $mod+ctrl+Shift+l exec i3lock.sh
+bindsym $mod+ctrl+Shift+l exec "xscreensaver-command -lock"
 bindsym $mod+Return exec gnome-terminal
 #bindsym $mod+Shift+Return exec xterm
 
