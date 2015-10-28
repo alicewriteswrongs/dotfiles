@@ -1,13 +1,5 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-# startup section
-exec --no-startup-id "compton -c"
-exec --no-startup-id "feh --bg-max /home/alice/Pictures/parkspins.jpg"
-exec --no-startup-id "xset dpms 300 600 0"
-exec --no-startup-id "redshift -l 42:-71"
-exec --no-startup-id "eval `keychain --eval id_rsa 29207A51`"
-exec --no-startup-id "xscreensaver"
-
 set $mod Mod1
 
 #set DPMS screen interval
