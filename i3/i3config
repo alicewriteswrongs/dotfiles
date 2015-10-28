@@ -15,7 +15,7 @@ exec --no-startup-id xset dpms 600
 
 #font for window titles and bar
 #font pango:DejaVu Sans Mono 8
-font pango:inconsolata, Icons 10
+font pango:inconsolata, Icons 8
 
 #bindings for scrot
 bindsym $mod+s exec "scrot ~/images/screenshots/%Y-%m-%d-%T.png"
@@ -144,6 +144,7 @@ for_window [title="GNU Image Manipulation Program"] floating enable
 for_window [title="Story Editor*"] floating enable
 for_window [title="Open File"] floating enable
 for_window [title="Save File"] floating enable
+for_window [title="Text Import*"] floating enable
 
 #no borders
 for_window [class="^.*"] border pixel 0
