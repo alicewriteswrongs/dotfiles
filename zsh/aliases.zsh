@@ -1,6 +1,8 @@
 alias -g G='| grep'
 alias abcdehighqual='abcde -o ogg:"-q 7"' #rips at ogg vorbis quality level 7
-alias addall='git commit -a'		#add all changed files and commit
+alias vresume='vagrant resume'
+alias vsuspend='vagrant suspend'
+alias addall='git commit -a' #add all changed files and commit
 alias aliases='vim ~/dotfiles/zsh/aliases.zsh'
 alias attach='tmux attach -t'
 alias bc='bc -l'
