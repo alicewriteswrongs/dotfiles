@@ -56,10 +56,9 @@ function install_i3() {
     ln -s ~/dotfiles/i3/init_file ~/.i3-gnome
     sudo pip install i3pystatus colour psutil
 
-    # todo:
-    # sort out autostart file
-    # clone the gnome-i3 repo
-    # execute that
+    xdg-mime default chromium.desktop x-scheme-handler/http
+    xdg-mime default chromium.desktop x-scheme-handler/https
+    xdg-mime default chromium.desktop text/html
 }
 
 function install_vagrant() {
