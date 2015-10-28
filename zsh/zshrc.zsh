@@ -1,6 +1,5 @@
 source ~/dotfiles/zsh/antigen/antigen.zsh
 
-
 zstyle ':completion:*' completer _complete _ignored
 zstyle ':completion:*' completions 1
 zstyle ':completion:*' menu select
