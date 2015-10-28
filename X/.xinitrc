@@ -2,9 +2,10 @@
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
 # #background image
-# feh --bg-max /home/alice/images/backgrounds/parkspins.jpg &
+feh --bg-max /home/alice/Pictures/parkspins.jpg &
 
-eval `keychain --eval id_rsa 29207A51` &
+eval $(keychain --eval --quiet id_rsa id_dsa 29207A51)
+
 pulseaudio &
 
 #start mpd
@@ -14,11 +15,11 @@ pulseaudio &
 # [[ -z $(pgrep -xU $UID mpdas) ]] && mpdas &
 
 #trackpoint config for thinkpad
-# xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation" 1
-# xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Button" 2
-# xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Timeout" 200
-# xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 6 7 4 5
-# xinput set-prop "TPPS/2 IBM TrackPoint" "Device Accel Constant Deceleration" 0.75
+xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation" 1
+xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Button" 2
+xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Timeout" 200
+xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 6 7 4 5
+xinput set-prop "TPPS/2 IBM TrackPoint" "Device Accel Constant Deceleration" 0.75
 
 #japanese input stuff
 # export GTK_IM_MODULE=fcitx
@@ -30,10 +31,10 @@ pulseaudio &
 
 nm-applet &
 
-xset dpms 300 600 0 &
+# xset dpms 300 600 0 &
 
 #make keybinds (for thinkpad media keys, etc)
-xbindkeys &
+# xbindkeys &
 
 xscreensaver &
 
