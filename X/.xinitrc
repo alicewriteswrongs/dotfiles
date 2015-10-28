@@ -4,14 +4,14 @@
 # #background image
 # feh --bg-max /home/alice/images/backgrounds/parkspins.jpg &
 
-#start pulse
+eval `keychain --eval id_rsa 29207A51` &
 pulseaudio &
 
 #start mpd
 # [ ! -s ~/.config/mpd/pid ] && mpd
 
 #start mpdas
-[[ -z $(pgrep -xU $UID mpdas) ]] && mpdas &
+# [[ -z $(pgrep -xU $UID mpdas) ]] && mpdas &
 
 #trackpoint config for thinkpad
 # xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation" 1
@@ -38,7 +38,7 @@ xbindkeys &
 xscreensaver &
 
 #start redshift (color temperature thing)
-redshift &
+redshift -l 42:-71 &
 
 # #start gnome keyright (for networkmanager to work correctly)
 # source /etc/X11/xinit/xinitrc.d/30-dbus
