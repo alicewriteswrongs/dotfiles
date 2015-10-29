@@ -1,7 +1,13 @@
 # Dotfiles
 
 For the syncing of the dotfiles. There's a lot of them, most are
-abandonware.
+abandonware. Things I use actively:
+
+* `zsh`
+* `vim`
+* `i3`
+* `git`
+* `tmux`
 
 ###`install.sh`
 
@@ -19,25 +25,9 @@ extensions, and run the install scripts for a couple of things like
 and [inconsolata for powerline](https://github.com/powerline/fonts)) to
 get my dev environment the way I like it.
 
-Anyway, you may find it helpful! 
-
-Tested on Debian testing.
-
-Do something like:
-
-```
-sudo apt-get install chromium
-ssh-keygen -t ecdsa -b 521 -C 'your_email@foo.bar'
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_ecdsa
-```
-
-then add your shiny new ssh key to Github, and do:
-
-```
-git clone git@github.com:aliceriot/dotfiles.git ~/dotfiles
-cd ~/dotfiles && ./install.sh
-```
+Anyway, you may find it helpful! I use Debian testing, but I imagine it
+should work ok (or at least give you a starting off point) for any other
+Debian-related distro (ubuntu, etc).
 
 ### Included herein:
 
