@@ -5,13 +5,19 @@ abandonware.
 
 ###`install.sh`
 
-I wrote a little shellscript that sets up a fresh debian install. It
-should install everything necessary, fetch git submodules, remove default
-configuration files, make symlinks, build a few extensions, and run the
-install scripts for a couple of things
-([fzf](https://github.com/junegunn/fzf),
+I originally wrote a little shellscript in order to set up a fresh Debian
+install, which I started modifying to keep track of esoteric configuration
+setup steps, and eventually it turned into collection of functions for
+installing and configuring various things.
+
+There's functions to install Python, Ruby, C, and Go stuff, get the common
+userspace stuff I like, and do all the necessary stuff
+(fetch git submodules, remove default configuration files, make symlinks,
+build a few extensions, and run the install scripts for a couple of things
+like [fzf](https://github.com/junegunn/fzf),
 [gnome-solarized](https://github.com/Anthony25/gnome-terminal-colors-solarized),
-and [inconsolata for powerline](https://github.com/powerline/fonts)).
+and [inconsolata for powerline](https://github.com/powerline/fonts)) to
+get my dev environment the way I like it.
 
 It works on Debian 8 and 9 (probably).
 
