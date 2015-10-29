@@ -144,9 +144,3 @@ function symlink_dotfiles() { # does a bit more, besides!
 
     source ~/.zshrc
 }
-
-echo "now, log in to keybase!"
-echo ""
-echo "gnome-terminal also needs some manual config :("
-echo ""
-echo "you're done!"
