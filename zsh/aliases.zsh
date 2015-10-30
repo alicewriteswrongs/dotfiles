@@ -62,7 +62,6 @@ alias ls='ls --color=auto'  #colorize ls output
 alias mc='make clean'
 alias mkdir='mkdir -p -v'   #makes a directory and it's hierarchy, also verbose
 alias mv='mv -iv'           #makes it interactive and verbose
-alias new='tmux new -s'
 alias node='nodejs'
 alias nodpms='xset dpms 0 0 0'
 alias notes='cd ~/SpiderOak\ Hive/notes'
@@ -79,7 +78,7 @@ alias qtconsole='ipython qtconsole --pylab=inline'
 alias quemudefault='qemu-system-i386  -m 512 -net nic -net user,hostfwd=tcp:127.0.0.1:2222-:22 vm-cs155/vm-cs155.vmdk'
 alias s3down='aws s3 sync'
 alias scc='ssh -X benpote@scc2.bu.edu'
-alias sessions='tmux list-sessions'
+alias tms='tmux list-sessions'
 alias shellscripts='cd ~/Code/shellscripts && vim'
 alias shellsync='cd ~/Code/shellscripts && git pull origin master && git commit -a && git push origin master'
 alias shutdown='sudo shutdown -P now'
