@@ -4,7 +4,7 @@
 # #background image
 feh --bg-max /home/alice/Pictures/parkspins.jpg &
 
-eval $(keychain --eval --quiet id_rsa id_dsa 29207A51)
+# eval $(keychain --eval --quiet id_rsa id_dsa 29207A51)
 
 pulseaudio &
 
