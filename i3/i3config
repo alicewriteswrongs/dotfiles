@@ -23,12 +23,9 @@ bindsym $mod+ctrl+i move workspace to eDP1
 bindsym $mod+ctrl+v move workspace to VGA1
 
 # start a terminal
-# bindsym $mod+Return exec urxvt
-# bindsym $mod+Shift+Return exec fakeurxvt
-# bindsym $mod+ctrl+Shift+l exec i3lock.sh
 bindsym $mod+ctrl+Shift+l exec "xscreensaver-command -lock"
 bindsym $mod+Return exec gnome-terminal
-#bindsym $mod+Shift+Return exec xterm
+bindsym $mod+Shift+Return exec gnome-terminal && floating enable
 
 # vim-anywhere
 bindsym $mod+v exec vim-anywhere
