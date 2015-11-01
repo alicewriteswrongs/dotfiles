@@ -1,4 +1,5 @@
 alias -g G='| grep'
+alias sinstall='source ~/dotfiles/install.sh'
 alias gfo='git fetch origin'
 alias abcdehighqual='abcde -o ogg:"-q 7"' #rips at ogg vorbis quality level 7
 alias vresume='vagrant resume'
