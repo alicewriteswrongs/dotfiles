@@ -43,7 +43,7 @@ function install_tools() {
 }
 
 function install_latex() {
-    sudo apt-get install texlive-full texlive-extra-utils texlive-math-extra texlive-latex-base texlive-latex-extra
+    sudo apt-get install texlive-full texlive-extra-utils texlive-math-extra texlive-latex-base texlive-latex-extra cweb-latex
 }
 
 function install_i3() {
