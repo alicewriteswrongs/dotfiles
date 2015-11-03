@@ -1,4 +1,5 @@
 alias -g G='| grep'
+alias clip='xsel --clipboard'
 alias tmuxconfig='vim ~/dotfiles/tmux/tmux.conf'
 alias sinstall='source ~/dotfiles/install.sh'
 alias gfo='git fetch origin'
