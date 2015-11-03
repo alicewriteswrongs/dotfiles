@@ -110,22 +110,22 @@ if message.from.email.start_with? 'notifications@myprewards.com'
 end
 
 if message.from.email.start_with? 'semaphore+notifications@renderedtext.com'
-  message.remove_label :indox
+  message.remove_label :inbox
   message.add_label :semaphore_alert
 end
 
 if message.from.email.start_with? 'do-not-reply@trello.com'
-  message.remove_label :indox
+  message.remove_label :inbox
   message.add_label :trello
 end
 
 if message.from.email.start_with? 'noreply@newrelic.com'
-  message.remove_label :indox
+  message.remove_label :inbox
   message.add_label :new_relic
 end
 
 if message.from.email.start_with? 'info@bookbub.com'
-  message.remove_label :indox
+  message.remove_label :inbox
   message.add_label :deals_email
 end
 
