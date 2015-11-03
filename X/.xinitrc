@@ -4,10 +4,6 @@
 # #background image
 feh --bg-max /home/alice/Pictures/parkspins.jpg &
 
-export SSH_ASKPASS=$(where ssh-askpass)
-eval $(gpg-agent --daemon)
-eval $(keychain --eval --quiet --agents ssh,gpg)
-
 pulseaudio &
 
 #start mpd
