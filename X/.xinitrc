@@ -5,7 +5,8 @@
 feh --bg-max /home/alice/Pictures/parkspins.jpg &
 
 export SSH_ASKPASS=$(where ssh-askpass)
-eval $(keychain --eval --quiet )
+eval $(gpg-agent --daemon)
+eval $(keychain --eval --quiet --agents ssh,gpg)
 
 pulseaudio &
 
