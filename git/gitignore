@@ -1,5 +1,6 @@
 __pycache__
 *.swp
+*.swo
 env
 *.pyc
 *.bin
