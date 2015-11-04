@@ -129,3 +129,8 @@ if message.from.email.start_with? 'info@bookbub.com'
   message.add_label :deals_email
 end
 
+if message.from.email.start_with? 'notifier@qbox.io'
+  message.remove_label :inbox
+  message.add_label :qbox_alert
+end
+
