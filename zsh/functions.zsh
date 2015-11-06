@@ -61,6 +61,14 @@ function gd() {
     fi
 }
 
+function gdfiles() {
+    if [[ $1 ]]; then
+        git diff --name-only $1
+    else
+        git diff --name-only $(selectbranch)
+    fi
+}
+
 function crun() {
     if [[ ! $1 ]]; then
         echo "no target supplied, just building"
