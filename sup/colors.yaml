@@ -1,75 +1,73 @@
 # Cursor
 
+# red with normal bg
 :default_h:
-  :fg: 14
-  :bg: 0
-
+  :fg: 1
+  :bg: 15
 :inverted_h:
   :fg: 14
-  :bg: 8
+  :bg: 15
 
 
 # Index in order of appearance
 
 :tagged:
-  :highlight: inverted_h
-  :fg: 125
-  :bg: 0
+  :highlight: default_h
+  :fg: 3
+  :bg: 15
 #  :attrs:
 #  - bold
 
 :tagged_h:
   :fg: 5
-  :bg: 8
+  :bg: 15
 
 :date:
   :highlight: default_h
-  :fg: 12
-  :bg: 8
+  :fg: 13
+  :bg: 15
   :attrs:
   - bold
 
 :starred:
   :highlight: default_h
-  :fg: 125
-  :bg: 0
+  :fg: 4
+  :bg: 15
 #  :attrs:
 #  - bold
 
 :size_widget:
   :highlight: default_h
   :fg: 244
-  :bg: 0
+  :bg: 15
 
 :to_me:
   :highlight: default_h
-  :fg: 64
-  :bg: 0
+  :fg: 6
+  :bg: 15
 #  :attrs:
 #  - bold
 
 
 :label:
   :highlight: label_h
-  :fg: 5
-  :bg: 8
-#  :attrs:
-#  - bold
+  :fg: 3
+  :bg: 15
 :label_h:
-  :fg: 5
-  :bg: 0
+  :fg: 1
+  :bg: 15
 
 :index_old:
   :highlight: default_h
-  :fg: 3
-  :bg: 8
+  :fg: 14
+  :bg: 15
 #  :attrs:
 #  - bold
 
 :snippet:
   :highlight: default_h
   :fg: 12
-  :bg: 8
+  :bg: 15
 #  :attrs:
 #  - bold
 
@@ -77,28 +75,28 @@
 
 :index_new:
   :highlight: index_new_h
-  :fg: 2
-  :bg: 8
+  :fg: 4
+  :bg: 15
 :index_new_h:
   :fg: 2
-  :bg: 0
+  :bg: 15
 
 # Subject of starred message
 
 :index_starred:
   :highlight: index_starred_h
-  :fg: 4
-  :bg: 8
+  :fg: 5
+  :bg: 15
 :index_starred_h:
-  :fg: 4
-  :bg: 0
+  :fg: 5
+  :bg: 15
 
 # Thread-view-mode
 
 :message_patina:
   :highlight: default_h
   :fg: 3
-  :bg: 0
+  :bg: 15
 #  :attrs:
 #  - bold
 
@@ -109,21 +107,21 @@
 
 :attachment:
 #  :highlight:
-  :fg: 6
-  :bg: 8
+  :fg: 4
+  :bg: 15
 #  :attrs:
 #  - bold
 
 :text:
   :highlight: text_h
-  :fg: 12
-  :bg: 8
-:text_h:
   :fg: 14
-  :bg: 0
+  :bg: 15
+:text_h:
+  :fg: 1
+  :bg: 15
 
 # Status line
 
 :status:
   :fg: 6
-  :bg: 0 
+  :bg: 15
