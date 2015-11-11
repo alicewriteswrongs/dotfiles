@@ -7,3 +7,6 @@ env
 reponotes
 .vagrant/*
 common_words.txt
+*.swl
+*.swn
+*.swm
