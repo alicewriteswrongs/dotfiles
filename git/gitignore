@@ -16,3 +16,6 @@ common_words.txt
 *.swh
 *.swl
 *.swq
+*.swf
+*.swg
+*.swe
