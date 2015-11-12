@@ -158,3 +158,21 @@ function new() {
 
     tmux attach-session -t $session_name
 }
+
+function blamesearch_include() {
+    for f in $(git ls-files); do
+        if [[ $(git blame $f | ag $1) ]]; then
+            echo $f
+        fi
+    done
+}
+
+function blamesearch_exclude() {
+    for f in $(git ls-files); do
+        if [[ ! $(git blame $f | ag $1) ]]; then
+            echo $f
+        fi
+    done
+}
+
+
