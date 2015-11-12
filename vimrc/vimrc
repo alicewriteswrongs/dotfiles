@@ -233,3 +233,4 @@ nnoremap <C-b> :CtrlPBuffer<cr>
 nnoremap <C-f> :Ag 
 let localleader = "\\"
 nnoremap <silent> <Leader>tp :TogglePencil<cr>
+nnoremap <Leader>rb :'<,'>s/pick/f/g<cr>
