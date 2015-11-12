@@ -43,7 +43,7 @@ alias gitgraph='git log --pretty=oneline --graph'
 alias gitignore='vim ~/dotfiles/git/gitignore'
 alias gitl='git log -1 HEAD' #last commit
 alias gits='git status'
-alias gl='git log --pretty=format:"%h - %an - %ar - %s" -10'
+alias gl='git log --pretty=format:"%h - %an - %ar - %s" -20'
 alias gpgfing='gpg --fingerprint'
 alias gpglist='gpg --list-keys'
 alias gpgrefresh='gpg --refresh-keys --keyserver hkp://pool.sks-keyservers.net'
