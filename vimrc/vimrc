@@ -149,6 +149,12 @@ if executable('ag')
     let g:CrtlSpaceglobCommand = 'ag %s -l --nocolor --hidden -g ""'
 endif
 
+"" fix the swapfile situation
+set noswapfile
+set backup
+set backupdir=~/.vim/backup//
+set undodir=~/.vim/undo//
+
 """""""""""""""""""""""""""""""""""""""""""""""""""
 """Plugin Configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""
