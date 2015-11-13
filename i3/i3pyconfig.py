@@ -41,6 +41,9 @@ status.register("pulseaudio",
         format = " {volume}",
         format_muted = " {volume}",)
 
+status.register("Spotify",
+        format = "[{status} {title}, {artist}]"
+        )
 
 # status.register("mpd",
 #     format="[{status} {title}, {artist} ]",
