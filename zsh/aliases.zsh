@@ -1,5 +1,6 @@
 alias -g G='| grep'
 alias clip='xsel --clipboard'
+alias update='sudo apt-get update && sudo apt-get dist-upgrade'
 alias tmuxconfig='vim ~/dotfiles/tmux/tmux.conf'
 alias sinstall='source ~/dotfiles/install.sh'
 alias gfo='git fetch origin'
