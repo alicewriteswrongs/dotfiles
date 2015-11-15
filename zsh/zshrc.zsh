@@ -91,6 +91,8 @@ if (( ${+terminfo[smkx]} )) && (( ${+terminfo[rmkx]} )); then
 fi
 
 [ -f ~/dotfiles/zsh/fzf.zsh ] && source ~/dotfiles/zsh/fzf.zsh
+export GOPATH="$HOME/Code/gospace"
+export PATH="$PATH:$GOPATH/bin"
 export PATH="$HOME/root/bin:$PATH" # for user libs
 export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
 fpath=(~/.zsh $fpath)
