@@ -175,4 +175,10 @@ function blamesearch_exclude() {
     done
 }
 
+function get_pull_request_numbeR() {
+    local current_commit=$(git rev-parse HEAD)
+    local current_branch=$(git rev-parse --abbrev-ref HEAD)
 
+    # find all origin/pull branches with commit
+    # use sed to get just the PR number
+}
