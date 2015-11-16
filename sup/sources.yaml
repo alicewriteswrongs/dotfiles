@@ -1,13 +1,5 @@
 ---
 - !supmua.org,2006-10-01/Redwood/Maildir
-  uri: maildir:/home/alice/mail/personal/archive
-  usual: true
-  archived: false
-  sync_back: false
-  id: 2
-  labels:
-  - alice_gmail
-- !supmua.org,2006-10-01/Redwood/Maildir
   uri: maildir:/home/alice/mail/work/archive
   usual: true
   archived: false
@@ -15,4 +7,12 @@
   id: 1
   labels:
   - bookbub
+- !supmua.org,2006-10-01/Redwood/Maildir
+  uri: maildir:/home/alice/mail/personal/archive
+  usual: true
+  archived: false
+  sync_back: false
+  id: 2
+  labels:
+  - alice_gmail
 - !supmua.org,2006-10-01/Redwood/SentLoader {}
