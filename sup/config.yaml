@@ -30,6 +30,11 @@
     :email: alice.writes.wrongs@gmail.com
     :sendmail: msmtp -t --read-envelope-from
     :gpgkey: ''
+  :work:
+    :name: Alice Pote
+    :email: alice@bookbub.com
+    :sendmail: msmtp -t --read-envelope-from
+    :gpgkey: ''
   :hampshire:
     :name: Alice Pote
     :email: blp09@hampshire.edu
