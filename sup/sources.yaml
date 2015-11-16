@@ -4,7 +4,7 @@
   usual: true
   archived: false
   sync_back: false
-  id: 1
+  id: 2
   labels:
   - alice_gmail
 - !supmua.org,2006-10-01/Redwood/Maildir
