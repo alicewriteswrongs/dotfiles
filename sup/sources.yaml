@@ -6,82 +6,13 @@
   sync_back: false
   id: 1
   labels:
-  - gmail_blp
+  - alice_gmail
 - !supmua.org,2006-10-01/Redwood/Maildir
-  uri: maildir:/home/alice/mail/riseup/INBOX/
+  uri: maildir:/home/alice/mail/work/archive
   usual: true
   archived: false
   sync_back: false
-  id: 4
+  id: 1
   labels:
-  - riseup
-- !supmua.org,2006-10-01/Redwood/Maildir
-  uri: maildir:/home/alice/mail/riseup/LPC
-  usual: true
-  archived: false
-  sync_back: false
-  id: 5
-  labels: []
-- !supmua.org,2006-10-01/Redwood/Maildir
-  uri: maildir:/home/alice/mail/riseup/Drafts/
-  usual: true
-  archived: false
-  sync_back: false
-  id: 6
-  labels: []
-- !supmua.org,2006-10-01/Redwood/Maildir
-  uri: maildir:/home/alice/mail/hampshire/INBOX/
-  usual: true
-  archived: false
-  sync_back: false
-  id: 7
-  labels:
-  - hampshire
-- !supmua.org,2006-10-01/Redwood/Maildir
-  uri: maildir:/home/alice/mail/hampshire/Sent
-  usual: true
-  archived: false
-  sync_back: false
-  id: 9
-  labels:
-  - hampshire
-- !supmua.org,2006-10-01/Redwood/Maildir
-  uri: maildir:/home/alice/mail/hampshire/sent-mail
-  usual: true
-  archived: false
-  sync_back: false
-  id: 10
-  labels:
-  - hampshire
-- !supmua.org,2006-10-01/Redwood/Maildir
-  uri: maildir:/home/alice/mail/hampshire/sent-mail-dec-2009/
-  usual: true
-  archived: false
-  sync_back: false
-  id: 11
-  labels:
-  - hampshire
-- !supmua.org,2006-10-01/Redwood/Maildir
-  uri: maildir:/home/alice/mail/hampshire/sent-mail-mar-2010/
-  usual: true
-  archived: false
-  sync_back: false
-  id: 12
-  labels:
-  - hampshire
-- !supmua.org,2006-10-01/Redwood/Maildir
-  uri: maildir:/home/alice/mail/riseup/Sent/
-  usual: true
-  archived: false
-  sync_back: false
-  id: 13
-  labels: []
-- !supmua.org,2006-10-01/Redwood/Maildir
-  uri: maildir:/home/alice/mail/alice/archive
-  usual: true
-  archived: false
-  sync_back: false
-  id: 15
-  labels:
-  - gmail_alice
+  - bookbub
 - !supmua.org,2006-10-01/Redwood/SentLoader {}
