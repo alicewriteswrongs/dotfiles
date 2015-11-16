@@ -4,6 +4,10 @@ if subj.start_with? '[lpc-c]'
   message.add_label :LPC
 end
 
+if subj.start_with? '[Cryptography]'
+  message.add_label :crypto
+end
+
 if subj.start_with? '[sup]'
   message.add_label :sup
 end
