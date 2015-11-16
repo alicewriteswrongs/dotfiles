@@ -1,4 +1,5 @@
 alias -g G='| grep'
+alias get_pulls='git config --add remote.origin.fetch "+refs/pull/*/head:refs/remotes/origin/pull/*"'
 alias clip='xsel --clipboard'
 alias update='sudo apt-get update && sudo apt-get dist-upgrade'
 alias tmuxconfig='vim ~/dotfiles/tmux/tmux.conf'
