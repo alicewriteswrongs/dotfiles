@@ -39,6 +39,8 @@ xscreensaver &
 #start redshift (color temperature thing)
 redshift -l 42:-71 &
 
+SpiderOakONE &
+
 # #start gnome keyright (for networkmanager to work correctly)
 # source /etc/X11/xinit/xinitrc.d/30-dbus
 # eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
