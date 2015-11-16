@@ -108,6 +108,7 @@ new_float pixel 3
 
 #some rules for various windows
 for_window [title="Write: *"] floating enable
+for_window [title="SpiderOakONE*"] floating enable
 #for_window [title="Zulip"] floating enable
 for_window [title="feh *"] floating enable
 for_window [title="Thunderbird Preferences"] floating enable
