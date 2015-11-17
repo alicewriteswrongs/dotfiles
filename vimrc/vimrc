@@ -12,6 +12,7 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'mtscout6/vim-cjsx'
+Plugin 'mxw/vim-jsx'
 Plugin 'pangloss/vim-javascript'
 Plugin 'tpope/vim-commentary' "gc to toggle comments
 Plugin 'chriskempson/base16-vim'
