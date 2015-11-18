@@ -182,3 +182,11 @@ function get_pull_request_numbeR() {
     # find all origin/pull branches with commit
     # use sed to get just the PR number
 }
+
+function install() {
+    sudo apt install $1
+}
+
+function uninstall() {
+    sudo apt remove $1
+}
