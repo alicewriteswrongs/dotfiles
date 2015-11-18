@@ -1,10 +1,6 @@
-! clear Super
-! clear lock
-! clear control
-! add control = Caps_Lock Control_L Control_R
-! keycode 66 = Control_L CapsLock NoSymbol NoSymbol
-! windows key is 133
+! clear window key, bind to F13
 clear Mod4
 keycode 133 = F13 F13 F13
+! clear capslock, bind to F14
 clear Lock
 keycode 66 = F14 F14 F14
