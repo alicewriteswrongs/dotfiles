@@ -190,6 +190,25 @@ augroup pencil
   autocmd FileType tex          call pencil#init({'wrap': 'hard'})
 augroup END
 
+" get extended F keys in vim
+" this is windows key
+set <F13>=[25~
+" caps
+set <F14>=[26~
+
+" mash caps to toggle insert mode
+nnoremap <F14> i
+inoremap <F14> <esc>l
+
+
+" vim-tmux-navigator settings
+let g:tmux_navigator_no_mappings = 1
+nnoremap <silent> <F13>h :TmuxNavigateLeft<cr>
+nnoremap <silent> <F13>j :TmuxNavigateDown<cr>
+nnoremap <silent> <F13>k :TmuxNavigateUp<cr>
+nnoremap <silent> <F13>l :TmuxNavigateRight<cr>
+nnoremap <silent> <f13>\ :TmuxNavigateRight<cr>
+
 " """""""""""""""""""""""""""""""""""""""""""""""""""
 " """Keybinds
 " """""""""""""""""""""""""""""""""""""""""""""""""""
