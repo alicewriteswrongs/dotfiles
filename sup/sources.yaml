@@ -18,7 +18,7 @@
 - !supmua.org,2006-10-01/Redwood/Maildir
   uri: maildir:/home/alice/mail/old_gmail/archive
   usual: true
-  archived: false
+  archived: true
   sync_back: false
   id: 3
   labels:
