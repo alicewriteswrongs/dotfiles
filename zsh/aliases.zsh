@@ -73,6 +73,7 @@ alias orphans='sudo pacman -Qdt'
 alias p='cd ~/Code/projects'
 alias poetry='cd ~/ownCloud/Documents/writing/poetry'
 alias pretty='git log --pretty=oneline' #get succinct git log information
+alias pserver='python -m SimpleHTTPServer'
 alias pullom='git checkout master && git pull origin master'
 alias pullsubmod='git submodule init && git submodule update'
 alias pulp='cd ~/Code/bookbub/pulp'
