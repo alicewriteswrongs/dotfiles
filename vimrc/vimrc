@@ -11,6 +11,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
+Plugin 'benmills/vimux'
 Plugin 'mtscout6/vim-cjsx'
 Plugin 'mxw/vim-jsx'
 Plugin 'pangloss/vim-javascript'
@@ -190,24 +191,21 @@ augroup pencil
   autocmd FileType tex          call pencil#init({'wrap': 'hard'})
 augroup END
 
-" get extended F keys in vim
-" this is windows key
-set <F13>=[25~
-" caps
-set <F14>=[26~
-
 " mash caps to toggle insert mode
-nnoremap <F14> i
-inoremap <F14> <esc>l
+nnoremap <F12> i
+inoremap <F12> <esc>l
 
+" vimux
+map <Leader>vrs :call VimuxRunCommand("clear; vdo rspec " . bufname("%"))<CR>
+map <Leader>vrb :call VimuxRunCommand("clear; pry")<CR>
 
 " vim-tmux-navigator settings
 let g:tmux_navigator_no_mappings = 1
-nnoremap <silent> <F13>h :TmuxNavigateLeft<cr>
-nnoremap <silent> <F13>j :TmuxNavigateDown<cr>
-nnoremap <silent> <F13>k :TmuxNavigateUp<cr>
-nnoremap <silent> <F13>l :TmuxNavigateRight<cr>
-nnoremap <silent> <f13>\ :TmuxNavigateRight<cr>
+nnoremap <silent> <F11>h :TmuxNavigateLeft<cr>
+nnoremap <silent> <F11>j :TmuxNavigateDown<cr>
+nnoremap <silent> <F11>k :TmuxNavigateUp<cr>
+nnoremap <silent> <F11>l :TmuxNavigateRight<cr>
+nnoremap <silent> <f11>\ :TmuxNavigateRight<cr>
 
 " """""""""""""""""""""""""""""""""""""""""""""""""""
 " """Keybinds
