@@ -10,7 +10,8 @@ let mapleader = "\<Space>" "set leader to space
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'lambdatoast/elm.vim'
+Plugin 'elmcast/elm-vim'
+" Plugin 'lambdatoast/elm.vim'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'mtscout6/vim-cjsx'
 Plugin 'mxw/vim-jsx'
