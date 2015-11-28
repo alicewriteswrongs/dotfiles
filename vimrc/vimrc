@@ -96,6 +96,11 @@ augroup myfiletypes
     autocmd FileType scss setlocal autoindent
     autocmd FileType scss setlocal shiftwidth=2
     autocmd FileType scss setlocal softtabstop=2
+    "elm
+    autocmd FileType scss setlocal expandtab
+    autocmd FileType scss setlocal autoindent
+    autocmd FileType scss setlocal shiftwidth=2
+    autocmd FileType scss setlocal softtabstop=2
 augroup END
 
 "colorscheme
