@@ -189,6 +189,7 @@ let g:airline#extensions#tabline#enabled = 0
 let g:airline#extensions#whitespace#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:bufferline_echo = 0
+let g:ag_highlight=1
 
 augroup pencil
   autocmd!
@@ -266,3 +267,5 @@ let localleader = "\\"
 nnoremap <silent> <Leader>tp :TogglePencil<cr>
 nnoremap <Leader>rb :'<,'>s/pick/f/g<cr>
 nnoremap <Leader>gb :Gblame<cr>
+nnoremap <Leader>[ :tabprevious<cr>
+nnoremap <Leader>] :tabnext<cr>
