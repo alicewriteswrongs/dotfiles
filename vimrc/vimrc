@@ -10,40 +10,41 @@ let mapleader = "\<Space>" "set leader to space
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'elmcast/elm-vim'
 " Plugin 'lambdatoast/elm.vim'
+" Plugin 'lokaltog/vim-powerline'
+" Plugin 'vim-scripts/Terminus'
+Plugin 'altercation/vim-colors-solarized' "solarized plugin
+Plugin 'bling/vim-airline'
+Plugin 'chriskempson/base16-vim'
+Plugin 'edkolev/tmuxline.vim' "makes tmux pretty
+Plugin 'elmcast/elm-vim'
 Plugin 'gmarik/Vundle.vim'
+Plugin 'haya14busa/incsearch.vim' "nice incremental search
+Plugin 'jceb/vim-orgmode'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'kien/ctrlp.vim' "fuzzy search
 Plugin 'mtscout6/vim-cjsx'
 Plugin 'mxw/vim-jsx'
 Plugin 'pangloss/vim-javascript'
-Plugin 'tpope/vim-commentary' "gc to toggle comments
-Plugin 'chriskempson/base16-vim'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-sensible'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-rake'
-Plugin 'tpope/vim-surround'
-Plugin 'kien/ctrlp.vim' "fuzzy search
-Plugin 'tpope/vim-rsi' "gives readline bindings
-Plugin 'terryma/vim-multiple-cursors' "sublime-like cursors
-Plugin 'edkolev/tmuxline.vim' "makes tmux pretty
-Plugin 'tpope/vim-vinegar' "makes vim directory browser nicer
-Plugin 'vim-scripts/lbdbq' "formats mail headers more nicely
-Plugin 'tpope/vim-fugitive' "tpopes git wrapper
-Plugin 'tpope/vim-unimpaired' "adds some keybinds?
-Plugin 'wlangstroth/vim-racket' "some stuff for racket-lang
-Plugin 'vim-scripts/paredit.vim' "lisp/racket S-expressions
-Plugin 'sjl/tslime.vim' "send text to a tmux pane
 Plugin 'reedes/vim-pencil' "soft/hard wraps for txt,md,email
-Plugin 'haya14busa/incsearch.vim' "nice incremental search
-Plugin 'altercation/vim-colors-solarized' "solarized plugin
-Plugin 'rust-lang/rust.vim' "some rust stuff
 Plugin 'rking/ag.vim' "wrapper for ag
+Plugin 'rust-lang/rust.vim' "some rust stuff
+Plugin 'sjl/tslime.vim' "send text to a tmux pane
+Plugin 'terryma/vim-multiple-cursors' "sublime-like cursors
+Plugin 'tpope/vim-commentary' "gc to toggle comments
+Plugin 'tpope/vim-fugitive' "tpopes git wrapper
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-rake'
+Plugin 'tpope/vim-rsi' "gives readline bindings
+Plugin 'tpope/vim-sensible'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-unimpaired' "adds some keybinds?
+Plugin 'tpope/vim-vinegar' "makes vim directory browser nicer
 Plugin 'valloric/youcompleteme' "the best completion ever
-Plugin 'bling/vim-airline'
-" Plugin 'lokaltog/vim-powerline'
-" Plugin 'vim-scripts/Terminus'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'vim-scripts/lbdbq' "formats mail headers more nicely
+Plugin 'vim-scripts/paredit.vim' "lisp/racket S-expressions
+Plugin 'wlangstroth/vim-racket' "some stuff for racket-lang
 
 call vundle#end()
 filetype plugin indent on "filetype based indenting 
