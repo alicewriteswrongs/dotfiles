@@ -1,4 +1,4 @@
-Dir['/home/benpote/mail/archive/*'].map do |d|
+Dir['/home/alice/mail/archive/*'].map do |d|
   uri = "maildir:" d
   log "Processing source #{uri}"
   unless SourceManager.source_for uri
