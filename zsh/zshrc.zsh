@@ -96,3 +96,6 @@ export PATH="$PATH:$GOPATH/bin"
 export PATH="$HOME/root/bin:$PATH" # for user libs
 export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
 fpath=(~/.zsh $fpath)
+
+export NVM_DIR="/home/alice/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
