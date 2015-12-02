@@ -13,12 +13,12 @@ function gs() { # use fzf-tmux to pick branches
 zle -N gs
 bindkey '^b' gs
 
-function clr() {
-    clear
-    zle redisplay
-}
-zle -N clr
-bindkey '^n' clr
+# function clr() {
+#     clear
+#     zle redisplay
+# }
+# zle -N clr
+# bindkey '^n' clr
 
 function find_within_files() {
     ag --nobreak --noheading . | fzf-tmux
