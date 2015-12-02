@@ -49,11 +49,9 @@ Plugin 'wlangstroth/vim-racket' "some stuff for racket-lang
 call vundle#end()
 filetype plugin indent on "filetype based indenting 
 
-" """""""""""""""""""""""""""""""""""""""""""""""""""
-" """general configuration
-" """""""""""""""""""""""""""""""""""""""""""""""""""
-
-"filetype specific stuff
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+"""general configuration
+"""""""""""""""""""""""""""""""""""""""""""""""""""
 augroup myfiletypes
     autocmd! 
     "python first
@@ -207,18 +205,9 @@ inoremap <F12> <esc>l
 map <Leader>vrs :call VimuxRunCommand("clear; vdo rspec " . bufname("%"))<CR>
 map <Leader>vrb :call VimuxRunCommand("clear; pry")<CR>
 
-" vim-tmux-navigator settings
-let g:tmux_navigator_no_mappings = 1
-nnoremap <silent> <F11>h :TmuxNavigateLeft<cr>
-nnoremap <silent> <F11>j :TmuxNavigateDown<cr>
-nnoremap <silent> <F11>k :TmuxNavigateUp<cr>
-nnoremap <silent> <F11>l :TmuxNavigateRight<cr>
-nnoremap <silent> <f11>\ :TmuxNavigateRight<cr>
-
-" """""""""""""""""""""""""""""""""""""""""""""""""""
-" """Keybinds
-" """""""""""""""""""""""""""""""""""""""""""""""""""
-
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+"""Keybinds
+"""""""""""""""""""""""""""""""""""""""""""""""""""
 let hlstate=0 
 nnoremap <F4> :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=1-hlstate<cr>
 nnoremap <Leader>ws :set list!<CR> 
