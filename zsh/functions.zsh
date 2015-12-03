@@ -197,3 +197,7 @@ function install() {
 function uninstall() {
     sudo apt remove $1
 }
+
+function latex_to_markdown() {
+    pandoc $1 -f latex -t markdown -o $2
+}
