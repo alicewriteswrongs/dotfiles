@@ -201,3 +201,7 @@ function uninstall() {
 function latex_to_markdown() {
     pandoc $1 -f latex -t markdown -o $2
 }
+
+function screenshot_selection() {
+    scrot -s ~/screens/$1
+}
