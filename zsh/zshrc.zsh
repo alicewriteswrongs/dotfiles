@@ -95,6 +95,7 @@ export GOPATH="$HOME/Code/gospace"
 export PATH="$PATH:$GOPATH/bin"
 export PATH="$HOME/root/bin:$PATH" # for user libs
 export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
+export PATH="$PATH:/home/alice/bin/swift-2.2-SNAPSHOT-2015-12-01-b-ubuntu15.10/usr/bin"
 fpath=(~/.zsh $fpath)
 
 export NVM_DIR="/home/alice/.nvm"
