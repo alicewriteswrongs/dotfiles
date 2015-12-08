@@ -46,6 +46,7 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus [title="Terminal"] scratchpad show
 bindsym $mod+plus [title="BookBub - Slack"] scratchpad show
 bindsym $mod+backslash [title="Spotify*"] scratchpad show
+bindsym $mod+Shift+plus [title="Signal"] scratchpad show
 
 #show all scratchpad (usually won't need)
 bindsym $mod+ctrl+minus scratchpad show
@@ -127,6 +128,7 @@ for_window [title="galculator"] floating enable
 for_window [title="Steam - Update News"] floating enable
 for_window [title="IBus Preferences"] floating enable
 for_window [title="Steam Login"] floating enable
+for_window [title="Signal"] floating enable
 for_window [class="(?i)gvim"] floating enable
 for_window [class="(?i)gvim"] resize shrink width 800 px
 for_window [class="(?i)gvim"] resize shrink height 200 px
