@@ -41,11 +41,13 @@ Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired' "adds some keybinds?
 Plugin 'tpope/vim-vinegar' "makes vim directory browser nicer
+Plugin 'tpope/vim-bundler'
 Plugin 'valloric/youcompleteme' "the best completion ever
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/lbdbq' "formats mail headers more nicely
 Plugin 'vim-scripts/paredit.vim' "lisp/racket S-expressions
 Plugin 'wlangstroth/vim-racket' "some stuff for racket-lang
+Plugin 'ternjs/tern_for_vim'
 
 call vundle#end()
 filetype plugin indent on "filetype based indenting 
@@ -53,6 +55,7 @@ filetype plugin indent on "filetype based indenting
 """""""""""""""""""""""""""""""""""""""""""""""""""
 """general configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""
+
 augroup myfiletypes
     autocmd! 
     "python first
@@ -101,6 +104,8 @@ augroup myfiletypes
     autocmd FileType elm setlocal autoindent
     autocmd FileType elm setlocal shiftwidth=2
     autocmd FileType elm setlocal softtabstop=2
+    "js
+    autocmd FileType javascript setlocal omnifunc=tern#Complete
 augroup END
 
 "colorscheme
