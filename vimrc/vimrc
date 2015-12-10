@@ -171,6 +171,7 @@ set undodir=~/.vim/undo//
 """""""""""""""""""""""""""""""""""""""""""""""""""
 """Plugin Configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""
+let g:EclimCompletionEngine = 'omnifunc'
 let g:ctrlp_extensions = ['buffertag']
 let g:incsearch#auto_nohlsearch = 1
 "tmuxline.vim
