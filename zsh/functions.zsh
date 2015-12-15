@@ -205,3 +205,8 @@ function latex_to_markdown() {
 function screenshot_selection() {
     scrot -s ~/screens/$1
 }
+
+function virtualbox_reinstall() {
+    sudo modprove vboxdrv
+    sudo /etc/init.d/virtualbox start
+}
