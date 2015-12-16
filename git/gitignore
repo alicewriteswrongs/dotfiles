@@ -25,3 +25,4 @@ common_words.txt
 *.swa
 *.crdownload
 .tern-project
+~/Code/bookbub/lello/Vagrantfile
