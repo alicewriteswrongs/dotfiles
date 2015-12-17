@@ -141,6 +141,7 @@ for_window [title="Open File"] floating enable
 for_window [title="Save File"] floating enable
 for_window [title="Text Import*"] floating enable
 for_window [title="Spotify Premium - Linux Preview"] floating enable
+for_window [title="BookBub - Slack"] floating enable
 
 #no borders
 for_window [class="^.*"] border pixel 0
