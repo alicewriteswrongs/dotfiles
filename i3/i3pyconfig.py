@@ -9,7 +9,7 @@ status = Status(standalone = True)
 #'hardware' related statuses
 
 status.register("clock",
-        format = "%a:%m/%d %I:%M",)
+        format = "%a:%m/%d %H:%M",)
 
 status.register("cpu_usage")
 
