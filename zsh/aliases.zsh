@@ -1,4 +1,5 @@
 alias -g G='| grep'
+alias orgmode='cd ~/notes/org'
 alias eclim='~/eclipse/eclimd'
 alias abcdehighqual='abcde -o ogg:"-q 7"' #rips at ogg vorbis quality level 7
 alias abig='tmux attach -t big'
