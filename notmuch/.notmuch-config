@@ -1,6 +1,6 @@
 # where the mail lives
 [database]
-path=/home/alice/mail
+path=/home/alice/SpiderOak Hive/mail
 
 [user]
 name=Alice Pote
