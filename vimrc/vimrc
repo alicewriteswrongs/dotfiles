@@ -109,6 +109,7 @@ augroup myfiletypes
     autocmd FileType javascript setlocal omnifunc=tern#Complete
     "org
     autocmd FileType org setlocal foldenable
+    autocmd FileType org setlocal nolist
 augroup END
 
 "colorscheme
