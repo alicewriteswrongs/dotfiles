@@ -98,6 +98,7 @@ export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
 export PATH="$PATH:/home/alice/bin/swift-2.2-SNAPSHOT-2015-12-01-b-ubuntu15.10/usr/bin"
 fpath=(~/.zsh $fpath)
 export PATH="$PATH:/home/alice/bin/nwjs-v0.13.0-alpha7-linux-x64"
+export PATH="$PATH:/home/alice/.local/bin/"
 
 export NVM_DIR="/home/alice/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
