@@ -107,6 +107,8 @@ augroup myfiletypes
     autocmd FileType elm setlocal softtabstop=2
     "js
     autocmd FileType javascript setlocal omnifunc=tern#Complete
+    "org
+    autocmd FileType org setlocal foldenable
 augroup END
 
 "colorscheme
