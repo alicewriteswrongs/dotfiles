@@ -1,30 +1,14 @@
-#muttrc, just trying to get it working at the most basic level possible, then we'll add more stuff
+#muttrc! for more mutt!
 
+set record=~/SpiderOak Hive/mail/Sent
+set spool
 
-#minimum connection block
-set imap_user 	= 'ben.pote@gmail.com'
-set spoolfile 	= imaps://imap.gmail.com/INBOX
-set folder 	= imaps://imap.gmail.com/
-set postponed 	="imaps://imap.gmail.com/[Gmail]/Drafts"
-#
-
-####SMTP support (using msmtp)
-set from 	= "ben.pote@gmail.com"
-set sendmail	= "/usr/local/bin/msmtp -a ben.pote"
-set sendmail_wait = 0
-unset record
-###works!!!!!
-
-########Pull contacts from address book
-set query_command = "contacts -Sf '%eTOKEN%n' '%s' | sed -e 's/TOKEN/\t/g'"
-bind editor <Tab> complete-query
-bind editor ^T    complete
-#######
-
+set mbox_type=Maildir
+set folder
 
 ###Other features
 #options
-set realname = "Ben Pote"
+set realname = "Alice Pote"
 
 #keybindings
 bind index gg	first-entry	#selects first entry in index
@@ -44,9 +28,8 @@ unset move
 set delete
 set quit
 
-
 # COLORS
-color attachment brightmagenta black  
+color attachment brightmagenta black
 color error brightwhite red   # errors yell at you in red
 color hdrdefault red black   # headers
 color indicator brightyellow magenta # currently selected message
