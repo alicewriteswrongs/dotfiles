@@ -15,6 +15,7 @@ call vundle#begin()
 " Plugin 'vim-scripts/Terminus'
 Plugin 'altercation/vim-colors-solarized' "solarized plugin
 Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-speeddating'
 Plugin 'chriskempson/base16-vim'
 " Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'edkolev/tmuxline.vim' "makes tmux pretty
