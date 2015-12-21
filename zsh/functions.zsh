@@ -57,7 +57,7 @@ fhash() {
 }
 
 function vdo() {
-    vagrant ssh -c '$1'
+    vagrant ssh -c '$*'
 }
 
 function gd() {
