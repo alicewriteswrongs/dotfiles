@@ -42,6 +42,11 @@ function install_tools() {
     sudo apt-get -y install vim-gnome tmux zsh nodejs-legacy npm silversearcher-ag htop mpd git exuberant-ctags virtualbox vagrant mupdf transmission-daemon redshift-gtk scrot redshift ssh-askpass keychain gpg_agent ssh-askpass-gnome
 }
 
+function install_notmuch() {
+    update
+    sudo apt install -y notmuch libnotmuch4 libnotmuch-dev
+}
+
 function install_latex() {
     sudo apt-get install texlive-full texlive-extra-utils texlive-math-extra texlive-latex-base texlive-latex-extra cweb-latex
 }
