@@ -1,0 +1,15 @@
+theme = solarized
+[accounts]
+    [[work]]
+        realname = Alice Pote
+        address = alice@bookbub.com
+        sendmail_command = msmtp --account=work -t
+        sent_box = maildir:///home/alice/SpiderOak Hive/mail/work/Sent
+        draft_box = maildir:///home/alice/SpiderOak Hive/mail/work/Draft
+
+    [[personal]]
+        realname = Alice Pote
+        address = alice.writes.wrongs@gmail.com
+        sendmail_command = msmtp --account=work -t
+        sent_box = maildir:///home/alice/SpiderOak Hive/mail/personal/Sent
+        draft_box = maildir:///home/alice/SpiderOak Hive/mail/personal/Draft
