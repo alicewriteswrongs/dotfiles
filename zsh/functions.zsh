@@ -207,6 +207,6 @@ function screenshot_selection() {
 }
 
 function virtualbox_reinstall() {
-    sudo modprove vboxdrv
+    sudo modprobe vboxdrv
     sudo /etc/init.d/virtualbox start
 }
