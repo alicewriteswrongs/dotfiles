@@ -13,6 +13,7 @@ call vundle#begin()
 " Plugin 'christoomey/vim-tmux-navigator'
 " Plugin 'lambdatoast/elm.vim'
 " Plugin 'lokaltog/vim-powerline'
+" Plugin 'pangloss/vim-javascript'
 " Plugin 'vim-scripts/Terminus'
 Plugin 'altercation/vim-colors-solarized' "solarized plugin
 Plugin 'bling/vim-airline'
@@ -25,9 +26,9 @@ Plugin 'jceb/vim-orgmode'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim' "fuzzy search
 Plugin 'mtscout6/vim-cjsx'
-Plugin 'mxw/vim-jsx' "nice JS highlighting
-Plugin 'othree/yajs.vim'
-" Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'othree/yajs.vim' "nice JS highlighting
 Plugin 'reedes/vim-pencil' "soft/hard wraps for txt,md,email
 Plugin 'rking/ag.vim' "wrapper for ag
 Plugin 'rust-lang/rust.vim' "some rust stuff
@@ -201,6 +202,7 @@ let g:airline#extensions#whitespace#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:bufferline_echo = 0
 let g:ag_highlight=1
+let g:used_javascript_libs = 'underscore, jquery, react'
 
 augroup pencil
   autocmd!
