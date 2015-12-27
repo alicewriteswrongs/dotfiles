@@ -1,6 +1,6 @@
 ---
 - !supmua.org,2006-10-01/Redwood/Maildir
-  uri: maildir:/home/alice/SpiderOak Hive/mail/work/archive
+  uri: maildir:/home/alice/mail/work/archive
   usual: true
   archived: false
   sync_back: false
@@ -8,7 +8,7 @@
   labels:
   - bookbub
 - !supmua.org,2006-10-01/Redwood/Maildir
-  uri: maildir:/home/alice/SpiderOak Hive/mail/personal/archive
+  uri: maildir:/home/alice/mail/personal/archive
   usual: true
   archived: false
   sync_back: false
@@ -16,7 +16,7 @@
   labels:
   - alice_gmail
 - !supmua.org,2006-10-01/Redwood/Maildir
-  uri: maildir:/home/alice/SpiderOak Hive/mail/old_gmail/archive
+  uri: maildir:/home/alice/mail/old_gmail/archive
   usual: true
   archived: true
   sync_back: false
