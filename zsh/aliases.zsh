@@ -68,7 +68,6 @@ alias ls='ls --color=auto'  #colorize ls output
 alias mc='make clean'
 alias mkdir='mkdir -p -v'   #makes a directory and it's hierarchy, also verbose
 alias mv='mv -iv'           #makes it interactive and verbose
-alias node='nodejs'
 alias nodpms='xset dpms 0 0 0'
 alias notes='cd ~/SpiderOak\ Hive/notes'
 alias orphans='sudo pacman -Qdt'
