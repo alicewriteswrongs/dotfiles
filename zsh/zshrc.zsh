@@ -99,6 +99,7 @@ export PATH="$PATH:/home/alice/bin/swift-2.2-SNAPSHOT-2015-12-01-b-ubuntu15.10/u
 fpath=(~/.zsh $fpath)
 export PATH="$PATH:/home/alice/bin/nwjs-v0.13.0-alpha7-linux-x64"
 export PATH="$PATH:/home/alice/.local/bin/"
+export PATH="$PATH:/home/alice/bin/Mancy-linux-x64"
 
 export NVM_DIR="/home/alice/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
