@@ -10,10 +10,14 @@ let mapleader = "\<Space>" "set leader to space
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+" Plugin 'othree/yajs.vim' "nice JS highlighting
+" Plugin 'othree/javascript-libraries-syntax.vim' "syntax for some common JS libs
+
 " Plugin 'christoomey/vim-tmux-navigator'
 " Plugin 'lambdatoast/elm.vim'
 " Plugin 'lokaltog/vim-powerline'
-" Plugin 'pangloss/vim-javascript'
 " Plugin 'vim-scripts/Terminus'
 Plugin 'altercation/vim-colors-solarized' "solarized plugin
 Plugin 'bling/vim-airline'
@@ -26,9 +30,6 @@ Plugin 'jceb/vim-orgmode'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim' "fuzzy search
 Plugin 'mtscout6/vim-cjsx'
-Plugin 'mxw/vim-jsx'
-Plugin 'othree/javascript-libraries-syntax.vim'
-Plugin 'othree/yajs.vim' "nice JS highlighting
 Plugin 'reedes/vim-pencil' "soft/hard wraps for txt,md,email
 Plugin 'rking/ag.vim' "wrapper for ag
 Plugin 'rust-lang/rust.vim' "some rust stuff
@@ -120,7 +121,7 @@ augroup END
 
 "colorscheme
 colorscheme solarized
-set background=light 
+set background=light
 syntax on
 
 "powerline
@@ -181,6 +182,8 @@ set undodir=~/.vim/undo//
 """""""""""""""""""""""""""""""""""""""""""""""""""
 """Plugin Configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""
+
+let g:jsx_ext_required = 0 " allow jsx syntax in normal js files
 let g:EclimCompletionEngine = 'omnifunc'
 let g:ctrlp_extensions = ['buffertag']
 let g:incsearch#auto_nohlsearch = 1
