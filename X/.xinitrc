@@ -32,7 +32,7 @@ nm-applet &
 # xset dpms 300 600 0 &
 
 #make keybinds (for thinkpad media keys, etc)
-# xbindkeys &
+xbindkeys &
 
 xscreensaver &
 
