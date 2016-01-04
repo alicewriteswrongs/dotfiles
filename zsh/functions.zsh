@@ -210,3 +210,9 @@ function virtualbox_reinstall() {
     sudo modprobe vboxdrv
     sudo /etc/init.d/virtualbox start
 }
+
+function npm_reset() {
+    rm -r node_modules
+    npm cache clean
+    npm install
+}
