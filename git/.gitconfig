@@ -3,3 +3,7 @@
 	email = alice.writes.wrongs@gmail.com
 [core]
 	excludesfile = /home/alice/dotfiles/git/gitignore
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
