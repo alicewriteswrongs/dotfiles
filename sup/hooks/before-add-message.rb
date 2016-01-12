@@ -74,10 +74,6 @@ if message.from.email.start_with? 'ryanvcostello@gmail.com'
   message.add_label :friends
 end
 
-if message.from.email.start_with? 'leocelo@gmail.com'
-  message.add_label :friends
-end
-
 if message.from.email.start_with? 'kspilios@bu.edu'
   message.add_label :BI108
 end
