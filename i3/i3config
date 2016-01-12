@@ -47,6 +47,7 @@ bindsym $mod+minus [title="Terminal"] scratchpad show
 bindsym $mod+plus [title="BookBub - Slack"] scratchpad show
 bindsym $mod+backslash [title="Spotify*"] scratchpad show
 bindsym $mod+Shift+plus [title="Signal"] scratchpad show
+bindsym $mod+Shift+backslash [title="Astroid"] scratchpad show
 
 #show all scratchpad (usually won't need)
 bindsym $mod+ctrl+minus scratchpad show
