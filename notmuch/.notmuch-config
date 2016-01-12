@@ -1,6 +1,6 @@
 # where the mail lives
 [database]
-path=/home/alice/SpiderOak Hive/mail
+path=/home/alice/mail
 
 [user]
 name=Alice Pote
@@ -17,4 +17,4 @@ exclude_tags=deleted;spam;
 # controls whether notmuch sync some basic tagging
 # back to the maildir by editing filenames
 [maildir]
-synchronize_flags=true
+synchronize_flags=false
