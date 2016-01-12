@@ -7,5 +7,6 @@
 	tool = vimdiff
 [merge]
 	tool = vimdiff
+	conflictStyle = diff3
 [difftool]
 	prompt = false
