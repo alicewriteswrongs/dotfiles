@@ -52,6 +52,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/lbdbq' "formats mail headers more nicely
 Plugin 'vim-scripts/paredit.vim' "lisp/racket S-expressions
 Plugin 'wlangstroth/vim-racket' "some stuff for racket-lang
+Plugin 'wellle/tmux-complete.vim' "autocomplete with text in tmux buffers
 
 call vundle#end()
 filetype plugin indent on "filetype based indenting 
@@ -209,6 +210,7 @@ let g:airline_powerline_fonts = 1
 let g:bufferline_echo = 0
 let g:ag_highlight=1
 let g:used_javascript_libs = 'underscore, jquery, react'
+let g:tmuxcomplete#trigger = 'omnifunc'
 
 augroup pencil
   autocmd!
