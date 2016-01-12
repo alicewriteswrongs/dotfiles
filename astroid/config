@@ -86,8 +86,19 @@
             "sendmail": "msmtp -t",
             "default": "true",
             "save_sent": "false",
-            "save_sent_to": "\/home\/alice\/mail\/sent\/cur\/",
-            "save_drafts_to": "\/home\/alice\/mail\/drafts\/",
+            "save_sent_to": "\/home\/alice\/mail\/personal\/Sent\/cur\/",
+            "save_drafts_to": "\/home\/alice\/mail\/personal\/Drafts\/",
+            "additional_sent_tags": ""
+        },
+        "alice_work_gmail": {
+            "name": "Alice Pote",
+            "email": "benpote@gmail.com",
+            "gpgkey": "",
+            "sendmail": "msmtp -t",
+            "default": "true",
+            "save_sent": "false",
+            "save_sent_to": "\/home\/alice\/mail\/old_gmail\/Sent\/cur\/",
+            "save_drafts_to": "\/home\/alice\/mail\/old_gmail\/Drafts\/",
             "additional_sent_tags": ""
         }
     },
