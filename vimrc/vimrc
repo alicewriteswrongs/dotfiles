@@ -156,7 +156,9 @@ set laststatus=2
 set noshowmode
 set ttyfast
 set mouse=a
-set ttymouse=sgr
+if !has('nvim')
+    set ttymouse=sgr
+endif
 set mousemodel=extend
 set noesckeys
 set timeout
