@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# mailist lists
+# mailing lists
 notmuch tag +LPC -- subject:"[lpc-c]"
 notmuch tag +crypto -- subject:"[Cryptography]"
 notmuch tag +crypto -- to:cryptography@metzdowd.com
@@ -15,7 +15,9 @@ notmuch tag +boston_iww -- to:bostgmb-l@lists.iww.org
 notmuch tag +BCN -- to:bcn@lists.bostoncoop.net
 notmuch tag +BATS -- to:massbats@googlegroups.com
 notmuch tag +BATS -- to:boston-area-trans-support@yahoogroups.com
-
+notmuch tag +Julia -- to:julia-users@googlegroups.com
+notmuch tag +kernel_newbies -- to:kernelnewbies@kernelnewbies.org
+notmuch tag +Arch to:arch-general@archlinux.org
 
 # skip the inbox
 function skip_inbox_from () {
@@ -30,5 +32,11 @@ skip_inbox_from do-not-reply@trello.com
 skip_inbox_from info@marighttoknow.org
 skip_inbox_from update@stubhub-mail.com
 skip_inbox_from noreply@coursera.org
+skip_inbox_from info@bookbub.com
+skip_inbox_from info@twitter.com
 skip_inbox_to staging_desk@bookbub.com
 skip_inbox_to ben.pote@gmail.com
+skip_inbox_from kernelnewbies@kernelnewbies.org
+skip_inbox_from noreply@newrelic.com
+skip_inbox_from notifier@qbox.io
+skip_inbox_from notifications@myprewards.com
