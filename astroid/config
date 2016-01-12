@@ -86,18 +86,9 @@
             "sendmail": "msmtp -t",
             "default": "true",
             "save_sent": "false",
-            "save_sent_to": "\/home\/root\/Mail\/sent\/cur\/",
-            "save_drafts_to": "\/home\/root\/Mail\/drafts\/"
-        },
-        "alice_riseup": {
-            "name": "Alice Pote",
-            "email": "axyridis@riseup.net",
-            "gpgkey": "",
-            "sendmail": "msmtp -t",
-            "default": "true",
-            "save_sent": "false",
-            "save_sent_to": "\/home\/root\/Mail\/sent\/cur\/",
-            "save_drafts_to": "\/home\/root\/Mail\/drafts\/"
+            "save_sent_to": "\/home\/alice\/mail\/sent\/cur\/",
+            "save_drafts_to": "\/home\/alice\/mail\/drafts\/",
+            "additional_sent_tags": ""
         }
     },
     "startup": {
