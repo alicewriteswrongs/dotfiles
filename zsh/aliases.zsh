@@ -58,7 +58,6 @@ alias grep='grep -n --color=auto' #colorize grep output and line numbers
 alias gsta='git stash apply'
 alias howbig='du -hc | tail -n 1'
 alias i3config='vim ~/dotfiles/i3/i3config'
-alias imac='ssh benpote@cumm005-0b01-dhcp-062.bu.edu'
 alias keypush='keybase dir sign && git add SIGNED.md && git commit && git push origin master'
 alias koantest='ruby path_to_enlightenment.rb'
 alias la='ls -alhF'         #show hidden files and attribute
