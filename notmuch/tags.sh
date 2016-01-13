@@ -28,6 +28,10 @@ notmuch tag +nylug -- to:nylug-talk@nylug.org
 notmuch tag +github_notification -- from:notifications@github.com
 notmuch tag +EFF -- from:editor@eff.org
 
+# work! school!
+notmuch tag +bookbub -- to:alice@bookbub.com
+notmuch tag +BU -- to:benpote@bu.edu
+
 # skip the inbox
 function skip_inbox_from () {
     notmuch tag -inbox -- from:$1
