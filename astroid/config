@@ -85,9 +85,20 @@
             "gpgkey": "",
             "sendmail": "msmtp -t",
             "default": "true",
-            "save_sent": "false",
+            "save_sent": "true",
             "save_sent_to": "\/home\/alice\/mail\/personal\/Sent\/cur\/",
             "save_drafts_to": "\/home\/alice\/mail\/personal\/Drafts\/",
+            "additional_sent_tags": ""
+        },
+        "riseup_mail": {
+            "name": "Alice Pote",
+            "email": "axyridis@riseup.net",
+            "gpgkey": "",
+            "sendmail": "msmtp -t",
+            "default": "false",
+            "save_sent": "true",
+            "save_sent_to": "\/home\/alice\/mail\/riseup\/Sent\/cur\/",
+            "save_drafts_to": "\/home\/alice\/mail\/riseup\/Drafts\/",
             "additional_sent_tags": ""
         },
         "alice_work_gmail": {
@@ -95,8 +106,8 @@
             "email": "benpote@gmail.com",
             "gpgkey": "",
             "sendmail": "msmtp -t",
-            "default": "true",
-            "save_sent": "false",
+            "default": "false",
+            "save_sent": "true",
             "save_sent_to": "\/home\/alice\/mail\/old_gmail\/Sent\/cur\/",
             "save_drafts_to": "\/home\/alice\/mail\/old_gmail\/Drafts\/",
             "additional_sent_tags": ""
