@@ -5,6 +5,7 @@ notmuch tag +LPC -- subject:"[lpc-c]"
 notmuch tag +crypto -- subject:"[Cryptography]"
 notmuch tag +crypto -- to:cryptography@metzdowd.com
 notmuch tag +crypto -- to:messaging@moderncrypto.org
+notmuch tag +crypto -- to:cryptography@randombit.net
 notmuch tag +sup -- subject:"[sup]"
 notmuch tag +tor -- subject:"[tor-talk]"
 notmuch tag +tor -- to:tor-talk@lists.torproject.org
@@ -18,13 +19,13 @@ notmuch tag +BATS -- to:massbats@googlegroups.com
 notmuch tag +BATS -- to:boston-area-trans-support@yahoogroups.com
 notmuch tag +Julia -- to:julia-users@googlegroups.com
 notmuch tag +kernel_newbies -- to:kernelnewbies@kernelnewbies.org
-notmuch tag +Arch to:arch-general@archlinux.org
-notmuch tag +blackandpink to:blackandpinkboston-courtsupport@googlegroups.coms
-notmuch tag +nylug to:nylug-talk@nylug.org
+notmuch tag +Arch -- to:arch-general@archlinux.org
+notmuch tag +blackandpink -- to:blackandpinkboston-courtsupport@googlegroups.coms
+notmuch tag +nylug -- to:nylug-talk@nylug.org
 
 # notifications and so on
-notmuch tag +github_notification from:notifications@github.com
-notmuch tag +EFF from:editor@eff.org
+notmuch tag +github_notification -- from:notifications@github.com
+notmuch tag +EFF -- from:editor@eff.org
 
 # skip the inbox
 function skip_inbox_from () {
@@ -49,5 +50,12 @@ skip_inbox_from notifier@qbox.io
 skip_inbox_from notifications@myprewards.com
 skip_inbox_from notifications@github.com
 skip_inbox_from cloudsuspensions@trustedproxies.com
+skip_inbox_from info@trustedproxies.com
 skip_inbox_to *@cic.us
 skip_inbox_to julia-users@googlegroups.com
+skip_inbox_from happiness@tinypulse.com
+skip_inbox_from maildelivery@freshbooks.com
+skip_inbox_from store-news@amazon.com
+skip_inbox_to bio-ebe-list@list-dist.bu.edu
+skip_inbox_to benpote@bu.edu
+skip_inbox_from vfe-campaign-response@amazon.com
