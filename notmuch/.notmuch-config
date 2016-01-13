@@ -18,3 +18,7 @@ exclude_tags=deleted;spam;
 # back to the maildir by editing filenames
 [maildir]
 synchronize_flags=true
+
+[addressbook]
+path=/home/alice/.notmuch-abook.db
+backend=sqlite3
