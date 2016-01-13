@@ -83,7 +83,7 @@
             "name": "Alice Pote",
             "email": "alice.writes.wrongs@gmail.com",
             "gpgkey": "",
-            "sendmail": "msmtp -t",
+            "sendmail": "msmtp --read-envelope-from -t",
             "default": "true",
             "save_sent": "true",
             "save_sent_to": "\/home\/alice\/mail\/personal\/Sent\/cur\/",
