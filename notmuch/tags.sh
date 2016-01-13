@@ -2,6 +2,7 @@
 
 # mailing lists
 notmuch tag +LPC -- subject:"[lpc-c]"
+notmuch tag +LPC -- to:lpc-c@masses.tao.ca
 notmuch tag +crypto -- subject:"[Cryptography]"
 notmuch tag +crypto -- to:cryptography@metzdowd.com
 notmuch tag +crypto -- to:messaging@moderncrypto.org
@@ -59,3 +60,4 @@ skip_inbox_from store-news@amazon.com
 skip_inbox_to bio-ebe-list@list-dist.bu.edu
 skip_inbox_to benpote@bu.edu
 skip_inbox_from vfe-campaign-response@amazon.com
+skip_inbox_to kernelnewbies@kernelnewbies.org
