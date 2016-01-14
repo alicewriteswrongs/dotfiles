@@ -51,7 +51,7 @@
         }
     },
     "poll": {
-        "interval": "0"
+        "interval": "160"
     },
     "attachment": {
         "external_open_cmd": "xdg-open"
