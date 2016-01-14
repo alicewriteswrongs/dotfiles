@@ -29,7 +29,7 @@ notmuch tag +github_notification -- from:notifications@github.com
 notmuch tag +EFF -- from:editor@eff.org
 
 # work! school!
-notmuch tag +bookbub -- to:alice@bookbub.com or from:alice@bookbub.com or to:geeks@bookbub.com or to:*@bookbub.com
+notmuch tag +bookbub -- to:alice@bookbub.com or from:alice@bookbub.com or to:geeks@bookbub.com or to:ops@bookbub.com
 notmuch tag +BU -- to:benpote@bu.edu
 notmuch tag +Hampshire -- to:blp09@hampshire.edu
 
