@@ -1,0 +1,25 @@
+# searching in main window
+main_window.search_tag=?
+main_window.search=/
+main_window.show_help=H
+
+# switching between buffers
+main_window.next_page=K
+main_window.previous_page=J
+thread_index.next_page=K
+thread_index.previous_page=J
+thread_view.scroll_up=u
+thread_view.scroll_down=d
+thread_view.delete=D
+thread_index.scroll_up=u
+thread_index.scroll_down=d
+thread_index.delete=D
+
+# replying, composing, etc
+
+main_window.new_mail=c
+main_window.mark_unread=N
+main_window.open_new_window=T
+thread_index.multi.achive=a
+main_window.jump_to_page=C-1
+
