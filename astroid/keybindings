@@ -8,18 +8,34 @@ main_window.next_page=K
 main_window.previous_page=J
 thread_index.next_page=K
 thread_index.previous_page=J
+help.next_page=K
+help.previous_page=J
 thread_view.scroll_up=u
 thread_view.scroll_down=d
+help.scroll_up=u
+help.scroll_down=d
+help.page_down=u
+help.page_up=d
 thread_view.delete=D
 thread_index.scroll_up=u
 thread_index.scroll_down=d
-thread_index.delete=D
-
-# replying, composing, etc
-
-main_window.new_mail=c
-main_window.mark_unread=N
 main_window.open_new_window=T
-thread_index.multi.achive=a
 main_window.jump_to_page=C-1
 
+# beginning/end of buffer
+thread_index.scroll_home=g
+thread_index.scroll_end=G
+thread_view.scroll_home=g
+thread_view.scroll_end=G
+
+# replying, composing, etc
+main_window.new_mail=c
+thread_index.reply=r
+thread_index.reply_all=R
+
+
+# tagging, etc
+main_window.mark_unread=N
+thread_index.multi.achive=a
+thread_index.delete=D
+thread_index.label=l
