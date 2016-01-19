@@ -13,13 +13,6 @@ function gs() { # use fzf-tmux to pick branches
 zle -N gs
 bindkey '^b' gs
 
-# function clr() {
-#     clear
-#     zle redisplay
-# }
-# zle -N clr
-# bindkey '^n' clr
-
 function find_within_files() {
     ag --nobreak --noheading . | fzf-tmux
     zle redisplay
@@ -28,13 +21,17 @@ function find_within_files() {
 zle -N find_within_files
 bindkey '^f' find_within_files
 
-function fda() {
-    local dir
-    dir=$(find ${1:-.} -type d 2> /dev/null | fzf-tmux +m) && cd "$dir"
+function select_directory() {
+    find ${1:-.} -type d 2> /dev/null | fzf-tmux 
+}
+
+function fancy_cd() {
+    cd $(select_directory)
     zle redisplay
 }
 
-zle -N fda
+zle -N fancy_cd
+bindkey '^P' fancy_cd
 
 fkill() {
   pid=$(ps -ef | sed 1d | fzf-tmux -m | awk '{print $2}')
