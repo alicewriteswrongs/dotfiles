@@ -31,7 +31,10 @@ bindkey '^f' find_within_files
 function fda() {
     local dir
     dir=$(find ${1:-.} -type d 2> /dev/null | fzf-tmux +m) && cd "$dir"
+    zle redisplay
 }
+
+zle -N fda
 
 fkill() {
   pid=$(ps -ef | sed 1d | fzf-tmux -m | awk '{print $2}')
@@ -118,6 +121,14 @@ function pullrequest() {
     else
         echo "not on master doofus!"
     fi
+}
+
+function prnew() {
+    pullrequest
+}
+
+function pru() {
+    pullrequest f
 }
 
 function gbnuke() { # nuke the current branch or $1
@@ -210,11 +221,11 @@ function latex_to_markdown() {
     pandoc $1 -f latex -t markdown -o $2
 }
 
-function screenshot_selection() {
+function sscreen() {
     scrot -s ~/screens/$1
 }
 
-function virtualbox_reinstall() {
+function vreinstall() {
     sudo modprobe vboxdrv
     sudo /etc/init.d/virtualbox start
 }
