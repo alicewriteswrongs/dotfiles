@@ -36,10 +36,10 @@ bindsym $mod+space exec dmenu_run
 #scratchpad (place to throw a window)
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+v [title="Terminal"] scratchpad show
-bindsym $mod+c [title="BookBub - Slack"] scratchpad show
-bindsym $mod+backslash [title="Spotify*"] scratchpad show
+bindsym $mod+f [title="BookBub - Slack"] scratchpad show
+bindsym $mod+d [title="Spotify*"] scratchpad show
 bindsym $mod+s [title="Signal"] scratchpad show
-bindsym $mod+m [title="Astroid"] scratchpad show
+bindsym $mod+a [title="Astroid"] scratchpad show
 
 #show all scratchpad (usually won't need)
 bindsym $mod+ctrl+minus scratchpad show
@@ -77,12 +77,6 @@ bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+ctrl+space focus mode_toggle
-
-# focus the parent container
-bindsym $mod+a focus parent
-
-# focus the child container
-#bindsym $mod+d focus child
 
 # give workspaces names
 set $WS1 1
