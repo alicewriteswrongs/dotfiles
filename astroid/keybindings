@@ -32,6 +32,8 @@ thread_view.scroll_end=G
 main_window.new_mail=c
 thread_index.reply=r
 thread_index.reply_all=R
+thread_view.reply=r
+thread_view.reply_all=R
 
 
 # tagging, etc
