@@ -9,11 +9,6 @@ exec --no-startup-id xset dpms 600
 #font pango:DejaVu Sans Mono 8
 font pango:inconsolata, Icons 8
 
-#bindings for scrot
-bindsym $mod+s exec "scrot ~/images/screenshots/%Y-%m-%d-%T.png"
-bindsym $mod+shift+s exec "scrot -s ~/images/screenshots/%Y-%m-%d-%T.png"
-
-
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -26,9 +21,6 @@ bindsym $mod+ctrl+v move workspace to VGA1
 bindsym $mod+ctrl+Shift+l exec "xscreensaver-command -lock"
 bindsym $mod+Return exec gnome-terminal
 bindsym $mod+Shift+Return exec gnome-terminal && floating enable
-
-# vim-anywhere
-bindsym $mod+v exec vim-anywhere
 
 #pause and play mpd, next and previous song
 bindsym $mod+p exec mpc toggle
@@ -43,11 +35,11 @@ bindsym $mod+space exec dmenu_run
 
 #scratchpad (place to throw a window)
 bindsym $mod+Shift+minus move scratchpad
-bindsym $mod+minus [title="Terminal"] scratchpad show
-bindsym $mod+plus [title="BookBub - Slack"] scratchpad show
+bindsym $mod+v [title="Terminal"] scratchpad show
+bindsym $mod+c [title="BookBub - Slack"] scratchpad show
 bindsym $mod+backslash [title="Spotify*"] scratchpad show
-bindsym $mod+Shift+plus [title="Signal"] scratchpad show
-bindsym $mod+Shift+backslash [title="Astroid"] scratchpad show
+bindsym $mod+s [title="Signal"] scratchpad show
+bindsym $mod+m [title="Astroid"] scratchpad show
 
 #show all scratchpad (usually won't need)
 bindsym $mod+ctrl+minus scratchpad show
