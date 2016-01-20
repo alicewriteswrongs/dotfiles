@@ -8,4 +8,5 @@ while read local_ref local_sha remote_ref remote_sha
 do
 
     # check for WIP commit
+    commit=`git rev-list -n 1 grep '^WIP' "$range"`
     if [ 
