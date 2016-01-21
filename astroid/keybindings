@@ -22,6 +22,9 @@ thread_index.scroll_down=d
 main_window.open_new_window=T
 main_window.jump_to_page=C-1
 
+# undo
+thread_index.undo=U
+
 # beginning/end of buffer
 thread_index.scroll_home=g
 thread_index.scroll_end=G
