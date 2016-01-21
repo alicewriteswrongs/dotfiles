@@ -56,9 +56,7 @@ fhash() {
   echo -n $(echo "$commit" | sed "s/ .*//")
 }
 
-function vdo() {
-    vagrant ssh -c '$*'
-}
+function vdo { vagrant ssh -c "$*" }
 
 function gd() {
     if [[ $1 ]]; then
