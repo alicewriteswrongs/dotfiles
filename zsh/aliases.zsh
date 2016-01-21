@@ -1,5 +1,6 @@
 alias -g G='| grep'
 alias vreload='vagrant reload'
+alias vrsync='vagrant rsync-auto'
 alias abcdehighqual='abcde -o ogg:"-q 7"' #rips at ogg vorbis quality level 7
 alias abig='tmux attach -t big'
 alias addall='git commit -a' #add all changed files and commit
