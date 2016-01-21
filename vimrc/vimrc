@@ -181,6 +181,7 @@ set noswapfile
 set backup
 set backupdir=~/.vim/backup//
 set undodir=~/.vim/undo//
+set cm=blowfish2
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 """Plugin Configuration
