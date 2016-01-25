@@ -67,3 +67,4 @@ skip_inbox_to bio-ebe-list@list-dist.bu.edu
 skip_inbox_to benpote@bu.edu
 skip_inbox_from vfe-campaign-response@amazon.com
 skip_inbox_to kernelnewbies@kernelnewbies.org
+skip_inbox_to fsf-community-team@gnu.org
