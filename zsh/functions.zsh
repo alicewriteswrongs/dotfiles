@@ -142,7 +142,9 @@ function gbnuke() { # nuke the current branch or $1
 }
 
 function rebase {
-    wipc
+    if [[ $(current_branch) != 'master'; then
+        wipc
+    fi
     if [[ $(origin_exists) ]]; then
         git fetch origin
         git rebase -i origin/master
