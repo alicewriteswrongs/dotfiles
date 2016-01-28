@@ -142,7 +142,7 @@ function gbnuke() { # nuke the current branch or $1
 }
 
 function rebase {
-    git commit -a -m 'WIP'
+    wipc
     git fetch origin
     git rebase -i origin/master
 }
@@ -163,7 +163,7 @@ function mergepr() { # merge a branch into master and push
 }
 
 function rebdiff() { # rebase and reload diff
-    git commit -a -m 'WIP'
+    wipc
     git rebase origin/master
     git diff origin/master
 }
