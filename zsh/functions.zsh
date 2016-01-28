@@ -232,13 +232,25 @@ function npm_reset() {
 }
 
 # improved WIP commits
+function origin_exists () {
+    [[ -d .git/refs/remotes/origin ]]
+}
+
 function first_commit_on_branch() {
     if [[ $(current_branch) != 'master' ]]; then
-        git log $(current_branch) --not origin/master --format=%h | tail -n 1
+        if [[ $(origin_exists) ]]; then
+            git log $(current_branch) --not origin/master --format=%h | tail -n 1
+        else
+            git log $(current_branch) --not master --format=%h | tail -n 1
+        fi
     else
         git log --format=%h | tail -n 1
     fi
 }
+
+function last_non_fixup_commit_on_branch () {
+    if [[ $(current_branch) != 'master' ]]; then
+
 
 function current_branch  () {
     git rev-parse --abbrev-ref HEAD
