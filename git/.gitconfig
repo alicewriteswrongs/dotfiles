@@ -10,3 +10,5 @@
 	conflictStyle = diff3
 [difftool]
 	prompt = false
+[rebase]
+	autosquash = true
