@@ -143,8 +143,12 @@ function gbnuke() { # nuke the current branch or $1
 
 function rebase {
     wipc
-    git fetch origin
-    git rebase -i origin/master
+    if [[ $(origin_exists) ]]; then
+        git fetch origin
+        git rebase -i origin/master
+    else
+        git rebase -i master
+    fi
 }
 
 function mergepr() { # merge a branch into master and push
