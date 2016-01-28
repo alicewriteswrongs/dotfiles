@@ -230,3 +230,25 @@ function npm_reset() {
     npm cache clean
     npm install
 }
+
+# improved WIP commits
+function first_commit_on_branch() {
+    if [[ $(current_branch) != 'master' ]]; then
+        git log $(current_branch) --not origin/master --format=%h | tail -n 1
+    else
+        git log --format=%h | tail -n 1
+    fi
+}
+
+function current_branch  () {
+    git rev-parse --abbrev-ref HEAD
+}
+
+
+function wipc() {
+    if [[ $(current_branch) != 'master' ]]; then
+        git commit -a --fixup $(first_commit_on_branch)
+    else
+        echo "not on master..."
+    fi
+}
