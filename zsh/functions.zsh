@@ -142,7 +142,7 @@ function gbnuke() { # nuke the current branch or $1
 }
 
 function rebase {
-    if [[ $(current_branch) != 'master'; then
+    if [[ $(current_branch) != 'master' ]]; then
         wipc
     fi
     if [[ $(origin_exists) ]]; then
@@ -272,7 +272,9 @@ function current_branch  () {
 
 function wipc() {
     if [[ $(current_branch) != 'master' ]]; then
-        git commit -a --fixup $(last_non_fixup_commit_on_branch)
+        if [[ $(last_non_fixup_commit_on_branch) != '' ]]; then
+            git commit -a --fixup $(last_non_fixup_commit_on_branch)
+        fi
     else
         echo "not on master..."
     fi
