@@ -250,16 +250,23 @@ function first_commit_on_branch() {
 
 function last_non_fixup_commit_on_branch () {
     if [[ $(current_branch) != 'master' ]]; then
-
+        if [[ $(origin_exists) ]]; then
+            git log $(current_branch) --not origin/master --format=online | ag -v fixup! | head -n 1 | sed -e 's/\s.*$//'
+        else
+            git log $(current_branch) --not master --format=oneline | ag -v fixup! | head -n 1 | sed -e 's/\s.*$//'
+        fi
+    else
+        git log --format=%H | head -n 1
+    fi
+}
 
 function current_branch  () {
     git rev-parse --abbrev-ref HEAD
 }
 
-
 function wipc() {
     if [[ $(current_branch) != 'master' ]]; then
-        git commit -a --fixup $(first_commit_on_branch)
+        git commit -a --fixup $(last_non_fixup_commit_on_branch)
     else
         echo "not on master..."
     fi
