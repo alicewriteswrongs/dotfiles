@@ -56,7 +56,7 @@ alias gpgupload='gpg --send-keys --keyserver hkps://pool.sks-keyservers.net'
 alias gpush='git commit && git push origin master'
 alias grebc='git rebase --continue'
 alias grebi='git rebase -i master'
-alias grep='grep -n --color=auto' #colorize grep output and line numbers
+alias grepn='grep -n --color=auto' #colorize grep output and line numbers
 alias gsta='git stash apply'
 alias howbig='du -hc | tail -n 1'
 alias i3config='vim ~/dotfiles/i3/i3config'
