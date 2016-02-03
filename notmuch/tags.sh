@@ -68,3 +68,5 @@ skip_inbox_to benpote@bu.edu
 skip_inbox_from vfe-campaign-response@amazon.com
 skip_inbox_to kernelnewbies@kernelnewbies.org
 skip_inbox_to fsf-community-team@gnu.org
+skip_inbox_from libreplanet-discuss@libreplanet.org
+skip_inbox_to libreplanet-discuss@libreplanet.org
