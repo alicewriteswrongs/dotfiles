@@ -1,15 +1,16 @@
 {
     "astroid": {
         "config": {
-            "version": "2"
+            "version": "3"
+        },
+        "notmuch_config": "\/home\/alice\/.notmuch-config",
+        "debug": {
+            "dryrun_sending": "false"
         },
         "notmuch": {
             "db": "~\/mail",
             "excluded_tags": "muted,spam,deleted",
             "sent_tags": "sent"
-        },
-        "debug": {
-            "dryrun_sending": "false"
         }
     },
     "thread_index": {
@@ -24,7 +25,8 @@
             "tags_length": "80",
             "subject_color": "#807d74",
             "subject_color_selected": "#000000",
-            "tags_color": "#31587a"
+            "tags_color": "#31587a",
+            "hidden_tags": "attachment,flagged,unread"
         },
         "open_default_paned": "false"
     },
@@ -49,7 +51,8 @@
         "forward": {
             "quote_line": "Forwarding %1's message of %2:",
             "disposition": "inline"
-        }
+        },
+        "sent_tags": "sent"
     },
     "poll": {
         "interval": "160"
