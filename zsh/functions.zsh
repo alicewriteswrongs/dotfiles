@@ -279,3 +279,10 @@ function wipc() {
         echo "not on master..."
     fi
 }
+
+function zip_it() {
+    if [[ -f $1.zip ]]; then
+        rm $1.zip
+    fi
+    zip -r $1.zip $1
+}
