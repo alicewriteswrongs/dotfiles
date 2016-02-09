@@ -1,4 +1,5 @@
 alias -g G='| grep'
+alias pdfs='cd ~/SpiderOak\ Hive/PDFs'
 alias abcdehighqual='abcde -o ogg:"-q 7"' #rips at ogg vorbis quality level 7
 alias abig='tmux attach -t big'
 alias addall='git commit -a' #add all changed files and commit
@@ -74,7 +75,7 @@ alias notes='cd ~/SpiderOak\ Hive/notes'
 alias orgmode='cd ~/SpiderOak\ Hive/notes/org'
 alias orphans='sudo pacman -Qdt'
 alias p='cd ~/Code/projects'
-alias poetry='cd ~/ownCloud/Documents/writing/poetry'
+alias poetry='cd ~/SpiderOak\ Hive/Documents/writing/poetry'
 alias pretty='git log --pretty=oneline' #get succinct git log information
 alias pserver='python -m SimpleHTTPServer'
 alias pullom='git checkout master && git pull origin master'
