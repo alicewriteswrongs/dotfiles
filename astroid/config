@@ -55,7 +55,7 @@
         "sent_tags": "sent"
     },
     "poll": {
-        "interval": "160"
+        "interval": "0"
     },
     "attachment": {
         "external_open_cmd": "xdg-open"
