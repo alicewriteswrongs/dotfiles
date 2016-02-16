@@ -40,6 +40,7 @@ bindsym $mod+f [title="BookBub - Slack"] scratchpad show
 bindsym $mod+d [title="Spotify*"] scratchpad show
 bindsym $mod+s [title="Signal"] scratchpad show
 bindsym $mod+a [title="Astroid"] scratchpad show
+bindsym $mod+g [title="login"] scratchpad show
 
 #show all scratchpad (usually won't need)
 bindsym $mod+ctrl+minus scratchpad show
