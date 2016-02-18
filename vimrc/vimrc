@@ -265,18 +265,20 @@ nnoremap <Leader>b6 :buffer6<cr>
 nnoremap <Leader>b7 :buffer7<cr> 
 nnoremap <Leader>t  :enew<cr> 
 nnoremap <Leader>bq :bd<cr> 
-nnoremap <Leader>o :vsplit<cr> 
-nnoremap <Leader>u :split<cr> 
-nnoremap <Leader>j <C-W>j 
-nnoremap <Leader>k <C-W>k
-nnoremap <Leader>h <C-W>h 
-nnoremap <Leader>l <C-W>l 
+"create splits
+nnoremap <C-o> :vsplit<cr>
+nnoremap <C-u> :split<cr>
+"window navigation
+nnoremap <C-j> <C-W>j
+nnoremap <C-k> <C-W>k
+nnoremap <C-h> <C-W>h
+nnoremap <C-l> <C-W>l
 map / <Plug>(incsearch-forward)
 map ? <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 nnoremap <Leader>d :YcmCompleter GoToDefinition<cr>
 nnoremap <Leader>p :CtrlPBufTag<cr>
-nnoremap <C-o> :CtrlPMRU<cr>
+nnoremap <Leader>o :CtrlPMRU<cr>
 nnoremap <C-b> :CtrlPBuffer<cr>
 nnoremap <C-f> :Ag 
 let localleader = "\\"
