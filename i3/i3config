@@ -31,7 +31,7 @@ bindsym $mod+period exec mpc next
 bindsym $mod+q kill
 
 # start dmenu
-bindsym $mod+space exec dmenu_run
+bindsym $mod+space exec dmenu_run -l 20 -i -fn pango:inconsolata
 
 #scratchpad (place to throw a window)
 bindsym $mod+Shift+minus move scratchpad
