@@ -14,7 +14,6 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 " Plugin 'othree/yajs.vim' "nice JS highlighting
 " Plugin 'othree/javascript-libraries-syntax.vim' "syntax for some common JS libs
-
 " Plugin 'christoomey/vim-tmux-navigator'
 " Plugin 'lambdatoast/elm.vim'
 " Plugin 'lokaltog/vim-powerline'
@@ -54,6 +53,7 @@ Plugin 'vim-scripts/paredit.vim' "lisp/racket S-expressions
 Plugin 'wlangstroth/vim-racket' "some stuff for racket-lang
 Plugin 'wellle/tmux-complete.vim' "autocomplete with text in tmux buffers
 Plugin 'guyzmo/notmuch-abook' "get emails out of notmuch db for autocomplete
+Plugin 'justinmk/vim-sneak'
 
 call vundle#end()
 filetype plugin indent on "filetype based indenting 
@@ -187,6 +187,7 @@ set cm=blowfish2
 """Plugin Configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
+let g:sneak#streak = 1
 let g:jsx_ext_required = 0 " allow jsx syntax in normal js files
 let g:EclimCompletionEngine = 'omnifunc'
 let g:ctrlp_extensions = ['buffertag']
@@ -230,6 +231,7 @@ inoremap <F12> <esc>l
 " vimux
 map <Leader>vrs :call VimuxRunCommand("clear; vdo rspec " . bufname("%"))<CR>
 map <Leader>vrb :call VimuxRunCommand("clear; pry")<CR>
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 """Keybinds
