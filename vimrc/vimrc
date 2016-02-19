@@ -240,6 +240,7 @@ nnoremap <Leader>ws :set list!<CR>
 imap <C-s> <esc>:w<cr> 
 nnoremap <C-s> <esc>:w<cr>
 nnoremap <Leader>w :w<cr>
+map Q :qa<cr>
 nnoremap <Leader>q :q<cr> 
 nnoremap <Leader>sp :setlocal spell<cr>
 nnoremap <Leader>lp :setlocal ft=python<cr>
