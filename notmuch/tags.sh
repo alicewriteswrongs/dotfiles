@@ -70,3 +70,8 @@ skip_inbox_to kernelnewbies@kernelnewbies.org
 skip_inbox_to fsf-community-team@gnu.org
 skip_inbox_from libreplanet-discuss@libreplanet.org
 skip_inbox_to libreplanet-discuss@libreplanet.org
+skip_inbox_from no-reply@sns.amazonaws.com
+skip_inbox_from bounces@mail1.oknotify2.com
+skip_inbox_from notification@browserstack.com
+skip_inbox_from support@honeybadger.io
+skip_inbox_from info@meetup.com
