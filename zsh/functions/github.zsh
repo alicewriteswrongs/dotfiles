@@ -4,11 +4,11 @@ function github_repo_location () {
     git remote -v | ag origin | head -n 1 | sed -e 's/^.*://' | sed -e 's/\..*//'
 }
 
-function ghub_branch() {
+function ghbranch() {
     xdg-open "https://github.com/`github_repo_location`/compare/`(current_branch)`"
 }
 
-function ghub_repo () {
+function ghrepo () {
     xdg-open "https://github.com/`github_repo_location`"
 }
 
