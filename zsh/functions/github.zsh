@@ -13,7 +13,7 @@ function ghrepo () {
 }
 
 
-function get_pull_request_numbeR() {
+function get_pull_request_number() {
     local current_commit=$(git rev-parse HEAD)
     local current_branch=$(git rev-parse --abbrev-ref HEAD)
 
