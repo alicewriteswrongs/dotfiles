@@ -37,6 +37,7 @@ function gdfiles() {
     fi
 }
 
+# managing opening and updating pullrequests
 function pullrequest() {
     branch=$(git rev-parse --abbrev-ref HEAD)
     if [[ $branch != 'master' ]]; then 
@@ -61,6 +62,7 @@ function pru() {
     pullrequest f
 }
 
+# delete local and remote branch
 function gbnuke() { # nuke the current branch or $1
     if [[ $1 && $1 != 'master' ]]; then
         git checkout master
