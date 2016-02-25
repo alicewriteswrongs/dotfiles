@@ -2,6 +2,9 @@
 source ~/dotfiles/zsh/functions/github.zsh
 source ~/dotfiles/zsh/functions/git.zsh
 source ~/dotfiles/zsh/functions/fzf.zsh
+source ~/dotfiles/zsh/functions/tmux.zsh
+source ~/dotfiles/zsh/functions/misc_dev_related.zsh
+
 function install() {
     sudo apt install $1
 }
