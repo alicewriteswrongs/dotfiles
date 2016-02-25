@@ -12,13 +12,8 @@ function ghrepo () {
     xdg-open "https://github.com/`github_repo_location`"
 }
 
-
 function get_pull_request_number() {
-    local current_commit=$(git rev-parse HEAD)
-    local current_branch=$(git rev-parse --abbrev-ref HEAD)
-
-    # find all origin/pull branches with commit
-    # use sed to get just the PR number
+    git branch --remotes --contains $(last_non_fixup_commit_on_branch) | ag pull | sed -e 's/^.*\///'
 }
 
 
