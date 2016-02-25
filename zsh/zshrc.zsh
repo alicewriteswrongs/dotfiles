@@ -46,7 +46,7 @@ chpwd() {
 }
 
 source ~/dotfiles/zsh/aliases.zsh
-source ~/dotfiles/zsh/functions.zsh
+source ~/dotfiles/zsh/functions/functions.zsh
 
 typeset -A key
 
