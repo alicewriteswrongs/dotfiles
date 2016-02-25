@@ -12,8 +12,10 @@ function ghrepo () {
     xdg-open "https://github.com/`github_repo_location`"
 }
 
-function get_pull_request_number() {
+function pull_request_number() {
     git branch --remotes --contains $(last_non_fixup_commit_on_branch) | ag pull | sed -e 's/^.*\///'
 }
 
-
+function ghpull () {
+    xdg-open "https://github.com/`github_repo_location`/pull/`pull_request_number`"
+}
