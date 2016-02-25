@@ -292,7 +292,7 @@ function github_repo_location () {
 }
 
 function ghub_branch() {
-    xdg-open "https://github.com/`github_repo_location`/`(current_branch)`"
+    xdg-open "https://github.com/`github_repo_location`/compare/`(current_branch)`"
 }
 
 function ghub_repo () {
