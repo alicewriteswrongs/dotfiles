@@ -52,6 +52,7 @@ function pullrequest() {
     else
         echo "not on master doofus!"
     fi
+    git fetch origin
 }
 
 function prnew() {
