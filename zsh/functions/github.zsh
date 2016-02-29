@@ -23,4 +23,4 @@ function ghpull () {
     else
         ghbranch
     fi
-k
+}
