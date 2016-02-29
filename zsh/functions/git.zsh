@@ -57,6 +57,9 @@ function pullrequest() {
 
 function prnew() {
     pullrequest
+    if [[ origin_exists ]]; then
+        ghbranch
+    fi
 }
 
 function pru() {
