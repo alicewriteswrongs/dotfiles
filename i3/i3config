@@ -22,7 +22,7 @@ bindsym $mod+ctrl+v move workspace to VGA1
 # start a terminal
 bindsym $mod+ctrl+Shift+l exec "xscreensaver-command -lock"
 bindsym $mod+Return exec gnome-terminal
-bindsym $mod+Shift+Return exec gnome-terminal -e "zsh -c '$(declare -f title); title Float; zsh'"
+bindsym $mod+Shift+Return exec floating_gnome_term.sh
 
 #pause and play mpd, next and previous song
 bindsym $mod+p exec mpc toggle
@@ -97,6 +97,7 @@ new_window pixel 3
 new_float pixel 3
 
 #some rules for various windows
+for_window [title="Float"] floating enable
 for_window [title="Write: *"] floating enable
 for_window [title="SpiderOakONE*"] floating enable
 for_window [title="SpiderOakONE"] floating enable
