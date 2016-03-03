@@ -88,9 +88,18 @@ function rebase {
     fi
     if [[ origin_exists ]]; then
         git fetch origin
-        git rebase -i origin/master
+        if [[ $1 == 'i' ]]; then
+            git rebase -i origin/master
+        else
+            GIT_SEQUENCE_EDITOR=: git rebase -i origin/master
+        fi
     else
-        git rebase -i master
+        if [[ $1 == 'i' ]]; then
+            git rebase -i master
+        else
+            GIT_SEQUENCE_EDITOR=: git rebase -i master
+        fi
+
     fi
 }
 
