@@ -22,7 +22,7 @@ bindsym $mod+ctrl+v move workspace to VGA1
 # start a terminal
 bindsym $mod+ctrl+Shift+l exec "xscreensaver-command -lock"
 bindsym $mod+Return exec gnome-terminal
-bindsym $mod+Shift+Return exec gnome-terminal && floating enable
+bindsym $mod+Shift+Return exec gnome-terminal -e "zsh -c '$(declare -f title); title Float; zsh'"
 
 #pause and play mpd, next and previous song
 bindsym $mod+p exec mpc toggle
