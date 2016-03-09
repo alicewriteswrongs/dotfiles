@@ -108,6 +108,7 @@ function mergepr() { # merge a branch into master and push
     if [[ $branch != 'master' ]]; then
         echo "merging "$branch" into master"
         pullrequest f
+        rebase i
         git checkout master
         git pull origin master
         git merge $branch
