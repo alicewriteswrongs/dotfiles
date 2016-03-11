@@ -204,3 +204,4 @@ bar {
         workspace_buttons   yes
 }
 
+# vim:filetype=i3

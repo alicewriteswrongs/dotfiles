@@ -54,6 +54,7 @@ Plugin 'wlangstroth/vim-racket' "some stuff for racket-lang
 Plugin 'wellle/tmux-complete.vim' "autocomplete with text in tmux buffers
 Plugin 'guyzmo/notmuch-abook' "get emails out of notmuch db for autocomplete
 Plugin 'justinmk/vim-sneak'
+Plugin 'PotatoesMaster/i3-vim-syntax'
 
 call vundle#end()
 filetype plugin indent on "filetype based indenting 
