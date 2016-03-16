@@ -19,7 +19,7 @@ function latex_to_markdown() {
 }
 
 function sscreen() {
-    scrot -s ~/screens/$1
+    scrot -s ~/screens/$1.png
 }
 
 function zip_it() {
