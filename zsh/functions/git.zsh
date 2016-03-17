@@ -186,3 +186,11 @@ function wipc() {
         echo "not on master..."
     fi
 }
+
+function penultimate_commit () {
+    git log --format=%H -2 | tail -n 1
+}
+
+function gdlast () {
+    git diff $(penultimate_commit)
+}
