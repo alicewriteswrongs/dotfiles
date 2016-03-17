@@ -102,6 +102,7 @@ export PATH="$PATH:/home/alice/bin/nwjs-v0.13.0-alpha7-linux-x64"
 export PATH="$PATH:/home/alice/.local/bin/"
 export PATH="$PATH:/home/alice/bin/Mancy-linux-x64"
 export PATH="$PATH:/home/alice/bin/turtl"
+export PATH="$PATH:/home/alice/bin/android-studio/bin"
 
 export NVM_DIR="/home/alice/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
