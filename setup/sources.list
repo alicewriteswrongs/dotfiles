@@ -1,3 +1,4 @@
+# vim: set filetype=debsources : #
 # DEBIAN REPOS
 # Debian Sid            # CURRENT UNSTABLE
 deb http://ftp.de.debian.org/debian unstable main contrib non-free
@@ -32,13 +33,13 @@ deb http://packages.elasticsearch.org/elasticsearch/1.2/debian stable main
 # deb-src http://ftp.us.debian.org/debian/ jessie-updates main contrib non-free
 
 # THIRD PARTY REPOS
-deb http://dl.google.com/linux/chrome/deb/ stable main
-deb http://toolbelt.heroku.com/ubuntu ./
-deb http://dist.keybase.io/linux/deb/repo stable main
-deb http://desktop-download.mendeley.com/download/apt stable main
-deb http://ppa.launchpad.net/neovim-ppa/unstable/ubuntu xenial main
-deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main
-deb http://APT.spideroak.com/ubuntu-spideroak-hardy/ release restricted
-deb https://packagecloud.io/slacktechnologies/slack/debian/ jessie main
-deb http://repository.spotify.com stable non-free
-deb https://pkg.tox.chat/debian nightly sid
+# deb http://dl.google.com/linux/chrome/deb/ stable main
+# deb http://toolbelt.heroku.com/ubuntu ./
+# deb http://dist.keybase.io/linux/deb/repo stable main
+# deb http://desktop-download.mendeley.com/download/apt stable main
+# deb http://ppa.launchpad.net/neovim-ppa/unstable/ubuntu xenial main
+# deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main
+# deb http://APT.spideroak.com/ubuntu-spideroak-hardy/ release restricted
+# deb https://packagecloud.io/slacktechnologies/slack/debian/ jessie main
+# deb http://repository.spotify.com stable non-free
+# deb https://pkg.tox.chat/debian nightly sid
