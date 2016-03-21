@@ -7,6 +7,9 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "debian/jessie64"
 
+  config.vm.network "forwarded_port", guest: 3000, host: 3000
+  config.vm.network :private_network, ip: '192.168.50.50'
+  config.vm.synced_folder '.', '/vagrant', nfs: true, nfs_export: true
   # we just want to copy the dotfiles to their correct location,
   # install.sh isn't intended to provision VMs, but be run on
   # dev machines (laptops and so on) to set up the environment
