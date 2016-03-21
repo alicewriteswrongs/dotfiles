@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 function help () {
     echo "you can run this, or use it as a setup guide"
