@@ -103,6 +103,7 @@ export PATH="$PATH:/home/alice/.local/bin/"
 export PATH="$PATH:/home/alice/bin/Mancy-linux-x64"
 export PATH="$PATH:/home/alice/bin/turtl"
 export PATH="$PATH:/home/alice/bin/android-studio/bin"
+export PATH="$PATH:/home/alice/dotfiles/tmux/battery/bin"
 
 export NVM_DIR="/home/alice/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
