@@ -26,6 +26,11 @@ function update() {
 ## installation functions
 ## each installs a group of packages, then does any needed manual setup
 
+function install_elm_stuff() {
+    npm install -g elm
+    npm install -g elm-oracle
+}
+
 function generate_ssh_key() {
     if [[ $1 ]]; then
         ssh-keygen -t ecdsa -b 521 -C $1
@@ -39,7 +44,7 @@ function generate_ssh_key() {
 #common userspace tools
 function install_tools() {
     update
-    sudo apt-get -y install vim-gnome tmux zsh nodejs-legacy npm silversearcher-ag htop mpd git exuberant-ctags virtualbox vagrant mupdf transmission-daemon redshift-gtk scrot redshift ssh-askpass keychain gpg_agent ssh-askpass-gnome
+    sudo apt-get -y install vim-gnome tmux zsh silversearcher-ag htop mpd git exuberant-ctags virtualbox vagrant mupdf transmission-daemon redshift-gtk scrot redshift ssh-askpass keychain gpg_agent ssh-askpass-gnome
 }
 
 function install_notmuch() {
