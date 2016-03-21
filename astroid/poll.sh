@@ -2,7 +2,8 @@
 
 # fetch new mail
 offlineimap
-getmail
+getmail --rcfile=riseup_getmail_rc
+getmail --rcfile=alice_gmail_getmail_rc
 
 # index it
 notmuch new
