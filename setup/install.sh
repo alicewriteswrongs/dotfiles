@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # first symlink sources.list
+sudo mv /etc/apt/sources.list ~/sources.list.old
 sudo ln -s /home/alice/dotfiles/setup/sources.list /etc/apt/sources.list
 mkdir ~/Code
 
