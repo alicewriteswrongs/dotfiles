@@ -4,6 +4,9 @@ set $mod Mod1
 
 for_window [class=".*"] title_format "title: %title, class: %class"
 
+#popups when fullscreen
+popup_during_fullscreen smart
+
 #set DPMS screen interval
 exec --no-startup-id xset dpms 600
 
