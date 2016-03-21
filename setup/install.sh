@@ -1,23 +1,5 @@
 #!/bin/bash
 
-function help () {
-    echo "you can run this, or use it as a setup guide"
-    echo "the dotfiles repo should already be cloned in ~/dotfiles"
-    echo ""
-    echo "I've defined a bunch of package groups"
-    echo "after you source the file you can do"
-    echo "\tinstall_tools"
-    echo "\tinstall_i3"
-    echo "\tinstall_python"
-    echo "\tinstall_ruby"
-    echo "\tinstall_go"
-    echo "\tinstall_c_tools"
-    echo "\nthere's also tools for getting set up:"
-    echo "\tgenerate_ssh_key"
-    echo "\tsymlink_dotfiles"
-}
-
-# this should write an environmental variable
 function update() {
     sudo apt-get update
     sudo apt-get -y dist-upgrade
@@ -30,25 +12,12 @@ function install_elm_stuff() {
     npm install -g elm
     npm install -g elm-oracle
 }
-
-function generate_ssh_key() {
-    if [[ $1 ]]; then
-        ssh-keygen -t ecdsa -b 521 -C $1
-        eval "$(ssh-agent -s)"
-        ssh-add ~/.ssh/id_ecdsa
-    else
-        echo "provide an email to use"
-    fi
-}
-
 #common userspace tools
 function install_tools() {
-    update
     sudo apt-get -y install vim-gnome tmux zsh silversearcher-ag htop mpd git exuberant-ctags virtualbox vagrant mupdf transmission-daemon redshift-gtk scrot redshift ssh-askpass keychain gpg_agent ssh-askpass-gnome
 }
 
 function install_notmuch() {
-    update
     sudo apt install -y notmuch libnotmuch4 libnotmuch-dev
 }
 
@@ -128,6 +97,17 @@ function install_security_tools() {
     echo "now login to lastpass and keybase!"
 }
 
+function generate_ssh_key() {
+    if [[ $1 ]]; then
+        ssh-keygen -t ecdsa -b 521 -C $1
+        eval "$(ssh-agent -s)"
+        ssh-add ~/.ssh/id_ecdsa
+    else
+        echo "provide an email to use"
+    fi
+}
+
+
 function symlink_dotfiles() { # does a bit more, besides!
     echo "pull in git submodules"
     cd ~/dotfiles && git submodule init && git submodule update
@@ -162,3 +142,16 @@ function symlink_dotfiles() { # does a bit more, besides!
 
     source ~/.zshrc
 }
+
+function install_everything () {
+    update
+    install_tools
+    install_c_tools
+    install_python
+    install_i3
+    install_ruby
+    install_go
+
+
+    
+    
