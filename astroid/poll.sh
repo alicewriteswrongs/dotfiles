@@ -10,6 +10,3 @@ notmuch new
 
 # run the tags script
 ~/dotfiles/notmuch/tags.sh
-
-# backup the getmail files
-cp ~/.getmail/oldmail-* ~/SpiderOak\ Hive/mail_config
