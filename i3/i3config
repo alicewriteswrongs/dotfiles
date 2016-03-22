@@ -45,6 +45,7 @@ bindsym $mod+f [class="Slack"] scratchpad show
 bindsym $mod+d [class="Spotify"] scratchpad show
 bindsym $mod+s [title="Signal"] scratchpad show
 bindsym $mod+a [class="Astroid"] scratchpad show
+bindsym $mod+c [class="Jitsi"] scratchpad show
 
 #show all scratchpad (usually won't need)
 bindsym $mod+ctrl+minus scratchpad show
@@ -107,7 +108,6 @@ for_window [title="Float"] floating enable
 for_window [title="Write: *"] floating enable
 for_window [title="SpiderOakONE*"] floating enable
 for_window [title="SpiderOakONE"] floating enable
-#for_window [title="Zulip"] floating enable
 for_window [title="feh *"] floating enable
 for_window [title="Thunderbird Preferences"] floating enable
 for_window [title="LPC - Register your shifts! - Chromium"] floating enable
@@ -139,6 +139,7 @@ for_window [title="Text Import*"] floating enable
 for_window [title="Spotify Premium - Linux Preview"] floating enable
 for_window [class="Slack"] floating enable
 for_window [title="ImageMagick"] floating enable
+for_window [class="Jitsi"] floating enable
 
 #no borders
 for_window [class="^.*"] border pixel 0
