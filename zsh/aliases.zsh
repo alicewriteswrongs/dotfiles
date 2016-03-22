@@ -1,4 +1,5 @@
 alias -g G='| grep'
+alias elmserve='elm-reactor -p 8080'
 alias pdfs='cd ~/SpiderOak\ Hive/PDFs'
 alias abcdehighqual='abcde -o ogg:"-q 7"' #rips at ogg vorbis quality level 7
 alias abig='tmux attach -t big'
