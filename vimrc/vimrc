@@ -10,53 +10,78 @@ let mapleader = "\<Space>" "set leader to space
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+" JS / CoffeeScript
 Plugin 'pangloss/vim-javascript'
+Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'mxw/vim-jsx'
-" Plugin 'othree/yajs.vim' "nice JS highlighting
-" Plugin 'othree/javascript-libraries-syntax.vim' "syntax for some common JS libs
-" Plugin 'christoomey/vim-tmux-navigator'
-" Plugin 'lambdatoast/elm.vim'
-" Plugin 'lokaltog/vim-powerline'
-" Plugin 'vim-scripts/Terminus'
-Plugin 'altercation/vim-colors-solarized' "solarized plugin
-Plugin 'bling/vim-airline'
-Plugin 'chriskempson/base16-vim'
-Plugin 'edkolev/tmuxline.vim' "makes tmux pretty
-Plugin 'elmcast/elm-vim'
-Plugin 'gmarik/Vundle.vim'
-Plugin 'haya14busa/incsearch.vim' "nice incremental search
-Plugin 'jceb/vim-orgmode'
 Plugin 'kchmck/vim-coffee-script'
-Plugin 'kien/ctrlp.vim' "fuzzy search
 Plugin 'mtscout6/vim-cjsx'
-Plugin 'reedes/vim-pencil' "soft/hard wraps for txt,md,email
-Plugin 'rking/ag.vim' "wrapper for ag
-Plugin 'rust-lang/rust.vim' "some rust stuff
-Plugin 'sjl/tslime.vim' "send text to a tmux pane
-" Plugin 'ternjs/tern_for_vim'
-Plugin 'terryma/vim-multiple-cursors' "sublime-like cursors
+
+" other web stuff
+Plugin 'othree/html5-syntax.vim'
+Plugin 'cakebaker/scss-syntax.vim'
+
+" ruby
 Plugin 'tpope/vim-bundler'
-Plugin 'tpope/vim-commentary' "gc to toggle comments
-Plugin 'tpope/vim-fugitive' "tpopes git wrapper
+Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-rake'
+
+" colorschemes
+Plugin 'altercation/vim-colors-solarized' "solarized plugin
+Plugin 'chriskempson/base16-vim'
+
+" ui
+Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+" tmux
+Plugin 'edkolev/tmuxline.vim' "makes tmux pretty
+Plugin 'sjl/tslime.vim' "send text to a tmux pane
+Plugin 'wellle/tmux-complete.vim' "autocomplete with text in tmux buffers
+
+" git
+Plugin 'tpope/vim-fugitive' "tpopes git wrapper
+
+" utility
+Plugin 'gmarik/Vundle.vim'
+Plugin 'tpope/vim-commentary' "gc to toggle comments
 Plugin 'tpope/vim-rsi' "gives readline bindings
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-speeddating'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired' "adds some keybinds?
 Plugin 'tpope/vim-vinegar' "makes vim directory browser nicer
+Plugin 'terryma/vim-multiple-cursors' "sublime-like cursors
+
+" file opening / search
+Plugin 'haya14busa/incsearch.vim' "nice incremental search
+Plugin 'kien/ctrlp.vim' "fuzzy search
+Plugin 'rking/ag.vim' "wrapper for ag
+Plugin 'justinmk/vim-sneak'
+
+" elm
+Plugin 'elmcast/elm-vim'
+
+" rust
+Plugin 'rust-lang/rust.vim' "some rust stuff
 Plugin 'valloric/youcompleteme' "the best completion ever
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'vim-scripts/lbdbq' "formats mail headers more nicely
+
+" racket / scheme
 Plugin 'vim-scripts/paredit.vim' "lisp/racket S-expressions
 Plugin 'wlangstroth/vim-racket' "some stuff for racket-lang
-Plugin 'wellle/tmux-complete.vim' "autocomplete with text in tmux buffers
-Plugin 'guyzmo/notmuch-abook' "get emails out of notmuch db for autocomplete
-Plugin 'justinmk/vim-sneak'
+
+" i3
 Plugin 'PotatoesMaster/i3-vim-syntax'
-Plugin 'vim-airline/vim-airline-themes'
+
+" email
+Plugin 'guyzmo/notmuch-abook' "get emails out of notmuch db for autocomplete
+Plugin 'vim-scripts/lbdbq' "formats mail headers more nicely
+
+" markdown / prose writing
 Plugin 'suan/vim-instant-markdown'
+Plugin 'reedes/vim-pencil' "soft/hard wraps for txt,md,email
+Plugin 'jceb/vim-orgmode'
 
 call vundle#end()
 filetype plugin indent on "filetype based indenting 
