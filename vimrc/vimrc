@@ -132,6 +132,7 @@ augroup myfiletypes
     autocmd FileType scss setlocal autoindent
     autocmd FileType scss setlocal shiftwidth=2
     autocmd FileType scss setlocal softtabstop=2
+    autocmd FileType scss setlocal omnifunc=csscomplete#CompleteCSS
     "elm
     autocmd FileType elm setlocal expandtab
     autocmd FileType elm setlocal autoindent
