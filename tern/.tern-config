@@ -3,6 +3,10 @@
         "browser",
         "jquery"
     ],
+    "loadEagerly": [
+        "./src/*.js",
+        "./src/*.jsx"
+    ],
     "plugins": {
         "node": {},
         "es_modules": {},
