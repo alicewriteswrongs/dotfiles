@@ -294,3 +294,6 @@ nnoremap <Leader>gb :Gblame<cr>
 nnoremap <Leader>[ :tabprevious<cr>
 nnoremap <Leader>] :tabnext<cr>
 nnoremap <Leader>T :tabnew<cr>
+let g:ycm_semantic_triggers = {
+    \ 'elm' : ['.'],
+    \}
