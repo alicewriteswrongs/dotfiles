@@ -24,6 +24,7 @@ notmuch tag +Arch -- to:arch-general@archlinux.org
 notmuch tag +blackandpink -- to:blackandpinkboston-courtsupport@googlegroups.coms
 notmuch tag +nylug -- to:nylug-talk@nylug.org
 notmuch tag +offlineimap -inbox -- to:offlineimap-project@lists.alioth.debian.org
+notmuch tag +mapping_group -- to:boston-displacement@lists.riseup.net
 
 # notifications and so on
 notmuch tag +github_notification -- from:notifications@github.com
