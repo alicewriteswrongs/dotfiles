@@ -33,7 +33,7 @@ Plugin 'reedes/vim-pencil' "soft/hard wraps for txt,md,email
 Plugin 'rking/ag.vim' "wrapper for ag
 Plugin 'rust-lang/rust.vim' "some rust stuff
 Plugin 'sjl/tslime.vim' "send text to a tmux pane
-Plugin 'ternjs/tern_for_vim'
+" Plugin 'ternjs/tern_for_vim'
 Plugin 'terryma/vim-multiple-cursors' "sublime-like cursors
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-commentary' "gc to toggle comments
