@@ -123,5 +123,7 @@ echo "get vim plugins"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 echo "install vim pluings"
 vim +PluginInstall +qall && python ~/.vim/bundle/youcompleteme/install.py --gocode-completer --tern-completer
+mkdir ~/.vim/backup
+mkdir ~/.vim/undo
 
 source ~/.zshrc
