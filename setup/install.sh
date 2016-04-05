@@ -15,7 +15,7 @@ update
 # start by installing some utilities
 
 # common userspace utilities
-sudo apt -y install vim-gnome tmux zsh silversearcher-ag htop mpd git exuberant-ctags virtualbox vagrant mupdf transmission-daemon redshift-gtk scrot redshift ssh-askpass keychain gpg_agent ssh-askpass-gnome
+sudo apt -y install vim-gnome tmux zsh silversearcher-ag htop mpd git exuberant-ctags virtualbox vagrant mupdf transmission-daemon redshift-gtk scrot redshift ssh-askpass keychain ssh-askpass-gnome
 
 # stuff for mail
 sudo apt install -y notmuch libnotmuch4 libnotmuch-dev
