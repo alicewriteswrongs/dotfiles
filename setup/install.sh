@@ -25,8 +25,13 @@ sudo apt install texlive-full texlive-extra-utils texlive-math-extra texlive-lat
 
 # install vagrant for VMs
 sudo apt install virtualbox vagrant nfs-common nfs-kernel-server portmap 
+sudo modprobe nfsd
 sudo service rpcbind start
 sudo service nfs-kernel-server start
+sudo systemctl stop nfs-kernel-server.service
+sudo systemctl disable nfs-kernel-server.service
+sudo systemctl enable nfs-kernel-server.service
+sudo systemctl start nfs-kernel-server.service
 
 # install various langauge runtimes and build tools
 sudo apt -y install golang-go
