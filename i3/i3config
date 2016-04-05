@@ -19,6 +19,7 @@ floating_modifier $mod
 
 #send a workspace to one of the connected screens (for thinkpad screens)
 bindsym $mod+ctrl+h move workspace to HDMI1
+bindsym $mod+ctrl+d move workspace to DP1
 bindsym $mod+ctrl+i move workspace to eDP1
 bindsym $mod+ctrl+v move workspace to VGA1
 
