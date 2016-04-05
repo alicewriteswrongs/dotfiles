@@ -108,4 +108,7 @@ export PATH="$PATH:/home/alice/dotfiles/tmux/battery/bin"
 export NVM_DIR="/home/alice/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+
+eval $(keychain --eval --quiet ~/.ssh/id_ecdsa)
+
 export CDPATH="/home/alice/Code:/home/alice/dotfiles:/home/alice"
