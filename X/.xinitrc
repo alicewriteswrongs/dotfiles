@@ -1,6 +1,12 @@
 #Xresources file
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
+# deal with keychain (ssh key thing)
+keychain ~/.ssh/id_ecdsa
+[ -f ~/.keychain/$HOSTNAME-sh ] && . ~/.keychain/$HOSTNAME-sh 2>/dev/null
+[ -f ~/.keychain/$HOSTNAME-sh-gpg ] && . ~/.keychain/$HOSTNAME-sh-gpg 2>/dev/null
+export SSH_ASKPASS=ssh-askpass
+
 # #background image
 feh --bg-max /home/alice/Pictures/parkspins.jpg &
 
