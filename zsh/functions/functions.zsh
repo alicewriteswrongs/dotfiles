@@ -20,10 +20,10 @@ function latex_to_markdown() {
 
 function sscreen() {
     filepath_to_save="~/screens/$1.png"
-    if [[ -f ~/SpiderOak\ Hive/screens/$1.png ]]; then
+    if [[ -f ~/screens/$1.png ]]; then
         echo "file $filepath_to_save already exists, pick a different name"
     else
-        scrot -s ~/SpiderOak\ Hive/screens/$1.png
+        scrot -s ~/screens/$1.png
     fi
 }
 
