@@ -4,6 +4,7 @@ alias drun='docker-compose run web'
 alias dpshell='docker-compose run web ./manage.py shell'
 alias dup='docker-compose up'
 alias dhalt='docker-compose stop'
+alias dbuild='docker-compose build'
 alias pdfs='cd ~/SpiderOak\ Hive/PDFs'
 alias abcdehighqual='abcde -o ogg:"-q 7"' #rips at ogg vorbis quality level 7
 alias abig='tmux attach -t big'
