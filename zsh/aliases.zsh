@@ -1,5 +1,6 @@
 alias -g G='| grep'
 alias elmserve='elm-reactor -p 8080'
+alias dshell='docker-compose run web bash'
 alias drun='docker-compose run web'
 alias dpshell='docker-compose run web ./manage.py shell'
 alias dup='docker-compose up'
