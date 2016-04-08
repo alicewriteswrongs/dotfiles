@@ -227,6 +227,7 @@ let g:tmuxline_preset = {
     \'a' : '#S',
     \'win'  : '#W',
     \'cwin'  : '#W',
+    \'x' : '#(battery)',
     \'y' : '%l:%M',
     \'z' : '#h',
     \'options': {
