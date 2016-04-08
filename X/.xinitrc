@@ -26,7 +26,7 @@ xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 6 7 4 5
 xinput set-prop "TPPS/2 IBM TrackPoint" "Device Accel Constant Deceleration" 0.75
 
 #touchpad config (tap and stuff)
-synclient TabButton1=1
+synclient TapButton1=1
 synclient HorizTwoFingerScroll=1
 
 #japanese input stuff
