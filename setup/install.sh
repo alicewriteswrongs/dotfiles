@@ -49,7 +49,7 @@ rvm use 2.2.3
 gem install bundler
 rvm rvmrc warning ignore allGemfiles
 
-curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
+curl -sL https://deb.nodesource.com/setup_5.x | sudo bash -
 sudo apt install -y nodejs
 
 # stuff that depends on nodejs / npm
