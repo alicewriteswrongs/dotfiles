@@ -141,6 +141,7 @@ for_window [class="Spotify"] floating enable
 for_window [class="Slack"] floating enable
 for_window [title="ImageMagick"] floating enable
 for_window [class="Jitsi"] floating enable
+for_window [title="Appointment*"] floating enable
 
 #no borders
 for_window [class="^.*"] border pixel 0
