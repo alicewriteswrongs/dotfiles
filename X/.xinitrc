@@ -28,6 +28,7 @@ xinput set-prop "TPPS/2 IBM TrackPoint" "Device Accel Constant Deceleration" 0.7
 #touchpad config (tap and stuff)
 synclient TapButton1=1
 synclient HorizTwoFingerScroll=1
+synclient PalmDetect=1
 
 #japanese input stuff
 # export GTK_IM_MODULE=fcitx
