@@ -1,4 +1,5 @@
 alias -g G='| grep'
+alias agf='ag -g'
 alias elmserve='elm-reactor -p 8080'
 alias dps='docker-compose ps'
 alias battery_percentage='acpi | tail -n 1 | cut -d "," -f2'
