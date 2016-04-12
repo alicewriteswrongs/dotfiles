@@ -8,7 +8,7 @@ keychain ~/.ssh/id_ecdsa
 export SSH_ASKPASS=ssh-askpass
 
 # #background image
-feh --bg-max /home/alice/Pictures/parkspins.jpg &
+feh --bg-max /home/alice/Pictures/tarsands.jpg &
 
 pulseaudio &
 
