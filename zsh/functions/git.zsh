@@ -180,7 +180,7 @@ function current_branch  () {
 function wipc() {
     if [[ $(current_branch) != 'master' ]]; then
         if [[ $(last_non_fixup_commit_on_branch) != '' ]]; then
-            git commit -a --fixup $(last_non_fixup_commit_on_branch)
+            git commit -a -S --fixup $(last_non_fixup_commit_on_branch)
         fi
     else
         echo "not on master..."
