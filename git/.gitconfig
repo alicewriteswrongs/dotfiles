@@ -1,7 +1,7 @@
 [user]
 	name = Alice Pote
 	email = alice.writes.wrongs@gmail.com
-	signingkey = 29207A51
+	signingkey = A152BCF9
 [core]
 	excludesfile = /home/alice/dotfiles/git/gitignore
 [diff]
