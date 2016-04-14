@@ -5,7 +5,7 @@ function selectbranch() {
 }
 
 function gs() { # use fzf-tmux to pick branches
-    git commit -a -m "WIP"
+    git commit -a -m "WIP" -S
     git checkout $(selectbranch)
     zle redisplay
 }
