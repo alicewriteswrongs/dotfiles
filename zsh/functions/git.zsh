@@ -89,15 +89,15 @@ function rebase {
     if [[ origin_exists ]]; then
         git fetch origin
         if [[ $1 == 'i' ]]; then
-            git rebase -i origin/master
+            git rebase -i -S origin/master
         else
-            GIT_SEQUENCE_EDITOR=: git rebase -i origin/master
+            GIT_SEQUENCE_EDITOR=: git rebase -i -S origin/master
         fi
     else
         if [[ $1 == 'i' ]]; then
-            git rebase -i master
+            git rebase -i -S master
         else
-            GIT_SEQUENCE_EDITOR=: git rebase -i master
+            GIT_SEQUENCE_EDITOR=: git rebase -i -S master
         fi
 
     fi
@@ -121,7 +121,7 @@ function mergepr() { # merge a branch into master and push
 
 function rebdiff() { # rebase and reload diff
     wipc
-    git rebase origin/master
+    git rebase -S origin/master
     git diff origin/master
 }
 
