@@ -34,3 +34,6 @@ function zip_it() {
     zip -r $1.zip $1
 }
 
+function latex_boilerplate() {
+    cp ~/dotfiles/latex/basic_boilerplate.tex ./$1
+}
