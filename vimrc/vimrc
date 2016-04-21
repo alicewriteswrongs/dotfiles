@@ -27,12 +27,15 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-rake'
 
+" cross-language
+Plugin 'scrooloose/syntastic'
+
 " colorschemes
 Plugin 'altercation/vim-colors-solarized' "solarized plugin
 Plugin 'chriskempson/base16-vim'
 
 " ui
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
 " tmux
@@ -246,6 +249,7 @@ let g:pencil#autoformat = 1
 let g:pencil#conceallevel = 0
 let g:airline#extensions#tabline#enabled = 0
 let g:airline#extensions#whitespace#enabled = 1
+let g:airline#extensions#syntastic#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:bufferline_echo = 0
 let g:ag_highlight=1
