@@ -255,6 +255,9 @@ let g:bufferline_echo = 0
 let g:ag_highlight=1
 let g:used_javascript_libs = 'underscore, jquery, react'
 let g:tmuxcomplete#trigger = 'omnifunc'
+let g:elm_syntastic_show_warnings = 1
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
 
 augroup pencil
   autocmd!
@@ -286,6 +289,7 @@ nnoremap <Leader>q :q<cr>
 nnoremap <Leader>sp :setlocal spell<cr>
 nnoremap <Leader>lp :setlocal ft=python<cr>
 nnoremap <Leader>md :setlocal ft=markdown<cr>
+nnoremap <Leader>ed :ElmBrowseDocs<cr>
 vmap <Leader>y "+y
 vmap <Leader>d "+d
 nmap <Leader>p "+p
