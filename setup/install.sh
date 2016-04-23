@@ -56,7 +56,7 @@ cd ~/Code/lastpass-cli && make && sudo make install
 echo "now login to lastpass and keybase!"
 
 # install and setup i3
-sudo pacman -S feh parcellite compton xautolock xscreensaver
+sudo pacman -S feh parcellite compton xautolock xscreensaver dmenu
 sudo pacman -S libxcb pango yajl startup-notification libev libxkbcommon libxkbcommon-x11 xcb-util-keysyms xcb-util xcb-util-wm xcb-util-cursor
 
 git clone git@github.com:Airblader/i3.git ~/Code/i3-gaps
