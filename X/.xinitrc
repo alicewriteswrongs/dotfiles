@@ -67,7 +67,7 @@ SpiderOakONE &
 # parcellite &
 
 #start the drop shadows
-compton -c &
+compton -c --no-fading-openclose &
 
 #keep touchscreen aligned
 # xrandr-align monitor --input="ELAN Touchscreen" &
