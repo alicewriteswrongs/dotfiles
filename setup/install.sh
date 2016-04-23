@@ -1,30 +1,22 @@
 #!/bin/bash
 
-# first symlink sources.list
-sudo mv /etc/apt/sources.list ~/sources.list.old
-sudo ln -s ~/dotfiles/setup/sources.list /etc/apt/sources.list
 mkdir ~/Code
 
-# then pull in new package lists
-function update() {
-    sudo apt update
-    sudo apt -y dist-upgrade
-}
-update
+sudo pacman -Syyu
 
 # start by installing some utilities
 
 # common userspace utilities
-sudo apt -y install vim-gnome tmux zsh silversearcher-ag htop mpd git exuberant-ctags virtualbox vagrant mupdf transmission-daemon redshift-gtk scrot redshift ssh-askpass keychain ssh-askpass-gnome
+sudo pacman -S vim tmux zsh the_silver_searcher htop mpd git exuberant-ctags virtualbox vagrant mupdf transmission-gtk scrot redshift keychain 
 
 # stuff for mail
-sudo apt install -y notmuch libnotmuch4 libnotmuch-dev
+sudo pacman -S notmuch
 
 # latex
-sudo apt install texlive-full texlive-extra-utils texlive-math-extra texlive-latex-base texlive-latex-extra cweb-latex
+sudo pacman -S texlive-core texlive-latexextra texlive-science
 
 # install vagrant for VMs
-sudo apt install virtualbox vagrant nfs-common nfs-kernel-server portmap 
+sudo pacman -S nfs-utils
 sudo modprobe nfsd
 sudo service rpcbind start
 sudo service nfs-kernel-server start
@@ -34,12 +26,13 @@ sudo systemctl enable nfs-kernel-server.service
 sudo systemctl start nfs-kernel-server.service
 
 # install various langauge runtimes and build tools
-sudo apt -y install golang-go
-sudo apt -y install python3-dev python-dev python-pip python3-pip python-virtualenv python-setuptools python3-setuptools
-sudo apt -y install build-essential autoconf automake libtool cmake pkg-config libclang-dev
-sudo apt -y install libboost1.55-dev-all libboost1.55-dev libboost1.55-tools-dev scons libgdbm libgdbm-dev libncurses5 libncurses5-dev bison libreadline6 libreadline6-dev libyaml libyaml-dev libsqlite3 libsqlite3-dev sqlite3 libffi libffi-dev libpq libpq-dev notmuch libnotmuch3 libnotmuch-dev libglibmm-2.4-dev libgtkmm-3.0-1 libgtkmm-3.0-dev libgmime-2.6-0 libgmime-2.6-dev libwebkitgtk-3.0-0 libwebkitgtk-3.0-dev libwebkit-dev g++
+sudo pacman -S go
+sudo pacman -S  python-pip python2-pip python-virtualenv python2-virtualenv ppython-setuptools python2-setuptools
+sudo pacman -S autoconf automake libtool cmake pkg-config clang clang-tools-extra
+# sudo pacman -S libboost1.55-dev-all libboost1.55-dev libboost1.55-tools-dev scons libgdbm libgdbm-dev libncurses5 libncurses5-dev bison libreadline6 libreadline6-dev libyaml libyaml-dev libsqlite3 libsqlite3-dev sqlite3 libffi libffi-dev libpq libpq-dev notmuch libnotmuch3 libnotmuch-dev libglibmm-2.4-dev libgtkmm-3.0-1 libgtkmm-3.0-dev libgmime-2.6-0 libgmime-2.6-dev libwebkitgtk-3.0-0 libwebkitgtk-3.0-dev libwebkit-dev g++
+sudo pacman -S nodejs npm
 
-# node and ruby need some special treatment (sigh)
+# ruby need some special treatment (sigh)
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 \curl -sSL https://get.rvm.io | bash -s stable
@@ -49,25 +42,23 @@ rvm use 2.2.3
 gem install bundler
 rvm rvmrc warning ignore allGemfiles
 
-curl -sL https://deb.nodesource.com/setup_5.x | sudo bash -
-sudo apt install -y nodejs
-
 # stuff that depends on nodejs / npm
-npm install -g elm
-npm install -g elm-oracle
-npm install -g tern
+sudo npm install -g elm
+sudo npm install -g elm-oracle
+sudo npm install -g tern
 
 # install some security related stuff
-sudo apt install tor torbrowser-launcher
-sudo apt install openssl libcurl3 libxml2 libssl-dev libxml2-dev libcurl4-openssl-dev pinentry-curses xclip
-sudo apt install keybase
+sudo pacman -S tor 
+sudo pacman -S openssl curl libxml2 pinentry xclip
+sudo pacman -S keybase
 git clone git@github.com:lastpass/lastpass-cli.git ~/Code/
 cd ~/Code/lastpass-cli && make && sudo make install
 echo "now login to lastpass and keybase!"
 
 # install and setup i3
-sudo apt install suckless-tools i3-wm i3 i3-wm-debug feh nm-applet parcellite compton xautolock xscreensaver
-sudo apt install libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev
+sudo pacman -S feh parcellite compton xautolock xscreensaver
+sudo pacman -S libxcb pango yajl startup-notification libev libxkbcommon libxkbcommon-x11 xcb-util-keysyms xcb-util xcb-util-wm xcb-util-cursor
+
 git clone git@github.com:Airblader/i3.git ~/Code/i3-gaps
 cd ~/Code/i3-gaps
 git checkout gaps && git pull
@@ -77,6 +68,7 @@ mkdir ~/.i3
 ln -s ~/dotfiles/i3/i3config ~/.i3/config
 sudo pip install i3pystatus colour psutil
 
+# set chromium as link opening default app
 xdg-mime default chromium.desktop x-scheme-handler/http
 xdg-mime default chromium.desktop x-scheme-handler/https
 xdg-mime default chromium.desktop text/html
@@ -91,7 +83,7 @@ function generate_ssh_key() {
         echo "provide an email to use"
     fi
 }
-generate_ssh_key alice.writes.wrongs@gmail.com
+# generate_ssh_key alice.writes.wrongs@gmail.com
 
 # symlink dotfiles, install vim stuff and some shell extensions
 echo "pull in git submodules"
