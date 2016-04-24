@@ -251,6 +251,10 @@ let g:bufferline_echo = 0
 let g:ag_highlight=1
 let g:used_javascript_libs = 'underscore, jquery, react'
 let g:tmuxcomplete#trigger = 'omnifunc'
+let g:ycm_semantic_triggers = {
+    \ 'elm' : ['.'],
+    \}
+let g:ycm_path_to_python_interpreter = '/usr/bin/python'
 
 augroup pencil
   autocmd!
@@ -327,6 +331,3 @@ nnoremap <Leader>gb :Gblame<cr>
 nnoremap <Leader>[ :tabprevious<cr>
 nnoremap <Leader>] :tabnext<cr>
 nnoremap <Leader>T :tabnew<cr>
-let g:ycm_semantic_triggers = {
-    \ 'elm' : ['.'],
-    \}
