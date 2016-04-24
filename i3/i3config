@@ -41,7 +41,7 @@ bindsym $mod+space exec dmenu_run -l 20 -i -fn pango:inconsolata
 
 #scratchpad (place to throw a window)
 bindsym $mod+Shift+minus move scratchpad
-bindsym $mod+v [class="Gnome-terminal"] scratchpad show
+bindsym $mod+v [class="Xfce4-terminal"] scratchpad show
 bindsym $mod+f [class="Slack"] scratchpad show
 bindsym $mod+d [class="Spotify"] scratchpad show
 bindsym $mod+s [title="Signal"] scratchpad show
