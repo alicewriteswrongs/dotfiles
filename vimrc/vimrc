@@ -131,6 +131,10 @@ augroup myfiletypes
     autocmd FileType htmldjango setlocal autoindent
     autocmd FileType htmldjango setlocal shiftwidth=2
     autocmd FileType htmldjango setlocal softtabstop=2
+    autocmd FileType eruby setlocal expandtab
+    autocmd FileType eruby setlocal autoindent
+    autocmd FileType eruby setlocal shiftwidth=2
+    autocmd FileType eruby setlocal softtabstop=2
     "scss
     autocmd FileType scss setlocal expandtab
     autocmd FileType scss setlocal autoindent
