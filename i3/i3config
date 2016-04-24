@@ -26,7 +26,7 @@ bindsym $mod+ctrl+v move workspace to VGA1
 # start a terminal
 bindsym $mod+ctrl+Shift+l exec "xscreensaver-command -lock"
 bindsym $mod+Return exec xfce4-terminal
-bindsym $mod+Shift+Return exec floating_gnome_term.sh
+bindsym $mod+Shift+Return exec floating_xfce4_term.sh
 
 #pause and play mpd, next and previous song
 bindsym $mod+p exec mpc toggle
