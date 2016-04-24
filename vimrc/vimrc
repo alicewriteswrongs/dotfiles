@@ -155,7 +155,7 @@ augroup END
 
 "colorscheme
 colorscheme solarized
-set background=light
+set background=dark
 syntax on
 
 "powerline
