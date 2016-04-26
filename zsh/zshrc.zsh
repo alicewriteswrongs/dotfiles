@@ -1,5 +1,11 @@
 source ~/dotfiles/zsh/antigen/antigen.zsh
 
+source ~/dotfiles/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=3'
+bindkey '^ ' autosuggest-execute
+
+ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=("expand-or-complete")
+
 zstyle ':completion:*' completer _complete _ignored
 zstyle ':completion:*' completions 1
 zstyle ':completion:*' menu select
@@ -138,3 +144,5 @@ export NVM_DIR="/home/alice/.nvm"
 eval $(keychain --eval --quiet ~/.ssh/id_ecdsa)
 
 export CDPATH="/home/alice/Code:/home/alice/dotfiles:/home/alice"
+
+source ~/dotfiles/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
