@@ -30,3 +30,7 @@ function crun() {
         ./$1
     fi
 }
+
+function gorun() {
+    go build $1 && ./$( $1 | sed 's/\..*$//')
+}
