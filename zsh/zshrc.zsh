@@ -144,5 +144,3 @@ export NVM_DIR="/home/alice/.nvm"
 eval $(keychain --eval --quiet ~/.ssh/id_ecdsa)
 
 export CDPATH="/home/alice/Code:/home/alice/dotfiles:/home/alice"
-
-source ~/dotfiles/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
