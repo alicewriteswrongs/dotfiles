@@ -32,5 +32,5 @@ function crun() {
 }
 
 function gorun() {
-    go build $1 && ./$( $1 | sed 's/\..*$//')
+    go build $1 && ./$( echo $1 | sed 's/\..*$//')
 }
