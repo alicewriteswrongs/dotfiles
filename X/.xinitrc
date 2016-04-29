@@ -53,9 +53,8 @@ redshift -l 42:-71 &
 SpiderOakONE &
 
 # #start gnome keyright (for networkmanager to work correctly)
-# source /etc/X11/xinit/xinitrc.d/30-dbus
-# eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
-# export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT_INFO SSH_AUTH_SOCK
+eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
+export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT_INFO SSH_AUTH_SOCK
 
 #screen locker (not for power changes, systemd service handles that)
 # xautolock -time 10 -locker "/home/alice/Code/shellscripts/i3lock.sh" &
