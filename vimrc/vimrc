@@ -158,6 +158,9 @@ augroup myfiletypes
     "org
     autocmd FileType org setlocal foldenable
     autocmd FileType org setlocal nolist
+    "go
+    autocmd FileType go setlocal tabstop=4
+    autocmd FileType go set nolist
 augroup END
 
 "colorscheme
