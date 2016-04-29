@@ -63,6 +63,9 @@ Plugin 'justinmk/vim-sneak'
 " elm
 Plugin 'elmcast/elm-vim'
 
+" go
+Plugin 'fatih/vim-go'
+
 " rust
 Plugin 'rust-lang/rust.vim' "some rust stuff
 Plugin 'valloric/youcompleteme' "the best completion ever
