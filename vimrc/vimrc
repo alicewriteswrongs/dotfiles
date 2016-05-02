@@ -265,6 +265,12 @@ let g:ycm_semantic_triggers = {
     \ 'elm' : ['.'],
     \}
 let g:ycm_path_to_python_interpreter = '/usr/bin/python'
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_interfaces = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
 
 augroup pencil
   autocmd!
