@@ -12,7 +12,9 @@ call vundle#begin()
 
 " JS / CoffeeScript
 Plugin 'pangloss/vim-javascript'
+" Plugin 'othree/yajs.vim'
 Plugin 'othree/javascript-libraries-syntax.vim'
+" Plugin 'othree/es.next.syntax.vim'
 Plugin 'mxw/vim-jsx'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'mtscout6/vim-cjsx'
