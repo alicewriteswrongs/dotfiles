@@ -54,7 +54,7 @@ SpiderOakONE &
 
 # #start gnome keyright (for networkmanager to work correctly)
 eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
-export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT_INFO SSH_AUTH_SOCK
+export SSH_AUTH_SOCK
 
 #screen locker (not for power changes, systemd service handles that)
 # xautolock -time 10 -locker "/home/alice/Code/shellscripts/i3lock.sh" &
