@@ -161,8 +161,8 @@ augroup myfiletypes
     autocmd FileType org setlocal foldenable
     autocmd FileType org setlocal nolist
     "go
-    autocmd FileType go setlocal tabstop=4
     autocmd FileType go setlocal tabstop=2
+    autocmd FileType go setlocal shiftwidth=2
     autocmd FileType go set nolist
 augroup END
 
