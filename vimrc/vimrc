@@ -232,6 +232,7 @@ set cm=blowfish2
 """Plugin Configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
+let g:elm_format_autosave = 1
 let g:instant_markdown_slow = 1
 let g:sneak#streak = 1
 let g:jsx_ext_required = 0 " allow jsx syntax in normal js files
