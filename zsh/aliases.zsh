@@ -1,4 +1,5 @@
 alias -g G='| grep'
+alias ddebug='docker-compose run --service-ports web'
 alias agf='ag -g'
 alias elmserve='elm-reactor -p 8080'
 alias dps='docker-compose ps'
