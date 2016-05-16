@@ -13,3 +13,5 @@
 	prompt = false
 [rebase]
 	autosquash = true
+[alias]
+	db = 'branch -D'
