@@ -13,6 +13,21 @@ function gs() { # use fzf-tmux to pick branches
 zle -N gs
 bindkey '^b' gs
 
+function gbd() { # delete a branch
+    if [[ $1 ]]; then
+        git branch -D $1
+    else
+        branch=$(selectbranch)
+        local response
+        read "response?delete branch? [yn] "
+        if [[ $response =~ ^[Yy]$ ]]; then
+            git branch -D $(echo $branch | sed -e 's/^\s*//')
+        else
+            echo "not deleting $branch"
+        fi
+    fi
+}
+
 function gd() {
     if [[ $1 ]]; then
         git diff $1
