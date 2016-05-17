@@ -89,6 +89,11 @@ Plugin 'suan/vim-instant-markdown'
 Plugin 'reedes/vim-pencil' "soft/hard wraps for txt,md,email
 Plugin 'jceb/vim-orgmode'
 
+" neovim-specific
+if has('nvim')
+endif
+
+
 call vundle#end()
 filetype plugin indent on "filetype based indenting 
 
@@ -209,9 +214,6 @@ if !has('nvim')
 endif
 set mousemodel=extend
 set noesckeys
-set timeout
-set timeoutlen=2000
-set ttimeoutlen=2000
 
 exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
 set list!
