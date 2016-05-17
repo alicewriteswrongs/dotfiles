@@ -18,6 +18,7 @@ Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'mxw/vim-jsx'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'mtscout6/vim-cjsx'
+Plugin 'mustache/vim-mustache-handlebars'
 
 " other web stuff
 Plugin 'othree/html5-syntax.vim'
@@ -261,6 +262,8 @@ let g:pencil#conceallevel = 0
 let g:airline#extensions#tabline#enabled = 0
 let g:airline#extensions#whitespace#enabled = 1
 let g:airline_powerline_fonts = 1
+let g:airline_skip_empty_sections = 0
+let g:airline_inactive_collapse = 0
 let g:bufferline_echo = 0
 let g:ag_highlight=1
 let g:used_javascript_libs = 'underscore, jquery, react'
