@@ -59,7 +59,7 @@ Plugin 'terryma/vim-multiple-cursors' "sublime-like cursors
 
 " file opening / search
 Plugin 'haya14busa/incsearch.vim' "nice incremental search
-Plugin 'kien/ctrlp.vim' "fuzzy search
+Plugin 'ctrlpvim/ctrlp.vim' "fuzzy search
 Plugin 'rking/ag.vim' "wrapper for ag
 Plugin 'justinmk/vim-sneak'
 
