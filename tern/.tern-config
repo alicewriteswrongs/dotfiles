@@ -5,7 +5,8 @@
     ],
     "loadEagerly": [
         "./src/*.js",
-        "./src/*.jsx"
+        "./src/*.jsx",
+        "./static/js/*.js"
     ],
     "plugins": {
         "node": {},
