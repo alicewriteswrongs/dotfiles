@@ -106,6 +106,8 @@ rm ~/.vimrc
 rm ~/.zshrc
 rm ~/.zshenv
 rm ~/.gitconfig
+mkdir ~/.config/xfce4/terminal
+rm ~/.config/xfce4/terminal/terminalrc
 ln -s ~/dotfiles/vimrc/vimrc ~/.vimrc
 ln -s ~/dotfiles/zsh/zshrc.zsh ~/.zshrc
 ln -s ~/dotfiles/zsh/zshenv.zsh ~/.zshenv
@@ -114,6 +116,7 @@ ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
 ln -s ~/dotfiles/X/.xscreensaver ~/.xscreensaver
 ln -s ~/dotfiles/X/.xinitrc ~/.xinitrc
 ln -s ~/dotfiles/tern/.tern-config ~/.tern-config
+ln -s ~/dotfiles/xfce4-term/terminalrc ~/.config/xfce4/terminal/terminalrc
 
 
 echo "get vim plugins"
