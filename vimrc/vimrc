@@ -33,6 +33,7 @@ Plugin 'tpope/vim-rake'
 " colorschemes
 Plugin 'altercation/vim-colors-solarized' "solarized plugin
 Plugin 'chriskempson/base16-vim'
+Plugin 'NLKNguyen/papercolor-theme'
 
 " ui
 Plugin 'vim-airline/vim-airline'
@@ -179,8 +180,8 @@ augroup myfiletypes
 augroup END
 
 "colorscheme
-colorscheme solarized
-set background=dark
+colorscheme PaperColor
+set background=light
 syntax on
 
 "powerline
