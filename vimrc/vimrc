@@ -35,9 +35,10 @@ Plugin 'altercation/vim-colors-solarized' "solarized plugin
 Plugin 'chriskempson/base16-vim'
 Plugin 'NLKNguyen/papercolor-theme'
 
-" ui
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+" statusline
+" Plugin 'vim-airline/vim-airline'
+" Plugin 'vim-airline/vim-airline-themes'
+Plugin 'itchyny/lightline.vim'
 
 " tmux
 Plugin 'edkolev/tmuxline.vim' "makes tmux pretty
@@ -183,6 +184,10 @@ augroup END
 colorscheme PaperColor
 set background=light
 syntax on
+
+let g:lightline = {
+    \ 'colorscheme': 'PaperColor',
+    \ }
 
 "powerline
 " let g:Powerline_symbols = 'fancy'
