@@ -114,7 +114,7 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 #export Vim as my default editor
-export EDITOR="vim"
+export EDITOR="nvim"
 
 #background environmental variable
 export BACKGROUND="/home/alice/images/tarsands.jpg"
