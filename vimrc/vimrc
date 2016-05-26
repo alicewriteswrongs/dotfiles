@@ -265,6 +265,7 @@ let g:tmuxline_preset = {
     \'options': {
         \'status-justify': 'left'}
     \}
+let g:tmuxline_powerline_separators = 0
 let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_Flavor='latex'
 let g:Tex_ViewRule_pdf='mupdf'
