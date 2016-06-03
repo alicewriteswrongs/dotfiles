@@ -1,1 +1,5 @@
 $VI_MODE = True
+$PROMPT = ' {BLUE}{user} {RED}<3 {BLUE}{short_cwd}{branch_color}{curr_branch} '
+$RIGHT_PROMPT = '{time}'
+
+source ~/dotfiles/xonsh/aliases.xsh
