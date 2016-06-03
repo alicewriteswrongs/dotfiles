@@ -1,5 +1,10 @@
+from datetime import datetime
+
 $VI_MODE = True
+
+# setting the prompt
+$FORMATTER_DICT['curr_time'] = lambda: datetime.strftime(datetime.now(), '%H:%M')
 $PROMPT = ' {BLUE}{user} {RED}<3 {BLUE}{short_cwd}{branch_color}{curr_branch} '
-$RIGHT_PROMPT = '{time}'
+$RIGHT_PROMPT = '{BLUE}{curr_time} '
 
 source ~/dotfiles/xonsh/aliases.xsh
