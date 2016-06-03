@@ -91,6 +91,9 @@ Plugin 'suan/vim-instant-markdown'
 Plugin 'reedes/vim-pencil' "soft/hard wraps for txt,md,email
 Plugin 'jceb/vim-orgmode'
 
+"xonsh
+Plugin 'linkinpark342/xonsh-vim'
+
 " neovim-specific
 if has('nvim')
 endif
