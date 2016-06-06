@@ -111,7 +111,7 @@ aliases['shellscripts'] = 'cd ~/Code/shellscripts && nvim'
 aliases['shellsync'] = 'cd ~/Code/shellscripts && git pull origin master && git commit -a -S && git push origin master'
 aliases['shutdown'] = 'sudo shutdown -P now'
 aliases['sinstall'] = 'source ~/dotfiles/install.sh'
-aliases['so'] = "unalias -m '*' && source ~/.zshrc"
+aliases['so'] = "source ~/.xonshrc"
 aliases['tmptest'] = 'mkdir /tmp/test && cd /tmp/test'
 aliases['tms'] = 'tmux list-sessions'
 aliases['tmuxconfig'] = 'nvim ~/dotfiles/tmux/tmux.conf'
@@ -139,3 +139,4 @@ aliases['vup'] = 'vagrant up'
 aliases['yesdpms'] = 'xset dpms 300 600 0'
 aliases['zfunc'] = 'vim ~/dotfiles/zsh/functions.zsh'
 aliases['zshrc'] = 'vim ~/dotfiles/zsh/zshrc.zsh'
+aliases['latex_boilerplate'] = lambda args, stdin=None: ($(cp ~/dotfiles/latex/basic_boilerplate.tex .))
