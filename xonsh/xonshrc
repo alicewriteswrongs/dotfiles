@@ -8,3 +8,4 @@ $PROMPT = ' {BLUE}{user} {RED}<3 {BLUE}{short_cwd} '
 $RIGHT_PROMPT = '{branch_color}{curr_branch} {BLUE}{curr_time} '
 
 source ~/dotfiles/xonsh/aliases.xsh
+source ~/dotfiles/xonsh/functions/general.xsh
