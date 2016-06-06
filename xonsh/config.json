@@ -1,7 +1,8 @@
 {
  "foreign_shells": [
   {
-   "shell": "zsh"
+   "shell": "zsh",
+   "login": true
   }
  ]
 }
