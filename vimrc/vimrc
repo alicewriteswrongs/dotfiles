@@ -19,6 +19,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'mtscout6/vim-cjsx'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'flowtype/vim-flow'
 
 " other web stuff
 Plugin 'othree/html5-syntax.vim'
