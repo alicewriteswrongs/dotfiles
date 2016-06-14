@@ -16,6 +16,7 @@ alias changebackground='feh --bg-max'
 alias chromesound='chromium --audio-buffer-size=2048'
 alias cleankernel='make mrproper' # remove previous compilation
 alias clip='xsel --clipboard'
+alias dflow='docker-compose run watch npm run-script flow'
 alias d3manage='docker-compose run web python3 manage.py'
 alias dbuild='docker-compose build'
 alias ddebug='docker-compose run --service-ports web'

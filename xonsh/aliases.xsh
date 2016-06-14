@@ -21,6 +21,7 @@ aliases['dbuild'] = 'docker-compose build'
 aliases['ddebug'] = 'docker-compose run --service-ports web'
 aliases['def'] = 'sdcv'
 aliases['dhalt'] = 'docker-compose stop'
+aliases['dflow'] = 'docker-compose run watch npm run-script flow'
 aliases['dmanage'] = 'docker-compose run web python manage.py'
 aliases['documents'] = 'cd ~/Dropbox/Documents/'
 aliases['dotfiles'] = 'cd ~/dotfiles/'    #get into dotfiles repo
