@@ -138,6 +138,12 @@ augroup myfiletypes
     autocmd FileType yaml setlocal softtabstop=2
     autocmd FileType yaml setlocal shiftwidth=2
     autocmd FileType yaml setlocal norelativenumber
+    "json
+    autocmd FileType json setlocal expandtab
+    autocmd FileType json setlocal autoindent
+    autocmd FileType json setlocal softtabstop=2
+    autocmd FileType json setlocal shiftwidth=2
+    autocmd FileType json setlocal norelativenumber
     " autocmd FileType ruby setlocal nocursorline
     autocmd BufRead,BufNewFile *.arb setfiletype ruby
     "coffeescript
