@@ -38,8 +38,6 @@ Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'morhetz/gruvbox'
 
 " statusline
-" Plugin 'vim-airline/vim-airline'
-" Plugin 'vim-airline/vim-airline-themes'
 Plugin 'itchyny/lightline.vim'
 
 " tmux
@@ -335,11 +333,6 @@ let g:tsline_ensure_trailing_newlines = 1
 let g:pencil#wrapModeDefault = 'hard'
 let g:pencil#autoformat = 1
 let g:pencil#conceallevel = 0
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#whitespace#enabled = 1
-let g:airline_powerline_fonts = 1
-let g:airline_skip_empty_sections = 0
-let g:airline_inactive_collapse = 0
 let g:bufferline_echo = 0
 let g:ag_highlight=1
 let g:used_javascript_libs = 'underscore, jquery, react'
