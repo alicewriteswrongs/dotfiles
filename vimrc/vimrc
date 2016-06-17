@@ -35,6 +35,7 @@ Plugin 'tpope/vim-rake'
 Plugin 'altercation/vim-colors-solarized' "solarized plugin
 Plugin 'chriskempson/base16-vim'
 Plugin 'NLKNguyen/papercolor-theme'
+Plugin 'morhetz/gruvbox'
 
 " statusline
 " Plugin 'vim-airline/vim-airline'
@@ -191,12 +192,12 @@ augroup myfiletypes
 augroup END
 
 "colorscheme
-colorscheme PaperColor
+colorscheme gruvbox
 set background=light
 syntax on
 
 let g:lightline = {
-    \ 'colorscheme': 'PaperColor',
+    \ 'colorscheme': 'gruvbox',
     \ 'active': {
     \   'left': [ [ 'mode', 'paste' ],
     \             [ 'fugitive', 'readonly', 'filename', 'modified' ],
