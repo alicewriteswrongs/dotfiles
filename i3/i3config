@@ -25,8 +25,8 @@ bindsym $mod+ctrl+v move workspace to VGA1
 
 # start a terminal
 bindsym $mod+ctrl+Shift+l exec "xscreensaver-command -lock"
-bindsym $mod+Return exec xfce4-terminal
-bindsym $mod+Shift+Return exec floating_xfce4_term.sh
+bindsym $mod+Return exec termite
+bindsym $mod+Shift+Return exec "termite -t FLOATING_TERMITE"
 
 #pause and play mpd, next and previous song
 bindsym $mod+p exec mpc toggle
@@ -143,6 +143,7 @@ for_window [title="ImageMagick"] floating enable
 for_window [class="Jitsi"] floating enable
 for_window [title="Appointment*"] floating enable
 for_window [class="HipChat"] floating enable
+for_window [class="Termite" title="FLOATING_TERMITE"] floating enable
 
 #no borders
 for_window [class="^.*"] border pixel 0
