@@ -119,6 +119,9 @@ export EDITOR="nvim"
 #background environmental variable
 export BACKGROUND="/home/alice/images/tarsands.jpg"
 
+#let nvim have better color support
+export NVIM_TUI_ENABLE_TRUE_COLOR=1
+
 
 [ -f ~/dotfiles/zsh/fzf.zsh ] && source ~/dotfiles/zsh/fzf.zsh
 [ -d ~/.rvm/ ] && source ~/.rvm/scripts/rvm
