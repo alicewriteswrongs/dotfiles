@@ -16,5 +16,10 @@
             "baseURL": "./",
             "paths": {}
         }
-    }
+    },
+    "exclude": [
+        ".git/**",
+        "node_modules/**",
+        "static/js/public"
+    ]
 }
