@@ -37,7 +37,8 @@ bindsym $mod+period exec mpc next
 bindsym $mod+q kill
 
 # start dmenu
-bindsym $mod+space exec dmenu_run -l 20 -i -fn pango:inconsolata
+bindsym $mod+space exec rofi -show run
+bindsym $mod+ctrl+space exec rofi -show window
 
 #scratchpad (place to throw a window)
 bindsym $mod+Shift+minus move scratchpad
@@ -85,9 +86,6 @@ bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
-
-# change focus between tiling / floating windows
-bindsym $mod+ctrl+space focus mode_toggle
 
 # give workspaces names
 set $WS1 1
