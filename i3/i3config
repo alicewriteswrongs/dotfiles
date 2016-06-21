@@ -47,6 +47,7 @@ bindsym $mod+d [class="Spotify"] scratchpad show
 bindsym $mod+s [title="Signal"] scratchpad show
 bindsym $mod+a [class="Astroid"] scratchpad show
 bindsym $mod+c [class="Jitsi"] scratchpad show
+bindsym $mod+z [class="Slack"] scratchpad show
 
 #show all scratchpad (usually won't need)
 bindsym $mod+ctrl+minus scratchpad show
