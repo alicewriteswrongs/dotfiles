@@ -307,6 +307,7 @@ set undodir=~/.vim/undo//
 """Plugin Configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
+let g:javascript_plugin_flow = 1
 let g:gruvbox_termcolors=256
 let g:flow#autoclose = 1
 let g:elm_format_autosave = 1
