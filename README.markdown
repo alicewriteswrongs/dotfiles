@@ -19,6 +19,5 @@ extensions, and run the install scripts for a couple of things like
 and [inconsolata for powerline](https://github.com/powerline/fonts)) to
 get my dev environment the way I like it.
 
-Anyway, you may find it helpful! I use Debian testing, but I imagine it
-should work ok (or at least give you a starting off point) for any other
-Debian-related distro (ubuntu, etc). 
+Anyway, you may find it helpful! I use Arch, but I imagine it should work
+ok (or at least give you a starting off point) for any other distro.
