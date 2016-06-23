@@ -427,3 +427,5 @@ nnoremap <Leader>gb :Gblame<cr>
 nnoremap <Leader>[ :tabprevious<cr>
 nnoremap <Leader>] :tabnext<cr>
 nnoremap <Leader>T :tabnew<cr>
+"find flowtype for a variable
+nnoremap <Leader>ft :FlowType<cr>
