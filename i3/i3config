@@ -214,4 +214,17 @@ bar {
         workspace_buttons   yes
 }
 
+# move scratchpad apps to scratchpad
+for_window [title="scratchpad"] move window to scratchpad
+for_window [class="HipChat"] move window to scratchpad
+for_window [class="Spotify"] move window to scratchpad
+for_window [class="Slack"] move window to scratchpad
+
+# autostart applications
+# exec chromium; for_window [class="chromium"] move container to workspace $WS2
+exec --no-startup-id i3-msg 'workspace 1; exec chromium; workspace 1'
+exec --no-startup-id i3-msg 'workspace 2; exec termite; workspace 1'
+exec termite -t scratchpad
+exec spotify
+
 # vim:filetype=i3
