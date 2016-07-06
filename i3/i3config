@@ -4,14 +4,14 @@ set $mod Mod1
 
 for_window [class=".*"] title_format "title: %title, class: %class"
 
-#popups when fullscreen
+# popups when fullscreen
 popup_during_fullscreen smart
 
-#set DPMS screen interval
+# set DPMS screen interval
 exec --no-startup-id xset dpms 600
 
-#font for window titles and bar
-#font pango:DejaVu Sans Mono 8
+# font for window titles and bar
+# font pango:DejaVu Sans Mono 8
 font pango:inconsolata, Icons 8
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -23,8 +23,10 @@ bindsym $mod+ctrl+d move workspace to DP1
 bindsym $mod+ctrl+i move workspace to eDP1
 bindsym $mod+ctrl+v move workspace to VGA1
 
-# start a terminal
+# lock the screen
 bindsym $mod+ctrl+Shift+l exec "xscreensaver-command -lock"
+
+# start a terminal
 bindsym $mod+Return exec termite
 bindsym $mod+Shift+Return exec "termite -t FLOATING_TERMITE"
 
@@ -52,6 +54,12 @@ bindsym $mod+z [class="Slack"] scratchpad show
 
 #show all scratchpad (usually won't need)
 bindsym $mod+ctrl+minus scratchpad show
+
+# set certain apps to live in the scratchpad
+for_window [title="scratchpad"] move window to scratchpad
+for_window [class="HipChat"] move window to scratchpad
+for_window [class="Spotify"] move window to scratchpad
+for_window [class="Slack"] move window to scratchpad
 
 # change focus
 bindsym $mod+h focus left
@@ -214,14 +222,7 @@ bar {
         workspace_buttons   yes
 }
 
-# move scratchpad apps to scratchpad
-for_window [title="scratchpad"] move window to scratchpad
-for_window [class="HipChat"] move window to scratchpad
-for_window [class="Spotify"] move window to scratchpad
-for_window [class="Slack"] move window to scratchpad
-
 # autostart applications
-# exec chromium; for_window [class="chromium"] move container to workspace $WS2
 exec --no-startup-id i3-msg 'workspace 1; exec chromium; workspace 1'
 exec --no-startup-id i3-msg 'workspace 2; exec termite; workspace 1'
 exec termite -t scratchpad
