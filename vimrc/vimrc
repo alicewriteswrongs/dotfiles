@@ -12,9 +12,7 @@ call vundle#begin()
 
 " JS / CoffeeScript
 Plugin 'pangloss/vim-javascript'
-" Plugin 'othree/yajs.vim'
 Plugin 'othree/javascript-libraries-syntax.vim'
-" Plugin 'othree/es.next.syntax.vim'
 Plugin 'mxw/vim-jsx'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'mtscout6/vim-cjsx'
@@ -59,6 +57,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired' "adds some keybinds?
 Plugin 'tpope/vim-vinegar' "makes vim directory browser nicer
 Plugin 'terryma/vim-multiple-cursors' "sublime-like cursors
+Plugin 'neomake/neomake'
+Plugin 'benjie/neomake-local-eslint.vim'
 
 " file opening / search
 Plugin 'haya14busa/incsearch.vim' "nice incremental search
@@ -98,7 +98,6 @@ Plugin 'linkinpark342/xonsh-vim'
 " neovim-specific
 if has('nvim')
 endif
-
 
 call vundle#end()
 filetype plugin indent on "filetype based indenting 
@@ -319,15 +318,15 @@ let g:ctrlp_extensions = ['buffertag']
 let g:incsearch#auto_nohlsearch = 1
 "tmuxline.vim
 let g:tmuxline_preset = {
-    \'a' : '#S',
-    \'win'  : '#W',
-    \'cwin'  : '#W',
-    \'x' : '#(battery)',
-    \'y' : '%l:%M',
-    \'z' : '#h',
-    \'options': {
-        \'status-justify': 'left'}
-    \}
+            \'a' : '#S',
+            \'win'  : '#W',
+            \'cwin'  : '#W',
+            \'x' : '#(battery)',
+            \'y' : '%l:%M',
+            \'z' : '#h',
+            \'options': {
+            \'status-justify': 'left'}
+            \}
 let g:tmuxline_powerline_separators = 0
 let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_Flavor='latex'
@@ -341,8 +340,8 @@ let g:ag_highlight=1
 let g:used_javascript_libs = 'underscore, jquery, react'
 let g:tmuxcomplete#trigger = 'omnifunc'
 let g:ycm_semantic_triggers = {
-    \ 'elm' : ['.'],
-    \}
+            \ 'elm' : ['.'],
+            \}
 let g:ycm_path_to_python_interpreter = '/usr/bin/python'
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
@@ -351,6 +350,9 @@ let g:go_highlight_interfaces = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:go_fmt_command = "goimports"
+let g:neomake_open_list = 1
+let g:neomake_javascript_enabled_makers = ['eslint']
+let g:neomake_jsx_enabled_makers = ['eslint']
 
 augroup pencil
   autocmd!
