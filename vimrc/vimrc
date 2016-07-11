@@ -188,6 +188,7 @@ augroup myfiletypes
     autocmd FileType go setlocal shiftwidth=2
     autocmd FileType go set nolist
 augroup END
+autocmd! BufWritePost * Neomake
 
 "colorscheme
 colorscheme gruvbox
