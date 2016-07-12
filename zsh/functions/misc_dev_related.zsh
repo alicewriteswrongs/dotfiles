@@ -34,3 +34,7 @@ function crun() {
 function gorun() {
     go build $1 && ./$( echo $1 | sed 's/\..*$//') && rm ./$( echo $1 | sed 's/\..*$//')
 }
+
+function freplace() {
+    ag -l $1 | xargs sed -i '' -e $2
+}
