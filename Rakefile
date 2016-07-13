@@ -5,9 +5,16 @@ def get_json(relpath)
   JSON.parse(File.read(relpath))
 end
 
+def git_pull(dir = Dir.pwd)
+  Dir.chdir(dir) do
+    status = %x{git pull}
+    puts status unless status =~ /Already up-to-date\./
+  end
+end
+
 namespace :dotfiles do 
   def symlink_manifest
-    get_json("./symlink.json")
+    get_json("./manifest/symlink.json")
   end
 
   def expand(partial_path)
@@ -38,7 +45,7 @@ end
 
 namespace :packages do
   def arch_manifest
-    get_json("./arch/arch_packages.json")
+    get_json("./manifest/arch_packages.json")
   end
 
   task :update_lists do
@@ -54,7 +61,24 @@ namespace :packages do
       sh "sudo pacman -S #{pkg}"
     end
   end
+
+  task :install_python_dependencies do
+  end
 end
 
-task default: ["dotfiles:symlink_dotfiles"]
-task update: ["packages:update_packages"]
+namespace :system_configuration do
+  task :set_default_applicatons do
+    sh "xdg-mime default chromium.desktop x-scheme-handler/http"
+    sh "xdg-mime default chromium.desktop x-scheme-handler/https"
+    sh "xdg-mime default chromium.desktop text/html"
+  end
+
+  task :update_submodules do
+  end
+end
+
+task default: ["packages:update_packages"]
+task setup: [
+  "packages:install_packages",
+  "dotfiles:symlink_dotfiles"
+]
