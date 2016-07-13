@@ -5,6 +5,10 @@ def get_json(relpath)
   JSON.parse(File.read(relpath))
 end
 
+def expand(partial_path)
+  Pathname(partial_path).expand_path
+end
+
 def git_pull(dir = Dir.pwd)
   Dir.chdir(dir) do
     status = %x{git pull}
@@ -17,18 +21,12 @@ namespace :dotfiles do
     get_json("./manifest/symlink.json")
   end
 
-  def expand(partial_path)
-    Pathname(partial_path).expand_path
-  end
-
   def contains_dotfiles(path)
     path.to_s.match(/dotfiles/)
   end
 
   task :create_dotfiles_dirs do
-    symlink_manifest["directories"].each do |dirname|
-      Dir.new(expand(dirname))
-    end
+    symlink_manifest["directories"].each { |dirname| Dir.new(expand(dirname)) }
   end
 
   task :symlink_dotfiles => [:create_dotfiles_dirs] do
