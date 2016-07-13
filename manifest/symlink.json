@@ -10,11 +10,13 @@
     ["./X/.xscreensaver", "~/.xscreensaver"],
     ["./zsh/zshrc.zsh", "~/.zshrc"],
     ["./xonsh/xonshrc", "~/.xonshrc"],
-    ["./termite/config", "~/.config/termite/config"]
+    ["./termite/config", "~/.config/termite/config"],
+    ["./i3/i3config", "~/.i3/config"]
   ],
   "directories": [
     "~/.config",
     "~/.config/nvim",
-    "~/.config/termite"
+    "~/.config/termite",
+    "~/.i3"
   ]
 }
