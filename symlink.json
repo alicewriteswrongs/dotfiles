@@ -1,0 +1,20 @@
+{
+  "dotfiles": [
+    ["./vimrc/vimrc", "~/.config/nvim/init.vim"],
+    ["./vimrc/vimrc", "~/.vimrc"],
+    ["./tmux/tmux.conf", "~/.tmux.conf"],
+    ["./tern/.tern-config", "~/.tern-config"],
+    ["./git/.gitconfig", "~/.gitconfig"],
+    ["./X/.xinitrc", "~/.xinitrc"],
+    ["./X/Xresources", "~/.Xresources"],
+    ["./X/.xscreensaver", "~/.xscreensaver"],
+    ["./zsh/zshrc.zsh", "~/.zshrc"],
+    ["./xonsh/xonshrc", "~/.xonshrc"],
+    ["./termite/config", "~/.config/termite/config"]
+  ],
+  "directories": [
+    "~/.config",
+    "~/.config/nvim",
+    "~/.config/termite"
+  ]
+}
