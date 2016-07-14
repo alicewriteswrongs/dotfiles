@@ -11,6 +11,7 @@ end
 
 def git_pull(dir = Dir.pwd)
   Dir.chdir(dir) do
+    %x{git checkout master}
     status = %x{git pull}
     puts status unless status =~ /Already up-to-date\./
   end
@@ -38,6 +39,21 @@ namespace :dotfiles do
         system "ln -s #{dotfile_path} #{symlink_path}"
       end
     end
+  end
+
+  task :initialize_submodules do
+    sh "git submodule init"
+    sh "git submodule update"
+  end
+
+  task :update_submodules => [:initialize_submodules] do
+    Dir.chdir("extras")
+    Dir.entries(Dir.pwd).keep_if { |s| s != "." && s != ".." }.each do |submodule_dir|
+      git_pull(submodule_dir)
+    end
+  end
+
+  task :install_extras => [:initialize_submodules] do
   end
 end
 
@@ -75,8 +91,21 @@ namespace :system_configuration do
   end
 end
 
+namespace :vim do
+  task :install_plugins do
+  end
+end
+
+namespace :i3 do
+  task :install do
+  end
+end
+
 task default: ["packages:update_packages"]
 task setup: [
   "packages:install_packages",
-  "dotfiles:symlink_dotfiles"
+  "dotfiles:symlink_dotfiles",
+  "dotfiles:install_extras",
+  "vim:setup",
+  "i3:install"
 ]
