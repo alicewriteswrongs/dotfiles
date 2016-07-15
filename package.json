@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/aliceriot/dotfiles#readme",
   "dependencies": {
+    "flow-bin": "^0.29.0",
     "npm-check-updates": "^2.7.0"
   }
 }
