@@ -106,5 +106,8 @@
     "xterm",
     "yajl",
     "zsh"
+  ],
+  "aur" [
+    "pasystray"
   ]
 }
