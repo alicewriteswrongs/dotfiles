@@ -43,14 +43,14 @@ function docker_js_upgrade() {
     docker-compose run watch npm install --save $1@latest
 }
 
-function get_package_name() {
+function get_npm_package_name() {
     echo "$1" | sed 's/ .*//g'
 }
 
 function docker_js_upgrade_all() {
     IFS=$'\n'
     for package in $(npm outdated | tail -n +2); do
-        to_upgrade=$(get_package_name $package)
+        to_upgrade=$(get_npm_package_name $package)
         echo "upgrading $to_upgrade"
         docker_js_upgrade $to_upgrade
     done
