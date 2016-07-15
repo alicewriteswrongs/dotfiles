@@ -1,0 +1,22 @@
+{
+  "name": "dotfiles",
+  "version": "1.0.0",
+  "description": "For the syncing of the dotfiles. There's a lot of them, most are abandonware.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliceriot/dotfiles.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aliceriot/dotfiles/issues"
+  },
+  "homepage": "https://github.com/aliceriot/dotfiles#readme",
+  "dependencies": {
+    "npm-check-updates": "^2.7.0"
+  }
+}
