@@ -26,11 +26,11 @@ namespace :dotfiles do
     path.to_s.match(/dotfiles/)
   end
 
-  task :create_dotfiles_dirs do
+  task :create_dotfile_dirs do
     symlink_manifest["directories"].each { |dirname| Dir.new(expand(dirname)) }
   end
 
-  task :symlink_dotfiles => [:create_dotfiles_dirs] do
+  task :symlink_dotfiles => [:create_dotfile_dirs] do
     symlink_manifest["dotfiles"].each do |symlink|
       dotfile_path = expand(symlink[0])
       symlink_path = expand(symlink[1])
