@@ -89,10 +89,17 @@ namespace :packages do
 end
 
 namespace :system_configuration do
-  task :set_default_applicatons do
+  task :set_default_applications do
     sh "xdg-mime default chromium.desktop x-scheme-handler/http"
     sh "xdg-mime default chromium.desktop x-scheme-handler/https"
     sh "xdg-mime default chromium.desktop text/html"
+  end
+
+  task :change_shell do
+    sh "chsh -s $(which zsh)"
+  end
+
+  task :setup => [:set_default_applications, :change_shell] do
   end
 end
 
@@ -113,8 +120,8 @@ namespace :vim do
   end
 
   task :setup => [:clone_vundle, :install_packages, :setup_ycm] do
-    mkdir vim_dir << "backup"
-    mkdir vim_dir << "undo"
+    mkdir vim_dir.to_s << "backup"
+    mkdir vim_dir.to_s << "undo"
     puts "Vim setup complete!"
   end
 end
