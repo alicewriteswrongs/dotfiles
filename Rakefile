@@ -126,6 +126,10 @@ namespace :vim do
     sh "python install.py --tern-completer --gocode-completer --clang-completer"
   end
 
+  task :update do
+    sh "vim +PluginUpdate +qall"
+  end
+
   task :setup => [:clone_vundle, :install_packages, :setup_ycm] do
     mkdir vim_dir.to_s << "/backup"
     mkdir vim_dir.to_s << "/undo"
