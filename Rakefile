@@ -131,8 +131,8 @@ namespace :vim do
   end
 
   task :setup => [:clone_vundle, :install_packages, :setup_ycm] do
-    mkdir vim_dir.to_s << "/backup"
-    mkdir vim_dir.to_s << "/undo"
+    mkdir_p vim_dir.to_s << "/backup"
+    mkdir_p vim_dir.to_s << "/undo"
     puts "Vim setup complete!"
   end
 end
