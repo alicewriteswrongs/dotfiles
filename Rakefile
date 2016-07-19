@@ -1,5 +1,6 @@
 require 'json'
 require 'pathname'
+require 'pry'
 
 def get_json(relpath)
   JSON.parse(File.read(relpath))
@@ -63,17 +64,23 @@ namespace :packages do
     get_json("./manifest/arch_packages.json")
   end
 
+  def package_installed?(pkg_name)
+    sh "pacman -Qs #{pkg_name}"
+  end
+
   task :update_lists do
-    sh "sudo pacman -Syy"
+    sh "sudo pacman -Syy --noconfirm"
   end
 
   task :update_packages => [:update_lists] do
-    sh "sudo pacman -Syyu"
+    sh "sudo pacman -Syyu --noconfirm"
   end
 
   task :install_packages => [:update_packages] do
     arch_manifest["repos"].each do |pkg|
-      sh "sudo pacman -S #{pkg}"
+      sh "pacman -Qs #{pkg}" do |ok, res|
+        sh "sudo pacman -S #{pkg} --noconfirm" if !ok
+      end
     end
   end
 
@@ -87,18 +94,48 @@ namespace :system_configuration do
     sh "xdg-mime default chromium.desktop x-scheme-handler/https"
     sh "xdg-mime default chromium.desktop text/html"
   end
-
-  task :update_submodules do
-  end
 end
 
 namespace :vim do
-  task :install_plugins do
+  vim_dir = expand "~/.vim"
+
+  task :clone_vundle do
+    sh "git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim" if ! Dir.exists? expand("~/.vim/bundle/Vundle.vim")
+  end
+
+  task :install_packages do
+    sh "vim +PluginInstall +qall"
+  end
+
+  task :setup_ycm do
+    cd expand("~/.vim/bundle/youcompleteme")
+    sh "python install.py --tern-completer --gocode-completer --clang-completer"
+  end
+
+  task :setup => [:clone_vundle, :install_packages, :setup_ycm] do
+    mkdir vim_dir << "backup"
+    mkdir vim_dir << "undo"
+    puts "Vim setup complete!"
   end
 end
 
 namespace :i3 do
-  task :install do
+  url = "git@github.com:Airblader/i3.git"
+  dir = expand "~/Code/i3-gaps"
+
+  task :clone do
+    sh "git clone #{url} #{dir}" if ! Dir.exists? dir
+  end
+
+  task :build do
+    cd dir
+    sh "git checkout gaps"
+    sh "git pull"
+    sh "make"
+  end
+
+  task :install => [:clone, :build] do
+    sh "sudo make install"
   end
 end
 
@@ -110,3 +147,4 @@ task setup: [
   "vim:setup",
   "i3:install"
 ]
+task vim: ["vim:setup"]
