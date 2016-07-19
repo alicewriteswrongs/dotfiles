@@ -65,6 +65,7 @@ Plugin 'haya14busa/incsearch.vim' "nice incremental search
 Plugin 'ctrlpvim/ctrlp.vim' "fuzzy search
 Plugin 'rking/ag.vim' "wrapper for ag
 Plugin 'justinmk/vim-sneak'
+Plugin 'blarghmatey/split-expander'
 
 " elm
 Plugin 'elmcast/elm-vim'
