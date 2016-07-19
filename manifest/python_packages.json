@@ -1,0 +1,7 @@
+{
+  "packages": [
+    "i3pystatus",
+    "colour",
+    "psutil"
+  ]
+}

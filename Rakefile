@@ -64,6 +64,10 @@ namespace :packages do
     get_json("./manifest/arch_packages.json")
   end
 
+  def python_manifest
+    get_json("./manifest/python_packages.json")
+  end
+
   def package_installed?(pkg_name)
     sh "pacman -Qs #{pkg_name}"
   end
@@ -85,6 +89,9 @@ namespace :packages do
   end
 
   task :install_python_dependencies do
+    python_manifest["packages"].each do |pkg|
+      sh "sudo pip install #{pkg}"
+    end
   end
 end
 
@@ -149,9 +156,11 @@ end
 task default: ["packages:update_packages"]
 task setup: [
   "packages:install_packages",
+  "packages:install_python_dependencies",
   "dotfiles:symlink_dotfiles",
   "dotfiles:install_extras",
   "vim:setup",
-  "i3:install"
+  "i3:install",
+  "system_configuration:setup"
 ]
 task vim: ["vim:setup"]
