@@ -14,7 +14,7 @@
     "dmenu",
     "evolution",
     "evolution-ews",
-    "exuberant-ctags",
+    "ctags",
     "feh",
     "firefox",
     "fuse",
@@ -26,7 +26,6 @@
     "go-tools ",
     "gvim ",
     "htop",
-    "i3-wm",
     "inkscape ",
     "keybase",
     "keychain",
@@ -107,7 +106,7 @@
     "yajl",
     "zsh"
   ],
-  "aur" [
+  "aur": [
     "pasystray"
   ]
 }
