@@ -54,6 +54,7 @@ namespace :dotfiles do
   end
 
   task :install_extras => [:initialize_submodules] do
+    sh "./extras/fzf/install"
   end
 end
 
