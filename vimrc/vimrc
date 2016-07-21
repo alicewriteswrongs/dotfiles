@@ -187,7 +187,6 @@ augroup myfiletypes
     "go
     autocmd FileType go setlocal tabstop=2
     autocmd FileType go setlocal shiftwidth=2
-    autocmd FileType go set nolist
 augroup END
 autocmd! BufWritePost * Neomake
 
@@ -288,7 +287,7 @@ endif
 set mousemodel=extend
 set noesckeys
 
-set list lcs=tab:>-,trail:-
+set list lcs=tab:>-,trail:.
 " highlight StatusLine ctermfg=blue ctermbg=yellow
 if executable('ag')
     set grepprg=ag\ --nogroup\ --nocolor
