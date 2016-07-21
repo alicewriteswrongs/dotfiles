@@ -68,6 +68,9 @@ export SSH_AUTH_SOCK
 #start the drop shadows
 compton -c --no-fading-openclose &
 
+# pulseaudio
+pasystray &
+
 #keep touchscreen aligned
 # xrandr-align monitor --input="ELAN Touchscreen" &
 
