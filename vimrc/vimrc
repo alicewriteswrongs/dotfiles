@@ -59,6 +59,7 @@ Plugin 'tpope/vim-vinegar' "makes vim directory browser nicer
 Plugin 'terryma/vim-multiple-cursors' "sublime-like cursors
 Plugin 'neomake/neomake'
 Plugin 'benjie/neomake-local-eslint.vim'
+Plugin 'Yggdroot/indentLine'
 
 " file opening / search
 Plugin 'haya14busa/incsearch.vim' "nice incremental search
@@ -132,6 +133,7 @@ augroup myfiletypes
     autocmd FileType ruby setlocal softtabstop=2
     autocmd FileType ruby setlocal shiftwidth=2
     autocmd FileType ruby setlocal norelativenumber
+    autocmd BufRead,BufNewFile *.arb setfiletype ruby
     "yaml
     autocmd FileType yaml setlocal expandtab
     autocmd FileType yaml setlocal autoindent
@@ -144,8 +146,6 @@ augroup myfiletypes
     autocmd FileType json setlocal softtabstop=2
     autocmd FileType json setlocal shiftwidth=2
     autocmd FileType json setlocal norelativenumber
-    " autocmd FileType ruby setlocal nocursorline
-    autocmd BufRead,BufNewFile *.arb setfiletype ruby
     "coffeescript
     autocmd FileType coffee setlocal expandtab
     autocmd FileType coffee setlocal autoindent
@@ -288,8 +288,7 @@ endif
 set mousemodel=extend
 set noesckeys
 
-exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
-set list!
+set list lcs=tab:>-,trail:-
 " highlight StatusLine ctermfg=blue ctermbg=yellow
 if executable('ag')
     set grepprg=ag\ --nogroup\ --nocolor
@@ -356,6 +355,13 @@ let g:neomake_open_list = 2
 let g:neomake_javascript_enabled_makers = ['eslint']
 let g:neomake_jsx_enabled_makers = ['eslint']
 let g:neomake_scss_enabled_makers = []
+let g:indentLine_char = ">"
+let g:indentLine_first_char = ">"
+let g:indentLine_leadingSpaceChar = '-'
+let g:indentLine_leadingSpaceEnabled = 1
+let g:indentLine_showFirstIndentLevel = 1
+let g:indentLine_color_gui = '#504945'
+let g:indent_guides_auto_colors = 0
 
 augroup pencil
   autocmd!
