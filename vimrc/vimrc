@@ -287,7 +287,8 @@ endif
 set mousemodel=extend
 set noesckeys
 
-set list lcs=tab:>-,trail:.
+set lcs=trail:.,tab:>\ 
+set list
 " highlight StatusLine ctermfg=blue ctermbg=yellow
 if executable('ag')
     set grepprg=ag\ --nogroup\ --nocolor
@@ -356,11 +357,10 @@ let g:neomake_jsx_enabled_makers = ['eslint']
 let g:neomake_scss_enabled_makers = []
 let g:indentLine_char = ">"
 let g:indentLine_first_char = ">"
-let g:indentLine_leadingSpaceChar = '-'
-let g:indentLine_leadingSpaceEnabled = 1
 let g:indentLine_showFirstIndentLevel = 1
 let g:indentLine_color_gui = '#504945'
 let g:indent_guides_auto_colors = 0
+let g:indentLine_faster = 1
 
 augroup pencil
   autocmd!
