@@ -1,12 +1,12 @@
 [Unit]
-Description=i3lock
+Description=xscreensaver
 Before=sleep.target
 
 [Service]
 User=alice
 Type=forking
 Environment=DISPLAY=:0
-ExecStart=/home/alice/Code/shellscripts/i3lock.sh
+ExecStart=/usr/bin/xscreensaver-command -lock
 
 [Install]
 WantedBy=sleep.target
