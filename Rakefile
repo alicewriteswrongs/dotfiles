@@ -106,7 +106,16 @@ namespace :system_configuration do
     sh "chsh -s $(which zsh)"
   end
 
-  task :setup => [:set_default_applications, :change_shell] do
+  task :screenlock do
+    systemd_dir = expand "/etc/systemd/system"
+    service_file = "xscreensaver.service"
+    dest = systemd_dir.to_s << "/" << service_file
+    if ! File.exists? dest
+      sh "sudo cp #{expand("~/dotfiles/X/xscreensaver.service").to_s} #{dest}"
+    end
+  end
+
+  task :setup => [:set_default_applications, :change_shell, :screenlock] do
   end
 end
 
