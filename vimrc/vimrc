@@ -61,6 +61,7 @@ Plugin 'terryma/vim-multiple-cursors' "sublime-like cursors
 Plugin 'neomake/neomake'
 Plugin 'benjie/neomake-local-eslint.vim'
 Plugin 'Yggdroot/indentLine'
+Plugin 'jamessan/vim-gnupg'
 
 " file opening / search
 Plugin 'haya14busa/incsearch.vim' "nice incremental search
