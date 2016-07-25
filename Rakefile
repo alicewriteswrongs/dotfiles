@@ -114,8 +114,8 @@ namespace :system_configuration do
       sh "sudo cp #{expand("~/dotfiles/X/xscreensaver.service").to_s} #{dest}"
     end
 
-    sh "sudo systemctl enable i3lock.service"
-    sh "sudo systemctl start i3lock.service"
+    sh "sudo systemctl enable xscreensaver.service"
+    sh "sudo systemctl start xscreensaver.service"
   end
 
   task :setup => [:set_default_applications, :change_shell, :screenlock] do
