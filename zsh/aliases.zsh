@@ -17,7 +17,7 @@ alias chromesound='chromium --audio-buffer-size=2048'
 alias cleankernel='make mrproper' # remove previous compilation
 alias clip='xsel --clipboard'
 alias dflow='docker-compose run watch npm run-script flow'
-alias d3manage='docker-compose run web python3 manage.py'
+alias d3manage='docker-compose run web python3 manage.py -i bpython'
 alias dbuild='docker-compose build'
 alias ddebug='docker-compose run --service-ports web'
 alias def='sdcv'
