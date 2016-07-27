@@ -1,18 +1,19 @@
 [user]
-	name = Alice Pote
-	email = alice.writes.wrongs@gmail.com
-	signingkey = A152BCF9
+    name = Alice Pote
+    email = alice.writes.wrongs@gmail.com
+    signingkey = A152BCF9
 [core]
-	excludesfile = /home/alice/dotfiles/git/gitignore
+    excludesfile = /home/alice/dotfiles/git/gitignore
 [diff]
-	tool = vimdiff
+    tool = vimdiff
 [merge]
-	tool = vimdiff
-	conflictStyle = diff3
+    tool = vimdiff
+    conflictStyle = diff3
 [difftool]
-	prompt = false
+    prompt = false
 [rebase]
-	autosquash = true
+    autosquash = true
 [alias]
-	db = 'branch -D'
-	cc = checkout
+    db = 'branch -D'
+    cc = checkout
+    gd = git diff

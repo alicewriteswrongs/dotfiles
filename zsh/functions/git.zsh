@@ -28,14 +28,6 @@ function gbd() { # delete a branch
     fi
 }
 
-function gd() {
-    if [[ $1 ]]; then
-        git diff $1
-    else
-        git diff .
-    fi
-}
-
 function gds() {
     if [[ $1 ]]; then
         git diff $1
