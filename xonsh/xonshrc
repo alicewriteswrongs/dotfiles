@@ -9,3 +9,11 @@ $RIGHT_PROMPT = '{branch_color}{curr_branch} {BLUE}{curr_time} '
 
 source ~/dotfiles/xonsh/aliases.xsh
 source ~/dotfiles/xonsh/functions/general.xsh
+
+source-bash ~/dotfiles/zsh/functions/github.zsh
+source-bash ~/dotfiles/zsh/functions/fzf.zsh
+source-bash ~/dotfiles/zsh/functions/misc_dev_related.zsh
+source-bash ~/dotfiles/zsh/functions/x_windows.zsh
+source-bash ~/dotfiles/zsh/functions/git.zsh
+source-bash ~/dotfiles/zsh/functions/tmux.zsh
+

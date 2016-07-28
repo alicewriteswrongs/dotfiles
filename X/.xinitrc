@@ -63,7 +63,7 @@ export SSH_AUTH_SOCK
 # owncloud &
 
 #start that nice clipboard manager
-# parcellite &
+parcellite &
 
 #start the drop shadows
 compton -c --no-fading-openclose &
