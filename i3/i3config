@@ -151,6 +151,7 @@ for_window [class="Jitsi"] floating enable
 for_window [title="Appointment*"] floating enable
 for_window [class="HipChat"] floating enable
 for_window [class="Termite" title="FLOATING_TERMITE"] floating enable
+for_window [class="Keybase"] floating enable
 
 #no borders
 for_window [class="^.*"] border pixel 0
