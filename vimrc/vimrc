@@ -31,6 +31,9 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-rake'
 
+" elixir
+Plugin 'elixir-lang/vim-elixir'
+
 " colorschemes
 Plugin 'altercation/vim-colors-solarized' "solarized plugin
 Plugin 'chriskempson/base16-vim'
