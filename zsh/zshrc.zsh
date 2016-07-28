@@ -1,5 +1,3 @@
-source ~/dotfiles/zsh/antigen/antigen.zsh
-
 source ~/dotfiles/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=3'
 bindkey '^ ' autosuggest-execute
