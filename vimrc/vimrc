@@ -367,6 +367,8 @@ let g:indentLine_color_gui = '#504945'
 let g:indent_guides_auto_colors = 0
 let g:indentLine_faster = 1
 let g:indentLine_concealcursor = 0
+let g:indentLine_fileTypeExclude = ['json']
+let g:indentLine_conceallevel = 1
 
 augroup pencil
   autocmd!
