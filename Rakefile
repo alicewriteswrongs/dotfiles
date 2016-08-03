@@ -82,8 +82,8 @@ namespace :packages do
 
   task :install_packages => [:update_packages] do
     arch_manifest["repos"].each do |pkg|
-      sh "pacman -Qs #{pkg}" do |ok, res|
-        sh "sudo pacman -S #{pkg} --noconfirm" if !ok
+      sh "pacman -Qi #{pkg} > /dev/null" do |ok, res|
+        sh "sudo pacman -S #{pkg} --noconfirm > /dev/null" if !ok
       end
     end
   end
