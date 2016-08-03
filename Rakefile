@@ -35,10 +35,14 @@ namespace :dotfiles do
     symlink_manifest["dotfiles"].each do |symlink|
       dotfile_path = expand(symlink[0])
       symlink_path = expand(symlink[1])
-      if File.exists?(symlink_path) && !contains_dotfiles(symlink_path)
+      if !contains_dotfiles(symlink_path)
+        if File.symlink?(symlink_path) || File.exists?(symlink_path)
+          puts "removing #{symlink_path}"
         system "rm #{symlink_path}"
-        system "ln -s #{dotfile_path} #{symlink_path}"
+        end
       end
+      puts "symlinking #{dotfile_path} to #{symlink_path}"
+      system "ln -s #{dotfile_path} #{symlink_path}"
     end
   end
 
@@ -169,6 +173,7 @@ namespace :i3 do
   end
 end
 
+task vim: ["vim:setup"]
 task default: ["packages:update_packages"]
 task setup: [
   "packages:install_packages",
@@ -179,4 +184,3 @@ task setup: [
   "i3:install",
   "system_configuration:setup"
 ]
-task vim: ["vim:setup"]
