@@ -258,6 +258,7 @@ endfunction
 
 
 "random options
+set relativenumber
 let ruby_operators=1
 let ruby_space_errors=1
 let ruby_no_expensive=1
@@ -291,9 +292,9 @@ if !has('nvim')
 endif
 set mousemodel=extend
 set noesckeys
-
 set lcs=trail:.,tab:>\ 
 set list
+
 " highlight StatusLine ctermfg=blue ctermbg=yellow
 if executable('ag')
     set grepprg=ag\ --nogroup\ --nocolor
