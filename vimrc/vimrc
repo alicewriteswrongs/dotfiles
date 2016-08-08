@@ -197,7 +197,7 @@ autocmd! BufWritePost * Neomake
 
 "colorscheme
 colorscheme gruvbox
-set background=dark
+set background=light
 syntax on
 
 let g:lightline = {
