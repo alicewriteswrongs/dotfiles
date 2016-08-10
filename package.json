@@ -17,9 +17,12 @@
   },
   "homepage": "https://github.com/aliceriot/dotfiles#readme",
   "dependencies": {
+    "bower": "^1.7.9",
     "flow-bin": "^0.29.0",
     "flow-typed": "^2.0.0-beta.6",
     "npm-check-updates": "^2.7.0",
+    "pulp": "^9.0.1",
+    "purescript": "^0.9.3",
     "react-monocle": "^0.1.6"
   }
 }
