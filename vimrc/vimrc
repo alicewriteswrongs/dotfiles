@@ -36,6 +36,7 @@ Plugin 'elixir-lang/vim-elixir'
 
 " purescript
 Plugin 'raichoo/purescript-vim'
+Plugin 'frigoeu/psc-ide-vim'
 
 " colorschemes
 Plugin 'altercation/vim-colors-solarized' "solarized plugin
