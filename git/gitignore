@@ -27,3 +27,4 @@ common_words.txt
 .tern-project
 ~/Code/bookbub/lello/Vagrantfile
 npm-debug.log
+ramda.json
