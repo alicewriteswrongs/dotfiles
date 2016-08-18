@@ -5,12 +5,7 @@
     ],
     "plugins": {
         "node": {},
-        "es_modules": {},
-        "complete_strings": {},
-        "requirejs": {
-            "baseURL": "./",
-            "paths": {}
-        }
+        "es_modules": {}
     },
     "exclude": [
         ".git/**",
