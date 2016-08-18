@@ -54,6 +54,7 @@ Plugin 'wellle/tmux-complete.vim' "autocomplete with text in tmux buffers
 
 " git
 Plugin 'tpope/vim-fugitive' "tpopes git wrapper
+Plugin 'junegunn/gv.vim'
 
 " utility
 Plugin 'gmarik/Vundle.vim'
