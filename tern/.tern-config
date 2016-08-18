@@ -2,7 +2,6 @@
     "libs": [
         "browser",
         "jquery",
-        "ramda"
     ],
     "plugins": {
         "node": {},
@@ -11,8 +10,5 @@
     "exclude": [
         ".git/**",
         "static/js/public"
-    ],
-    "dontLoad": [
-      "./node_modules/ramda/dist/ramda.js"
     ]
 }
