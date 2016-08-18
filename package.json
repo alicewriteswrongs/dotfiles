@@ -23,6 +23,8 @@
     "npm-check-updates": "^2.7.0",
     "pulp": "^9.0.1",
     "purescript": "^0.9.3",
-    "react-monocle": "^0.1.6"
+    "ramda": "^0.22.1",
+    "react-monocle": "^0.1.6",
+    "tern": "^0.20.0"
   }
 }
