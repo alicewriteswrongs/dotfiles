@@ -22,6 +22,8 @@ bindsym $mod+ctrl+h move workspace to HDMI1
 bindsym $mod+ctrl+d move workspace to DP1
 bindsym $mod+ctrl+i move workspace to eDP1
 bindsym $mod+ctrl+v move workspace to VGA1
+bindsym $mod+ctrl+1 move workspace to DP2-1
+bindsym $mod+ctrl+2 move workspace to DP2-2
 
 # lock the screen
 bindsym $mod+ctrl+Shift+l exec "xscreensaver-command -lock"
