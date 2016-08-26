@@ -263,6 +263,7 @@ endfunction
 
 
 "random options
+set termguicolors
 set relativenumber
 let ruby_operators=1
 let ruby_space_errors=1
@@ -319,7 +320,6 @@ set undodir=~/.vim/undo//
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
 let g:javascript_plugin_flow = 1
-let g:gruvbox_termcolors=256
 let g:flow#autoclose = 1
 let g:elm_format_autosave = 1
 let g:instant_markdown_slow = 1
