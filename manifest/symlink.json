@@ -13,7 +13,7 @@
     ["./termite/config", "~/.config/termite/config"],
     ["./i3/i3config", "~/.i3/config"],
     ["./notmuch/notmuch-config", "~/.notmuch-config"],
-    ['./hyperterm/hyperterm.js", "~/.hyperterm.js"]
+    ["./hyperterm/hyperterm.js", "~/.hyperterm.js"]
   ],
   "directories": [
     "~/.config",

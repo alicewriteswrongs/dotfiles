@@ -37,11 +37,11 @@ namespace :dotfiles do
       symlink_path = expand(symlink[1])
       if !contains_dotfiles(symlink_path)
         if File.symlink?(symlink_path) || File.exists?(symlink_path)
-          puts "removing #{symlink_path}"
+          puts "removing :: #{symlink_path}"
         system "rm #{symlink_path}"
         end
       end
-      puts "symlinking #{dotfile_path} to #{symlink_path}"
+      puts "symlinking :: #{dotfile_path} -> #{symlink_path}"
       system "ln -s #{dotfile_path} #{symlink_path}"
     end
   end
