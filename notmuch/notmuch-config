@@ -1,11 +1,10 @@
 # where the mail lives
 [database]
-path=/home/alice/SpiderOak Hive/mail
+path=/home/alice/mail/personal
 
 [user]
 name=Alice Pote
 primary_email=alice.writes.wrongs@gmail.com
-other_email=axyridis@riseup.net;blp09@hampshire.edu;ben.pote@gmail.com;
 
 [new]
 tags=unread;inbox;
