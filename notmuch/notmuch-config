@@ -1,4 +1,5 @@
 # where the mail lives
+
 [database]
 path=/home/alice/mail/personal
 
@@ -7,7 +8,7 @@ name=Alice Pote
 primary_email=alice.writes.wrongs@gmail.com
 
 [new]
-tags=unread;inbox;
+tags=new
 ignore=
 
 [search]
@@ -15,9 +16,20 @@ exclude_tags=deleted;spam;
 
 # controls whether notmuch sync some basic tagging
 # back to the maildir by editing filenames
+
 [maildir]
 synchronize_flags=true
 
 [addressbook]
 path=/home/alice/.notmuch-abook.db
 backend=sqlite3
+
+# Cryptography related configuration
+#
+# The following option is supported here:
+#
+#	gpg_path
+#		binary name or full path to invoke gpg.
+#
+[crypto]
+gpg_path=gpg
