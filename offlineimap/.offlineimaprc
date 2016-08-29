@@ -1,0 +1,24 @@
+[general]
+pythonfile = ~/.offlineimap.py
+accounts = personal
+ui = ttyui
+
+[Account personal]
+localrepository = personal-local
+remoterepository = personal-remote
+status_backend = sqlite
+
+[Repository personal-local]
+type = Maildir
+localfolders = ~/mail/personal
+
+[Repository personal-remote]
+type = Gmail
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+remoteuser = alice.writes.wrongs@gmail.com
+remotepasseval = get_pass()
+nametrans = lambda foldername: re.sub ('^\[gmail\]', 'gmail',
+                               re.sub ('sent_mail', 'sent',
+                               re.sub ('starred', 'flagged',
+                               re.sub (' ', '_', foldername.lower()))))
+folderfilter = lambda foldername: True

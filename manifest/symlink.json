@@ -14,7 +14,8 @@
     ["./i3/i3config", "~/.i3/config"],
     ["./notmuch/notmuch-config", "~/.notmuch-config"],
     ["./hyperterm/hyperterm.js", "~/.hyperterm.js"],
-    ["./astroid/config", "~/.config/astroid/config"]
+    ["./astroid/config", "~/.config/astroid/config"],
+    ["./offlineimap/.offlineimaprc", "~/.offlineimaprc"]
   ],
   "directories": [
     "~/.config",
