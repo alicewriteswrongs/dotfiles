@@ -7,8 +7,8 @@ ui = ttyui
 localrepository = personal-local
 remoterepository = personal-remote
 status_backend = sqlite
-# presynchook = /home/alice/dotfiles/notmuch/maildir-notmuch-sync.sh "~/mail/personal"
-# postsynchook = /home/alice/dotfiles/notmuch/maildir-notmuch-sync.sh "~/mail/personal"
+presynchook = /home/alice/dotfiles/notmuch/maildir-notmuch-sync.sh "~/mail/personal"
+postsynchook = /home/alice/dotfiles/notmuch/maildir-notmuch-sync.sh "~/mail/personal"
 
 [Repository personal-local]
 type = Maildir
@@ -20,8 +20,3 @@ realdelete = no
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 remoteuser = alice.writes.wrongs@gmail.com
 remotepasseval = get_pass()
-# nametrans = lambda foldername: re.sub ('^\[gmail\]', 'gmail',
-#                                re.sub ('sent_mail', 'sent',
-#                                re.sub ('starred', 'flagged',
-#                                re.sub (' ', '_', foldername.lower()))))
-# folderfilter = lambda foldername: True
