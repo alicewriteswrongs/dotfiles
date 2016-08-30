@@ -15,6 +15,7 @@
     ["./notmuch/notmuch-config", "~/.notmuch-config"],
     ["./hyperterm/hyperterm.js", "~/.hyperterm.js"],
     ["./astroid/config", "~/.config/astroid/config"],
+    ["./astroid/keybindings", "~/.config/astroid/keybindings"],
     ["./offlineimap/.offlineimaprc", "~/.offlineimaprc"]
   ],
   "directories": [

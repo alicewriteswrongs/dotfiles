@@ -44,3 +44,8 @@ main_window.mark_unread=N
 thread_index.multi.achive=a
 thread_index.delete=D
 thread_index.label=l
+
+# closing app, tabs
+main_window.quit_ask=q # Quit astroid, default: q
+main_window.quit=Q # Quit astroid (without asking), default: Q
+main_window.close_page=x # Close mode (or window if other windows are open), default: C-w
