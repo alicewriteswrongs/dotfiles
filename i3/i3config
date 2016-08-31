@@ -52,6 +52,7 @@ bindsym $mod+d [class="Spotify"] scratchpad show
 bindsym $mod+s [title="Signal"] scratchpad show
 bindsym $mod+a [class="Astroid"] scratchpad show
 bindsym $mod+c [class="Jitsi"] scratchpad show
+bindsym $mod+x [class="Pidgin"] scratchpad show
 bindsym $mod+z [class="Slack"] scratchpad show
 
 #show all scratchpad (usually won't need)
@@ -62,6 +63,7 @@ for_window [title="scratchpad"] move window to scratchpad
 for_window [class="HipChat"] move window to scratchpad
 for_window [class="Spotify"] move window to scratchpad
 for_window [class="Slack"] move window to scratchpad
+for_window [class="Pidgin"] move window to scratchpad
 
 # change focus
 bindsym $mod+h focus left
