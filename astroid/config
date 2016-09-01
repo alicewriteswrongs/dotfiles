@@ -30,7 +30,7 @@
             "tags_upper_color": "#e5e5e5",
             "tags_lower_color": "#333333",
             "tags_alpha": "0.5",
-            "hidden_tags": "attachment,flagged,unread",
+            "hidden_tags": "attachment,flagged,unread,archive",
             "tags_color": "#31587a"
         },
         "open_default_paned": "false"
