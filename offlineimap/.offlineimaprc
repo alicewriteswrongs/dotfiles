@@ -1,5 +1,5 @@
 [general]
-pythonfile = ~/.offlineimap.py
+pythonfile = /home/alice/.offlineimap.py
 accounts = personal
 ui = ttyui
 
