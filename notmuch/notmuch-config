@@ -20,10 +20,6 @@ exclude_tags=deleted;spam;
 [maildir]
 synchronize_flags=true
 
-[addressbook]
-path=/home/alice/.notmuch-abook.db
-backend=sqlite3
-
 # Cryptography related configuration
 #
 # The following option is supported here:
@@ -33,3 +29,7 @@ backend=sqlite3
 #
 [crypto]
 gpg_path=gpg
+
+[addressbook]
+path=/home/alice/.notmuch-abook.db
+backend=sqlite3
