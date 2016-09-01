@@ -46,6 +46,7 @@
     "libxml2",
     "mesa",
     "mpd",
+    "msmtp",
     "mupdf",
     "neovim ",
     "nodejs",
