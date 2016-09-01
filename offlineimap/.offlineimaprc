@@ -21,6 +21,7 @@ nametrans = lambda folder: {
                             'spam':      '[Gmail]/Spam',
                             'trash':     '[Gmail]/Trash',
                             'archive':   '[Gmail]/All Mail',
+                            'sent':   '[Gmail]/Sent Mail',
                             }.get(folder, folder)
 
 [Repository personal-remote]
