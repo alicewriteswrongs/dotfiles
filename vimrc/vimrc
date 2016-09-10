@@ -198,6 +198,8 @@ augroup myfiletypes
     "go
     autocmd FileType go setlocal tabstop=2
     autocmd FileType go setlocal shiftwidth=2
+    "purescript
+    autocmd FileType purescript setlocal shiftwidth=2
 augroup END
 " autocmd! BufWritePost * Neomake
 
