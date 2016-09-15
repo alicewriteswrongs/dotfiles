@@ -7,6 +7,9 @@
         "debug": {
             "dryrun_sending": "false"
         },
+        "hints": {
+            "level": "0"
+        },
         "notmuch": {
             "db": "~\/mail",
             "excluded_tags": "muted,spam,deleted",
