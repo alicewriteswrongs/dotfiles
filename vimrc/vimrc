@@ -71,6 +71,8 @@ Plugin 'neomake/neomake'
 Plugin 'benjie/neomake-local-eslint.vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'jamessan/vim-gnupg'
+Plugin 'sirver/ultisnips'
+Plugin 'honza/vim-snippets'
 
 " file opening / search
 Plugin 'haya14busa/incsearch.vim' "nice incremental search
@@ -192,6 +194,7 @@ augroup myfiletypes
     autocmd FileType javascript setlocal autoindent
     autocmd FileType javascript setlocal shiftwidth=2
     autocmd FileType javascript setlocal softtabstop=2
+    autocmd FileType js UltiSnipsAddFiletypes javascript-es6
     "org
     autocmd FileType org setlocal foldenable
     autocmd FileType org setlocal nolist
@@ -359,6 +362,7 @@ let g:ycm_semantic_triggers = {
             \ 'elm' : ['.'],
             \}
 let g:ycm_path_to_python_interpreter = '/usr/bin/python'
+let g:ycm_use_ultisnips_complete = 1
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
@@ -380,6 +384,9 @@ let g:indentLine_faster = 1
 let g:indentLine_concealcursor = 0
 let g:indentLine_fileTypeExclude = ['json', 'purescript']
 let g:indentLine_conceallevel = 1
+let g:UltiSnipsExpandTrigger = "<c-e>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 augroup pencil
   autocmd!
