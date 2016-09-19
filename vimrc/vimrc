@@ -194,7 +194,8 @@ augroup myfiletypes
     autocmd FileType javascript setlocal autoindent
     autocmd FileType javascript setlocal shiftwidth=2
     autocmd FileType javascript setlocal softtabstop=2
-    autocmd FileType js UltiSnipsAddFiletypes javascript-es6
+    autocmd FileType js UltiSnipsAddFiletypes javascript-es6 
+    autocmd FileType js UltiSnipsAddFiletypes javascript-mocha
     "org
     autocmd FileType org setlocal foldenable
     autocmd FileType org setlocal nolist
@@ -385,8 +386,8 @@ let g:indentLine_concealcursor = 0
 let g:indentLine_fileTypeExclude = ['json', 'purescript']
 let g:indentLine_conceallevel = 1
 let g:UltiSnipsExpandTrigger = "<c-e>"
-let g:UltiSnipsJumpForwardTrigger = "<tab>"
-let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+let g:UltiSnipsJumpForwardTrigger = "<c-e>"
+let g:UltiSnipsJumpBackwardTrigger = "<c-f>"
 
 augroup pencil
   autocmd!
@@ -455,7 +456,7 @@ nnoremap <Leader>d :YcmCompleter GoToDefinition<cr>
 nnoremap <Leader>p :CtrlPBufTag<cr>
 nnoremap <Leader>o :CtrlPMRU<cr>
 nnoremap <C-b> :CtrlPBuffer<cr>
-nnoremap <C-f> :Ag 
+" nnoremap <C-f> :Ag 
 let localleader = "\\"
 nnoremap <silent> <Leader>tp :TogglePencil<cr>
 nnoremap <Leader>rb :'<,'>s/pick/f/g<cr>
