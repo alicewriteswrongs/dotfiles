@@ -64,6 +64,7 @@ for_window [class="HipChat"] move window to scratchpad
 for_window [class="Spotify"] move window to scratchpad
 for_window [class="Slack"] move window to scratchpad
 for_window [class="Pidgin"] move window to scratchpad
+for_window [class="Astroid"] move window to scratchpad
 
 # change focus
 bindsym $mod+h focus left
