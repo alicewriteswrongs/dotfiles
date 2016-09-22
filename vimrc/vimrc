@@ -17,7 +17,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'mtscout6/vim-cjsx'
 Plugin 'mustache/vim-mustache-handlebars'
-Plugin 'flowtype/vim-flow'
+" Plugin 'flowtype/vim-flow'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'leafgarland/typescript-vim'
 
