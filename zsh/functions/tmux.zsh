@@ -8,5 +8,6 @@ function new() {
 
 function new_non_prog() {
     session_name=$1
-    tmux new-session -s $session_name -n 1 -d
+    tmux new-session -s $session_name -d
+    tmux attach-session -t $session_name
 }
