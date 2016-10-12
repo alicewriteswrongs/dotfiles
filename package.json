@@ -32,6 +32,7 @@
     "purescript": "^0.9.3",
     "ramda": "^0.22.1",
     "react-monocle": "^0.1.6",
-    "tern": "^0.20.0"
+    "tern": "^0.20.0",
+    "yarnpkg": "^0.15.1"
   }
 }
