@@ -455,7 +455,8 @@ nnoremap <C-l> <C-W>l
 map / <Plug>(incsearch-forward)
 map ? <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
-nnoremap <Leader>d :YcmCompleter GoToDefinition<cr>
+nnoremap <Leader>yd :YcmCompleter GoToDefinition<cr>
+nnoremap <Leader>yrr :YcmCompleter RefactorRename 
 nnoremap <Leader>p :CtrlPBufTag<cr>
 nnoremap <Leader>o :CtrlPMRU<cr>
 nnoremap <C-b> :CtrlPBuffer<cr>
