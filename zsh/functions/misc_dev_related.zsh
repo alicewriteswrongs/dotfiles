@@ -56,3 +56,11 @@ function docker_js_upgrade_all() {
     done
 }
 
+function js_upgrade_all() {
+    IFS=$'\n'
+    for package in $(npm outdated | tail -n +2); do
+        to_upgrade=$(get_npm_package_name $package)
+        echo "upgrading $to_upgrade"
+        npm install --save $to_upgrade@latest
+    done
+}
