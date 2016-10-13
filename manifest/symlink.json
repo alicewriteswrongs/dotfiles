@@ -16,7 +16,8 @@
     ["./hyperterm/hyperterm.js", "~/.hyperterm.js"],
     ["./astroid/config", "~/.config/astroid/config"],
     ["./astroid/keybindings", "~/.config/astroid/keybindings"],
-    ["./offlineimap/.offlineimaprc", "~/.offlineimaprc"]
+    ["./offlineimap/.offlineimaprc", "~/.offlineimaprc"],
+    ["./festival/.festivalrc", "~/.festivalrc"]
   ],
   "directories": [
     "~/.config",
