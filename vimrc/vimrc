@@ -17,7 +17,6 @@ Plugin 'mxw/vim-jsx'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'mtscout6/vim-cjsx'
 Plugin 'mustache/vim-mustache-handlebars'
-" Plugin 'flowtype/vim-flow'
 Plugin 'leafgarland/typescript-vim'
 
 " other web stuff
@@ -38,7 +37,7 @@ Plugin 'elixir-lang/vim-elixir'
 Plugin 'raichoo/purescript-vim'
 Plugin 'frigoeu/psc-ide-vim'
 
-"haskell
+" haskell
 Plugin 'neovimhaskell/haskell-vim'
 
 " colorschemes
@@ -70,7 +69,6 @@ Plugin 'tpope/vim-unimpaired' "adds some keybinds?
 Plugin 'tpope/vim-vinegar' "makes vim directory browser nicer
 Plugin 'terryma/vim-multiple-cursors' "sublime-like cursors
 Plugin 'neomake/neomake'
-Plugin 'benjie/neomake-local-eslint.vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'jamessan/vim-gnupg'
 Plugin 'sirver/ultisnips'
@@ -91,7 +89,6 @@ Plugin 'fatih/vim-go'
 
 " rust
 Plugin 'rust-lang/rust.vim' "some rust stuff
-Plugin 'valloric/youcompleteme' "the best completion ever
 
 " racket / scheme
 Plugin 'vim-scripts/paredit.vim' "lisp/racket S-expressions
@@ -111,6 +108,10 @@ Plugin 'jceb/vim-orgmode'
 
 "xonsh
 Plugin 'linkinpark342/xonsh-vim'
+
+" slow plugins
+" Plugin 'valloric/youcompleteme' "the best completion ever
+" Plugin 'benjie/neomake-local-eslint.vim'
 
 " neovim-specific
 if has('nvim')
