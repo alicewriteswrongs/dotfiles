@@ -111,7 +111,6 @@ Plugin 'linkinpark342/xonsh-vim'
 
 " slow plugins
 " Plugin 'valloric/youcompleteme' "the best completion ever
-" Plugin 'benjie/neomake-local-eslint.vim'
 
 " neovim-specific
 if has('nvim')
