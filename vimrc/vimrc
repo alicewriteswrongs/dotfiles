@@ -191,13 +191,12 @@ augroup myfiletypes
     autocmd FileType elm setlocal shiftwidth=2
     autocmd FileType elm setlocal softtabstop=2
     "js
-    autocmd FileType javascript setlocal omnifunc=tern#Complete
     autocmd FileType javascript setlocal expandtab
     autocmd FileType javascript setlocal autoindent
     autocmd FileType javascript setlocal shiftwidth=2
     autocmd FileType javascript setlocal softtabstop=2
-    autocmd FileType js UltiSnipsAddFiletypes javascript-es6 
-    autocmd FileType js UltiSnipsAddFiletypes javascript-mocha
+    autocmd FileType javascript UltiSnipsAddFiletypes javascript-es6 
+    autocmd FileType javascript UltiSnipsAddFiletypes javascript-mocha
     "org
     autocmd FileType org setlocal foldenable
     autocmd FileType org setlocal nolist
