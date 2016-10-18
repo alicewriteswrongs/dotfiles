@@ -92,6 +92,9 @@ Plugin 'fatih/vim-go'
 " rust
 Plugin 'rust-lang/rust.vim' "some rust stuff
 
+" C/C++
+" Plugin 'jeaye/color_coded' "not yet in neovim :(
+
 " racket / scheme
 Plugin 'vim-scripts/paredit.vim' "lisp/racket S-expressions
 Plugin 'wlangstroth/vim-racket' "some stuff for racket-lang
