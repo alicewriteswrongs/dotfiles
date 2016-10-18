@@ -359,7 +359,8 @@ let g:ag_highlight=1
 let g:used_javascript_libs = 'underscore, jquery, react'
 let g:tmuxcomplete#trigger = 'omnifunc'
 let g:ycm_semantic_triggers = {
-            \ 'elm' : ['.'],
+            \ 'c' : ['->', '.', 're!\w'],
+            \ 'js,elm': ['.', 're!\w'],
             \}
 let g:ycm_path_to_python_interpreter = '/usr/bin/python'
 let g:ycm_use_ultisnips_complete = 1
