@@ -73,6 +73,8 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'jamessan/vim-gnupg'
 Plugin 'sirver/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'valloric/youcompleteme' "the best completion ever
+Plugin 'Chiel92/vim-autoformat'
 
 " file opening / search
 Plugin 'haya14busa/incsearch.vim' "nice incremental search
@@ -109,9 +111,6 @@ Plugin 'jceb/vim-orgmode'
 "xonsh
 Plugin 'linkinpark342/xonsh-vim'
 
-" slow plugins
-" Plugin 'valloric/youcompleteme' "the best completion ever
-
 " neovim-specific
 if has('nvim')
 endif
@@ -135,13 +134,9 @@ augroup myfiletypes
     autocmd FileType python set nowrap
     autocmd FileType python set nojoinspaces
     "C
-    autocmd FileType C set cinoptions=1s
-    autocmd FileType C setlocal cindent
-    autocmd FileType C setlocal expandtab
-    autocmd FileType C setlocal autoindent
-    autocmd FileType C set shiftwidth=4
-    autocmd FileType C setlocal highlight Excess ctermbg=Green
-    autocmd FileType C setlocal match Excess /\%79v.*/
+    autocmd FileType c setlocal tabstop=2
+    autocmd FileType c setlocal shiftwidth=2
+    autocmd FileType c au BufWrite * :Autoformat
     "ruby
     autocmd FileType ruby setlocal expandtab
     autocmd FileType ruby setlocal autoindent
