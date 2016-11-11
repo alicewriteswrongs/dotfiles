@@ -124,6 +124,7 @@
   ],
   "aur": [
     "keybase",
-    "pasystray"
+    "pasystray",
+    "tor-browser-en"
   ]
 }
