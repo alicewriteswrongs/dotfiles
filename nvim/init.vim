@@ -357,6 +357,7 @@ let g:tmuxcomplete#trigger = 'omnifunc'
 let g:ycm_semantic_triggers = {
             \ 'c' : ['->', '.', 're!\w'],
             \ 'elm': ['.', 're!\w'],
+            \ 'haskell' : ['.'],
             \}
 let g:ycm_path_to_python_interpreter = '/usr/bin/python'
 let g:ycm_use_ultisnips_complete = 1
