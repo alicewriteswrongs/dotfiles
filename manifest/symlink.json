@@ -1,7 +1,6 @@
 {
   "dotfiles": [
-    ["./vimrc/vimrc", "~/.config/nvim/init.vim"],
-    ["./vimrc/vimrc", "~/.vimrc"],
+    ["./nvim", "~/.config/nvim"],
     ["./tmux/tmux.conf", "~/.tmux.conf"],
     ["./tern/.tern-config", "~/.tern-config"],
     ["./git/.gitconfig", "~/.gitconfig"],
