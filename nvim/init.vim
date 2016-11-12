@@ -128,39 +128,7 @@ filetype plugin indent on "filetype based indenting
 
 augroup myfiletypes
     autocmd! 
-    "python first
-    autocmd FileType python setlocal tabstop=8
-    autocmd FileType python setlocal shiftwidth=4
-    autocmd FileType python setlocal expandtab
-    autocmd FileType python setlocal softtabstop=4
-    autocmd FileType python setlocal autoindent
-    autocmd FileType python highlight Excess ctermbg=Green
-    autocmd FileType python set nowrap
-    autocmd FileType python set nojoinspaces
-    "C
-    autocmd FileType c setlocal tabstop=2
-    autocmd FileType c setlocal shiftwidth=2
-    autocmd FileType c au BufWrite * :Autoformat
-    "ruby
-    autocmd FileType ruby setlocal expandtab
-    autocmd FileType ruby setlocal autoindent
-    autocmd FileType ruby setlocal softtabstop=2
-    autocmd FileType ruby setlocal shiftwidth=2
-    autocmd FileType ruby setlocal norelativenumber
     autocmd BufRead,BufNewFile *.arb setfiletype ruby
-    "yaml
-    autocmd FileType yaml setlocal expandtab
-    autocmd FileType yaml setlocal autoindent
-    autocmd FileType yaml setlocal softtabstop=2
-    autocmd FileType yaml setlocal shiftwidth=2
-    autocmd FileType yaml setlocal norelativenumber
-    "json
-    autocmd FileType json setlocal expandtab
-    autocmd FileType json setlocal autoindent
-    autocmd FileType json setlocal softtabstop=2
-    autocmd FileType json setlocal shiftwidth=2
-    autocmd FileType json setlocal norelativenumber
-    "coffeescript
     autocmd FileType coffee setlocal expandtab
     autocmd FileType coffee setlocal autoindent
     autocmd FileType coffee setlocal shiftwidth=2
