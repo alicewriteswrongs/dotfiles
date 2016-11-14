@@ -1,5 +1,8 @@
-setlocal expandtab
-setlocal autoindent
-setlocal softtabstop=2
-setlocal shiftwidth=2
-setlocal norelativenumber
+augroup yamlsettings
+    autocmd!
+    autocmd FileType yaml setlocal expandtab
+    autocmd FileType yaml setlocal autoindent
+    autocmd FileType yaml setlocal softtabstop=2
+    autocmd FileType yaml setlocal shiftwidth=2
+    autocmd FileType yaml setlocal norelativenumber
+augroup END
