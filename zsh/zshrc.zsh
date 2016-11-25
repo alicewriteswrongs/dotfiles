@@ -144,6 +144,6 @@ export NVM_DIR="/home/alice/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 
-eval $(keychain --eval --quiet ~/.ssh/id_ecdsa)
+eval $(keychain --eval --quiet ~/.ssh/id_ecdsa_digital_ocean ~/.ssh/id_ecdsa_github_aliceriot)
 
 export CDPATH="/home/alice/Code:/home/alice/dotfiles:/home/alice"
