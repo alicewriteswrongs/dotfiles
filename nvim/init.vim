@@ -43,9 +43,9 @@ Plugin 'eagletmt/neco-ghc'
 
 " colorschemes
 Plugin 'altercation/vim-colors-solarized' "solarized plugin
-Plugin 'chriskempson/base16-vim'
-Plugin 'NLKNguyen/papercolor-theme'
-Plugin 'morhetz/gruvbox'
+" Plugin 'chriskempson/base16-vim'
+" Plugin 'NLKNguyen/papercolor-theme'
+" Plugin 'morhetz/gruvbox'
 
 " statusline
 Plugin 'itchyny/lightline.vim'
@@ -171,12 +171,12 @@ augroup END
 " autocmd! BufWritePost * Neomake
 
 "colorscheme
-colorscheme gruvbox
+colorscheme solarized
 set background=light
 syntax on
 
 let g:lightline = {
-    \ 'colorscheme': 'gruvbox',
+    \ 'colorscheme': 'solarized',
     \ 'active': {
     \   'left': [ [ 'mode', 'paste' ],
     \             [ 'fugitive', 'readonly', 'filename', 'modified' ],
@@ -233,7 +233,6 @@ endfunction
 
 
 "random options
-set termguicolors
 set relativenumber
 let ruby_operators=1
 let ruby_space_errors=1
@@ -242,7 +241,7 @@ set hidden
 set lazyredraw
 set number
 set wildmenu "better command line completion
-set modeline 
+set modeline
 set nofoldenable "no goddamn folding
 set cursorline "line highlighting
 autocmd WinEnter * setlocal cursorline
@@ -346,7 +345,7 @@ let g:neomake_scss_enabled_makers = []
 let g:indentLine_char = ">"
 let g:indentLine_first_char = ">"
 let g:indentLine_showFirstIndentLevel = 1
-let g:indentLine_color_gui = '#928374'
+" let g:indentLine_color_gui = '#928374'
 " let g:indentLine_color_gui = '#504945'
 let g:indent_guides_auto_colors = 0
 let g:indentLine_faster = 1
