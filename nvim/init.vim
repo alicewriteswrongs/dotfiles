@@ -39,7 +39,10 @@ Plugin 'frigoeu/psc-ide-vim'
 
 " haskell
 Plugin 'neovimhaskell/haskell-vim'
+Plugin 'alx741/vim-hindent'
 Plugin 'eagletmt/neco-ghc'
+Plugin 'pbrisbin/vim-syntax-shakespeare'
+Plugin 'alx741/vim-yesod'
 
 " colorschemes
 Plugin 'altercation/vim-colors-solarized' "solarized plugin
