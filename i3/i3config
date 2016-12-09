@@ -49,10 +49,11 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+v [class="Termite"] scratchpad show
 bindsym $mod+f [class="Slack"] scratchpad show
 bindsym $mod+d [class="Spotify"] scratchpad show
-bindsym $mod+s [title="Signal"] scratchpad show
+bindsym $mod+s [class="Chromium"] scratchpad show
 bindsym $mod+a [class="Astroid"] scratchpad show
 bindsym $mod+c [class="Jitsi"] scratchpad show
 bindsym $mod+x [class="Pidgin"] scratchpad show
+bindsym $mod+z [class="HipChat"] scratchpad show
 
 #show all scratchpad (usually won't need)
 bindsym $mod+ctrl+minus scratchpad show

@@ -130,7 +130,7 @@ filetype plugin indent on "filetype based indenting
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
 augroup myfiletypes
-    autocmd! 
+    autocmd!
     autocmd BufRead,BufNewFile *.arb setfiletype ruby
     autocmd FileType coffee setlocal expandtab
     autocmd FileType coffee setlocal autoindent
@@ -175,6 +175,7 @@ augroup END
 
 "colorscheme
 colorscheme solarized
+let g:solarized_visibility='normal'
 set background=light
 syntax on
 
@@ -270,8 +271,8 @@ if !has('nvim')
 endif
 set mousemodel=extend
 set noesckeys
-set lcs=trail:.,tab:>\ 
-set list
+" set lcs=trail:.,tab:>\ 
+" set list
 
 " highlight StatusLine ctermfg=blue ctermbg=yellow
 if executable('ag')
