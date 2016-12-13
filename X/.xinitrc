@@ -50,8 +50,6 @@ xscreensaver &
 #start redshift (color temperature thing)
 redshift -l 42:-71 &
 
-SpiderOakONE &
-
 # #start gnome keyright (for networkmanager to work correctly)
 eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
 export SSH_AUTH_SOCK
