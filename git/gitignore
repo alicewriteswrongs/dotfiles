@@ -29,3 +29,4 @@ common_words.txt
 npm-debug.log
 ramda.json
 tags
+.eslintcache
