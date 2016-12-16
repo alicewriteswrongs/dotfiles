@@ -18,6 +18,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'mtscout6/vim-cjsx'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'flowtype/vim-flow'
 
 " other web stuff
 Plugin 'othree/html5-syntax.vim'
@@ -271,7 +272,7 @@ if !has('nvim')
 endif
 set mousemodel=extend
 set noesckeys
-" set lcs=trail:.,tab:>\ 
+set lcs=trail:.,tab:>\ 
 " set list
 
 " highlight StatusLine ctermfg=blue ctermbg=yellow
@@ -295,6 +296,7 @@ set undodir=~/.vim/undo//
 let g:vim_json_syntax_conceal = 0
 let g:javascript_plugin_flow = 1
 let g:flow#autoclose = 1
+let g:flow#enable = 0
 let g:elm_format_autosave = 1
 let g:instant_markdown_slow = 1
 let g:sneak#streak = 1
