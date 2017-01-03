@@ -40,5 +40,3 @@ fhash() {
   commit=$(echo "$commits" | fzf-tmux --tac +s +m -e --ansi --reverse) &&
   echo -n $(echo "$commit" | sed "s/ .*//")
 }
-
-
