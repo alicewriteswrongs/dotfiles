@@ -64,3 +64,19 @@ function js_upgrade_all() {
         npm install --save $to_upgrade@latest
     done
 }
+
+function setjstest() {
+    jstest=$(ag -g test.js | fzf-tmux)
+    echo 'running '$jstest
+    djstest $jstest
+    export lasttest=$jstest
+}
+
+function jstest() {
+    if [ -z ${lasttest+1} ]; then
+        setjstest
+    else
+        echo 'running '$jstest
+        djstest $lasttest
+    fi
+}
