@@ -10,3 +10,10 @@ If you want to set up everything (provision a fresh Arch install) then do:
 ``` 
 rake setup
 ```
+
+## Links
+
+things to keep track of:
+
+- [solarized for
+  slack](https://gist.github.com/mgreensmith/098897288f580b964ef8)
