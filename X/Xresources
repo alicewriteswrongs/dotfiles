@@ -2,18 +2,16 @@
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
-! Use extended color scheme
-rofi.color-enabled:                  true
-! Color scheme for normal row
-rofi.color-normal:                   argb:00000000,  #D8DEE9 , argb:00000000,  #FAC863 ,  #1B2B34
-! Color scheme for urgent row
-rofi.color-urgent:                   argb:00000000,  #F99157 , argb:00000000,  #F99157 ,  #1B2B34
-! Color scheme for active row
-rofi.color-active:                   argb:00000000,  #6699CC , argb:00000000,  #6699CC ,  #1B2B34
-! Color scheme window
-rofi.color-window:                   argb:ee222222,  #FAC863 ,  #FAC863
-! Separator style (none, dash, solid)
-rofi.separator-style:                solid
+rofi.color-enabled: true
+rofi.color-window: #fdf6e3, #268bd2, #268bd2
+rofi.color-normal: #fdf6e3, #002b36, #eee8d5, #268bd2, #eee8d5
+rofi.color-active: #fdf6e3, #268bd2, #eee8d5, #268bd2, #fdf6e3
+rofi.color-urgent: #fdf6e3, #dc322f, #eee8d5, #dc322f, #fdf6e3
+rofi.font: Hack 13
+rofi.padding: 30
+rofi.width: 800
+rofi.bw: 4
+rofi.separator-style: solid
 
 
 ! Solarized color scheme for the X Window System
