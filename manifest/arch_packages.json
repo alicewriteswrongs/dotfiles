@@ -45,6 +45,7 @@
     "libxkbcommon",
     "libxkbcommon-x11",
     "libxml2",
+    "lxappearance",
     "mesa",
     "mpd",
     "msmtp",
