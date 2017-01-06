@@ -22,3 +22,6 @@
 [submodule "papercolor"]
 	path = papercolor
 	url = git@github.com:NLKNguyen/papercolor.git
+[submodule "extras/numix-solarized-gtk-theme"]
+	path = extras/numix-solarized-gtk-theme
+	url = git@github.com:Ferdi265/numix-solarized-gtk-theme.git
