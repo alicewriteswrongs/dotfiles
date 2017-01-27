@@ -16,12 +16,14 @@
     ["./astroid/config", "~/.config/astroid/config"],
     ["./astroid/keybindings", "~/.config/astroid/keybindings"],
     ["./offlineimap/.offlineimaprc", "~/.offlineimaprc"],
-    ["./festival/.festivalrc", "~/.festivalrc"]
+    ["./festival/.festivalrc", "~/.festivalrc"],
+    ["./dunst/.dunstrc", "~/.config/dunst/dunstrc"]
   ],
   "directories": [
     "~/.config",
     "~/.config/termite",
     "~/.config/astroid",
-    "~/.i3"
+    "~/.i3",
+    "~/.config/dunst"
   ]
 }

@@ -1,6 +1,5 @@
 require 'json'
 require 'pathname'
-require 'pry'
 
 def get_json(relpath)
   JSON.parse(File.read(relpath))
