@@ -31,6 +31,9 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-rake'
 
+" python
+Plugin 'Vimjas/vim-python-pep8-indent'
+
 " elixir
 Plugin 'elixir-lang/vim-elixir'
 

@@ -4,7 +4,6 @@ augroup pysettings
     autocmd FileType python setlocal shiftwidth=4
     autocmd FileType python setlocal expandtab
     autocmd FileType python setlocal softtabstop=4
-    autocmd FileType python setlocal autoindent
     autocmd FileType python highlight Excess ctermbg=Green
     autocmd FileType python set nowrap
     autocmd FileType python set nojoinspaces

@@ -92,7 +92,7 @@ alias lpcpush='git push lpc LPC_edits:master'
 alias ls='ls --color=auto'  #colorize ls output
 alias mc='make clean'
 alias mkdir='mkdir -p -v'   #makes a directory and it's hierarchy, also verbose
-alias mmochaw='mocha --compilers js:babel-register global_init.js -w'
+alias mmochaw='mocha --require babelhook.js global_init.js -w'
 alias mv='mv -iv'           #makes it interactive and verbose
 alias nodpms='xset dpms 0 0 0'
 alias notes='cd ~/SpiderOak\ Hive/notes'
