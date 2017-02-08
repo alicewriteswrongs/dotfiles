@@ -1,5 +1,5 @@
 [options]
-font = inconsolata-dz for Powerline 12
+font = inconsolata-dz for Powerline 11
 audible_bell = false
 visible_bell = false
 
