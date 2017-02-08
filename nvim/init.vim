@@ -380,6 +380,8 @@ inoremap <F12> <esc>l
 map <Leader>vrs :call VimuxRunCommand("clear; vdo rspec " . bufname("%"))<CR>
 map <Leader>vrb :call VimuxRunCommand("clear; pry")<CR>
 
+" spell check commits
+au BufNewFile,BufRead COMMIT_EDITMSG set spell
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 """Keybinds
