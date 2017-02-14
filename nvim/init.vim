@@ -83,6 +83,7 @@ Plugin 'sirver/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'valloric/youcompleteme' "the best completion ever
 Plugin 'Chiel92/vim-autoformat'
+Plugin 'machakann/vim-highlightedyank'
 
 " file opening / search
 Plugin 'haya14busa/incsearch.vim' "nice incremental search
