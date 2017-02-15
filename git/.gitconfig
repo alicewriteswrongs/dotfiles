@@ -18,4 +18,4 @@
     cc = checkout
     gd = git diff
 [remote "origin"]
-	; fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
+    fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
