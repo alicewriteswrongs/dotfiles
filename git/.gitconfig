@@ -17,5 +17,3 @@
     db = 'branch -D'
     cc = checkout
     gd = git diff
-[remote "origin"]
-    fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
