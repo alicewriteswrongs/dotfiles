@@ -366,6 +366,9 @@ let g:indentLine_conceallevel = 1
 let g:UltiSnipsExpandTrigger = "<c-e>"
 let g:UltiSnipsJumpForwardTrigger = "<c-e>"
 let g:UltiSnipsJumpBackwardTrigger = "<c-f>"
+let g:formatdef_my_custom_js = '"eslint_d --stdin --fix-to-stdout"'
+let g:formatters_javascript = ['my_custom_js']
+
 
 augroup pencil
   autocmd!
@@ -448,3 +451,4 @@ nnoremap <Leader>T :tabnew<cr>
 "find flowtype for a variable
 nnoremap <Leader>ft :FlowType<cr>
 nnoremap <Leader>nm :Neomake<cr>
+nnoremap <Leader>af :Autoformat<cr>
