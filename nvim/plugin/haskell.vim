@@ -16,7 +16,7 @@ let g:hindent_indent_size = 4
 augroup ft_haskell
     au!
     au FileType haskell setlocal omnifunc=necoghc#omnifunc
-    au FileType haskell compiler ghc
+    " au FileType haskell compiler ghc
     au FileType haskell nnoremap <silent><buffer> git :GhcModTypeInsert<CR>
     au FileType haskell nnoremap <silent><buffer> gfs :GhcModSplitFunCase<CR>
     au FileType haskell nnoremap <silent><buffer> gtt :GhcModType<CR>

@@ -31,6 +31,9 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-rake'
 
+" crystal
+Plugin 'rhysd/vim-crystal'
+
 " python
 Plugin 'Vimjas/vim-python-pep8-indent'
 
@@ -84,6 +87,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'valloric/youcompleteme' "the best completion ever
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'machakann/vim-highlightedyank'
+Plugin 'lilydjwg/colorizer'
 
 " file opening / search
 Plugin 'haya14busa/incsearch.vim' "nice incremental search
