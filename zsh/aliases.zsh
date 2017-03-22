@@ -1,5 +1,6 @@
 alias -g G='| grep'
 alias abcdehighqual='abcde -o ogg:"-q 7"' #rips at ogg vorbis quality level 7
+alias vpresent='vimdeck --no-ascii --editor nvim'
 alias abig='tmux attach -t big'
 alias addall='git commit -a -S' #add all changed files and commit
 alias agf='ag -g'
