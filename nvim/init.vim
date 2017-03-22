@@ -88,6 +88,8 @@ Plugin 'valloric/youcompleteme' "the best completion ever
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'machakann/vim-highlightedyank'
 Plugin 'lilydjwg/colorizer'
+Plugin 'vim-scripts/SyntaxRange'
+Plugin 'vim-scripts/ingo-library'
 
 " file opening / search
 Plugin 'haya14busa/incsearch.vim' "nice incremental search
@@ -120,7 +122,7 @@ Plugin 'guyzmo/notmuch-abook' "get emails out of notmuch db for autocomplete
 Plugin 'vim-scripts/lbdbq' "formats mail headers more nicely
 
 " markdown / prose writing
-Plugin 'suan/vim-instant-markdown'
+" Plugin 'suan/vim-instant-markdown'
 Plugin 'reedes/vim-pencil' "soft/hard wraps for txt,md,email
 Plugin 'jceb/vim-orgmode'
 
@@ -370,6 +372,7 @@ let g:indentLine_conceallevel = 1
 let g:UltiSnipsExpandTrigger = "<c-e>"
 let g:UltiSnipsJumpForwardTrigger = "<c-e>"
 let g:UltiSnipsJumpBackwardTrigger = "<c-f>"
+" au! UltiSnips_AutoTrigger
 let g:formatdef_my_custom_js = '"eslint_d --stdin --fix-to-stdout"'
 let g:formatters_javascript = ['my_custom_js']
 
