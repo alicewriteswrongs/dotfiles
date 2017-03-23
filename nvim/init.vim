@@ -73,7 +73,6 @@ Plugin 'junegunn/gv.vim'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-commentary' "gc to toggle comments
 Plugin 'tpope/vim-rsi' "gives readline bindings
-Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-speeddating'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired' "adds some keybinds?
