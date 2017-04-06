@@ -209,3 +209,12 @@ function penultimate_commit () {
 function gdlast () {
     git diff $(penultimate_commit)
 }
+
+function clean_pr_branches () {
+    if [[ $(current_branch) != 'master' ]]; then
+        git cc master
+    fi
+    for branch in $(git branch | ag ' pr/'); {
+        git branch -D $branch
+    }
+}
