@@ -89,6 +89,7 @@ Plugin 'machakann/vim-highlightedyank'
 Plugin 'lilydjwg/colorizer'
 Plugin 'vim-scripts/SyntaxRange'
 Plugin 'vim-scripts/ingo-library'
+Plugin 'tommcdo/vim-lion'
 
 " file opening / search
 Plugin 'haya14busa/incsearch.vim' "nice incremental search
