@@ -81,7 +81,7 @@ Plugin 'terryma/vim-multiple-cursors' "sublime-like cursors
 Plugin 'neomake/neomake'
 Plugin 'Yggdroot/indentLine'
 Plugin 'jamessan/vim-gnupg'
-" Plugin 'sirver/ultisnips'
+Plugin 'sirver/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'valloric/youcompleteme' "the best completion ever
 Plugin 'Chiel92/vim-autoformat'
