@@ -13,6 +13,8 @@
     prompt = false
 [rebase]
     autosquash = true
+[status]
+    showUntrackedFiles = all
 [alias]
     db = 'branch -D'
     cc = checkout

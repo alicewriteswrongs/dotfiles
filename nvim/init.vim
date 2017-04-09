@@ -457,5 +457,6 @@ nnoremap <Leader>] :tabnext<cr>
 nnoremap <Leader>T :tabnew<cr>
 "find flowtype for a variable
 nnoremap <Leader>ft :FlowType<cr>
+nnoremap <Leader>fm :FlowMake<cr>
 nnoremap <Leader>nm :Neomake<cr>
 nnoremap <Leader>af :Autoformat<cr>
