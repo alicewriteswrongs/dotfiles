@@ -27,7 +27,10 @@ namespace :dotfiles do
   end
 
   task :create_dotfile_dirs do
-    symlink_manifest["directories"].each { |dirname| Dir.new(expand(dirname)) }
+    symlink_manifest["directories"].each do |dirname| 
+      name = expand dirname
+      Dir.mkdir name unless Dir.exist? name
+    end
   end
 
   task :symlink_dotfiles => [:create_dotfile_dirs] do
