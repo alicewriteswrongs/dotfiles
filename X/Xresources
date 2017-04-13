@@ -1,7 +1,4 @@
-
-! ------------------------------------------------------------------------------
-! ROFI Color theme
-! ------------------------------------------------------------------------------
+! Solarized theme for Rofi
 rofi.color-enabled: true
 rofi.color-window: #fdf6e3, #268bd2, #268bd2
 rofi.color-normal: #fdf6e3, #002b36, #eee8d5, #268bd2, #eee8d5
@@ -13,13 +10,7 @@ rofi.width: 800
 rofi.bw: 4
 rofi.separator-style: solid
 
-
-! Solarized color scheme for the X Window System
-!
-! http://ethanschoonover.com/solarized
-
-! Common
-
+! Solarized base colors
 #define S_yellow        #b58900
 #define S_orange        #cb4b16
 #define S_red           #dc322f
@@ -29,8 +20,7 @@ rofi.separator-style: solid
 #define S_cyan          #2aa198
 #define S_green         #859900
 
-! Dark
-
+! Solarized Dark
 !#define S_base03        #002b36
 !#define S_base02        #073642
 !#define S_base01        #586e75
@@ -40,9 +30,7 @@ rofi.separator-style: solid
 !#define S_base2         #eee8d5
 !#define S_base3         #fdf6e3
 
-
-! Light
-
+! Solarized Light
 #define S_base03        #fdf6e3
 #define S_base02        #eee8d5
 #define S_base01        #93a1a1
@@ -52,21 +40,9 @@ rofi.separator-style: solid
 #define S_base2         #073642
 #define S_base3         #002b36
 
-
-! To only apply colors to your terminal, for example, prefix
-! the color assignment statement with its name. Example:
-!
-! *background:            S_base03
-!URxvt.intensityStyles: false
-!
-!URxvt*background:              S_base03
-!URxvt*foreground:              S_base0
-!*fading:                  40
-!*fadeColor:               S_base03
-!*cursorColor:             S_base1
-!*pointerColorBackground:  S_base01
-!*pointerColorForeground:  S_base1
-!
+! Solarized colors exported
+*background:              S_base03
+*foreground:              S_base0
 *color0:                  S_base02
 *color1:                  S_red
 *color2:                  S_green
