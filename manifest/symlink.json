@@ -17,13 +17,15 @@
     ["./astroid/keybindings", "~/.config/astroid/keybindings"],
     ["./offlineimap/.offlineimaprc", "~/.offlineimaprc"],
     ["./festival/.festivalrc", "~/.festivalrc"],
-    ["./dunst/.dunstrc", "~/.config/dunst/dunstrc"]
+    ["./dunst/.dunstrc", "~/.config/dunst/dunstrc"],
+    ["./polybar/config.ini", "~/.config/polybar/config"]
   ],
   "directories": [
     "~/.config",
     "~/.config/termite",
     "~/.config/astroid",
     "~/.i3",
-    "~/.config/dunst"
+    "~/.config/dunst",
+    "~/.config/polybar"
   ]
 }
