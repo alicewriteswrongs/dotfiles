@@ -10,13 +10,13 @@ function select_directory() {
     find ${1:-.} -type d 2> /dev/null | fzf-tmux 
 }
 
-function fancy_cd() {
-    cd $(select_directory)
-    zle redisplay
-}
+# function fancy_cd() {
+#     cd $(select_directory)
+#     zle redisplay
+# }
 
-zle -N fancy_cd
-bindkey '^P' fancy_cd
+# zle -N fancy_cd
+# bindkey '^P' fancy_cd
 
 fkill() {
   pid=$(ps -ef | sed 1d | fzf-tmux -m | awk '{print $2}')
