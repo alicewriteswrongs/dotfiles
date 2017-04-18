@@ -78,10 +78,9 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired' "adds some keybinds?
 Plugin 'tpope/vim-vinegar' "makes vim directory browser nicer
 Plugin 'terryma/vim-multiple-cursors' "sublime-like cursors
-Plugin 'neomake/neomake'
 Plugin 'Yggdroot/indentLine'
 Plugin 'jamessan/vim-gnupg'
-Plugin 'sirver/ultisnips'
+" Plugin 'sirver/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'valloric/youcompleteme' "the best completion ever
 Plugin 'Chiel92/vim-autoformat'
@@ -111,8 +110,11 @@ Plugin 'rust-lang/rust.vim' "some rust stuff
 " Plugin 'jeaye/color_coded' "not yet in neovim :(
 
 " racket / scheme
-Plugin 'vim-scripts/paredit.vim' "lisp/racket S-expressions
+" Plugin 'vim-scripts/paredit.vim' "lisp/racket S-expressions
 Plugin 'wlangstroth/vim-racket' "some stuff for racket-lang
+
+" clojure
+Plugin 'clojure-vim/nvim-parinfer.js'
 
 " i3
 Plugin 'PotatoesMaster/i3-vim-syntax'
@@ -130,8 +132,8 @@ Plugin 'jceb/vim-orgmode'
 Plugin 'linkinpark342/xonsh-vim'
 
 " neovim-specific
-if has('nvim')
-endif
+Plugin 'neomake/neomake'
+Plugin 'neovim/node-host'
 
 call vundle#end()
 filetype plugin indent on "filetype based indenting 
