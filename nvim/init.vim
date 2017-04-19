@@ -81,7 +81,9 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'jamessan/vim-gnupg'
 Plugin 'sirver/ultisnips'
 Plugin 'honza/vim-snippets'
-Plugin 'valloric/youcompleteme'
+" Plugin 'valloric/youcompleteme'
+Plugin 'Shougo/deoplete.nvim'
+Plugin 'carlitux/deoplete-ternjs'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'machakann/vim-highlightedyank'
 Plugin 'lilydjwg/colorizer'
@@ -305,6 +307,7 @@ set undodir=~/.vim/undo//
 """Plugin Configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
+let g:deoplete#enable_at_startup = 1
 let g:vim_json_syntax_conceal = 0
 let g:javascript_plugin_flow = 1
 let g:flow#autoclose = 1
@@ -378,6 +381,14 @@ let g:UltiSnipsJumpBackwardTrigger = "<c-f>"
 let g:formatdef_my_custom_js = '"eslint_d --stdin --fix-to-stdout"'
 let g:formatters_javascript = ['my_custom_js']
 
+" deoplete 
+let g:tern_request_timeout = 1
+let g:tern#filetypes = [
+                \ 'jsx',
+                \ 'javascript.jsx',
+                \ 'javascript',
+                \ ]
+
 augroup pencil
   autocmd!
   autocmd FileType markdown,mkd call pencil#init()
@@ -423,6 +434,10 @@ nnoremap <F4> :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif 
 map / <Plug>(incsearch-forward)
 map ? <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
+
+" selecting popup items
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 " browsing docs, static analysis, etc
 nnoremap <Leader>ft :FlowType<cr>
