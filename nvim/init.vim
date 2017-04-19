@@ -52,7 +52,7 @@ Plugin 'pbrisbin/vim-syntax-shakespeare'
 Plugin 'alx741/vim-yesod'
 
 " colorschemes
-Plugin 'altercation/vim-colors-solarized' "solarized plugin
+Plugin 'altercation/vim-colors-solarized'
 " Plugin 'chriskempson/base16-vim'
 " Plugin 'NLKNguyen/papercolor-theme'
 " Plugin 'morhetz/gruvbox'
@@ -80,7 +80,7 @@ Plugin 'tpope/vim-vinegar' "makes vim directory browser nicer
 Plugin 'terryma/vim-multiple-cursors' "sublime-like cursors
 Plugin 'Yggdroot/indentLine'
 Plugin 'jamessan/vim-gnupg'
-" Plugin 'sirver/ultisnips'
+Plugin 'sirver/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'valloric/youcompleteme' "the best completion ever
 Plugin 'Chiel92/vim-autoformat'
@@ -192,6 +192,7 @@ let g:solarized_visibility='normal'
 set background=light
 syntax on
 
+"lightline
 let g:lightline = {
     \ 'colorscheme': 'solarized',
     \ 'active': {
