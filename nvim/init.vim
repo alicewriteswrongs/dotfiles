@@ -61,28 +61,27 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'itchyny/lightline.vim'
 
 " tmux
-Plugin 'edkolev/tmuxline.vim' "makes tmux pretty
-Plugin 'sjl/tslime.vim' "send text to a tmux pane
-Plugin 'wellle/tmux-complete.vim' "autocomplete with text in tmux buffers
+Plugin 'edkolev/tmuxline.vim'
+Plugin 'sjl/tslime.vim' 
+Plugin 'wellle/tmux-complete.vim'
 
 " git
-Plugin 'tpope/vim-fugitive' "tpopes git wrapper
+Plugin 'tpope/vim-fugitive'
 Plugin 'junegunn/gv.vim'
 
 " utility
 Plugin 'gmarik/Vundle.vim'
-Plugin 'tpope/vim-commentary' "gc to toggle comments
-Plugin 'tpope/vim-rsi' "gives readline bindings
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-rsi'
 Plugin 'tpope/vim-speeddating'
 Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-unimpaired' "adds some keybinds?
-Plugin 'tpope/vim-vinegar' "makes vim directory browser nicer
-Plugin 'terryma/vim-multiple-cursors' "sublime-like cursors
+Plugin 'tpope/vim-vinegar'
+Plugin 'terryma/vim-multiple-cursors'
 Plugin 'Yggdroot/indentLine'
 Plugin 'jamessan/vim-gnupg'
 Plugin 'sirver/ultisnips'
 Plugin 'honza/vim-snippets'
-Plugin 'valloric/youcompleteme' "the best completion ever
+Plugin 'valloric/youcompleteme'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'machakann/vim-highlightedyank'
 Plugin 'lilydjwg/colorizer'
@@ -111,7 +110,7 @@ Plugin 'rust-lang/rust.vim' "some rust stuff
 
 " racket / scheme
 " Plugin 'vim-scripts/paredit.vim' "lisp/racket S-expressions
-Plugin 'wlangstroth/vim-racket' "some stuff for racket-lang
+Plugin 'wlangstroth/vim-racket'
 
 " clojure
 Plugin 'clojure-vim/nvim-parinfer.js'
@@ -125,7 +124,7 @@ Plugin 'vim-scripts/lbdbq' "formats mail headers more nicely
 
 " markdown / prose writing
 " Plugin 'suan/vim-instant-markdown'
-Plugin 'reedes/vim-pencil' "soft/hard wraps for txt,md,email
+Plugin 'reedes/vim-pencil'
 Plugin 'jceb/vim-orgmode'
 
 "xonsh
@@ -136,7 +135,7 @@ Plugin 'neomake/neomake'
 Plugin 'neovim/node-host'
 
 call vundle#end()
-filetype plugin indent on "filetype based indenting 
+filetype plugin indent on
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 """general configuration
@@ -379,7 +378,6 @@ let g:UltiSnipsJumpBackwardTrigger = "<c-f>"
 let g:formatdef_my_custom_js = '"eslint_d --stdin --fix-to-stdout"'
 let g:formatters_javascript = ['my_custom_js']
 
-
 augroup pencil
   autocmd!
   autocmd FileType markdown,mkd call pencil#init()
@@ -387,79 +385,74 @@ augroup pencil
   autocmd FileType tex          call pencil#init({'wrap': 'hard'})
 augroup END
 
-" mash caps to toggle insert mode
-nnoremap <F12> i
-inoremap <F12> <esc>l
-
-" vimux
-map <Leader>vrs :call VimuxRunCommand("clear; vdo rspec " . bufname("%"))<CR>
-map <Leader>vrb :call VimuxRunCommand("clear; pry")<CR>
-
 " spell check commits
 au BufNewFile,BufRead COMMIT_EDITMSG set spell
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 """Keybinds
 """""""""""""""""""""""""""""""""""""""""""""""""""
-let hlstate=0 
-nnoremap <F4> :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=1-hlstate<cr>
-nnoremap <Leader>ws :set list!<CR> 
+let localleader = "\\"
+
+" tab navigation
+nnoremap <Leader>[ :tabprevious<cr>
+nnoremap <Leader>] :tabnext<cr>
+nnoremap <Leader>T :tabnew<cr>
+
+" split navigation
+nnoremap <C-j> <C-W>j
+nnoremap <C-k> <C-W>k
+nnoremap <C-h> <C-W>h
+nnoremap <C-l> <C-W>l
+nnoremap <C-o> :vsplit<cr>
+nnoremap <C-u> :split<cr>
+
+" buffers
+nnoremap <Leader>t  :enew<cr> 
+nnoremap <Leader>bq :bd<cr> 
+
+" quitting and saving
 imap <C-s> <esc>:w<cr> 
 nnoremap <C-s> <esc>:w<cr>
 nnoremap <Leader>w :w<cr>
 map Q :qa<cr>
 nnoremap <Leader>q :q<cr> 
-nnoremap <Leader>sp :setlocal spell<cr>
-nnoremap <Leader>lp :setlocal ft=python<cr>
-nnoremap <Leader>md :setlocal ft=markdown<cr>
-nnoremap <Leader>ed :ElmBrowseDocs<cr>
-vmap <Leader>y "+y
-vmap <Leader>d "+d
-nmap <Leader>p "+p
-nmap <Leader>P "+P
-vmap <Leader>p "+p
-vmap <Leader>P "+P
-nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<CR> 
-nnoremap <Leader>cl :set cursorline!<CR> 
-nnoremap <Leader>cc :set cursorcolumn!<CR> 
-nnoremap <Leader>ln :set number!<cr>
-nnoremap <Leader>rln :set relativenumber!<cr>
-nnoremap <Leader>bl :buffers<cr> 
-nnoremap <Leader>b1 :buffer1<cr> 
-nnoremap <Leader>b2 :buffer2<cr> 
-nnoremap <Leader>b3 :buffer3<cr> 
-nnoremap <Leader>b4 :buffer4<cr> 
-nnoremap <Leader>b5 :buffer5<cr> 
-nnoremap <Leader>b6 :buffer6<cr> 
-nnoremap <Leader>b7 :buffer7<cr> 
-nnoremap <Leader>t  :enew<cr> 
-nnoremap <Leader>bq :bd<cr> 
-"create splits
-nnoremap <C-o> :vsplit<cr>
-nnoremap <C-u> :split<cr>
-"window navigation
-nnoremap <C-j> <C-W>j
-nnoremap <C-k> <C-W>k
-nnoremap <C-h> <C-W>h
-nnoremap <C-l> <C-W>l
+
+" search
+let hlstate=0 
+nnoremap <F4> :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=1-hlstate<cr>
 map / <Plug>(incsearch-forward)
 map ? <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
-nnoremap <Leader>yd :YcmCompleter GoToDefinition<cr>
-nnoremap <Leader>yrr :YcmCompleter RefactorRename 
-nnoremap <Leader>p :CtrlPBufTag<cr>
-nnoremap <Leader>o :CtrlPMRU<cr>
-nnoremap <C-b> :CtrlPBuffer<cr>
-" nnoremap <C-f> :Ag 
-let localleader = "\\"
-nnoremap <silent> <Leader>tp :TogglePencil<cr>
-nnoremap <Leader>rb :'<,'>s/pick/f/g<cr>
-nnoremap <Leader>gb :Gblame<cr>
-nnoremap <Leader>[ :tabprevious<cr>
-nnoremap <Leader>] :tabnext<cr>
-nnoremap <Leader>T :tabnew<cr>
-"find flowtype for a variable
+
+" browsing docs, static analysis, etc
 nnoremap <Leader>ft :FlowType<cr>
 nnoremap <Leader>fm :FlowMake<cr>
 nnoremap <Leader>nm :Neomake<cr>
 nnoremap <Leader>af :Autoformat<cr>
+nnoremap <Leader>yd :YcmCompleter GoToDefinition<cr>
+nnoremap <Leader>yrr :YcmCompleter RefactorRename 
+nnoremap <Leader>ed :ElmBrowseDocs<cr>
+
+" git
+nnoremap <Leader>gb :Gblame<cr>
+
+" ctrl-p
+nnoremap <Leader>p :CtrlPBufTag<cr>
+nnoremap <Leader>o :CtrlPMRU<cr>
+nnoremap <C-b> :CtrlPBuffer<cr>
+
+" number, column, scrolling, whitespace
+nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<cr> 
+nnoremap <Leader>cl :set cursorline!<cr> 
+nnoremap <Leader>cc :set cursorcolumn!<cr> 
+nnoremap <Leader>ln :set number!<cr>
+nnoremap <Leader>rln :set relativenumber!<cr>
+nnoremap <Leader>ws :set list!<cr> 
+
+" prose writing
+nnoremap <Leader>sp :setlocal spell<cr>
+nnoremap <silent> <Leader>tp :TogglePencil<cr>
+
+" literate python
+nnoremap <Leader>lp :setlocal ft=python<cr>
+nnoremap <Leader>md :setlocal ft=markdown<cr>
