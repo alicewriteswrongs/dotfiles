@@ -471,3 +471,22 @@ nnoremap <silent> <Leader>tp :TogglePencil<cr>
 " literate python
 nnoremap <Leader>lp :setlocal ft=python<cr>
 nnoremap <Leader>md :setlocal ft=markdown<cr>
+
+" tslime
+nmap <C-c>v <Plug>SetTmuxVars
+vmap <C-c><C-c> <Plug>SendSelectionToTmux
+
+function! RunCurrentFileAsTest ()
+    let fp = fnamemodify(expand("%"), ":~:.")
+    if &filetype == 'javascript' || &filetype == 'javascript.jsx'
+        exec "Tmux djstest " . fp
+    endif
+
+    if &filetype == 'python'
+        exec "Tmux drun tox -- -x " . fp
+    endif
+endfunction
+
+nnoremap <Leader>ttf :call RunCurrentFileAsTest()<cr>
+nnoremap <Leader>esl :Tmux fasteslint<cr>
+nnoremap <Leader>flw :Tmux flow<cr>
