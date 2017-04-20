@@ -62,7 +62,7 @@ Plugin 'itchyny/lightline.vim'
 
 " tmux
 Plugin 'edkolev/tmuxline.vim'
-Plugin 'sjl/tslime.vim' 
+Plugin 'jgdavey/tslime.vim'
 Plugin 'wellle/tmux-complete.vim'
 
 " git
