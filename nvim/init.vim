@@ -76,6 +76,7 @@ Plugin 'tpope/vim-rsi'
 Plugin 'tpope/vim-speeddating'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-vinegar'
+Plugin 'tpope/vim-unimpaired'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'Yggdroot/indentLine'
 Plugin 'jamessan/vim-gnupg'
@@ -380,6 +381,10 @@ let g:UltiSnipsJumpBackwardTrigger = "<c-f>"
 " au! UltiSnips_AutoTrigger
 let g:formatdef_my_custom_js = '"eslint_d --stdin --fix-to-stdout"'
 let g:formatters_javascript = ['my_custom_js']
+
+" tslime
+let g:tslime_always_current_session = 1
+let g:tslime_always_current_window = 1
 
 " deoplete 
 let g:tern_request_timeout = 1
