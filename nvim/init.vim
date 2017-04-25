@@ -82,9 +82,9 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'jamessan/vim-gnupg'
 Plugin 'sirver/ultisnips'
 Plugin 'honza/vim-snippets'
-" Plugin 'valloric/youcompleteme'
-Plugin 'Shougo/deoplete.nvim'
-Plugin 'carlitux/deoplete-ternjs'
+Plugin 'valloric/youcompleteme'
+" Plugin 'Shougo/deoplete.nvim'
+" Plugin 'carlitux/deoplete-ternjs'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'machakann/vim-highlightedyank'
 Plugin 'lilydjwg/colorizer'
@@ -308,7 +308,7 @@ set undodir=~/.vim/undo//
 """Plugin Configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
-let g:deoplete#enable_at_startup = 1
+" let g:deoplete#enable_at_startup = 1
 let g:vim_json_syntax_conceal = 0
 let g:javascript_plugin_flow = 1
 let g:flow#autoclose = 1
@@ -386,13 +386,13 @@ let g:formatters_javascript = ['my_custom_js']
 let g:tslime_always_current_session = 1
 let g:tslime_always_current_window = 1
 
-" deoplete 
-let g:tern_request_timeout = 1
-let g:tern#filetypes = [
-                \ 'jsx',
-                \ 'javascript.jsx',
-                \ 'javascript',
-                \ ]
+" " deoplete 
+" let g:tern_request_timeout = 1
+" let g:tern#filetypes = [
+"                 \ 'jsx',
+"                 \ 'javascript.jsx',
+"                 \ 'javascript',
+"                 \ ]
 
 augroup pencil
   autocmd!

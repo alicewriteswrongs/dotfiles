@@ -124,7 +124,6 @@ export NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 [ -f ~/dotfiles/zsh/fzf.zsh ] && source ~/dotfiles/zsh/fzf.zsh
 # [ -d ~/.rvm/ ] && source ~/.rvm/scripts/rvm
-export LELLO_SYNC_PROVIDER=""
 export GOPATH="$HOME/Code/gospace"
 export PATH="$PATH:$GOPATH/bin"
 export PATH="$HOME/root/bin:$PATH" # for user libs
