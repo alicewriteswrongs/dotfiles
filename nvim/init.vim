@@ -286,7 +286,6 @@ if !has('nvim')
     set ttymouse=sgr
 endif
 set mousemodel=extend
-set noesckeys
 set lcs=trail:.,tab:>\ 
 " set list
 
