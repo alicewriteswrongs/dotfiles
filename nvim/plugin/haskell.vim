@@ -1,7 +1,7 @@
 " Disable haskell-vim omnifunc
 let g:haskellmode_completion_ghc = 0
 " use the omnifunc provided by necoghc
-autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
+" autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 
 let g:haskell_enable_quantification = 1   " to enable highlighting of `forall`
 let g:haskell_enable_recursivedo = 1      " to enable highlighting of `mdo` and `rec`
@@ -11,7 +11,6 @@ let g:haskell_enable_typeroles = 1        " to enable highlighting of type roles
 let g:haskell_enable_static_pointers = 1  " to enable highlighting of `static`
 let g:hindent_on_save = 1
 let g:hindent_line_length = 80
-let g:hindent_indent_size = 4
 
 augroup ft_haskell
     au!
