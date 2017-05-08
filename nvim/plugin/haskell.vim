@@ -19,4 +19,5 @@ augroup ft_haskell
     au FileType haskell nnoremap <silent><buffer> git :GhcModTypeInsert<CR>
     au FileType haskell nnoremap <silent><buffer> gfs :GhcModSplitFunCase<CR>
     au FileType haskell nnoremap <silent><buffer> gtt :GhcModType<CR>
+    au FileType haskell setlocal shiftwidth=2
 augroup END
