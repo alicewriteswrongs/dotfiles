@@ -82,7 +82,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'jamessan/vim-gnupg'
 Plugin 'sirver/ultisnips'
 Plugin 'honza/vim-snippets'
-Plugin 'valloric/youcompleteme'
+" Plugin 'valloric/youcompleteme'
 " Plugin 'Shougo/deoplete.nvim'
 " Plugin 'carlitux/deoplete-ternjs'
 Plugin 'Chiel92/vim-autoformat'
@@ -126,7 +126,7 @@ Plugin 'guyzmo/notmuch-abook' "get emails out of notmuch db for autocomplete
 Plugin 'vim-scripts/lbdbq' "formats mail headers more nicely
 
 " markdown / prose writing
-" Plugin 'suan/vim-instant-markdown'
+Plugin 'suan/vim-instant-markdown'
 Plugin 'reedes/vim-pencil'
 Plugin 'jceb/vim-orgmode'
 
