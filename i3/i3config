@@ -17,7 +17,7 @@ font pango:inconsolata, Icons 8
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-#send a workspace to one of the connected screens (for thinkpad screens)
+#send a workspace to one of the connected screens
 bindsym $mod+ctrl+h move workspace to HDMI1
 bindsym $mod+ctrl+d move workspace to DP1
 bindsym $mod+ctrl+i move workspace to eDP1
@@ -40,7 +40,7 @@ bindsym $mod+period exec mpc next
 # kill focused window
 bindsym $mod+q kill
 
-# start dmenu
+# start rofi
 bindsym $mod+space exec rofi -show run -font "inconsolata 12"
 bindsym $mod+ctrl+space exec rofi -show window -font "inconsolata 12"
 
@@ -119,11 +119,8 @@ new_float pixel 3
 #some rules for various windows
 for_window [title="Float"] floating enable
 for_window [title="Write: *"] floating enable
-for_window [title="SpiderOakONE*"] floating enable
-for_window [title="SpiderOakONE"] floating enable
 for_window [title="feh *"] floating enable
 for_window [title="Thunderbird Preferences"] floating enable
-for_window [title="LPC - Register your shifts! - Chromium"] floating enable
 for_window [title="Firefox Preferences"] floating enable
 for_window [title="skakillers - Skype*"] floating enable
 for_window [title="Enigmail Key Management"] floating enable
