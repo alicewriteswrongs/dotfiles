@@ -348,7 +348,6 @@ let g:ycm_semantic_triggers = {
             \ 'purescript': ['.', 're!\w'],
             \ 'haskell': ['.', 're!\w'],
             \}
-let g:ycm_path_to_python_interpreter = '/usr/bin/python'
 let g:ycm_use_ultisnips_complete = 1
 let g:ycm_seed_identifiers_with_syntax = 1
 let g:ycm_complete_in_comments = 1
