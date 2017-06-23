@@ -18,7 +18,8 @@
     ["./offlineimap/.offlineimaprc", "~/.offlineimaprc"],
     ["./festival/.festivalrc", "~/.festivalrc"],
     ["./dunst/.dunstrc", "~/.config/dunst/dunstrc"],
-    ["./polybar/config.ini", "~/.config/polybar/config"]
+    ["./polybar/config.ini", "~/.config/polybar/config"],
+    ["./compton/compton.conf", "~/.config/compton.conf"]
   ],
   "directories": [
     "~/.config",
