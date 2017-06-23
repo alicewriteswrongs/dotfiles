@@ -160,7 +160,7 @@ for_window [class="^.*"] border pixel 0
 
 #gap size
 gaps inner 5
-smart_gaps on
+# smart_gaps on
 
 #smart borders!
 smart_borders on

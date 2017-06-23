@@ -134,6 +134,7 @@
   "aur": [
     "keybase",
     "pasystray",
-    "tor-browser-en"
+    "tor-browser-en",
+    "hsetroot"
   ]
 }

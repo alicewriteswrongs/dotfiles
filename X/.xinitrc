@@ -8,7 +8,7 @@ keychain ~/.ssh/id_ecdsa
 export SSH_ASKPASS=ssh-askpass
 
 # #background image
-feh --bg-scale /home/alice/Pictures/tarsands.jpg &
+hsetroot --solid "#93A1A1" # one of the solarized greys
 
 pulseaudio &
 
