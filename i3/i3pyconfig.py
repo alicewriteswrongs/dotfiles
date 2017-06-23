@@ -38,8 +38,8 @@ status.register("battery",
 #non 'hardware' related stuff below
 
 status.register("pulseaudio",
-        format = " {volume}",
-        format_muted = " {volume}",)
+        format = "{volume}",
+        format_muted = "{volume}",)
 
 # status.register("Spotify",
 #         format = "[{status} {title}, {artist}]"
