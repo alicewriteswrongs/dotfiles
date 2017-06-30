@@ -242,9 +242,9 @@ bar {
 
     colors {
         background $base02
-        active_workspace $base03 $base01 $base0B
-        focused_workspace $base0E $base01 $base08
-        inactive_workspace $base03 $base01 $base02
+        active_workspace $base03 $base02 $base0B
+        focused_workspace $base0E $base02 $base08
+        inactive_workspace $base03 $base02 #FFFFFF
         urgent_workspace $base0F $base0F $base02
     }
 }
