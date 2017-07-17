@@ -31,10 +31,10 @@ synclient HorizTwoFingerScroll=1
 synclient PalmDetect=1
 
 #japanese input stuff
-# export GTK_IM_MODULE=fcitx
-# export QT_IM_MODULE=fcitx
-# export XMODIFIERS="@im=fcitx"
-# fcitx 
+export GTK_IM_MODULE=ibus
+export QT_IM_MODULE=ibus
+export XMODIFIERS=ibus
+ibus-daemon -drx
 
 # export XCURSOR_PATH=""
 
