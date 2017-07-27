@@ -377,7 +377,7 @@ let g:UltiSnipsExpandTrigger = "<c-e>"
 let g:UltiSnipsJumpForwardTrigger = "<c-e>"
 let g:UltiSnipsJumpBackwardTrigger = "<c-f>"
 " au! UltiSnips_AutoTrigger
-let g:formatdef_my_custom_js = '"eslint_d --stdin --fix-to-stdout"'
+let g:formatdef_my_custom_js = '"prettier-eslint --stdin --no-semi"'
 let g:formatters_javascript = ['my_custom_js']
 
 " tslime
