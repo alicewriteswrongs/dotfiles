@@ -19,6 +19,7 @@ Plugin 'mtscout6/vim-cjsx'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'flowtype/vim-flow'
+Plugin 'briancollins/vim-jst'
 
 " other web stuff
 Plugin 'othree/html5-syntax.vim'
