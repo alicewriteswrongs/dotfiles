@@ -112,6 +112,7 @@
     "ttf-ionicons",
     "ttf-liberation",
     "ttf-symbola",
+    "ttf-indic-otf",
     "uzbl-browser",
     "vagrant",
     "virtualbox",
@@ -136,6 +137,7 @@
     "pasystray",
     "tor-browser-en",
     "hsetroot",
-    "xcalib"
+    "xcalib",
+    "ttf-urdufonts"
   ]
 }
