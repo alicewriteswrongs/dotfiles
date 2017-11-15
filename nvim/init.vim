@@ -123,7 +123,7 @@ Plugin 'clojure-vim/nvim-parinfer.js'
 Plugin 'PotatoesMaster/i3-vim-syntax'
 
 " email
-Plugin 'guyzmo/notmuch-abook' "get emails out of notmuch db for autocomplete
+" Plugin 'guyzmo/notmuch-abook' "get emails out of notmuch db for autocomplete
 Plugin 'vim-scripts/lbdbq' "formats mail headers more nicely
 
 " markdown / prose writing

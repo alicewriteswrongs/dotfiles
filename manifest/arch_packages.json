@@ -26,7 +26,6 @@
     "fuse",
     "ghc",
     "git",
-    "git",
     "gnome-terminal",
     "go",
     "go-tools ",
@@ -35,11 +34,12 @@
     "gvim ",
     "htop",
     "inkscape ",
+    "iw",
     "jq",
     "keychain",
     "libev",
-    "libev",
     "libpqxx",
+    "libreoffice",
     "libsass",
     "libtool",
     "libxcb",
@@ -112,6 +112,7 @@
     "ttf-ionicons",
     "ttf-liberation",
     "ttf-symbola",
+    "ttf-indic-otf",
     "uzbl-browser",
     "vagrant",
     "virtualbox",
@@ -136,6 +137,7 @@
     "pasystray",
     "tor-browser-en",
     "hsetroot",
-    "xcalib"
+    "xcalib",
+    "ttf-urdufonts"
   ]
 }
