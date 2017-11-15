@@ -49,7 +49,7 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+v [class="Termite"] scratchpad show
 bindsym $mod+f [class="Slack"] scratchpad show
 bindsym $mod+d [class="Spotify"] scratchpad show
-bindsym $mod+s [class="Chromium"] scratchpad show
+bindsym $mod+s [class="Signal"] scratchpad show
 bindsym $mod+a [class="Keybase"] scratchpad show
 bindsym $mod+c [class="Jitsi"] scratchpad show
 bindsym $mod+x [class="Pidgin"] scratchpad show
@@ -134,7 +134,7 @@ for_window [title="galculator"] floating enable
 for_window [title="Steam - Update News"] floating enable
 for_window [title="IBus Preferences"] floating enable
 for_window [title="Steam Login"] floating enable
-for_window [title="Signal"] floating enable
+for_window [class="Signal"] floating enable
 for_window [class="(?i)gvim"] floating enable
 for_window [class="(?i)gvim"] resize shrink width 800 px
 for_window [class="(?i)gvim"] resize shrink height 200 px
