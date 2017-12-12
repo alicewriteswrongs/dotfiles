@@ -7,8 +7,9 @@ keychain ~/.ssh/id_ecdsa
 [ -f ~/.keychain/$HOSTNAME-sh-gpg ] && . ~/.keychain/$HOSTNAME-sh-gpg 2>/dev/null
 export SSH_ASKPASS=ssh-askpass
 
-# #background image
-hsetroot -solid "#93A1A1" # one of the solarized greys
+# background image
+# hsetroot -solid "#93A1A1" # one of the solarized greys
+feh --randomize --bg-max ~/dotfiles/backgrounds/* # random background
 
 pulseaudio &
 
