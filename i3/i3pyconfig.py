@@ -2,11 +2,9 @@
 
 import subprocess
 
-from i3pystatus import Status
+from i3pystatus import Status, IntervalModule
 
 status = Status(standalone = True)
-
-#'hardware' related statuses
 
 status.register("clock",
         format = "%a:%m/%d %H:%M",)
@@ -31,26 +29,20 @@ status.register("battery",
         "FULL": "",
     },)
 
-# status.register("wireless",
-#         interface = "wlp3s0",
-#         format_up = " {essid}",)
-
-#non 'hardware' related stuff below
-
 status.register("pulseaudio",
         format = "{volume}",
         format_muted = "{volume}",)
 
-# status.register("Spotify",
-#         format = "[{status} {title}, {artist}]"
-#         )
+class Brightness(IntervalModule):
+    def run(self):
+        result = subprocess.run(
+            "xbacklight", stdout=subprocess.PIPE, encoding="utf-8"
+        )
 
-# status.register("mpd",
-#     format="[{status} {title}, {artist} ]",
-#     status={
-#         "pause": "▷",
-#         "play": "▶",
-#         "stop": "◾",
-#     },)
+        self.output = {
+            "full_text": result.stdout.strip().split(".")[0],
+        }
+
+status.register(Brightness)
 
 status.run()
