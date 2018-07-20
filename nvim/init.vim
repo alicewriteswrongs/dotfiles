@@ -31,6 +31,7 @@ Plugin 'tpope/vim-bundler'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-rake'
+Plugin 'slim-template/vim-slim'
 
 " crystal
 Plugin 'rhysd/vim-crystal'
@@ -312,7 +313,7 @@ set undodir=~/.vim/undo//
 let g:vim_json_syntax_conceal = 0
 let g:javascript_plugin_flow = 1
 let g:flow#autoclose = 1
-let g:flow#enable = 0
+let g:flow#enable = 1
 let g:elm_format_autosave = 1
 let g:instant_markdown_slow = 1
 let g:sneak#streak = 1
