@@ -11,8 +11,6 @@ export SSH_ASKPASS=ssh-askpass
 # hsetroot -solid "#93A1A1" # one of the solarized greys
 feh --randomize --bg-max ~/dotfiles/backgrounds/* # random background
 
-pulseaudio &
-
 #start mpd
 # [ ! -s ~/.config/mpd/pid ] && mpd
 
@@ -68,6 +66,7 @@ parcellite &
 compton -c --no-fading-openclose &
 
 # pulseaudio
+pulseaudio &
 pasystray &
 
 #keep touchscreen aligned

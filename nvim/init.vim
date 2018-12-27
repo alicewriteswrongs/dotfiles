@@ -26,6 +26,10 @@ Plugin 'othree/html5-syntax.vim'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'elzr/vim-json'
 
+" reasonML
+Plugin 'reasonml-editor/vim-reason-plus'
+
+
 " ruby
 Plugin 'tpope/vim-bundler'
 Plugin 'vim-ruby/vim-ruby'
