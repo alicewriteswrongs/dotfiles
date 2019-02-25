@@ -18,8 +18,9 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'mtscout6/vim-cjsx'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'leafgarland/typescript-vim'
-Plugin 'flowtype/vim-flow'
+" Plugin 'flowtype/vim-flow'
 Plugin 'briancollins/vim-jst'
+Plugin 'styled-components/vim-styled-components'
 
 " other web stuff
 Plugin 'othree/html5-syntax.vim'
@@ -315,9 +316,9 @@ set undodir=~/.vim/undo//
 
 " let g:deoplete#enable_at_startup = 1
 let g:vim_json_syntax_conceal = 0
-let g:javascript_plugin_flow = 1
+" let g:javascript_plugin_flow = 1
 let g:flow#autoclose = 1
-let g:flow#enable = 1
+" let g:flow#enable = 1
 let g:elm_format_autosave = 1
 let g:instant_markdown_slow = 1
 let g:sneak#streak = 1
