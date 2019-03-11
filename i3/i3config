@@ -163,6 +163,7 @@ for_window [class="Termite" title="FLOATING_TERMITE"] floating enable
 for_window [class="Keybase"] floating enable
 for_window [class="Pinentry"] floating enable
 for_window [class="Anki" title="Edit Current"] floating enable
+for_window [class="Anki" title="Add"] floating enable
 for_window [class="Anki" title="Statistics"] floating enable
 
 #no borders
