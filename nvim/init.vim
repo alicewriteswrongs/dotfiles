@@ -260,6 +260,7 @@ endfunction
 
 
 "random options
+set clipboard+=unnamed
 set relativenumber
 let ruby_operators=1
 let ruby_space_errors=1
@@ -309,6 +310,7 @@ set noswapfile
 set backup
 set backupdir=~/.vim/backup//
 set undodir=~/.vim/undo//
+set undofile
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 """Plugin Configuration
