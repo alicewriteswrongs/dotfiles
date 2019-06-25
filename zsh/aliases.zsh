@@ -72,6 +72,7 @@ alias gitignore='nvim ~/dotfiles/git/gitignore'
 alias gitl='git log -1 HEAD' #last commit
 alias gits='git status'
 alias gl='git log --pretty=format:"%h - %an - %ar - %s" -20'
+alias gll='git log'
 alias glsign='git log --pretty=format:"%h - %an - %ar - %s" -20 --show-signature'
 alias gpgfing='gpg --fingerprint'
 alias gpglist='gpg --list-keys'
