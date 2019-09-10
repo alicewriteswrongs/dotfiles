@@ -74,3 +74,6 @@ pasystray &
 
 #start i3wm
 exec i3
+
+# export GDK_BACKEND=x11
+# exec gnome-session
