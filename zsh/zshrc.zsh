@@ -122,7 +122,6 @@ export BACKGROUND="/home/alice/images/tarsands.jpg"
 export NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 
-[ -f ~/dotfiles/zsh/fzf.zsh ] && source ~/dotfiles/zsh/fzf.zsh
 # [ -d ~/.rvm/ ] && source ~/.rvm/scripts/rvm
 export GOPATH="$HOME/Code/gospace"
 export PATH="$PATH:$GOPATH/bin"
@@ -149,3 +148,5 @@ eval $(keychain --eval --quiet --confhost ~/.ssh/id_ecdsa_digital_ocean ~/.ssh/i
 export CDPATH="/home/alice/Code:/home/alice/dotfiles:/home/alice"
 
 source ~/dotfiles/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
