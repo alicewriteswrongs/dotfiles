@@ -202,6 +202,15 @@ function wipc() {
     fi
 }
 
+function skipc() {
+    if [[ $1 == "" ]]; then
+        echo "コミットのメッセージは必要だ"
+    else
+        git commit -m "[skip ci] "$1
+    fi
+
+}
+
 function penultimate_commit () {
     git log --format=%H -2 | tail -n 1
 }
