@@ -89,7 +89,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'jamessan/vim-gnupg'
 Plugin 'sirver/ultisnips'
 Plugin 'honza/vim-snippets'
-Plugin 'valloric/youcompleteme'
+Plugin 'ycm-core/YouCompleteMe'
 " Plugin 'Shougo/deoplete.nvim'
 " Plugin 'carlitux/deoplete-ternjs'
 Plugin 'Chiel92/vim-autoformat'
@@ -499,6 +499,7 @@ function! RunCurrentFileAsTest ()
     endif
 endfunction
 
-nnoremap <Leader>ttf :call RunCurrentFileAsTest()<cr>
+nnoremap <Leader>tf :call RunCurrentFileAsTest()<cr>
 nnoremap <Leader>esl :Tmux fasteslint<cr>
 nnoremap <Leader>flw :Tmux flow<cr>
+nnoremap <Leader>faf :Tmux npm run fmt<cr>
