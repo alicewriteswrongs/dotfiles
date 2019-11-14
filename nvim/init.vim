@@ -12,13 +12,9 @@ call vundle#begin()
 
 " JS / CoffeeScript
 Plugin 'pangloss/vim-javascript'
+Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'othree/javascript-libraries-syntax.vim'
-Plugin 'mxw/vim-jsx'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'mtscout6/vim-cjsx'
-Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'leafgarland/typescript-vim'
-" Plugin 'flowtype/vim-flow'
 Plugin 'briancollins/vim-jst'
 Plugin 'styled-components/vim-styled-components'
 
@@ -59,7 +55,7 @@ Plugin 'pbrisbin/vim-syntax-shakespeare'
 Plugin 'alx741/vim-yesod'
 
 " colorschemes
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'iCyMind/NeoSolarized'
 " Plugin 'chriskempson/base16-vim'
 " Plugin 'NLKNguyen/papercolor-theme'
 " Plugin 'morhetz/gruvbox'
@@ -196,9 +192,9 @@ augroup END
 " autocmd! BufWritePost * Neomake
 
 "colorscheme
-colorscheme solarized
-let g:solarized_visibility='normal'
-set background=light
+set termguicolors
+colorscheme NeoSolarized
+set background=dark
 syntax on
 
 "lightline
@@ -316,8 +312,8 @@ set undofile
 """Plugin Configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
-" let g:deoplete#enable_at_startup = 1
 let g:vim_json_syntax_conceal = 0
+let g:vim_jsx_pretty_colorful_config = 1
 " let g:javascript_plugin_flow = 1
 let g:flow#autoclose = 1
 " let g:flow#enable = 1
