@@ -17,6 +17,7 @@ Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'briancollins/vim-jst'
 Plugin 'styled-components/vim-styled-components'
+Plugin 'flowtype/vim-flow'
 
 " other web stuff
 Plugin 'othree/html5-syntax.vim'
@@ -194,7 +195,7 @@ augroup END
 "colorscheme
 set termguicolors
 colorscheme NeoSolarized
-set background=dark
+set background=light
 syntax on
 
 "lightline
@@ -314,7 +315,6 @@ set undofile
 
 let g:vim_json_syntax_conceal = 0
 let g:vim_jsx_pretty_colorful_config = 1
-" let g:javascript_plugin_flow = 1
 let g:flow#autoclose = 1
 " let g:flow#enable = 1
 let g:elm_format_autosave = 1
