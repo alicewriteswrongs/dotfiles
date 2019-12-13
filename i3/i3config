@@ -247,7 +247,7 @@ set $base0F #d33682
 
 # i3bar config
 bar {
-    status_command      python3 ~/dotfiles/i3/i3pyconfig.py
+    status_command      python ~/dotfiles/i3/i3pyconfig.py
     position            top
     workspace_buttons   yes
 
