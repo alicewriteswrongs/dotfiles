@@ -5,7 +5,7 @@ function selectbranch() {
 }
 
 function gs() { # use fzf-tmux to pick branches
-    git commit -a -m "WIP" -S
+    git commit -a -m "WIP"
     git checkout $(selectbranch | tr -d ' ')
     zle redisplay
 }
@@ -104,15 +104,15 @@ function rebase {
     if [[ origin_exists ]]; then
         git fetch origin
         if [[ $1 == 'i' ]]; then
-            git rebase -i -S origin/master
+            git rebase -i origin/master
         else
-            GIT_SEQUENCE_EDITOR=: git rebase -i -S origin/master
+            GIT_SEQUENCE_EDITOR=: git rebase -i origin/master
         fi
     else
         if [[ $1 == 'i' ]]; then
-            git rebase -i -S master
+            git rebase -i master
         else
-            GIT_SEQUENCE_EDITOR=: git rebase -i -S master
+            GIT_SEQUENCE_EDITOR=: git rebase -i master
         fi
 
     fi
@@ -136,7 +136,7 @@ function mergepr() { # merge a branch into master and push
 
 function rebdiff() { # rebase and reload diff
     wipc
-    git rebase -S origin/master
+    git rebase origin/master
     git diff origin/master
 }
 
@@ -195,7 +195,7 @@ function current_branch  () {
 function wipc() {
     if [[ $(current_branch) != 'master' ]]; then
         if [[ $(last_non_fixup_commit_on_branch) != '' ]]; then
-            git commit -a -S --fixup $(last_non_fixup_commit_on_branch)
+            git commit -a --fixup $(last_non_fixup_commit_on_branch)
         fi
     else
         echo "not on master..."
