@@ -143,10 +143,11 @@ export NVM_DIR="/home/alice/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 
-eval $(keychain --eval --quiet --confhost ~/.ssh/id_ecdsa_digital_ocean ~/.ssh/id_ecdsa_github_aliceriot)
+# eval $(keychain --eval --quiet --confhost ~/.ssh/id_ecdsa_digital_ocean ~/.ssh/id_ecdsa_github_aliceriot)
 
 export CDPATH="/home/alice/Code:/home/alice/dotfiles:/home/alice"
 
 source ~/dotfiles/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
