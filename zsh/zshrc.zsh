@@ -151,3 +151,5 @@ source ~/dotfiles/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
+
+source /home/alice/.config/broot/launcher/bash/br

@@ -131,7 +131,6 @@ Plugin 'vim-scripts/lbdbq' "formats mail headers more nicely
 
 " markdown / prose writing
 Plugin 'suan/vim-instant-markdown'
-Plugin 'reedes/vim-pencil'
 Plugin 'jceb/vim-orgmode'
 
 "xonsh
@@ -340,9 +339,6 @@ let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_Flavor='latex'
 let g:Tex_ViewRule_pdf='mupdf'
 let g:tsline_ensure_trailing_newlines = 1
-let g:pencil#wrapModeDefault = 'hard'
-let g:pencil#autoformat = 1
-let g:pencil#conceallevel = 0
 let g:bufferline_echo = 0
 let g:ag_highlight=1
 let g:used_javascript_libs = 'underscore, jquery, react'
@@ -396,13 +392,6 @@ let g:tslime_always_current_window = 1
 "                 \ 'javascript.jsx',
 "                 \ 'javascript',
 "                 \ ]
-
-augroup pencil
-  autocmd!
-  autocmd FileType markdown,mkd call pencil#init()
-  autocmd FileType text         call pencil#init({'wrap': 'hard'})
-  autocmd FileType tex          call pencil#init({'wrap': 'hard'})
-augroup END
 
 " spell check commits
 au BufNewFile,BufRead COMMIT_EDITMSG set spell
@@ -474,7 +463,6 @@ nnoremap <Leader>ws :set list!<cr>
 
 " prose writing
 nnoremap <Leader>sp :setlocal spell<cr>
-nnoremap <silent> <Leader>tp :TogglePencil<cr>
 
 " literate python
 nnoremap <Leader>lp :setlocal ft=python<cr>
