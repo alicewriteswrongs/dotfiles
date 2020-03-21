@@ -1,4 +1,5 @@
 alias -g G='| grep'
+alias open='xdg-open'
 alias abcdehighqual='abcde -o ogg:"-q 7"' #rips at ogg vorbis quality level 7
 alias abig='tmux attach -t big'
 alias addall='git commit -a' #add all changed files and commit
@@ -63,6 +64,7 @@ alias gdmaster='git fetch origin && git diff origin/master'
 alias gdt='git difftool'
 alias gdtc='git difftool --cached'
 alias get_pulls='git config --add remote.origin.fetch "+refs/pull/*/head:refs/remotes/origin/pr/*"'
+alias gfmt='git commit -a -m "fmt"'
 alias gfo='git fetch origin'
 alias gitb='git branch'
 alias gitc='git commit'
