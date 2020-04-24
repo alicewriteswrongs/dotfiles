@@ -80,3 +80,10 @@ function jstest() {
         djstest $lasttest
     fi
 }
+
+function fmtfast() {
+    changed=$(git status -s | sed 's/^\s\S\s//' | tr '\n' ' ')
+    for file in $(git status -s | sed 's/^\s\S\s//'); do
+        ./node_modules/.bin/prettier-eslint --write --no-semi $file
+    done
+}
