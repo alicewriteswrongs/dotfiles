@@ -4,3 +4,5 @@ node_modules/
 nvim/.netrwhist
 nvim/spell/*
 nvim/bundle
+nvim/undo
+nvim/backup/

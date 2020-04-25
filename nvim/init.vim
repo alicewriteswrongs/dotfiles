@@ -304,8 +304,8 @@ endif
 "" fix the swapfile situation
 set noswapfile
 set backup
-set backupdir=~/.vim/backup//
-set undodir=~/.vim/undo//
+set backupdir=~/.config/nvim/backup//
+set undodir=~/.config/nvim/undo//
 set undofile
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
