@@ -132,7 +132,7 @@ namespace :vim do
   vim_dir = expand "~/.vim"
 
   task :clone_vundle do
-    sh "git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim" if ! Dir.exists? expand("~/.vim/bundle/Vundle.vim")
+    sh "git clone https://github.com/VundleVim/Vundle.vim.git ~/.config/nvim/bundle/Vundle.vim" if ! Dir.exists? expand("~/.config/nvim/bundle/Vundle.vim")
   end
 
   task :install_packages do
