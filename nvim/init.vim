@@ -483,7 +483,15 @@ function! RunCurrentFileAsTest ()
     endif
 endfunction
 
+function! RunCurrentFileAsWatchTest ()
+    let fp = fnamemodify(expand("%"), ":~:.")
+    if &filetype == 'javascript' || &filetype == 'javascript.jsx'
+        exec "Tmux dwatch " . fp
+    endif
+endfunction
+
 nnoremap <Leader>tf :call RunCurrentFileAsTest()<cr>
+nnoremap <Leader>tw :call RunCurrentFileAsWatchTest()<cr>
 nnoremap <Leader>esl :Tmux fasteslint<cr>
 nnoremap <Leader>flw :Tmux flow<cr>
 nnoremap <Leader>faf :Tmux npm run fmt<cr>
