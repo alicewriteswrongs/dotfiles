@@ -1,2 +1,0 @@
-MODULES_PATH="$MODULES_PATH ~/.lbdb/modules/"
-METHODS="m_sup m_gmail"

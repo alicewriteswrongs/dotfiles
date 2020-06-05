@@ -1,7 +1,7 @@
 # where the mail lives
 
 [database]
-path=/home/alice/mail/personal
+path=/home/alice/mail
 
 [user]
 name=Alice Pote
