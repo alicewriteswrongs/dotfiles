@@ -19,3 +19,5 @@
     db = 'branch -D'
     cc = checkout
     gd = git diff
+[pull]
+	ff = only
