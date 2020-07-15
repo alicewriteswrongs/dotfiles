@@ -14,10 +14,13 @@ call vundle#begin()
 Plugin 'pangloss/vim-javascript'
 Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'othree/javascript-libraries-syntax.vim'
-Plugin 'leafgarland/typescript-vim'
 Plugin 'briancollins/vim-jst'
 Plugin 'styled-components/vim-styled-components'
 Plugin 'flowtype/vim-flow'
+
+"typescript
+Plugin 'leafgarland/typescript-vim'
+Plugin 'peitalin/vim-jsx-typescript'
 
 " other web stuff
 Plugin 'othree/html5-syntax.vim'
@@ -86,9 +89,10 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'jamessan/vim-gnupg'
 Plugin 'sirver/ultisnips'
 Plugin 'honza/vim-snippets'
-Plugin 'ycm-core/YouCompleteMe'
+" Plugin 'ycm-core/YouCompleteMe'
 " Plugin 'Shougo/deoplete.nvim'
 " Plugin 'carlitux/deoplete-ternjs'
+Plugin 'neoclide/coc.nvim'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'machakann/vim-highlightedyank'
 Plugin 'lilydjwg/colorizer'
@@ -307,6 +311,10 @@ set backup
 set backupdir=~/.config/nvim/backup//
 set undodir=~/.config/nvim/undo//
 set undofile
+
+"" a few htings that are nice with JSX
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 """Plugin Configuration
