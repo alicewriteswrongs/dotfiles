@@ -93,6 +93,7 @@ Plugin 'honza/vim-snippets'
 " Plugin 'Shougo/deoplete.nvim'
 " Plugin 'carlitux/deoplete-ternjs'
 Plugin 'neoclide/coc.nvim'
+Plugin 'neoclide/coc-python'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'machakann/vim-highlightedyank'
 Plugin 'lilydjwg/colorizer'
@@ -449,9 +450,15 @@ nnoremap <Leader>ft :FlowType<cr>
 nnoremap <Leader>fm :FlowMake<cr>
 nnoremap <Leader>nm :Neomake<cr>
 nnoremap <Leader>af :Autoformat<cr>
-nnoremap <Leader>yd :YcmCompleter GoToDefinition<cr>
-nnoremap <Leader>yrr :YcmCompleter RefactorRename 
-nnoremap <Leader>ed :ElmBrowseDocs<cr>
+" nnoremap <Leader>yd :YcmCompleter GoToDefinition<cr>
+" nnoremap <Leader>yrr :YcmCompleter RefactorRename 
+" nnoremap <Leader>ed :ElmBrowseDocs<cr>
+
+" some things for CoC
+nnoremap <Leader>gd <Plug>(coc-definition)
+nnoremap <Leader>gt <Plug>(coc-type-definition)
+" nmap <silent> gi <Plug>(coc-implementation)
+" nmap <silent> gr <Plug>(coc-references)
 
 " git
 nnoremap <Leader>gb :Gblame<cr>
