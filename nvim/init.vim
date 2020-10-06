@@ -15,7 +15,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'briancollins/vim-jst'
-Plugin 'styled-components/vim-styled-components'
+" Plugin 'styled-components/vim-styled-components'
 Plugin 'flowtype/vim-flow'
 
 "typescript
