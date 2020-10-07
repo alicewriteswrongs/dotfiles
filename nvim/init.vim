@@ -178,6 +178,16 @@ augroup myfiletypes
     autocmd FileType scss setlocal shiftwidth=2
     autocmd FileType scss setlocal softtabstop=2
     autocmd FileType scss setlocal omnifunc=csscomplete#CompleteCSS
+    "typescript
+    autocmd FileType typescript setlocal expandtab
+    autocmd FileType typescript setlocal autoindent
+    autocmd FileType typescript setlocal shiftwidth=2
+    autocmd FileType typescript setlocal softtabstop=2
+    autocmd FileType typescript.tsx setlocal expandtab
+    autocmd FileType typescript.tsx setlocal autoindent
+    autocmd FileType typescript.tsx setlocal shiftwidth=2
+    autocmd FileType typescript.tsx setlocal softtabstop=2
+
     "js
     autocmd FileType javascript setlocal expandtab
     autocmd FileType javascript setlocal autoindent
