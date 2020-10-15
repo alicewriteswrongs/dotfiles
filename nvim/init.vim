@@ -466,7 +466,8 @@ nnoremap <Leader>af :Autoformat<cr>
 
 " some things for CoC
 nnoremap <Leader>gd <Plug>(coc-definition)
-nnoremap <Leader>gt <Plug>(coc-type-definition)
+nnoremap <Leader>gt <Plug>(coc-type-definition)<cr>
+nnoremap <silent> <leader>i :call CocActionAsync('doHover')<cr>
 " nmap <silent> gi <Plug>(coc-implementation)
 " nmap <silent> gr <Plug>(coc-references)
 
