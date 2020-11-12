@@ -58,6 +58,9 @@ status.register(
     ),
 )
 
-status.register("spotify")
+status.register(
+    "spotify",
+    format = "{artist} - {title} {status}"
+)
 
 status.run()
