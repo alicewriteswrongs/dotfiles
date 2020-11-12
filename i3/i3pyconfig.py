@@ -8,7 +8,7 @@ from i3pystatus.weather import wunderground
 status = Status(standalone = True)
 
 status.register("clock",
-        format = "%a:%m/%d %H:%M",)
+        format = "%a:%m/%d %H:%M ",)
 
 status.register("cpu_usage")
 
@@ -57,5 +57,7 @@ status.register(
         update_error='<span color="#ff0000">!</span>',
     ),
 )
+
+status.register("spotify")
 
 status.run()
