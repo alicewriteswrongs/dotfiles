@@ -3,6 +3,7 @@
 import subprocess
 
 from i3pystatus import Status, IntervalModule
+from i3pystatus.weather import wunderground
 
 status = Status(standalone = True)
 
@@ -44,5 +45,17 @@ class Brightness(IntervalModule):
         }
 
 status.register(Brightness)
+
+status.register(
+    'weather',
+    format='{condition} {current_temp}{temp_unit}[ Hi: {high_temp}][ Lo: {low_temp}][ {update_error}]',
+    colorize=True,
+    hints={'markup': 'pango'},
+    backend=wunderground.Wunderground(
+        location_code='KMAJAMAI24',
+        units='imperial',
+        update_error='<span color="#ff0000">!</span>',
+    ),
+)
 
 status.run()
