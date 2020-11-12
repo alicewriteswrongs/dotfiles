@@ -16,6 +16,7 @@ exec_always --no-startup-id gnome-power-manager
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id gnome-flashback
 exec --no-startup-id /usr/bin/gnome-screensaver
+exec_always --no-startup-id picom &
 
 # font for window titles and bar
 # font pango:DejaVu Sans Mono 8
@@ -23,13 +24,6 @@ font pango:inconsolata, Icons 8
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
-
-# volume and screen brightness
-# bindcode 233 exec "xbacklight -inc 5"
-# bindcode 232 exec "xbacklight -dec 5"
-# bindcode 123 exec "amixer set Master 5%+"
-# bindcode 122 exec "amixer set Master 5%-"
-# bindcode 121 exec "amixer set Master toggle"
 
 #send a workspace to one of the connected screens
 bindsym $mod+ctrl+h move workspace to HDMI1
@@ -40,11 +34,11 @@ bindsym $mod+ctrl+1 move workspace to DP2-1
 bindsym $mod+ctrl+2 move workspace to DP2-2
 
 # lock the screen
-# bindsym $mod+ctrl+Shift+l exec "xscreensaver-command -lock"
 bindsym $mod+ctrl+Shift+l exec "dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.Lock"
 
 # start a terminal
 bindsym $mod+Return exec termite
+# start a floating terminal
 bindsym $mod+Shift+Return exec "termite -t FLOATING_TERMITE"
 
 #pause and play mpd, next and previous song

@@ -11,7 +11,6 @@
     ["./xonsh/xonshrc", "~/.xonshrc"],
     ["./termite/config", "~/.config/termite/config"],
     ["./i3/i3config", "~/.i3/config"],
-    ["./i3/i3config", "~/.config/sway/config"],
     ["./notmuch/notmuch-config", "~/.notmuch-config"],
     ["./hyperterm/hyperterm.js", "~/.hyperterm.js"],
     ["./astroid/config", "~/.config/astroid/config"],
