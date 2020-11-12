@@ -20,7 +20,7 @@
     ["./festival/.festivalrc", "~/.festivalrc"],
     ["./dunst/.dunstrc", "~/.config/dunst/dunstrc"],
     ["./polybar/config.ini", "~/.config/polybar/config"],
-    ["./compton/compton.conf", "~/.config/compton.conf"]
+    ["./picom/picom.conf", "~/.config/picom.conf"]
   ],
   "directories": [
     "~/.config",

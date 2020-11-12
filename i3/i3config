@@ -8,7 +8,14 @@ for_window [class=".*"] title_format "title: %title, class: %class"
 popup_during_fullscreen smart
 
 # set DPMS screen interval
-exec --no-startup-id xset dpms 600
+# exec --no-startup-id xset dpms 600
+
+# i3-gnome
+exec --no-startup-id /usr/lib/gsd-xsettings
+exec_always --no-startup-id gnome-power-manager
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id gnome-flashback
+exec --no-startup-id /usr/bin/gnome-screensaver
 
 # font for window titles and bar
 # font pango:DejaVu Sans Mono 8
@@ -18,11 +25,11 @@ font pango:inconsolata, Icons 8
 floating_modifier $mod
 
 # volume and screen brightness
-bindcode 233 exec "xbacklight -inc 5"
-bindcode 232 exec "xbacklight -dec 5"
-bindcode 123 exec "amixer set Master 5%+"
-bindcode 122 exec "amixer set Master 5%-"
-bindcode 121 exec "amixer set Master toggle"
+# bindcode 233 exec "xbacklight -inc 5"
+# bindcode 232 exec "xbacklight -dec 5"
+# bindcode 123 exec "amixer set Master 5%+"
+# bindcode 122 exec "amixer set Master 5%-"
+# bindcode 121 exec "amixer set Master toggle"
 
 #send a workspace to one of the connected screens
 bindsym $mod+ctrl+h move workspace to HDMI1
@@ -33,7 +40,8 @@ bindsym $mod+ctrl+1 move workspace to DP2-1
 bindsym $mod+ctrl+2 move workspace to DP2-2
 
 # lock the screen
-bindsym $mod+ctrl+Shift+l exec "xscreensaver-command -lock"
+# bindsym $mod+ctrl+Shift+l exec "xscreensaver-command -lock"
+bindsym $mod+ctrl+Shift+l exec "dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.Lock"
 
 # start a terminal
 bindsym $mod+Return exec termite
