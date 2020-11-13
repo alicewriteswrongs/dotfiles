@@ -101,11 +101,8 @@ alias mmochaw='mocha --require babelhook.js global_init.js -w'
 alias mv='mv -iv'           #makes it interactive and verbose
 alias nodpms='xset dpms 0 0 0'
 alias notes='cd ~/files/note'
-alias orgmode='cd ~/SpiderOak\ Hive/notes/org'
 alias orphans='sudo pacman -Qdt'
 alias p='cd ~/Code/projects'
-alias pdfs='cd ~/SpiderOak\ Hive/PDFs'
-alias poetry='cd ~/SpiderOak\ Hive/Documents/writing/poetry'
 alias pretty='git log --pretty=oneline' #get succinct git log information
 alias pserver='python -m SimpleHTTPServer'
 alias pullom='git checkout master && git pull origin master'
