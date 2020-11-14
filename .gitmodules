@@ -25,3 +25,6 @@
 [submodule "extras/numix-solarized-gtk-theme"]
 	path = extras/numix-solarized-gtk-theme
 	url = git@github.com:Ferdi265/numix-solarized-gtk-theme.git
+[submodule "extras/zzzfoo"]
+	path = extras/zzzfoo
+	url = git@github.com:andersju/zzzfoo.git
