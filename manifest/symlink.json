@@ -8,7 +8,6 @@
     ["./X/Xresources", "~/.Xresources"],
     ["./X/.xscreensaver", "~/.xscreensaver"],
     ["./zsh/zshrc.zsh", "~/.zshrc"],
-    ["./xonsh/xonshrc", "~/.xonshrc"],
     ["./termite/config", "~/.config/termite/config"],
     ["./i3/i3config", "~/.i3/config"],
     ["./notmuch/notmuch-config", "~/.notmuch-config"],
