@@ -56,10 +56,12 @@ bindsym $mod+ctrl+space exec rofi -show window -font "inconsolata 12"
 
 #scratchpad (place to throw a window)
 bindsym $mod+Shift+minus move scratchpad
-# asdf
+
+# asdf show/hide
 bindsym $mod+a [class="Anki"] scratchpad show
 bindsym $mod+s [class="Signal"] scratchpad show
 bindsym $mod+d [class="Spotify"] scratchpad show
+bindsym $mod+f [class="Org.gnome.Nautilus"] scratchpad show
 
 bindsym $mod+v [class="Termite"] scratchpad show
 
