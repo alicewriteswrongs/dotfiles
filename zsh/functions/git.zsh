@@ -240,10 +240,26 @@ function clean_pr_branches () {
 }
 
 # git related aliases (moved here for main / master compat)
-alias pullom="git checkout $(getMainBranch) && git pull origin $(getMainBranch)"
-alias pushom="git push origin $(getMainBranch)"
-alias gapush="git commit -a && git push origin $(getMainBranch)"
-alias gbranch="git checkout $(getMainBranch) && git pull && git checkout -b"
-alias gdfmaster="git fetch origin && git diff --name-only origin/$(getMainBranch)"
-alias gdmaster="git fetch origin && git diff origin/$(getMainBranch)"
+function pullom() {
+    git checkout $(getMainBranch) && git pull origin $(getMainBranch)
+}
 
+function pushom() {
+    git push origin $(getMainBranch)
+}
+
+function gapush() {
+    git commit -a && git push origin $(getMainBranch)
+}
+
+function gbranch() {
+    git checkout $(getMainBranch) && git pull && git checkout -b
+}
+
+function gdfmaster() {
+    git fetch origin && git diff --name-only origin/$(getMainBranch)
+}
+
+function gdmaster() {
+    git fetch origin && git diff origin/$(getMainBranch)
+}
