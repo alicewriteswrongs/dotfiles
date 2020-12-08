@@ -42,6 +42,9 @@ bindsym $mod+Return exec termite
 # start a floating terminal
 bindsym $mod+Shift+Return exec "termite -t FLOATING_TERMITE"
 
+# open the file manager
+bindsym $mod+n exec nautilus
+
 #pause and play mpd, next and previous song
 bindsym $mod+p exec mpc toggle
 bindsym $mod+comma exec mpc prev
@@ -122,8 +125,8 @@ set $WS9 9
 set $WS10 10
 
 #set default border style
-new_window pixel 3
-new_float pixel 3
+# new_window pixel 3
+# new_float pixel 3
 
 #some rules for various windows
 for_window [title="Float"] floating enable
@@ -167,6 +170,7 @@ for_window [class="Pinentry"] floating enable
 for_window [class="Anki" title="Edit Current"] floating enable
 for_window [class="Anki" title="Add"] floating enable
 for_window [class="Anki" title="Statistics"] floating enable
+for_window [class="zoom"] floating enable
 
 #no borders
 for_window [class="^.*"] border pixel 0

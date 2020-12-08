@@ -4,13 +4,15 @@ import subprocess
 
 from i3pystatus import Status, IntervalModule
 from i3pystatus.weather import wunderground
+from i3pystatus.weather import weathercom
 
 status = Status(standalone = True)
 
 status.register("clock",
         format = "%a:%m/%d %H:%M ",)
 
-status.register("cpu_usage")
+status.register("cpu_usage",
+        format = "{usage:02}%")
 
 status.register("mem",
         format = "{used_mem}G",
@@ -46,21 +48,35 @@ class Brightness(IntervalModule):
 
 status.register(Brightness)
 
+# status.register(
+#     'weather',
+#     format='{condition} {current_temp}{temp_unit}[ Hi: {high_temp}][ Lo: {low_temp}][ {update_error}]',
+#     colorize=True,
+#     hints={'markup': 'pango'},
+#     update_error='<span color="#ff0000">!</span>'
+#     backend=weathercom.Weathercom(
+#         location_code='a20fadf655606add2451379f9f725be9d7ff1fe5b4d5b76a689f228ab3fb1375',
+#         units='imperial',
+#     ),
+# )
+
+
 status.register(
     'weather',
-    format='{condition} {current_temp}{temp_unit}[ Hi: {high_temp}][ Lo: {low_temp}][ {update_error}]',
+    format='{condition} {current_temp}{temp_unit}[ {icon}][ Hi: {high_temp}][ Lo: {low_temp}][ {update_error}]',
     colorize=True,
     hints={'markup': 'pango'},
-    backend=wunderground.Wunderground(
-        location_code='KMAJAMAI24',
+    update_error='<span color="#ff0000">!</span>',
+    # log_level=logging.DEBUG,
+    backend=weathercom.Weathercom(
+        location_code='94107:4:US',
         units='imperial',
-        update_error='<span color="#ff0000">!</span>',
     ),
 )
 
-status.register(
-    "spotify",
-    format = "{artist} - {title} {status}"
-)
+# status.register(
+#     "spotify",
+#     format = "{artist} - {title} {status}"
+# )
 
 status.run()
