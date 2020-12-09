@@ -253,7 +253,7 @@ function gapush() {
 }
 
 function gbranch() {
-    git checkout $(getMainBranch) && git pull && git checkout -b
+    git checkout $(getMainBranch) && git pull && git checkout -b $1
 }
 
 function gdfmaster() {

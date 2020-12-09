@@ -209,7 +209,7 @@ augroup END
 "colorscheme
 set termguicolors
 colorscheme NeoSolarized
-set background=light
+set background=dark
 syntax on
 
 "lightline
