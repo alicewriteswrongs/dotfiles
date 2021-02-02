@@ -209,7 +209,7 @@ augroup END
 "colorscheme
 set termguicolors
 colorscheme NeoSolarized
-set background=dark
+set background=light
 syntax on
 
 "lightline
@@ -465,11 +465,11 @@ nnoremap <Leader>af :Autoformat<cr>
 " nnoremap <Leader>ed :ElmBrowseDocs<cr>
 
 " some things for CoC
-nnoremap <Leader>gd <Plug>(coc-definition)
-nnoremap <Leader>gt <Plug>(coc-type-definition)<cr>
 nnoremap <silent> <leader>i :call CocActionAsync('doHover')<cr>
-" nmap <silent> gi <Plug>(coc-implementation)
-" nmap <silent> gr <Plug>(coc-references)
+nmap <silent> <leader>gd <Plug>(coc-definition)
+nmap <silent> <leader>gt <Plug>(coc-type-definition)
+nmap <silent> <leader>gi <Plug>(coc-implementation)
+nmap <silent> <leader>gr <Plug>(coc-references)
 
 " git
 nnoremap <Leader>gb :Gblame<cr>
