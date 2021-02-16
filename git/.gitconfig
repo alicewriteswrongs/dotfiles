@@ -21,3 +21,5 @@
     gd = git diff
 [pull]
 	ff = only
+[init]
+	defaultBranch = main
