@@ -19,8 +19,9 @@ Plugin 'briancollins/vim-jst'
 Plugin 'flowtype/vim-flow'
 
 "typescript
-Plugin 'leafgarland/typescript-vim'
-Plugin 'peitalin/vim-jsx-typescript'
+" Plugin 'leafgarland/typescript-vim'
+" Plugin 'peitalin/vim-jsx-typescript'
+Plugin 'HerringtonDarkholme/yats.vim'
 
 " other web stuff
 Plugin 'othree/html5-syntax.vim'
@@ -29,7 +30,6 @@ Plugin 'elzr/vim-json'
 
 " reasonML
 Plugin 'reasonml-editor/vim-reason-plus'
-
 
 " ruby
 Plugin 'tpope/vim-bundler'
@@ -89,9 +89,6 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'jamessan/vim-gnupg'
 Plugin 'sirver/ultisnips'
 Plugin 'honza/vim-snippets'
-" Plugin 'ycm-core/YouCompleteMe'
-" Plugin 'Shougo/deoplete.nvim'
-" Plugin 'carlitux/deoplete-ternjs'
 Plugin 'neoclide/coc.nvim'
 Plugin 'neoclide/coc-python'
 Plugin 'Chiel92/vim-autoformat'
@@ -187,6 +184,10 @@ augroup myfiletypes
     autocmd FileType typescript.tsx setlocal autoindent
     autocmd FileType typescript.tsx setlocal shiftwidth=2
     autocmd FileType typescript.tsx setlocal softtabstop=2
+    autocmd FileType typescriptreact setlocal expandtab
+    autocmd FileType typescriptreact setlocal autoindent
+    autocmd FileType typescriptreact setlocal shiftwidth=2
+    autocmd FileType typescriptreact setlocal softtabstop=2
 
     "js
     autocmd FileType javascript setlocal expandtab
@@ -211,6 +212,9 @@ set termguicolors
 colorscheme NeoSolarized
 set background=light
 syntax on
+
+"recommended by yats.vim
+set re=0
 
 "lightline
 let g:lightline = {
@@ -362,16 +366,6 @@ let g:bufferline_echo = 0
 let g:ag_highlight=1
 let g:used_javascript_libs = 'underscore, jquery, react'
 let g:tmuxcomplete#trigger = 'omnifunc'
-let g:ycm_semantic_triggers = {
-            \ 'c' : ['->', '.', 're!\w'],
-            \ 'elm': ['.', 're!\w'],
-            \ 'purescript': ['.', 're!\w'],
-            \ 'haskell': ['.', 're!\w'],
-            \}
-let g:ycm_use_ultisnips_complete = 1
-let g:ycm_seed_identifiers_with_syntax = 1
-let g:ycm_complete_in_comments = 1
-let g:ycm_confirm_extra_conf = 0
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
@@ -460,8 +454,6 @@ nnoremap <Leader>ft :FlowType<cr>
 nnoremap <Leader>fm :FlowMake<cr>
 nnoremap <Leader>nm :Neomake<cr>
 nnoremap <Leader>af :Autoformat<cr>
-" nnoremap <Leader>yd :YcmCompleter GoToDefinition<cr>
-" nnoremap <Leader>yrr :YcmCompleter RefactorRename 
 " nnoremap <Leader>ed :ElmBrowseDocs<cr>
 
 " some things for CoC
@@ -470,6 +462,14 @@ nmap <silent> <leader>gd <Plug>(coc-definition)
 nmap <silent> <leader>gt <Plug>(coc-type-definition)
 nmap <silent> <leader>gi <Plug>(coc-implementation)
 nmap <silent> <leader>gr <Plug>(coc-references)
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
+nmap <leader>do <Plug>(coc-codeaction)
+nmap <leader>rn <Plug>(coc-rename)
+
+let g:coc_global_extensions = [
+  \ 'coc-tsserver'
+  \ ]
 
 " git
 nnoremap <Leader>gb :Gblame<cr>
