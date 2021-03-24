@@ -97,6 +97,7 @@ Plugin 'lilydjwg/colorizer'
 Plugin 'vim-scripts/SyntaxRange'
 Plugin 'vim-scripts/ingo-library'
 Plugin 'tommcdo/vim-lion'
+" Plugin 'wellle/context.vim'
 
 " file opening / search
 Plugin 'haya14busa/incsearch.vim' "nice incremental search
@@ -117,15 +118,12 @@ Plugin 'fatih/vim-go'
 " rust
 Plugin 'rust-lang/rust.vim' "some rust stuff
 
-" C/C++
-" Plugin 'jeaye/color_coded' "not yet in neovim :(
-
 " racket / scheme
 " Plugin 'vim-scripts/paredit.vim' "lisp/racket S-expressions
 Plugin 'wlangstroth/vim-racket'
 
 " clojure
-Plugin 'clojure-vim/nvim-parinfer.js'
+" Plugin 'clojure-vim/nvim-parinfer.js'
 
 " i3
 Plugin 'PotatoesMaster/i3-vim-syntax'
@@ -303,7 +301,6 @@ autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 """""""""""""""""""""""""""""""""""""""""""""""""""
 """Plugin Configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""
-
 let g:vim_json_syntax_conceal = 0
 let g:vim_jsx_pretty_colorful_config = 1
 let g:flow#autoclose = 1
