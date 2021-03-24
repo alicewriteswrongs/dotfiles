@@ -131,8 +131,9 @@ end
 namespace :vim do
   vim_dir = expand "~/.vim"
 
-  task :clone_vundle do
-    sh "git clone https://github.com/VundleVim/Vundle.vim.git ~/.config/nvim/bundle/Vundle.vim" if ! Dir.exists? expand("~/.config/nvim/bundle/Vundle.vim")
+  task :copy_vim_plug do
+    sh "sh -c 'curl -fLo \"${XDG_DATA_HOME:-$HOME/.local/share}\"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'"
   end
 
   task :install_packages do
@@ -143,7 +144,7 @@ namespace :vim do
     sh "vim +PluginUpdate +qall"
   end
 
-  task :setup => [:clone_vundle, :install_packages, :setup_ycm] do
+  task :setup => [:copy_vim_plug, :install_packages, :setup_ycm] do
     mkdir_p vim_dir.to_s << "/backup"
     mkdir_p vim_dir.to_s << "/undo"
     puts "Vim setup complete!"

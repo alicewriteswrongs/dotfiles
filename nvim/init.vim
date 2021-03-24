@@ -1,149 +1,146 @@
-""""""""""""""""""""""""""""""""""""""""""""""""""
-"""Vundle
-"""""""""""""""""""""""""""""""""""""""""""""""""""
-set nocompatible              " be iMproved, required
-filetype off                  " required
 
 let mapleader = "\<Space>" "set leader to space
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.config/nvim/bundle/Vundle.vim
-call vundle#begin()
+""""""""""""""""""""""""""""""""""""""""""""""""""
+"""plugins
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+
+call plug#begin(stdpath('data') . '/plugged')
 
 " JS / CoffeeScript
-Plugin 'pangloss/vim-javascript'
-Plugin 'maxmellon/vim-jsx-pretty'
-Plugin 'othree/javascript-libraries-syntax.vim'
-Plugin 'briancollins/vim-jst'
-" Plugin 'styled-components/vim-styled-components'
-Plugin 'flowtype/vim-flow'
+Plug 'pangloss/vim-javascript'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'briancollins/vim-jst'
+" Plug 'styled-components/vim-styled-components'
+Plug 'flowtype/vim-flow'
 
 "typescript
-" Plugin 'leafgarland/typescript-vim'
-" Plugin 'peitalin/vim-jsx-typescript'
-Plugin 'HerringtonDarkholme/yats.vim'
+" Plug 'leafgarland/typescript-vim'
+" Plug 'peitalin/vim-jsx-typescript'
+Plug 'HerringtonDarkholme/yats.vim'
 
 " other web stuff
-Plugin 'othree/html5-syntax.vim'
-Plugin 'cakebaker/scss-syntax.vim'
-Plugin 'elzr/vim-json'
+Plug 'othree/html5-syntax.vim'
+Plug 'cakebaker/scss-syntax.vim'
+Plug 'elzr/vim-json'
 
 " reasonML
-Plugin 'reasonml-editor/vim-reason-plus'
+Plug 'reasonml-editor/vim-reason-plus'
 
 " ruby
-Plugin 'tpope/vim-bundler'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-rake'
-Plugin 'slim-template/vim-slim'
+Plug 'tpope/vim-bundler'
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-rake'
+Plug 'slim-template/vim-slim'
 
 " crystal
-Plugin 'rhysd/vim-crystal'
+Plug 'rhysd/vim-crystal'
 
 " python
-Plugin 'Vimjas/vim-python-pep8-indent'
+Plug 'Vimjas/vim-python-pep8-indent'
 
 " elixir
-Plugin 'elixir-lang/vim-elixir'
+Plug 'elixir-lang/vim-elixir'
 
 " purescript
-Plugin 'raichoo/purescript-vim'
-Plugin 'frigoeu/psc-ide-vim'
+Plug 'raichoo/purescript-vim'
+Plug 'frigoeu/psc-ide-vim'
 
 " haskell
-Plugin 'neovimhaskell/haskell-vim'
-Plugin 'alx741/vim-hindent'
-Plugin 'eagletmt/neco-ghc'
-Plugin 'pbrisbin/vim-syntax-shakespeare'
-Plugin 'alx741/vim-yesod'
+Plug 'neovimhaskell/haskell-vim'
+Plug 'alx741/vim-hindent'
+Plug 'eagletmt/neco-ghc'
+Plug 'pbrisbin/vim-syntax-shakespeare'
+Plug 'alx741/vim-yesod'
 
 " colorschemes
-Plugin 'iCyMind/NeoSolarized'
-" Plugin 'chriskempson/base16-vim'
-" Plugin 'NLKNguyen/papercolor-theme'
-" Plugin 'morhetz/gruvbox'
+Plug 'iCyMind/NeoSolarized'
+" Plug 'chriskempson/base16-vim'
+" Plug 'NLKNguyen/papercolor-theme'
+" Plug 'morhetz/gruvbox'
 
 " statusline
-Plugin 'itchyny/lightline.vim'
+Plug 'itchyny/lightline.vim'
 
 " tmux
-Plugin 'edkolev/tmuxline.vim'
-Plugin 'jgdavey/tslime.vim'
-Plugin 'wellle/tmux-complete.vim'
+Plug 'edkolev/tmuxline.vim'
+Plug 'jgdavey/tslime.vim'
+Plug 'wellle/tmux-complete.vim'
 
 " git
-Plugin 'tpope/vim-fugitive'
-Plugin 'junegunn/gv.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'junegunn/gv.vim'
 
 " utility
-Plugin 'gmarik/Vundle.vim'
-Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-rsi'
-Plugin 'tpope/vim-speeddating'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-vinegar'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'Yggdroot/indentLine'
-Plugin 'jamessan/vim-gnupg'
-Plugin 'sirver/ultisnips'
-Plugin 'honza/vim-snippets'
-Plugin 'neoclide/coc.nvim'
-Plugin 'neoclide/coc-python'
-Plugin 'Chiel92/vim-autoformat'
-Plugin 'machakann/vim-highlightedyank'
-Plugin 'lilydjwg/colorizer'
-Plugin 'vim-scripts/SyntaxRange'
-Plugin 'vim-scripts/ingo-library'
-Plugin 'tommcdo/vim-lion'
-" Plugin 'wellle/context.vim'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-rsi'
+Plug 'tpope/vim-speeddating'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-vinegar'
+Plug 'tpope/vim-unimpaired'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'Yggdroot/indentLine'
+Plug 'jamessan/vim-gnupg'
+Plug 'sirver/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'neoclide/coc.nvim'
+Plug 'neoclide/coc-python'
+Plug 'Chiel92/vim-autoformat'
+Plug 'machakann/vim-highlightedyank'
+Plug 'lilydjwg/colorizer'
+Plug 'vim-scripts/SyntaxRange'
+Plug 'vim-scripts/ingo-library'
+Plug 'tommcdo/vim-lion'
+" Plug 'wellle/context.vim'
 
 " file opening / search
-Plugin 'haya14busa/incsearch.vim' "nice incremental search
-Plugin 'rking/ag.vim' "wrapper for ag
-Plugin 'justinmk/vim-sneak'
-Plugin 'blarghmatey/split-expander'
+Plug 'haya14busa/incsearch.vim' "nice incremental search
+Plug 'rking/ag.vim' "wrapper for ag
+Plug 'justinmk/vim-sneak'
+Plug 'blarghmatey/split-expander'
 
-Plugin 'nvim-lua/popup.nvim'
-Plugin 'nvim-lua/plenary.nvim'
-Plugin 'nvim-telescope/telescope.nvim'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 " elm
-Plugin 'elmcast/elm-vim'
+Plug 'elmcast/elm-vim'
 
 " go
-Plugin 'fatih/vim-go'
+Plug 'fatih/vim-go'
 
 " rust
-Plugin 'rust-lang/rust.vim' "some rust stuff
+Plug 'rust-lang/rust.vim' "some rust stuff
 
 " racket / scheme
-" Plugin 'vim-scripts/paredit.vim' "lisp/racket S-expressions
-Plugin 'wlangstroth/vim-racket'
+" Plug 'vim-scripts/paredit.vim' "lisp/racket S-expressions
+Plug 'wlangstroth/vim-racket'
 
 " clojure
-" Plugin 'clojure-vim/nvim-parinfer.js'
+" Plug 'clojure-vim/nvim-parinfer.js'
 
 " i3
-Plugin 'PotatoesMaster/i3-vim-syntax'
+Plug 'PotatoesMaster/i3-vim-syntax'
 
 " email
-" Plugin 'guyzmo/notmuch-abook' "get emails out of notmuch db for autocomplete
-Plugin 'vim-scripts/lbdbq' "formats mail headers more nicely
+" Plug 'guyzmo/notmuch-abook' "get emails out of notmuch db for autocomplete
+Plug 'vim-scripts/lbdbq' "formats mail headers more nicely
 
 " markdown / prose writing
-Plugin 'suan/vim-instant-markdown'
-Plugin 'jceb/vim-orgmode'
+Plug 'suan/vim-instant-markdown'
+Plug 'jceb/vim-orgmode'
 
 "xonsh
-Plugin 'linkinpark342/xonsh-vim'
+Plug 'linkinpark342/xonsh-vim'
 
 " neovim-specific
-Plugin 'neomake/neomake'
-Plugin 'neovim/node-host'
+Plug 'neomake/neomake'
+Plug 'neovim/node-host'
 
-call vundle#end()
+call plug#end()
+
 filetype plugin indent on
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
