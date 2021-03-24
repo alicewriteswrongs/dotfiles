@@ -139,11 +139,6 @@ namespace :vim do
     sh "vim +PluginInstall +qall"
   end
 
-  task :setup_ycm do
-    cd expand("~/.vim/bundle/youcompleteme")
-    sh "python install.py --tern-completer --gocode-completer --clang-completer"
-  end
-
   task :update do
     sh "vim +PluginUpdate +qall"
   end

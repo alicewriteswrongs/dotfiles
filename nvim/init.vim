@@ -100,10 +100,13 @@ Plugin 'tommcdo/vim-lion'
 
 " file opening / search
 Plugin 'haya14busa/incsearch.vim' "nice incremental search
-Plugin 'ctrlpvim/ctrlp.vim' "fuzzy search
 Plugin 'rking/ag.vim' "wrapper for ag
 Plugin 'justinmk/vim-sneak'
 Plugin 'blarghmatey/split-expander'
+
+Plugin 'nvim-lua/popup.nvim'
+Plugin 'nvim-lua/plenary.nvim'
+Plugin 'nvim-telescope/telescope.nvim'
 
 " elm
 Plugin 'elmcast/elm-vim'
@@ -221,8 +224,8 @@ let g:lightline = {
     \ 'colorscheme': 'solarized',
     \ 'active': {
     \   'left': [ [ 'mode', 'paste' ],
-    \             [ 'fugitive', 'readonly', 'filename', 'modified' ],
-    \             [ 'ctrlpmark' ] ]
+    \             [ 'fugitive', 'readonly', 'filename', 'modified' ]
+    \           ]
     \ },
     \ 'component': {
     \   'readonly': '%{&filetype=="help"?"":&readonly?"⭤":""}',
@@ -245,34 +248,6 @@ function! LightLineFugitive()
   endif
   return ''
 endfunction
-
-function! CtrlPMark()
-  if expand('%:t') =~ 'ControlP' && has_key(g:lightline, 'ctrlp_item')
-    call lightline#link('iR'[g:lightline.ctrlp_regex])
-    return lightline#concatenate([g:lightline.ctrlp_prev, g:lightline.ctrlp_item
-          \ , g:lightline.ctrlp_next], 0)
-  else
-    return ''
-  endif
-endfunction
-
-let g:ctrlp_status_func = {
-  \ 'main': 'CtrlPStatusFunc_1',
-  \ 'prog': 'CtrlPStatusFunc_2',
-  \ }
-
-function! CtrlPStatusFunc_1(focus, byfname, regex, prev, item, next, marked)
-  let g:lightline.ctrlp_regex = a:regex
-  let g:lightline.ctrlp_prev = a:prev
-  let g:lightline.ctrlp_item = a:item
-  let g:lightline.ctrlp_next = a:next
-  return lightline#statusline(0)
-endfunction
-
-function! CtrlPStatusFunc_2(str)
-  return lightline#statusline(0)
-endfunction
-
 
 "random options
 set clipboard+=unnamed
@@ -313,12 +288,6 @@ set lcs=trail:.,tab:>\
 " set list
 
 " highlight StatusLine ctermfg=blue ctermbg=yellow
-if executable('ag')
-    set grepprg=ag\ --nogroup\ --nocolor
-    let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
-    let g:ctrlp_use_caching = 0
-    let g:CrtlSpaceglobCommand = 'ag %s -l --nocolor --hidden -g ""'
-endif
 
 "" fix the swapfile situation
 set noswapfile
@@ -344,7 +313,6 @@ let g:instant_markdown_slow = 1
 let g:sneak#streak = 1
 let g:jsx_ext_required = 0 " allow jsx syntax in normal js files
 let g:EclimCompletionEngine = 'omnifunc'
-let g:ctrlp_extensions = ['buffertag']
 let g:incsearch#auto_nohlsearch = 1
 "tmuxline.vim
 let g:tmuxline_preset = {
@@ -476,10 +444,9 @@ let g:coc_global_extensions = [
 " git
 nnoremap <Leader>gb :Gblame<cr>
 
-" ctrl-p
-nnoremap <Leader>p :CtrlPBufTag<cr>
-nnoremap <Leader>o :CtrlPMRU<cr>
-nnoremap <C-b> :CtrlPBuffer<cr>
+" Telescope
+nnoremap <C-b> <cmd>Telescope buffers<cr>
+nnoremap <C-p> <cmd>Telescope find_files<cr>
 
 " number, column, scrolling, whitespace
 nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<cr> 
