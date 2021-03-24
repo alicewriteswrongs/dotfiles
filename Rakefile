@@ -129,24 +129,22 @@ namespace :system_configuration do
 end
 
 namespace :vim do
-  vim_dir = expand "~/.vim"
-
   task :copy_vim_plug do
-    sh "sh -c 'curl -fLo \"${XDG_DATA_HOME:-$HOME/.local/share}\"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'"
+    sh "curl -fLo \"${XDG_DATA_HOME:-$HOME/.local/share}\"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
   end
 
   task :install_packages do
-    sh "vim +PluginInstall +qall"
+    sh "nvim +PlugInstall +qall"
   end
 
   task :update do
-    sh "vim +PluginUpdate +qall"
+    sh "nvim +PlugUpdate +qall"
   end
 
-  task :setup => [:copy_vim_plug, :install_packages, :setup_ycm] do
-    mkdir_p vim_dir.to_s << "/backup"
-    mkdir_p vim_dir.to_s << "/undo"
+  task :setup => [:copy_vim_plug, :install_packages] do
+    mkdir_p "~/.config/nvim/undo"
+    mkdir_p "~/.config/nvim/backup"
     puts "Vim setup complete!"
   end
 end
