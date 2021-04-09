@@ -1,0 +1,25 @@
+{
+  "formulae": [
+    "fzf",
+    "ag",
+    "node",
+    "wget",
+    "cmake",
+    "luarocks",
+    "pkg-config",
+    "bat",
+    "ripgrep",
+    "--HEAD luajit",
+    "--HEAD neovim",
+    "font-inconsolata"
+  ],
+  "casks": [
+    "libreoffice",
+    "firefox",
+    "docker",
+    "anki"
+  ],
+  "tap": [
+    "homebrew/cask-fonts"
+  ]
+}
