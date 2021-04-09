@@ -5,11 +5,11 @@ function github_repo_location () {
 }
 
 function ghbranch() {
-    xdg-open "https://github.com/`github_repo_location`/compare/`(current_branch)`"
+    open "https://github.com/`github_repo_location`/compare/`(current_branch)`"
 }
 
 function ghrepo () {
-    xdg-open "https://github.com/`github_repo_location`"
+    open "https://github.com/`github_repo_location`"
 }
 
 function pull_request_number() {
@@ -19,7 +19,7 @@ function pull_request_number() {
 function ghpull () {
     git fetch origin
     if [[ pull_request_number != "" ]]; then
-        xdg-open "https://github.com/`github_repo_location`/pull/`pull_request_number`"
+        open "https://github.com/`github_repo_location`/pull/`pull_request_number`"
     else
         ghbranch
     fi
