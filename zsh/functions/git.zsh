@@ -190,9 +190,9 @@ function first_commit_on_branch() {
 function last_non_fixup_commit_on_branch () {
     if [[ $(current_branch) != $(getMainBranch) ]]; then
         if [[ origin_exists ]]; then
-            git log $(current_branch) --not origin/$(getMainBranch) --format=oneline | ag -v fixup! | head -n 1 | sed -e 's/\s.*$//'
+            git log $(current_branch) --not origin/$(getMainBranch) --format=oneline | ag -v fixup! | head -n 1 | awk '{ print $1; }'
         else
-            git log $(current_branch) --not $(getMainBranch) --format=oneline | ag -v fixup! | head -n 1 | sed -e 's/\s.*$//'
+            git log $(current_branch) --not $(getMainBranch) --format=oneline | ag -v fixup! | head -n 1 | awk '{ print $1; }'
         fi
     else
         git log --format=%H | head -n 1
