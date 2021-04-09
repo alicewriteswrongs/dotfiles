@@ -1,5 +1,5 @@
 alias -g G='| grep'
-alias open='xdg-open'
+# alias open='xdg-open'
 alias abcdehighqual='abcde -o ogg:"-q 7"' #rips at ogg vorbis quality level 7
 alias abig='tmux attach -t big'
 alias addall='git commit -a' #add all changed files and commit
@@ -85,7 +85,7 @@ alias koantest='ruby path_to_enlightenment.rb'
 alias la='ls -alhF'         #show hidden files and attribute
 alias less='less -M'
 alias litpush='Pweave -f pandoc *.mdw && git commit -a && git push origin master'
-alias ls='ls --color=auto'  #colorize ls output
+alias ls='ls -G'  #colorize ls output
 alias mc='make clean'
 alias mkdir='mkdir -p -v'   #makes a directory and it's hierarchy, also verbose
 alias mmochaw='mocha --require babelhook.js global_init.js -w'

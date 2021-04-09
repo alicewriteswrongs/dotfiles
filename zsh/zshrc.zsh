@@ -47,7 +47,7 @@ eval `dircolors ~/dotfiles/zsh/dir_colors`
 export TERM=screen-256color-bce
 
 chpwd() {
-    ls -lrthG --color=auto
+    ls -lrthG
 }
 
 source ~/dotfiles/zsh/aliases.zsh
