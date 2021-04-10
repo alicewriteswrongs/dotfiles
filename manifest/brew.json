@@ -17,7 +17,8 @@
     "libreoffice",
     "firefox",
     "docker",
-    "anki"
+    "anki",
+    "iterm2"
   ],
   "tap": [
     "homebrew/cask-fonts"
