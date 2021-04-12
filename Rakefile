@@ -169,6 +169,20 @@ namespace :i3 do
   end
 end
 
+task :brew do
+
+end
+
+namespace :brew do
+  def get_package_list
+    get_json("./manifest/brew_packages.json")
+  end
+
+  task :install do
+  end
+end
+
+
 task vim: ["vim:setup"]
 task default: ["packages:update_packages"]
 task setup: [

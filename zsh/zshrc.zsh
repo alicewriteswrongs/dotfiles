@@ -41,10 +41,14 @@ PROMPT=" %{$fg[blue]%}%n%{$reset_color%} %{$fg[magenta]%}:: %{$fg_no_bold[yellow
 RPROMPT=$'%{$fg_no_bold[yellow]%}$(__git_ps1 "%s")%{$fg[magenta]%}$(__git_ps1 " :: ")%{$fg_no_bold[blue]%}%T%{$reset_color%}'
 #♥
 
-eval `dircolors ~/dotfiles/zsh/dir_colors`
+if whence dircolors >/dev/null; then
+  eval `dircolors ~/dotfiles/zsh/dir_colors`
+fi
 
-#make gnome terminal work correctly?
-export TERM=screen-256color-bce
+export CLICOLOR=1
+# export LSCOLORS=dxfxcxdxbxegedabagacad
+# export LSCOLORS=dxfxcxdxbxegedabagacad
+export LSCOLORS=exfxgedxbxegedabagacad
 
 chpwd() {
     ls -lrthG
@@ -108,32 +112,18 @@ export RUBY_HEAP_FREE_MIN=100000
 
 export KEYTIMEOUT=1
 
-#colored terminal output!
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
-
 #export Vim as my default editor
 export EDITOR="nvim"
-
-#background environmental variable
-export BACKGROUND="/home/alice/images/tarsands.jpg"
 
 #let nvim have better color support
 export NVIM_TUI_ENABLE_TRUE_COLOR=1
 
-
 # [ -d ~/.rvm/ ] && source ~/.rvm/scripts/rvm
-export GOPATH="$HOME/Code/gospace"
-export PATH="$PATH:$GOPATH/bin"
 export PATH="$HOME/root/bin:$PATH" # for user libs
 export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
-export PATH="$PATH:/home/alice/bin/swift-2.2-SNAPSHOT-2015-12-01-b-ubuntu15.10/usr/bin"
+
 fpath=(~/.zsh $fpath)
 export PATH="$PATH:/home/alice/bin/nwjs-v0.13.0-alpha7-linux-x64"
-export PATH="$PATH:/home/alice/.local/bin/"
-export PATH="$PATH:/home/alice/bin/Mancy-linux-x64"
-export PATH="$PATH:/home/alice/bin/turtl"
-export PATH="$PATH:/home/alice/bin/android-studio/bin"
 export PATH="$PATH:/home/alice/dotfiles/tmux/battery/bin"
 export PATH="$PATH:/home/alice/.gem/ruby/2.4.0/bin"
 export PATH="$PATH:/usr/local/heroku/bin"
@@ -145,7 +135,8 @@ export NVM_DIR="/home/alice/.nvm"
 
 # eval $(keychain --eval --quiet --confhost ~/.ssh/id_ecdsa_digital_ocean ~/.ssh/id_ecdsa_github_aliceriot)
 
-export CDPATH="/home/alice/Code:/home/alice/dotfiles:/home/alice"
+# export cdpath="/home/alice/code:/home/alice/dotfiles:/home/alice"
+export CDPATH="/Users/alice/Code:/Users/alice/dotfiles:/Users/alice"
 
 source ~/dotfiles/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 

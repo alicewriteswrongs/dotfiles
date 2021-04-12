@@ -9,16 +9,20 @@
     "pkg-config",
     "bat",
     "ripgrep",
+    "magic-wormhole",
+    "git",
+    "youtube-dl",
     "--HEAD luajit",
     "--HEAD neovim",
-    "font-inconsolata"
   ],
   "casks": [
+    "font-inconsolata",
     "libreoffice",
     "firefox",
     "docker",
     "anki",
-    "iterm2"
+    "iterm2",
+    "signal-desktop"
   ],
   "tap": [
     "homebrew/cask-fonts"
