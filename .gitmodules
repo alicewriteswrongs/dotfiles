@@ -7,12 +7,6 @@
 [submodule "extras/fonts"]
 	path = extras/fonts
 	url = git@github.com:powerline/fonts.git
-[submodule "zsh/antigen"]
-	path = zsh/antigen
-	url = git@github.com:zsh-users/antigen.git
-[submodule "tmux/battery"]
-	path = tmux/battery
-	url = git@github.com:richo/battery.git
 [submodule "zsh/zsh-autosuggestions"]
 	path = zsh/zsh-autosuggestions
 	url = git://github.com/zsh-users/zsh-autosuggestions
@@ -28,3 +22,6 @@
 [submodule "extras/zzzfoo"]
 	path = extras/zzzfoo
 	url = git@github.com:andersju/zzzfoo.git
+[submodule "tmux/plugins/battery"]
+	path = tmux/plugins/battery
+	url = https://github.com/tmux-plugins/tmux-battery
