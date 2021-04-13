@@ -314,7 +314,7 @@ let g:tmuxline_preset = {
             \'a' : '#S',
             \'win'  : '#W',
             \'cwin'  : '#W',
-            \'x' : '#(battery)',
+            \'x' : '#{battery_icon} #{battery_percentage}',
             \'y' : '%l:%M',
             \'z' : '#h',
             \'options': {
