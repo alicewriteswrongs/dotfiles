@@ -207,6 +207,7 @@ augroup END
 
 "colorscheme
 set termguicolors
+let g:solarized_termcolors = 16
 colorscheme NeoSolarized
 set background=light
 syntax on
