@@ -140,5 +140,5 @@ export CDPATH="/Users/alice/Code:/Users/alice/dotfiles:/Users/alice"
 
 source ~/dotfiles/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
+source /usr/local/opt/fzf/shell/key-bindings.zsh
+source /usr/local/opt/fzf/shell/completion.zsh
