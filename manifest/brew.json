@@ -8,7 +8,6 @@
     "tmux",
     "luarocks",
     "pkg-config",
-    "rust",
     "bat",
     "ripgrep",
     "magic-wormhole",
