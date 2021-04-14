@@ -16,6 +16,7 @@
     "youtube-dl",
     "--HEAD luajit",
     "--HEAD neovim",
+    "watchman"
   ],
   "casks": [
     "font-inconsolata",
