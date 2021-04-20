@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=redshift
-GenericName=Start redshift with Boston lat:long
-Comment=Weeee
-Exec=/usr/bin/redshift -l 42:-71
-Terminal=false
-Type=Application
-X-GNOME-Autostart-enabled=true
