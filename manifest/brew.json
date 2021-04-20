@@ -1,7 +1,7 @@
 {
   "formulae": [
     "fzf",
-    "ag",
+    "the_silver_searcher",
     "node",
     "wget",
     "cmake",
