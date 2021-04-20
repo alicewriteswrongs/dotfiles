@@ -16,8 +16,6 @@
     ["./astroid/keybindings", "~/.config/astroid/keybindings"],
     ["./offlineimap/.offlineimaprc", "~/.offlineimaprc"],
     ["./festival/.festivalrc", "~/.festivalrc"],
-    ["./polybar/config.ini", "~/.config/polybar/config"],
-    ["./picom/picom.conf", "~/.config/picom.conf"],
     ["./bat/config", "~/.config/bat/config"]
   ],
   "directories": [
@@ -25,7 +23,6 @@
     "~/.config/termite",
     "~/.config/astroid",
     "~/.i3",
-    "~/.config/polybar",
     "~/.config/bat"
   ]
 }

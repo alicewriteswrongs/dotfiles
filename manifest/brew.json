@@ -5,6 +5,7 @@
     "node",
     "wget",
     "cmake",
+    "tree",
     "tmux",
     "luarocks",
     "pkg-config",
