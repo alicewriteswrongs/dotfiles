@@ -6,3 +6,4 @@ nvim/spell/*
 nvim/bundle
 nvim/undo
 nvim/backup/
+.DS_Store
