@@ -4,20 +4,10 @@
     ["./tmux/tmux.conf", "~/.tmux.conf"],
     ["./git/.gitconfig", "~/.gitconfig"],
     ["./zsh/zshrc.zsh", "~/.zshrc"],
-    ["./termite/config", "~/.config/termite/config"],
-    ["./i3/i3config", "~/.i3/config"],
-    ["./notmuch/notmuch-config", "~/.notmuch-config"],
-    ["./astroid/config", "~/.config/astroid/config"],
-    ["./astroid/keybindings", "~/.config/astroid/keybindings"],
-    ["./offlineimap/.offlineimaprc", "~/.offlineimaprc"],
-    ["./festival/.festivalrc", "~/.festivalrc"],
     ["./bat/config", "~/.config/bat/config"]
   ],
   "directories": [
     "~/.config",
-    "~/.config/termite",
-    "~/.config/astroid",
-    "~/.i3",
     "~/.config/bat"
   ]
 }
