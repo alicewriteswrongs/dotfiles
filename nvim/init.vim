@@ -113,6 +113,7 @@ Plug 'fatih/vim-go'
 
 " rust
 Plug 'rust-lang/rust.vim' "some rust stuff
+Plug 'cespare/vim-toml'
 
 " racket / scheme
 " Plug 'vim-scripts/paredit.vim' "lisp/racket S-expressions
