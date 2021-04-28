@@ -98,7 +98,7 @@ if (( ${+terminfo[smkx]} )) && (( ${+terminfo[rmkx]} )); then
 fi
 
 typeset -U path
-path=(~/.vim-anywhere/bin ~/bin ~/Code/shellscripts ~/.gem/ruby/2.6.0/bin ~/.gem/ruby/2.2.0/bin ~/.cabal/bin ~/Code/ms/msdir $path)
+path=(~/Code/shellscripts ~/Library/Python/3.9/bin $path)
 
 stty stop undef
 
@@ -111,8 +111,7 @@ export EDITOR="nvim"
 export NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 fpath=(~/.zsh $fpath)
-export PATH="$PATH:/home/alice/bin/nwjs-v0.13.0-alpha7-linux-x64"
-export PATH="$PATH:/home/alice/dotfiles/tmux/battery/bin"
+# export PATH="$PATH:/home/alice/dotfiles/tmux/battery/bin"
 
 export NVM_DIR="/home/alice/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
