@@ -25,7 +25,8 @@
     "docker",
     "anki",
     "iterm2",
-    "signal-desktop"
+    "signal-desktop",
+    "obsidian"
   ],
   "tap": [
     "homebrew/cask-fonts"
