@@ -16,7 +16,8 @@
     "youtube-dl",
     "--HEAD luajit",
     "--HEAD neovim",
-    "watchman"
+    "watchman",
+    "heroku"
   ],
   "casks": [
     "font-inconsolata",
@@ -25,10 +26,12 @@
     "docker",
     "anki",
     "iterm2",
-    "signal-desktop",
-    "obsidian"
+    "signal",
+    "obsidian",
+    "calibre"
   ],
-  "tap": [
-    "homebrew/cask-fonts"
+  "taps": [
+    "homebrew/cask-fonts",
+    "heroku/brew"
   ]
 }

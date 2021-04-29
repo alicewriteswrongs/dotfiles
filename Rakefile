@@ -52,79 +52,50 @@ namespace :dotfiles do
     sh "git submodule init"
     sh "git submodule update"
   end
-
-  task :update_submodules => [:initialize_submodules] do
-    Dir.chdir("extras")
-    Dir.entries(Dir.pwd).keep_if { |s| s != "." && s != ".." }.each do |submodule_dir|
-      git_pull(submodule_dir)
-    end
-  end
-
-  task :install_extras => [:initialize_submodules] do
-    sh "./extras/fzf/install"
-  end
 end
 
-namespace :packages do
-  def arch_manifest
-    get_json("./manifest/arch_packages.json")
+namespace :brew do
+  def brew_manifest
+    get_json("./manifest/brew.json")
   end
 
-  def python_manifest
-    get_json("./manifest/python_packages.json")
-  end
-
-  def package_installed?(pkg_name)
-    sh "pacman -Qs #{pkg_name}"
-  end
-
-  task :update_lists do
-    sh "sudo pacman -Syy --noconfirm"
-  end
-
-  task :update_packages => [:update_lists] do
-    sh "sudo pacman -Syyu --noconfirm"
-  end
-
-  task :install_packages => [:update_packages] do
-    arch_manifest["repos"].each do |pkg|
-      sh "pacman -Qi #{pkg} > /dev/null" do |ok, res|
-        sh "sudo pacman -S #{pkg} --noconfirm > /dev/null" if !ok
+  task :install_homebrew do
+    puts "checking for homebrew installation..."
+    sh "which brew" do |ok|
+      if ok
+        puts "homebrew already installed!"
+      else
+        puts "installing homebrew..."
+        sh '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"'
       end
     end
+    puts "done installing homebrew"
   end
 
-  task :install_python_dependencies do
-    python_manifest["packages"].each do |pkg|
-      sh "sudo pip install #{pkg}"
+  task :taps do
+    brew_manifest["taps"].each do |tap|
+      sh "brew tap #{tap}"
     end
   end
-end
 
-namespace :system_configuration do
-  task :set_default_applications do
-    sh "xdg-mime default chromium.desktop x-scheme-handler/http"
-    sh "xdg-mime default chromium.desktop x-scheme-handler/https"
-    sh "xdg-mime default chromium.desktop text/html"
-  end
-
-  task :change_shell do
-    sh "chsh -s $(which zsh)"
-  end
-
-  task :screenlock do
-    systemd_dir = expand "/etc/systemd/system"
-    service_file = "xscreensaver.service"
-    dest = systemd_dir.to_s << "/" << service_file
-    if ! File.exists? dest
-      sh "sudo cp #{expand("~/dotfiles/X/xscreensaver.service").to_s} #{dest}"
+  task :install_casks => [:taps] do
+    puts "installing homebrew casks..."
+    brew_manifest["casks"].each do |cask|
+      sh "brew install --cask #{cask}"
     end
-
-    sh "sudo systemctl enable xscreensaver.service"
-    sh "sudo systemctl start xscreensaver.service"
+    puts "done installing homebrew casks"
   end
 
-  task :setup => [:set_default_applications, :change_shell, :screenlock] do
+  task :install_formulae do
+    puts "installing hombrew formulae..."
+    brew_manifest["formulae"].each do |formula|
+      sh "brew install #{formula}"
+    end
+    puts "done installing hombrew formulae"
+  end
+
+  task :install => [:install_homebrew, :taps, :install_casks, :install_formulae] do
+    puts "done installing homebrew and packages!"
   end
 end
 
@@ -143,54 +114,14 @@ namespace :vim do
   end
 
   task :setup => [:copy_vim_plug, :install_packages] do
-    mkdir_p "~/.config/nvim/undo"
-    mkdir_p "~/.config/nvim/backup"
     puts "Vim setup complete!"
   end
 end
 
-namespace :i3 do
-  url = "git@github.com:Airblader/i3.git"
-  dir = expand "~/Code/i3-gaps"
-
-  task :clone do
-    sh "git clone #{url} #{dir}" if ! Dir.exists? dir
-  end
-
-  task :build do
-    cd dir
-    sh "git checkout gaps"
-    sh "git pull"
-    sh "make"
-  end
-
-  task :install => [:clone, :build] do
-    sh "sudo make install"
-  end
-end
-
-task :brew do
-
-end
-
-namespace :brew do
-  def get_package_list
-    get_json("./manifest/brew_packages.json")
-  end
-
-  task :install do
-  end
-end
-
-
 task vim: ["vim:setup"]
-task default: ["packages:update_packages"]
-task setup: [
-  "packages:install_packages",
-  "packages:install_python_dependencies",
+task default: [
   "dotfiles:symlink_dotfiles",
-  "dotfiles:install_extras",
+  "dotfiles:initialize_submodules",
+  "brew:install",
   "vim:setup",
-  "i3:install",
-  "system_configuration:setup"
 ]
