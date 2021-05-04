@@ -3,6 +3,7 @@ export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=3'
 bindkey '^ ' autosuggest-execute
 
 ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=("expand-or-complete")
+ZSH_DISABLE_COMPFIX="true"
 
 zstyle ':completion:*' completer _complete _ignored
 zstyle ':completion:*' completions 1
