@@ -18,15 +18,12 @@ autoload -Uz compinit promptinit predict-on
 compinit
 promptinit
 
-# End of lines added by compinstall
-# Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000000000
 SAVEHIST=$HISTSIZE
-setopt appendhistory autocd extendedglob nomatch notify
+setopt appendhistory autocd extendedglob nomatch notify extended_history inc_append_history
 unsetopt beep
 bindkey -v
-# End of lines configured by zsh-newuser-install
 
 setopt completealiases
 autoload -U colors && colors
