@@ -21,7 +21,7 @@ promptinit
 HISTFILE=~/.histfile
 HISTSIZE=1000000000
 SAVEHIST=$HISTSIZE
-setopt appendhistory autocd extendedglob nomatch notify extended_history inc_append_history
+setopt appendhistory autocd extendedglob nomatch notify extended_history inc_append_history hist_ignore_all_dups
 unsetopt beep
 bindkey -v
 
