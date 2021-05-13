@@ -1,12 +1,14 @@
 {
   "formulae": [
     "fzf",
+    "awscli",
     "the_silver_searcher",
     "node",
     "wget",
     "cmake",
     "tree",
     "tmux",
+    "go",
     "luarocks",
     "pkg-config",
     "bat",
