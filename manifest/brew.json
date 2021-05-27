@@ -30,7 +30,8 @@
     "iterm2",
     "signal",
     "obsidian",
-    "calibre"
+    "calibre",
+    "mactex"
   ],
   "taps": [
     "homebrew/cask-fonts",
