@@ -31,7 +31,8 @@
     "signal",
     "obsidian",
     "calibre",
-    "mactex"
+    "mactex",
+    "element"
   ],
   "taps": [
     "homebrew/cask-fonts",
