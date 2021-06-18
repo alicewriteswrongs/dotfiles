@@ -1,6 +1,8 @@
 {
   "formulae": [
     "fzf",
+    "exa",
+    "git-delta",
     "awscli",
     "the_silver_searcher",
     "node",
