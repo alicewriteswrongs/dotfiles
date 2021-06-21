@@ -31,10 +31,10 @@
     show = delta
 
 [interactive]
-    diffFilter = delta --color-only
+    diffFilter = delta --color-only --hyperlinks
 
 [delta]
-    features = side-by-side line-numbers decorations
+    features = line-numbers decorations
     whitespace-error-style = 22 reverse
     syntax-theme = Solarized (light)
 
