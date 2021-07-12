@@ -187,7 +187,8 @@ augroup myfiletypes
     autocmd FileType typescriptreact setlocal autoindent
     autocmd FileType typescriptreact setlocal shiftwidth=2
     autocmd FileType typescriptreact setlocal softtabstop=2
-
+    autocmd FileType typescript UltiSnipsAddFiletypes javascript-mocha
+    autocmd FileType typescriptreact UltiSnipsAddFiletypes javascript-mocha
     "js
     autocmd FileType javascript setlocal expandtab
     autocmd FileType javascript setlocal autoindent
