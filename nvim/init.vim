@@ -12,7 +12,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'briancollins/vim-jst'
-" Plug 'styled-components/vim-styled-components'
+Plug 'styled-components/vim-styled-components'
 Plug 'flowtype/vim-flow'
 
 "typescript
