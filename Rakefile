@@ -55,10 +55,6 @@ namespace :dotfiles do
 end
 
 namespace :brew do
-  def brew_manifest
-    get_json("./manifest/brew.json")
-  end
-
   task :install_homebrew do
     puts "checking for homebrew installation..."
     sh "which brew" do |ok|
@@ -72,29 +68,11 @@ namespace :brew do
     puts "done installing homebrew"
   end
 
-  task :taps do
-    brew_manifest["taps"].each do |tap|
-      sh "brew tap #{tap}"
-    end
+  task :bundle do
+    sh "brew bundle"
   end
 
-  task :install_casks => [:taps] do
-    puts "installing homebrew casks..."
-    brew_manifest["casks"].each do |cask|
-      sh "brew install --cask #{cask}"
-    end
-    puts "done installing homebrew casks"
-  end
-
-  task :install_formulae do
-    puts "installing hombrew formulae..."
-    brew_manifest["formulae"].each do |formula|
-      sh "brew install #{formula}"
-    end
-    puts "done installing hombrew formulae"
-  end
-
-  task :install => [:install_homebrew, :taps, :install_casks, :install_formulae] do
+  task :install => [:install_homebrew, :bundle] do
     puts "done installing homebrew and packages!"
   end
 end
