@@ -1,0 +1,40 @@
+# taps
+tap "homebrew/cask-fonts"
+tap "heroku/brew"
+
+# packages
+brew "fzf"
+brew "exa"
+brew "git-delta"
+brew "awscli"
+brew "the_silver_searcher"
+brew "node"
+brew "wget"
+brew "cmake"
+brew "tree"
+brew "tmux"
+brew "go"
+brew "luarocks"
+brew "pkg-config"
+brew "bat"
+brew "ripgrep"
+brew "magic-wormhole"
+brew "git"
+brew "youtube-dl"
+brew "luajit", args: ["HEAD"]
+brew "neovim", args: ["HEAD"]
+brew "watchman"
+brew "heroku"
+
+# casks!
+cask "font-inconsolata"
+cask "libreoffice"
+cask "firefox"
+cask "docker"
+cask "anki"
+cask "iterm2"
+cask "signal"
+cask "obsidian"
+cask "calibre"
+cask "mactex"
+cask "element"
