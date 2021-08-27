@@ -4,7 +4,8 @@
     ["./tmux/tmux.conf", "~/.tmux.conf"],
     ["./git/.gitconfig", "~/.gitconfig"],
     ["./zsh/zshrc.zsh", "~/.zshrc"],
-    ["./bat/config", "~/.config/bat/config"]
+    ["./bat/config", "~/.config/bat/config"],
+    ["./fish", "~/.config/fish"]
   ],
   "directories": [
     "~/.config",
