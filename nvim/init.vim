@@ -93,8 +93,8 @@ Plug 'lilydjwg/colorizer'
 Plug 'vim-scripts/SyntaxRange'
 Plug 'vim-scripts/ingo-library'
 Plug 'tommcdo/vim-lion'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'romgrk/nvim-treesitter-context'
+" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+" Plug 'romgrk/nvim-treesitter-context'
 
 " file opening / search
 Plug 'haya14busa/incsearch.vim' "nice incremental search
@@ -489,19 +489,19 @@ nnoremap <Leader>esl :Tmux fasteslint<cr>
 nnoremap <Leader>flw :Tmux flow<cr>
 nnoremap <Leader>faf :Tmux npm run fmt<cr>
 
-lua <<EOF
-require'nvim-treesitter.configs'.setup {
-  highlight = {
-    enable = true,
-    custom_captures = {
-      -- Highlight the @foo.bar capture group with the "Identifier" highlight group.
-      ["foo.bar"] = "Identifier",
-    },
-    -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
-    -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
-    -- Using this option may slow down your editor, and you may see some duplicate highlights.
-    -- Instead of true it can also be a list of languages
-    additional_vim_regex_highlighting = false,
-  },
-}
-EOF
+" lua <<EOF
+" require'nvim-treesitter.configs'.setup {
+"   highlight = {
+"     enable = true,
+"     custom_captures = {
+"       -- Highlight the @foo.bar capture group with the "Identifier" highlight group.
+"       ["foo.bar"] = "Identifier",
+"     },
+"     -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
+"     -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
+"     -- Using this option may slow down your editor, and you may see some duplicate highlights.
+"     -- Instead of true it can also be a list of languages
+"     additional_vim_regex_highlighting = false,
+"   },
+" }
+" EOF
