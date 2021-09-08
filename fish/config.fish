@@ -5,3 +5,5 @@ end
 set EDITOR nvim
 
 fish_vi_key_bindings
+
+source ~/dotfiles/fish/aliases.fish

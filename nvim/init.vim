@@ -55,6 +55,9 @@ Plug 'eagletmt/neco-ghc'
 Plug 'pbrisbin/vim-syntax-shakespeare'
 Plug 'alx741/vim-yesod'
 
+" fish shell
+Plug 'Stautob/vim-fish'
+
 " colorschemes
 Plug 'iCyMind/NeoSolarized'
 " Plug 'chriskempson/base16-vim'
