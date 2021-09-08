@@ -25,6 +25,7 @@ brew "luajit", args: ["HEAD"]
 brew "neovim", args: ["HEAD"]
 brew "watchman"
 brew "heroku"
+brew "gh"
 
 # casks!
 cask "font-inconsolata"
