@@ -5,10 +5,12 @@
     ["./git/.gitconfig", "~/.gitconfig"],
     ["./zsh/zshrc.zsh", "~/.zshrc"],
     ["./bat/config", "~/.config/bat/config"],
-    ["./fish", "~/.config/fish"]
+    ["./fish", "~/.config/fish"],
+    ["./i3/i3config", "~/.config/i3/config"]
   ],
   "directories": [
     "~/.config",
-    "~/.config/bat"
+    "~/.config/bat",
+    "~/.config/i3"
   ]
 }
