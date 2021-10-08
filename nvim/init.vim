@@ -1,4 +1,3 @@
-
 let mapleader = "\<Space>" "set leader to space
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
@@ -443,7 +442,7 @@ let g:coc_global_extensions = [
   \ ]
 
 " git
-nnoremap <Leader>gb :Gblame<cr>
+nnoremap <Leader>gb :Git blame<cr>
 
 " Telescope
 nnoremap <C-b> <cmd>Telescope buffers<cr>
