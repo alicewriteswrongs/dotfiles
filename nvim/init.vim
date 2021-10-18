@@ -83,7 +83,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-unimpaired'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'Yggdroot/indentLine'
+" Plug 'Yggdroot/indentLine'
 Plug 'jamessan/vim-gnupg'
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
@@ -285,7 +285,7 @@ if !has('nvim')
     set ttymouse=sgr
 endif
 set mousemodel=extend
-set lcs=trail:.,tab:>\ 
+" set lcs=trail:.,tab:>\ 
 " set list
 
 " highlight StatusLine ctermfg=blue ctermbg=yellow
@@ -345,8 +345,8 @@ let g:neomake_open_list = 2
 let g:neomake_javascript_enabled_makers = ['eslint_d']
 let g:neomake_jsx_enabled_makers = ['eslint_d']
 let g:neomake_scss_enabled_makers = []
-let g:indentLine_char = ">"
-let g:indentLine_first_char = ">"
+" let g:indentLine_char = ">"
+" let g:indentLine_first_char = ">"
 let g:indentLine_showFirstIndentLevel = 1
 " let g:indentLine_color_gui = '#928374'
 " let g:indentLine_color_gui = '#504945'
