@@ -17,7 +17,7 @@ Plug 'flowtype/vim-flow'
 "typescript
 " Plug 'leafgarland/typescript-vim'
 " Plug 'peitalin/vim-jsx-typescript'
-Plug 'HerringtonDarkholme/yats.vim'
+" Plug 'HerringtonDarkholme/yats.vim'
 
 " other web stuff
 Plug 'othree/html5-syntax.vim'
@@ -438,7 +438,7 @@ nmap <leader>rn <Plug>(coc-rename)
 
 let g:coc_global_extensions = [
   \ 'coc-tsserver',
-  \ 'coc-rls'
+  \ 'coc-rust-analyzer'
   \ ]
 
 " git
