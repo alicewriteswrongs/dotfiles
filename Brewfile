@@ -26,6 +26,7 @@ brew "neovim", args: ["HEAD"]
 brew "watchman"
 brew "heroku"
 brew "gh"
+brew "pandoc"
 
 # casks!
 cask "font-inconsolata"
