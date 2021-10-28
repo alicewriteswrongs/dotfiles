@@ -439,7 +439,8 @@ nmap <leader>rn <Plug>(coc-rename)
 
 let g:coc_global_extensions = [
   \ 'coc-tsserver',
-  \ 'coc-rls'
+  \ 'coc-rls',
+  \ 'coc-go'
   \ ]
 
 " git
