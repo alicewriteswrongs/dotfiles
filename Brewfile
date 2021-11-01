@@ -27,6 +27,8 @@ brew "watchman"
 brew "heroku"
 brew "gh"
 brew "pandoc"
+brew "croc"
+brew "mosh"
 
 # casks!
 cask "font-inconsolata"
