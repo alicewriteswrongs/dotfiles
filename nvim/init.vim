@@ -451,6 +451,10 @@ nnoremap <C-b> <cmd>Telescope buffers<cr>
 nnoremap <C-p> <cmd>Telescope find_files<cr>
 nnoremap <C-f> <cmd>Telescope live_grep<cr>
 
+lua << EOF
+require('telescope').load_extension('fzy_native')
+EOF
+
 " number, column, scrolling, whitespace
 nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<cr> 
 nnoremap <Leader>cl :set cursorline!<cr> 
