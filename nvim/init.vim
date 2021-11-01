@@ -107,6 +107,7 @@ Plug 'blarghmatey/split-expander'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzy-native.nvim'
 
 " elm
 Plug 'elmcast/elm-vim'
@@ -448,6 +449,7 @@ nnoremap <Leader>gb :Git blame<cr>
 " Telescope
 nnoremap <C-b> <cmd>Telescope buffers<cr>
 nnoremap <C-p> <cmd>Telescope find_files<cr>
+nnoremap <C-f> <cmd>Telescope live_grep<cr>
 
 " number, column, scrolling, whitespace
 nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<cr> 
