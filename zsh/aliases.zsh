@@ -1,5 +1,4 @@
 alias -g G='| grep'
-# alias open='xdg-open'
 alias abcdehighqual='abcde -o ogg:"-q 7"' #rips at ogg vorbis quality level 7
 alias abig='tmux attach -t big'
 alias addall='git commit -a' #add all changed files and commit
@@ -133,6 +132,7 @@ alias vssh='vagrant ssh'
 alias vstatus='vagrant global-status'
 alias vsuspend='vagrant suspend'
 alias vup='vagrant up'
+alias y='yarn'
 alias yesdpms='xset dpms 300 600 0'
 alias zfunc='vim ~/dotfiles/zsh/functions.zsh'
 alias zshrc='vim ~/dotfiles/zsh/zshrc.zsh'
