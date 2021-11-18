@@ -29,6 +29,7 @@ brew "gh"
 brew "pandoc"
 brew "croc"
 brew "mosh"
+brew "deno"
 
 # casks!
 cask "font-inconsolata"
