@@ -7,3 +7,4 @@ nvim/bundle
 nvim/undo
 nvim/backup/
 .DS_Store
+Brewfile.lock.json
