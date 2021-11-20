@@ -33,6 +33,7 @@ brew "mosh"
 brew "deno"
 brew "htop"
 brew "iterm2-beta"
+brew "cormacrelf/tap/dark-notify"
 
 # casks!
 cask "font-inconsolata"

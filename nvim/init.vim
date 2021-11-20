@@ -59,6 +59,7 @@ Plug 'Stautob/vim-fish'
 
 " colorschemes
 Plug 'iCyMind/NeoSolarized'
+Plug 'cormacrelf/dark-notify'
 " Plug 'chriskempson/base16-vim'
 " Plug 'NLKNguyen/papercolor-theme'
 " Plug 'morhetz/gruvbox'
@@ -497,6 +498,10 @@ nnoremap <Leader>tw :call RunCurrentFileAsWatchTest()<cr>
 nnoremap <Leader>esl :Tmux fasteslint<cr>
 nnoremap <Leader>flw :Tmux flow<cr>
 nnoremap <Leader>faf :Tmux npm run fmt<cr>
+
+lua <<EOF
+require('dark_notify').run()
+EOF
 
 " lua <<EOF
 " require'nvim-treesitter.configs'.setup {
