@@ -1,6 +1,7 @@
 # taps
 tap "homebrew/cask-fonts"
 tap "heroku/brew"
+tap "homebrew/cask-versions"
 
 # packages
 brew "fzf"
@@ -31,6 +32,7 @@ brew "croc"
 brew "mosh"
 brew "deno"
 brew "htop"
+brew "iterm2-beta"
 
 # casks!
 cask "font-inconsolata"
@@ -38,7 +40,6 @@ cask "libreoffice"
 cask "firefox"
 cask "docker"
 cask "anki"
-cask "iterm2"
 cask "signal"
 cask "obsidian"
 cask "calibre"
