@@ -30,6 +30,7 @@ brew "pandoc"
 brew "croc"
 brew "mosh"
 brew "deno"
+brew "htop"
 
 # casks!
 cask "font-inconsolata"
