@@ -2,6 +2,7 @@
 tap "homebrew/cask-fonts"
 tap "heroku/brew"
 tap "homebrew/cask-versions"
+tap "cormacrelf/tap"
 
 # packages
 brew "fzf"
