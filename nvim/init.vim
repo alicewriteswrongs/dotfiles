@@ -86,7 +86,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'terryma/vim-multiple-cursors'
 " Plug 'Yggdroot/indentLine'
 Plug 'jamessan/vim-gnupg'
-" Plug 'sirver/ultisnips'
+Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/coc-python'

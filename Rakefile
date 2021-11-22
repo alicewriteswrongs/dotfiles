@@ -85,6 +85,7 @@ namespace :vim do
 
   task :install_packages do
     sh "nvim +PlugInstall +qall"
+    pip3 install --user pynvim
   end
 
   task :update do
