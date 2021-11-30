@@ -12,12 +12,15 @@ function getMainBranch() {
 }
 
 function selectbranch() {
-    git branch | fzf-tmux
+    git branch |\
+        fzf-tmux |\
+        tr -d ' ' |\
+        tr -d '*'
 }
 
 function gs() { # use fzf-tmux to pick branches
     git commit -a -m "WIP"
-    git checkout $(selectbranch | tr -d ' ')
+    git checkout $(selectbranch)
     zle redisplay
 }
 
@@ -28,7 +31,7 @@ function gbd() { # delete a branch
     if [[ $1 ]]; then
         git branch -D $1
     else
-        local branch=$(selectbranch | sed -e 's/^ *//' -e 's/ $*//g')
+        local branch=$(selectbranch)
         local response
         read "response?delete $branch? [yn] "
         if [[ $response =~ ^[Yy]$ ]]; then
