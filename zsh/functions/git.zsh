@@ -28,7 +28,7 @@ function gbd() { # delete a branch
     if [[ $1 ]]; then
         git branch -D $1
     else
-        local branch=$(selectbranch | sed -e 's/^\s*//')
+        local branch=$(selectbranch | sed -e 's/^ *//' -e 's/ $*//g')
         local response
         read "response?delete $branch? [yn] "
         if [[ $response =~ ^[Yy]$ ]]; then
