@@ -6,11 +6,11 @@
     ["./zsh/zshrc.zsh", "~/.zshrc"],
     ["./bat/config", "~/.config/bat/config"],
     ["./fish", "~/.config/fish"],
-    ["./i3/i3config", "~/.config/i3/config"]
+    ["./hammerspoon/init.lua", "~/.hammerspoon/init.lua"]
   ],
   "directories": [
     "~/.config",
     "~/.config/bat",
-    "~/.config/i3"
+    "~/.hammerspoon"
   ]
 }
