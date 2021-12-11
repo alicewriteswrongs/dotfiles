@@ -115,7 +115,7 @@ export NVM_DIR="/home/alice/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # export CDPATH="/home/alice/code:/home/alice/dotfiles:/home/alice"
-export CDPATH="/Users/alice/Code:/Users/alice/dotfiles:/Users/alice"
+export CDPATH="/Users/alice/Code:/Users/alice"
 
 source ~/dotfiles/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
