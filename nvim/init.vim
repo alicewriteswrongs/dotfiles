@@ -14,11 +14,6 @@ Plug 'briancollins/vim-jst'
 Plug 'styled-components/vim-styled-components'
 Plug 'flowtype/vim-flow'
 
-"typescript
-" Plug 'leafgarland/typescript-vim'
-" Plug 'peitalin/vim-jsx-typescript'
-" Plug 'HerringtonDarkholme/yats.vim'
-
 " other web stuff
 Plug 'othree/html5-syntax.vim'
 Plug 'cakebaker/scss-syntax.vim'
@@ -39,20 +34,6 @@ Plug 'rhysd/vim-crystal'
 
 " python
 Plug 'Vimjas/vim-python-pep8-indent'
-
-" elixir
-Plug 'elixir-lang/vim-elixir'
-
-" purescript
-Plug 'raichoo/purescript-vim'
-Plug 'frigoeu/psc-ide-vim'
-
-" haskell
-Plug 'neovimhaskell/haskell-vim'
-Plug 'alx741/vim-hindent'
-Plug 'eagletmt/neco-ghc'
-Plug 'pbrisbin/vim-syntax-shakespeare'
-Plug 'alx741/vim-yesod'
 
 " fish shell
 Plug 'Stautob/vim-fish'
