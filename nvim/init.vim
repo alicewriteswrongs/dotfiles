@@ -89,7 +89,6 @@ Plug 'jamessan/vim-gnupg'
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neoclide/coc-python'
 Plug 'Chiel92/vim-autoformat'
 Plug 'machakann/vim-highlightedyank'
 Plug 'lilydjwg/colorizer'
@@ -441,7 +440,8 @@ nmap <leader>rn <Plug>(coc-rename)
 let g:coc_global_extensions = [
   \ 'coc-tsserver',
   \ 'coc-rust-analyzer',
-  \ 'coc-go'
+  \ 'coc-go',
+  \ 'coc-pyright'
   \ ]
 
 " git
