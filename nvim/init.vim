@@ -69,7 +69,6 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'jamessan/vim-gnupg'
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Chiel92/vim-autoformat'
 Plug 'machakann/vim-highlightedyank'
 Plug 'lilydjwg/colorizer'
@@ -78,6 +77,7 @@ Plug 'vim-scripts/ingo-library'
 Plug 'tommcdo/vim-lion'
 " Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " Plug 'romgrk/nvim-treesitter-context'
+Plug 'neovim/nvim-lspconfig'
 
 " file opening / search
 Plug 'haya14busa/incsearch.vim' "nice incremental search
@@ -407,23 +407,23 @@ nnoremap <Leader>af :Autoformat<cr>
 " nnoremap <Leader>ed :ElmBrowseDocs<cr>
 
 " some things for CoC
-nnoremap <silent> <leader>i :call CocActionAsync('doHover')<cr>
-nmap <silent> <leader>gd <Plug>(coc-definition)
-nmap <silent> <leader>gt <Plug>(coc-type-definition)
-nmap <silent> <leader>gi <Plug>(coc-implementation)
-nmap <silent> <leader>gr <Plug>(coc-references)
-nmap <silent> <leader>gg :call  CocAction('diagnosticToggle')<cr>
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
-nmap <leader>do <Plug>(coc-codeaction)
-nmap <leader>rn <Plug>(coc-rename)
+" nnoremap <silent> <leader>i :call CocActionAsync('doHover')<cr>
+" nmap <silent> <leader>gd <Plug>(coc-definition)
+" nmap <silent> <leader>gt <Plug>(coc-type-definition)
+" nmap <silent> <leader>gi <Plug>(coc-implementation)
+" nmap <silent> <leader>gr <Plug>(coc-references)
+" nmap <silent> <leader>gg :call  CocAction('diagnosticToggle')<cr>
+" nmap <silent> [g <Plug>(coc-diagnostic-prev)
+" nmap <silent> ]g <Plug>(coc-diagnostic-next)
+" nmap <leader>do <Plug>(coc-codeaction)
+" nmap <leader>rn <Plug>(coc-rename)
 
-let g:coc_global_extensions = [
-  \ 'coc-tsserver',
-  \ 'coc-rust-analyzer',
-  \ 'coc-go',
-  \ 'coc-pyright'
-  \ ]
+" let g:coc_global_extensions = [
+"   \ 'coc-tsserver',
+"   \ 'coc-rust-analyzer',
+"   \ 'coc-go',
+"   \ 'coc-pyright'
+"   \ ]
 
 " git
 nnoremap <Leader>gb :Git blame<cr>
