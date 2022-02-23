@@ -36,6 +36,7 @@ brew "htop"
 brew "cormacrelf/tap/dark-notify"
 brew "fd"
 brew "yarn"
+brew "rust-analyzer"
 
 # casks!
 cask "font-inconsolata"
