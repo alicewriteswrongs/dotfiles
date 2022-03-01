@@ -348,7 +348,17 @@ let g:UltiSnipsJumpBackwardTrigger = "<c-f>"
 let g:formatdef_my_custom_js = '"prettier-eslint --stdin --no-semi --parser babel"'
 let g:formatters_javascript = ['my_custom_js']
 set guifont=Monaco:h20
-" let fc['.*'] = { 'takeover': 'never' }
+let g:firenvim_config = { 
+      \ 'localSettings': {
+        \ '.*': {
+            \ 'cmdline': 'neovim',
+            \ 'content': 'text',
+            \ 'priority': 0,
+            \ 'selector': 'textarea',
+            \ 'takeover': 'never',
+        \ },
+    \ }
+\ }
 
 " tslime
 let g:tslime_always_current_session = 1
