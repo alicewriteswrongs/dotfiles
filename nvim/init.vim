@@ -19,6 +19,9 @@ Plug 'othree/html5-syntax.vim'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'elzr/vim-json'
 
+" firefox integration
+Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+
 " reasonML
 Plug 'reasonml-editor/vim-reason-plus'
 
@@ -282,6 +285,7 @@ set undofile
 "" a few htings that are nice with JSX
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+au BufEnter github.com_*.txt set filetype=markdown
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 """Plugin Configuration
@@ -343,6 +347,8 @@ let g:UltiSnipsJumpBackwardTrigger = "<c-f>"
 " au! UltiSnips_AutoTrigger
 let g:formatdef_my_custom_js = '"prettier-eslint --stdin --no-semi --parser babel"'
 let g:formatters_javascript = ['my_custom_js']
+set guifont=Monaco:h20
+" let fc['.*'] = { 'takeover': 'never' }
 
 " tslime
 let g:tslime_always_current_session = 1
