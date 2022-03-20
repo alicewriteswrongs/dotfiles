@@ -1,5 +1,5 @@
 -- open a new iterm window
-hs.hotkey.bind({"option", "return"}, "return", function()
+hs.hotkey.bind("option", "return", function()
 	if hs.application.find("iTerm") then
 		hs.applescript.applescript([[
 			tell application "iTerm"
@@ -9,4 +9,13 @@ hs.hotkey.bind({"option", "return"}, "return", function()
 	else
 		hs.application.open("iTerm")
 	end
+end)
+
+hs.hotkey.bind("option", "f", function()
+        hs.applescript.applescript([[
+                tell application "Finder"
+                        make new Finder window
+                        activate 
+                end tell
+        ]])
 end)
