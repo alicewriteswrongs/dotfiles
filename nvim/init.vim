@@ -19,6 +19,9 @@ Plug 'othree/html5-syntax.vim'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'elzr/vim-json'
 
+" firefox integration
+Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+
 " reasonML
 Plug 'reasonml-editor/vim-reason-plus'
 
@@ -70,7 +73,6 @@ Plug 'jamessan/vim-gnupg'
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neoclide/coc-python'
 Plug 'Chiel92/vim-autoformat'
 Plug 'machakann/vim-highlightedyank'
 Plug 'lilydjwg/colorizer'
@@ -283,6 +285,7 @@ set undofile
 "" a few htings that are nice with JSX
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+au BufEnter github.com_*.txt set filetype=markdown
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 """Plugin Configuration
@@ -344,6 +347,18 @@ let g:UltiSnipsJumpBackwardTrigger = "<c-f>"
 " au! UltiSnips_AutoTrigger
 let g:formatdef_my_custom_js = '"prettier-eslint --stdin --no-semi --parser babel"'
 let g:formatters_javascript = ['my_custom_js']
+set guifont=Monaco:h20
+let g:firenvim_config = { 
+      \ 'localSettings': {
+        \ '.*': {
+            \ 'cmdline': 'neovim',
+            \ 'content': 'text',
+            \ 'priority': 0,
+            \ 'selector': 'textarea',
+            \ 'takeover': 'never',
+        \ },
+    \ }
+\ }
 
 " tslime
 let g:tslime_always_current_session = 1
@@ -422,7 +437,8 @@ nmap <leader>rn <Plug>(coc-rename)
 let g:coc_global_extensions = [
   \ 'coc-tsserver',
   \ 'coc-rust-analyzer',
-  \ 'coc-go'
+  \ 'coc-go',
+  \ 'coc-pyright'
   \ ]
 
 " git
