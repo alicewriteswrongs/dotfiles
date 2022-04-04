@@ -114,10 +114,12 @@ fpath=(~/.zsh $fpath)
 export NVM_DIR="/home/alice/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# export CDPATH="/home/alice/code:/home/alice/dotfiles:/home/alice"
 export CDPATH="/Users/alice/Code:/Users/alice"
 
 source ~/dotfiles/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source /usr/local/opt/fzf/shell/key-bindings.zsh
 source /usr/local/opt/fzf/shell/completion.zsh
+
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
