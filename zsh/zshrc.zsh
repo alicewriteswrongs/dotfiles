@@ -114,7 +114,7 @@ fpath=(~/.zsh $fpath)
 export NVM_DIR="/home/alice/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-export CDPATH="/Users/alice/Code:/Users/alice"
+export CDPATH="/Users/alice/Code:/Users/alice:."
 
 source ~/dotfiles/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
