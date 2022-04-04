@@ -38,6 +38,7 @@ brew "fd"
 brew "yarn"
 brew "rust-analyzer"
 brew "jq"
+brew "volta"
 
 # casks!
 cask "font-inconsolata"
