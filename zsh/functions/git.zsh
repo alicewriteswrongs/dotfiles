@@ -233,6 +233,12 @@ function gdlast () {
     git diff $(penultimate_commit)
 }
 
+# git push current branch
+# no rebasing
+function gpcb () {
+    git push origin ${current_branch}
+}
+
 function clean_pr_branches () {
     if [[ $(current_branch) != $(getMainBranch) ]]; then
         git cc $(getMainBranch)
