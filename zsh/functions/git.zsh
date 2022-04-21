@@ -236,7 +236,7 @@ function gdlast () {
 # git push current branch
 # no rebasing
 function gpcb () {
-    git push origin ${current_branch}
+    git push origin $(current_branch)
 }
 
 function clean_pr_branches () {
