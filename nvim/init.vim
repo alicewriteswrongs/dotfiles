@@ -79,8 +79,8 @@ Plug 'lilydjwg/colorizer'
 Plug 'vim-scripts/SyntaxRange'
 Plug 'vim-scripts/ingo-library'
 Plug 'tommcdo/vim-lion'
-" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-" Plug 'romgrk/nvim-treesitter-context'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+" Plug 'lewis6991/nvim-treesitter-context'
 
 " file opening / search
 Plug 'haya14busa/incsearch.vim' "nice incremental search
@@ -200,7 +200,7 @@ set termguicolors
 let g:solarized_termcolors = 16
 colorscheme NeoSolarized
 set background=light
-syntax on
+" syntax on
 
 "recommended by yats.vim
 set re=0
@@ -500,19 +500,17 @@ lua <<EOF
 require('dark_notify').run()
 EOF
 
-" lua <<EOF
-" require'nvim-treesitter.configs'.setup {
-"   highlight = {
-"     enable = true,
-"     custom_captures = {
-"       -- Highlight the @foo.bar capture group with the "Identifier" highlight group.
-"       ["foo.bar"] = "Identifier",
-"     },
-"     -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
-"     -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
-"     -- Using this option may slow down your editor, and you may see some duplicate highlights.
-"     -- Instead of true it can also be a list of languages
-"     additional_vim_regex_highlighting = false,
-"   },
-" }
-" EOF
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = { "rust", "typescript", "javascript", "python" },
+
+  highlight = {
+    enable = true,
+    -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
+    -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
+    -- Using this option may slow down your editor, and you may see some duplicate highlights.
+    -- Instead of true it can also be a list of languages
+    additional_vim_regex_highlighting = false,
+  },
+}
+EOF
