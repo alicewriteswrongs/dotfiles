@@ -223,13 +223,13 @@ let g:lightline = {
     \ 'component_visible_condition': {
     \   'readonly': '(&filetype!="help"&& &readonly)',
     \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
-    \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
+    \   'fugitive': '(exists("*FugitiveHead") && ""!=FugitiveHead())'
     \ },
     \ }
 
 function! LightLineFugitive()
-  if exists("*fugitive#head")
-    let branch = fugitive#head()
+  if exists("*FugitiveHead")
+    let branch = FugitiveHead()
     return branch !=# '' ? branch : ''
   endif
   return ''

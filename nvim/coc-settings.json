@@ -3,5 +3,6 @@
     "inlayHints": {
       "enable": false
     }
-  }
+  },
+  "tsserver.log": "verbose"
 }
