@@ -59,6 +59,7 @@ Plug 'wellle/tmux-complete.vim'
 " git
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
+Plug 'airblade/vim-gitgutter'
 
 " utility
 Plug 'tpope/vim-commentary'
