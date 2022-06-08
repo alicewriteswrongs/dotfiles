@@ -82,6 +82,7 @@ Plug 'vim-scripts/ingo-library'
 Plug 'tommcdo/vim-lion'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " Plug 'lewis6991/nvim-treesitter-context'
+Plug 'vim-test/vim-test'
 
 " file opening / search
 Plug 'haya14busa/incsearch.vim' "nice incremental search
@@ -473,29 +474,9 @@ nnoremap <Leader>md :setlocal ft=markdown<cr>
 nmap <C-c>v <Plug>SetTmuxVars
 vmap <C-c><C-c> <Plug>SendSelectionToTmux
 
-function! RunCurrentFileAsTest ()
-    let fp = fnamemodify(expand("%"), ":~:.")
-    if &filetype == 'javascript' || &filetype == 'javascript.jsx'
-        exec "Tmux djstest " . fp
-    endif
+nnoremap <Leader>tf :TestFile<cr>
+let test#strategy = "neovim"
 
-    if &filetype == 'python'
-        exec "Tmux drun tox -- -x " . fp
-    endif
-endfunction
-
-function! RunCurrentFileAsWatchTest ()
-    let fp = fnamemodify(expand("%"), ":~:.")
-    if &filetype == 'javascript' || &filetype == 'javascript.jsx'
-        exec "Tmux dwatch " . fp
-    endif
-endfunction
-
-nnoremap <Leader>tf :call RunCurrentFileAsTest()<cr>
-nnoremap <Leader>tw :call RunCurrentFileAsWatchTest()<cr>
-nnoremap <Leader>esl :Tmux fasteslint<cr>
-nnoremap <Leader>flw :Tmux flow<cr>
-nnoremap <Leader>faf :Tmux npm run fmt<cr>
 
 lua <<EOF
 require('dark_notify').run()
