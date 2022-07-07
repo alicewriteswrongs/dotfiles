@@ -25,6 +25,9 @@ Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 " reasonML
 Plug 'reasonml-editor/vim-reason-plus'
 
+" fsharp
+Plug 'fsharp/vim-fsharp'
+
 " ruby
 Plug 'tpope/vim-bundler'
 Plug 'vim-ruby/vim-ruby'
@@ -94,6 +97,7 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
+Plug 'fannheyward/telescope-coc.nvim'
 
 " elm
 Plug 'elmcast/elm-vim'
@@ -446,14 +450,16 @@ let g:coc_global_extensions = [
 " git
 nnoremap <Leader>gb :Git blame<cr>
 
+lua << EOF
+require('telescope').load_extension('fzy_native')
+require('telescope').load_extension('coc')
+EOF
+
 " Telescope
 nnoremap <C-b> <cmd>Telescope buffers<cr>
 nnoremap <C-p> <cmd>Telescope find_files<cr>
 nnoremap <C-f> <cmd>Telescope live_grep<cr>
-
-lua << EOF
-require('telescope').load_extension('fzy_native')
-EOF
+nnoremap <C-v> <cmd>Telescope coc workspace_symbols<cr>
 
 " number, column, scrolling, whitespace
 nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<cr> 
