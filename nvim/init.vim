@@ -84,7 +84,7 @@ Plug 'vim-scripts/SyntaxRange'
 Plug 'vim-scripts/ingo-library'
 Plug 'tommcdo/vim-lion'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-" Plug 'lewis6991/nvim-treesitter-context'
+Plug 'lewis6991/nvim-treesitter-context'
 Plug 'vim-test/vim-test'
 
 " file opening / search
