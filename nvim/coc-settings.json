@@ -4,5 +4,6 @@
       "enable": false
     }
   },
-  "tsserver.log": "verbose"
+  "tsserver.log": "verbose",
+  "suggest.noselect": true
 }
