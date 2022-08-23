@@ -1,9 +1,6 @@
 {
-  "rust-analyzer": {
-    "inlayHints": {
-      "enable": false
-    }
-  },
+  "rust-analyzer.inlayHints.enable": false,
   "tsserver.log": "verbose",
-  "suggest.noselect": true
+  "suggest.noselect": true,
+  "languageServerBase.disabledFeatures": [ "inlayHint" ]
 }
