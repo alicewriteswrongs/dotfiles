@@ -63,6 +63,8 @@ Plug 'wellle/tmux-complete.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'ruifm/gitlinker.nvim'
+
 
 " utility
 Plug 'tpope/vim-commentary'
@@ -469,6 +471,10 @@ nnoremap <C-b> <cmd>Telescope buffers<cr>
 nnoremap <C-p> <cmd>Telescope find_files<cr>
 nnoremap <C-f> <cmd>Telescope live_grep<cr>
 nnoremap <C-v> <cmd>Telescope coc workspace_symbols<cr>
+
+lua << EOF
+require"gitlinker".setup()
+EOF
 
 " number, column, scrolling, whitespace
 nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<cr> 
