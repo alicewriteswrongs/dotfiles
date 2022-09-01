@@ -510,7 +510,7 @@ EOF
 
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "rust", "typescript", "javascript", "python" },
+  ensure_installed = { "rust", "typescript", "tsx", "javascript", "python" },
 
   highlight = {
     enable = true,
