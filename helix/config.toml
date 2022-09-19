@@ -1,0 +1,4 @@
+theme = "solarized_light"
+
+[editor]
+line-number = "relative"

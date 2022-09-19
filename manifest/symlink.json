@@ -6,11 +6,13 @@
     ["./zsh/zshrc.zsh", "~/.zshrc"],
     ["./bat/config", "~/.config/bat/config"],
     ["./fish", "~/.config/fish"],
-    ["./hammerspoon/init.lua", "~/.hammerspoon/init.lua"]
+    ["./hammerspoon/init.lua", "~/.hammerspoon/init.lua"],
+    ["./helix/config.toml", "~/.config/helix/config.toml"]
   ],
   "directories": [
     "~/.config",
     "~/.config/bat",
+    "~/.config/helix",
     "~/.hammerspoon"
   ]
 }
