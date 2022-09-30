@@ -2,5 +2,6 @@
   "rust-analyzer.inlayHints.enable": false,
   "tsserver.log": "verbose",
   "suggest.noselect": true,
+  "suggest.enablePreselect": false,
   "languageServerBase.disabledFeatures": [ "inlayHint" ]
 }
