@@ -3,5 +3,12 @@
   "tsserver.log": "verbose",
   "suggest.noselect": true,
   "suggest.enablePreselect": false,
-  "languageServerBase.disabledFeatures": [ "inlayHint" ]
+  "languageServerBase.disabledFeatures": [ "inlayHint" ],
+  "languageserver": {
+    "elmLS": {
+      "command": "elm-language-server",
+      "filetypes": ["elm"],
+      "rootPatterns": ["elm.json"]
+    }
+  },
 }

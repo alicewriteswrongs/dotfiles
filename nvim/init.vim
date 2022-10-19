@@ -79,7 +79,7 @@ Plug 'jamessan/vim-gnupg'
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'Chiel92/vim-autoformat'
+" Plug 'Chiel92/vim-autoformat'
 Plug 'machakann/vim-highlightedyank'
 Plug 'lilydjwg/colorizer'
 Plug 'vim-scripts/SyntaxRange'
@@ -135,6 +135,9 @@ Plug 'linkinpark342/xonsh-vim'
 " neovim-specific
 Plug 'neomake/neomake'
 Plug 'neovim/node-host'
+
+" just
+Plug 'NoahTheDuke/vim-just'
 
 call plug#end()
 
