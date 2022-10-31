@@ -47,3 +47,7 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[scalar]
+	repo = /private/tmp/test/ionic-framework/src
+[maintenance]
+	repo = /private/tmp/test/ionic-framework/src

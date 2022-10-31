@@ -10,5 +10,5 @@
       "filetypes": ["elm"],
       "rootPatterns": ["elm.json"]
     }
-  },
+  }
 }
