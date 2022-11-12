@@ -136,6 +136,9 @@ Plug 'linkinpark342/xonsh-vim'
 Plug 'neomake/neomake'
 Plug 'neovim/node-host'
 
+" just
+Plug 'NoahTheDuke/vim-just'
+
 call plug#end()
 
 filetype plugin indent on
