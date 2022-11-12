@@ -79,7 +79,7 @@ Plug 'jamessan/vim-gnupg'
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'Chiel92/vim-autoformat'
+" Plug 'Chiel92/vim-autoformat'
 Plug 'machakann/vim-highlightedyank'
 Plug 'lilydjwg/colorizer'
 Plug 'vim-scripts/SyntaxRange'
