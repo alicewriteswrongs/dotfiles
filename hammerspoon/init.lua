@@ -19,3 +19,7 @@ hs.hotkey.bind("option", "f", function()
                 end tell
         ]])
 end)
+
+hs.hotkey.bind("option", "d", function() 
+        hs.execute("date | pbcopy")
+end)
