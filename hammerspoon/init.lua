@@ -21,5 +21,6 @@ hs.hotkey.bind("option", "f", function()
 end)
 
 hs.hotkey.bind("option", "d", function() 
-        hs.execute("date | pbcopy")
+    hs.execute('echo "### $(date)" | pbcopy')
+    hs.eventtap.keyStroke("cmd", "v")
 end)
