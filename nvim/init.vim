@@ -65,7 +65,6 @@ Plug 'junegunn/gv.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'ruifm/gitlinker.nvim'
 
-
 " utility
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-rsi'
@@ -88,12 +87,15 @@ Plug 'tommcdo/vim-lion'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'lewis6991/nvim-treesitter-context'
 Plug 'vim-test/vim-test'
+Plug 'nvim-tree/nvim-web-devicons'
+Plug 'MunifTanjim/nui.nvim'
 
 " file opening / search
 Plug 'haya14busa/incsearch.vim' "nice incremental search
 Plug 'rking/ag.vim' "wrapper for ag
 Plug 'justinmk/vim-sneak'
 Plug 'blarghmatey/split-expander'
+Plug 'nvim-neo-tree/neo-tree.nvim'
 
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
@@ -525,4 +527,12 @@ require'nvim-treesitter.configs'.setup {
     additional_vim_regex_highlighting = false,
   },
 }
+EOF
+
+lua <<EOF
+require("neo-tree").setup({
+    source_selector = {
+        winbar = true,
+    }
+})
 EOF
