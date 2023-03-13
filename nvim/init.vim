@@ -533,6 +533,11 @@ lua <<EOF
 require("neo-tree").setup({
     source_selector = {
         winbar = true,
+    },
+    filesystem = {
+        bind_to_cwd = false,
+        -- cwd_target = {sidebar = "window"},
+        follow_current_file = true,
     }
 })
 EOF
