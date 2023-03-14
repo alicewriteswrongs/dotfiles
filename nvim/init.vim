@@ -13,6 +13,7 @@ Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'briancollins/vim-jst'
 Plug 'styled-components/vim-styled-components'
 Plug 'flowtype/vim-flow'
+Plug 'pantharshit00/vim-prisma'
 
 " other web stuff
 Plug 'othree/html5-syntax.vim'
