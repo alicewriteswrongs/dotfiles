@@ -537,3 +537,4 @@ require("neo-tree").setup({
 EOF
 
 nnoremap <Leader>dr :Neotree source=filesystem focus left<cr>
+nnoremap <Leader>gs :Neotree float git_status<cr>
