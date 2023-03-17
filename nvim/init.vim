@@ -114,26 +114,8 @@ Plug 'fatih/vim-go'
 Plug 'rust-lang/rust.vim' "some rust stuff
 Plug 'cespare/vim-toml'
 
-" racket / scheme
-" Plug 'vim-scripts/paredit.vim' "lisp/racket S-expressions
-Plug 'wlangstroth/vim-racket'
-
-" clojure
-" Plug 'clojure-vim/nvim-parinfer.js'
-
 " i3
 Plug 'PotatoesMaster/i3-vim-syntax'
-
-" email
-" Plug 'guyzmo/notmuch-abook' "get emails out of notmuch db for autocomplete
-Plug 'vim-scripts/lbdbq' "formats mail headers more nicely
-
-" markdown / prose writing
-Plug 'suan/vim-instant-markdown'
-Plug 'jceb/vim-orgmode'
-
-"xonsh
-Plug 'linkinpark342/xonsh-vim'
 
 " neovim-specific
 Plug 'neomake/neomake'
