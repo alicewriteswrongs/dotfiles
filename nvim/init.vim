@@ -424,16 +424,9 @@ map / <Plug>(incsearch-forward)
 map ? <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 
-" selecting popup items
-" inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-" inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-
 " browsing docs, static analysis, etc
-nnoremap <Leader>ft :FlowType<cr>
-nnoremap <Leader>fm :FlowMake<cr>
 nnoremap <Leader>nm :Neomake<cr>
 nnoremap <Leader>af :Autoformat<cr>
-" nnoremap <Leader>ed :ElmBrowseDocs<cr>
 
 " some things for CoC
 nnoremap <silent> <leader>i :call CocActionAsync('doHover')<cr>
