@@ -531,6 +531,9 @@ require("neo-tree").setup({
         bind_to_cwd = false,
         -- cwd_target = {sidebar = "window"},
         follow_current_file = true,
+        hijack_netrw_behavior = "open_current",
     }
 })
 EOF
+
+nnoremap <Leader>dr :Neotree source=filesystem focus left<cr>
