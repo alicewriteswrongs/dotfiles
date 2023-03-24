@@ -90,6 +90,7 @@ Plug 'lewis6991/nvim-treesitter-context'
 Plug 'vim-test/vim-test'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'MunifTanjim/nui.nvim'
+Plug 'github/copilot.vim'
 
 " file opening / search
 Plug 'haya14busa/incsearch.vim' "nice incremental search
@@ -521,3 +522,9 @@ EOF
 
 nnoremap <Leader>dr :Neotree source=filesystem focus left<cr>
 nnoremap <Leader>gs :Neotree float git_status<cr>
+
+" gh copilot
+" disable github copilot by default
+let g:copilot_enabled = 0
+" toggle github copilot on and off
+nnoremap <Leader>cp :let g:copilot_enabled = 1 - g:copilot_enabled<cr>
