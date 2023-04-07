@@ -528,3 +528,8 @@ nnoremap <Leader>gs :Neotree float git_status<cr>
 let g:copilot_enabled = 0
 " toggle github copilot on and off
 nnoremap <Leader>cp :let g:copilot_enabled = 1 - g:copilot_enabled<cr>
+
+" it's np for 'narrow print'
+" silently call prettier on the current buffer, printing it at 80 characters
+" wide, then reload the buffer
+nnoremap <Leader>np :silent !npx prettier --print-width 80 --write %<cr>:e!<cr>
