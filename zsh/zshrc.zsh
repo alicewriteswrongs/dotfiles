@@ -32,8 +32,8 @@ setopt prompt_subst
 . ~/dotfiles/zsh/script/git-prompt.sh
 
 ## MY PROMPT
-## looks like alice hostname dir         current_time
-PROMPT=" %{$fg[blue]%}%n%{$reset_color%} %{$fg[magenta]%}%m %{$fg[magenta]%}%{$fg_no_bold[yellow]%}%1~ %{$reset_color%}% "
+## looks like dir         current_time
+PROMPT=" %{$fg[blue]%}%n%{$reset_color%} %{$fg[magenta]%}%1~ %{$reset_color%}% "
 # PROMPT=" %{$fg[blue]%}%n%{$reset_color%}|%{$fg[magenta]%}<3 %{$fg_no_bold[yellow]%}%1~ %{$reset_color%}" # less old version!
 #PROMPT="[%{$fg[green]%}%n%{$reset_color%}@%{$fg[blue]%}%m] %{$fg_no_bold[yellow]%}%1~ %{$reset_color%}%# " #old version!
 RPROMPT=$'%{$fg_no_bold[yellow]%}$(__git_ps1 "%s")%{$fg[magenta]%}$(__git_ps1 " ")%{$fg_no_bold[blue]%}%T%{$reset_color%}'
