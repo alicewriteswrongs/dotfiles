@@ -125,6 +125,8 @@ Plug 'neovim/node-host'
 " just
 Plug 'NoahTheDuke/vim-just'
 
+Plug 'wfxr/minimap.vim'
+
 call plug#end()
 
 filetype plugin indent on
