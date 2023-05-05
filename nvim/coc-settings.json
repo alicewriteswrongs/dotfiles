@@ -4,6 +4,7 @@
   "suggest.noselect": true,
   "suggest.enablePreselect": false,
   "languageServerBase.disabledFeatures": [ "inlayHint" ],
+  "typescript.inlayHints.variableTypes.enabled": true,
   "languageserver": {
     "elmLS": {
       "command": "elm-language-server",

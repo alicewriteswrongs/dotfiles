@@ -445,7 +445,9 @@ let g:coc_global_extensions = [
   \ 'coc-tsserver',
   \ 'coc-rust-analyzer',
   \ 'coc-go',
-  \ 'coc-pyright'
+  \ 'coc-pyright',
+  \ 'coc-json',
+  \ 'coc-css',
   \ ]
 
 " git
