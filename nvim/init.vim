@@ -46,7 +46,7 @@ Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'Stautob/vim-fish'
 
 " colorschemes
-Plug 'iCyMind/NeoSolarized'
+" Plug 'iCyMind/NeoSolarized'
 Plug 'cormacrelf/dark-notify'
 " Plug 'chriskempson/base16-vim'
 " Plug 'NLKNguyen/papercolor-theme'
@@ -196,8 +196,8 @@ augroup END
 
 "colorscheme
 set termguicolors
-let g:solarized_termcolors = 16
-colorscheme NeoSolarized
+" let g:solarized_termcolors = 16
+colorscheme selenized
 set background=light
 " syntax on
 
