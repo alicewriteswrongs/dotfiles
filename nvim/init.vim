@@ -199,7 +199,10 @@ set termguicolors
 " let g:solarized_termcolors = 16
 colorscheme selenized
 set background=light
-" syntax on
+
+hi CocUnderline gui=undercurl term=undercurl
+hi CocErrorHighlight ctermfg=red  guifg=#c4384b gui=undercurl term=undercurl
+hi CocWarningHighlight ctermfg=yellow guifg=#c4ab39 gui=undercurl term=undercurl
 
 "recommended by yats.vim
 set re=0

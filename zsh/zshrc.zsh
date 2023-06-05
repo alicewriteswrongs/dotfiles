@@ -39,15 +39,15 @@ PROMPT=" %{$fg[blue]%}%n%{$reset_color%} %{$fg[magenta]%}%1~ %{$reset_color%}% "
 RPROMPT=$'%{$fg_no_bold[yellow]%}$(__git_ps1 "%s")%{$fg[magenta]%}$(__git_ps1 " ")%{$fg_no_bold[blue]%}%T%{$reset_color%}'
 #♥
 
-if whence dircolors >/dev/null; then
-  eval `dircolors ~/dotfiles/zsh/dir_colors`
-fi
+# if whence dircolors >/dev/null; then
+#   eval `dircolors ~/dotfiles/zsh/dir_colors`
+# fi
 
-export CLICOLOR=1
-export LSCOLORS=exfxgedxbxegedabagacad
-export LS_COLORS=exfxgedxbxegedabagacad
+# export CLICOLOR=1
+# export LSCOLORS=exfxgedxbxegedabagacad
+# export LS_COLORS=exfxgedxbxegedabagacad
 # fix dircolors for Selenized
-export LS_COLORS="$LS_COLORS:ow=1;7;34:st=30;44:su=30;41"
+# export LS_COLORS="$LS_COLORS:ow=1;7;34:st=30;44:su=30;41"
 
 chpwd() {
     ls -lrthG
