@@ -29,6 +29,7 @@ brew "magic-wormhole"
 brew "mosh"
 brew "neovim", args: ["HEAD"]
 brew "node"
+brew "opam"
 brew "pandoc"
 brew "pkg-config"
 brew "pnpm"
