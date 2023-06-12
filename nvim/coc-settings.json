@@ -10,6 +10,11 @@
       "command": "elm-language-server",
       "filetypes": ["elm"],
       "rootPatterns": ["elm.json"]
+    },
+    "ocaml-lsp": {
+      "command": "opam",
+      "args": ["config", "exec", "--", "ocamllsp"],
+      "filetypes": ["ocaml", "reason"]
     }
   }
 }
