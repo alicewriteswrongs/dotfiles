@@ -1,4 +1,4 @@
-let mapleader = "\<Space>" "set leader to spaceinit.vim
+let mapleader = "\<Space>" "set leader to space
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 """plugins
@@ -86,7 +86,7 @@ Plug 'vim-scripts/SyntaxRange'
 Plug 'vim-scripts/ingo-library'
 Plug 'tommcdo/vim-lion'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'lewis6991/nvim-treesitter-context'
+Plug 'nvim-treesitter/nvim-treesitter-context'
 Plug 'vim-test/vim-test'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'MunifTanjim/nui.nvim'
@@ -500,7 +500,7 @@ EOF
 
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "rust", "typescript", "tsx", "javascript", "python", "bash", "vim", "lua" },
+  ensure_installed = { "rust", "typescript", "tsx", "javascript", "python", "bash", "vim", "lua", "ocaml" },
 
   highlight = {
     enable = true,
