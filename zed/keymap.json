@@ -1,0 +1,23 @@
+[
+  {
+    "context": "Editor && VimControl",
+    "bindings": {
+      "ctrl-[": "editor::Cancel"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "ctrl-[": "vim::NormalBefore"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      "ctrl-[": [
+        "vim::SwitchMode",
+        "Normal"
+      ]
+    }
+  }
+]
