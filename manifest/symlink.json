@@ -1,13 +1,14 @@
 {
   "dotfiles": [
-    ["./nvim", "~/.config/nvim"],
-    ["./tmux/tmux.conf", "~/.tmux.conf"],
-    ["./git/.gitconfig", "~/.gitconfig"],
-    ["./zsh/zshrc.zsh", "~/.zshrc"],
     ["./bat/config", "~/.config/bat/config"],
     ["./fish", "~/.config/fish"],
+    ["./git/.gitconfig", "~/.gitconfig"],
     ["./hammerspoon/init.lua", "~/.hammerspoon/init.lua"],
-    ["./helix/config.toml", "~/.config/helix/config.toml"]
+    ["./helix/config.toml", "~/.config/helix/config.toml"],
+    ["./nvim", "~/.config/nvim"],
+    ["./tmux/tmux.conf", "~/.tmux.conf"],
+    ["./zsh/zshrc.zsh", "~/.zshrc"],
+    ["./zed", "~/.config/zed"]
   ],
   "directories": [
     "~/.config",
