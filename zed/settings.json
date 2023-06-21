@@ -4,5 +4,6 @@
     "metrics": false
   },
   "theme": "Atelier Seaside Light",
-  "vim_mode": true
+  "vim_mode": true,
+  "buffer_font_family": "Inconsolata"
 }
