@@ -59,6 +59,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'edkolev/tmuxline.vim'
 Plug 'jgdavey/tslime.vim'
 Plug 'wellle/tmux-complete.vim'
+Plug 'christoomey/vim-tmux-navigator'
 
 " git
 Plug 'tpope/vim-fugitive'
@@ -365,6 +366,15 @@ let g:firenvim_config = {
 " tslime
 let g:tslime_always_current_session = 1
 let g:tslime_always_current_window = 1
+
+" vim-tmux-navigator
+let g:tmux_navigator_no_mappings = 1
+
+noremap <silent> <M-h> :<C-U>TmuxNavigateLeft<cr>
+noremap <silent> <M-j> :<C-U>TmuxNavigateDown<cr>
+noremap <silent> <M-k> :<C-U>TmuxNavigateUp<cr>
+noremap <silent> <M-l> :<C-U>TmuxNavigateRight<cr>
+noremap <silent> <M-/> :<C-U>TmuxNavigatePrevious<cr>
 
 " " deoplete 
 " let g:tern_request_timeout = 1
