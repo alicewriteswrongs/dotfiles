@@ -415,6 +415,8 @@ nnoremap <C-s> <esc>:w<cr>
 nnoremap <Leader>w :w<cr>
 map Q :qa<cr>
 nnoremap <Leader>q :q<cr> 
+imap <C-q> <esc>:q<cr> 
+nnoremap <C-q> <esc>:q<cr>
 
 " search
 let hlstate=0 
