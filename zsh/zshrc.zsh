@@ -126,3 +126,5 @@ source /opt/homebrew/opt/fzf/shell/completion.zsh
 
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+
+[ -f "/Users/alice/.ghcup/env" ] && source "/Users/alice/.ghcup/env" # ghcup-env
