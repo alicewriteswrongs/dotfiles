@@ -15,6 +15,12 @@
       "command": "opam",
       "args": ["config", "exec", "--", "ocamllsp"],
       "filetypes": ["ocaml", "reason"]
+    },
+    "haskell": {
+      "command": "haskell-language-server-wrapper",
+      "args": ["--lsp"],
+      "rootPatterns": ["*.cabal", "stack.yaml", "cabal.project", "package.yaml", "hie.yaml"],
+      "filetypes": ["haskell", "lhaskell"]
     }
   }
 }
