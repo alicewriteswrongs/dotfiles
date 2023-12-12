@@ -1,10 +1,9 @@
 {
-  "rust-analyzer.inlayHints.enable": false,
   "tsserver.log": "verbose",
   "suggest.noselect": true,
   "suggest.enablePreselect": false,
-  "languageServerBase.disabledFeatures": [ "inlayHint" ],
   "typescript.inlayHints.variableTypes.enabled": true,
+  "inlayHint.enableParameter": false,
   "languageserver": {
     "elmLS": {
       "command": "elm-language-server",
