@@ -2,7 +2,7 @@
   "tsserver.log": "verbose",
   "suggest.noselect": true,
   "suggest.enablePreselect": false,
-  "typescript.inlayHints.variableTypes.enabled": true,
+  "typescript.inlayHints.variableTypes.enabled": false,
   "inlayHint.enableParameter": false,
   "languageserver": {
     "elmLS": {
