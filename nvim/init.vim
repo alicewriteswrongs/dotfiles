@@ -6,14 +6,14 @@ let mapleader = "\<Space>" "set leader to space
 
 call plug#begin(stdpath('data') . '/plugged')
 
-" JS / CoffeeScript
+" JS / TypeScript
 Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'briancollins/vim-jst'
 Plug 'styled-components/vim-styled-components'
-Plug 'flowtype/vim-flow'
 Plug 'pantharshit00/vim-prisma'
+Plug 'pmizio/typescript-tools.nvim'
 
 " other web stuff
 Plug 'othree/html5-syntax.vim'
@@ -46,11 +46,8 @@ Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'Stautob/vim-fish'
 
 " colorschemes
-Plug 'iCyMind/NeoSolarized'
-Plug 'cormacrelf/dark-notify'
-" Plug 'chriskempson/base16-vim'
-" Plug 'NLKNguyen/papercolor-theme'
-" Plug 'morhetz/gruvbox'
+" Plug 'cormacrelf/dark-notify'
+Plug 'rebelot/kanagawa.nvim'
 
 " statusline
 Plug 'itchyny/lightline.vim'
@@ -79,8 +76,6 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'jamessan/vim-gnupg'
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Plug 'Chiel92/vim-autoformat'
 Plug 'machakann/vim-highlightedyank'
 Plug 'lilydjwg/colorizer'
 Plug 'vim-scripts/SyntaxRange'
@@ -92,6 +87,19 @@ Plug 'vim-test/vim-test'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'MunifTanjim/nui.nvim'
 Plug 'github/copilot.vim'
+Plug 'williamboman/mason.nvim'
+Plug 'neovim/nvim-lspconfig'
+Plug 'williamboman/mason-lspconfig.nvim'
+Plug 'folke/trouble.nvim'
+Plug 'lewis6991/hover.nvim'
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp-signature-help'
+Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 
 " file opening / search
 Plug 'haya14busa/incsearch.vim' "nice incremental search
@@ -100,11 +108,9 @@ Plug 'justinmk/vim-sneak'
 Plug 'blarghmatey/split-expander'
 Plug 'nvim-neo-tree/neo-tree.nvim'
 
-Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
-Plug 'fannheyward/telescope-coc.nvim'
 
 " elm
 Plug 'elmcast/elm-vim'
@@ -143,7 +149,7 @@ augroup myfiletypes
     autocmd FileType coffee setlocal autoindent
     autocmd FileType coffee setlocal shiftwidth=2
     autocmd FileType coffee setlocal softtabstop=2
-    "html
+    " html
     autocmd FileType html setlocal expandtab
     autocmd FileType html setlocal autoindent
     autocmd FileType html setlocal shiftwidth=2
@@ -156,13 +162,13 @@ augroup myfiletypes
     autocmd FileType eruby setlocal autoindent
     autocmd FileType eruby setlocal shiftwidth=2
     autocmd FileType eruby setlocal softtabstop=2
-    "scss
+    " scss
     autocmd FileType scss setlocal expandtab
     autocmd FileType scss setlocal autoindent
     autocmd FileType scss setlocal shiftwidth=2
     autocmd FileType scss setlocal softtabstop=2
     autocmd FileType scss setlocal omnifunc=csscomplete#CompleteCSS
-    "typescript
+    " typescript
     autocmd FileType typescript setlocal expandtab
     autocmd FileType typescript setlocal autoindent
     autocmd FileType typescript setlocal shiftwidth=2
@@ -177,36 +183,57 @@ augroup myfiletypes
     autocmd FileType typescriptreact setlocal softtabstop=2
     autocmd FileType typescript UltiSnipsAddFiletypes javascript-mocha
     autocmd FileType typescriptreact UltiSnipsAddFiletypes javascript-mocha
-    "js
+    " js
     autocmd FileType javascript setlocal expandtab
     autocmd FileType javascript setlocal autoindent
     autocmd FileType javascript setlocal shiftwidth=2
     autocmd FileType javascript setlocal softtabstop=2
     autocmd FileType javascript UltiSnipsAddFiletypes javascript-es6 
     autocmd FileType javascript UltiSnipsAddFiletypes javascript-mocha
-    "org
+    " org
     autocmd FileType org setlocal foldenable
     autocmd FileType org setlocal nolist
-    "go
+    " go
     autocmd FileType go setlocal tabstop=2
     autocmd FileType go setlocal shiftwidth=2
-    "purescript
+    " purescript
     autocmd FileType purescript setlocal shiftwidth=2
 augroup END
-" autocmd! BufWritePost * Neomake
+ autocmd! BufWritePost * Neomake
 
 "colorscheme
 set termguicolors
-" let g:solarized_termcolors = 16
-colorscheme NeoSolarized
 set background=light
 
-hi CocUnderline gui=undercurl term=undercurl
-hi CocErrorHighlight ctermfg=red  guifg=#c4384b gui=undercurl term=undercurl
-hi CocWarningHighlight ctermfg=yellow guifg=#c4ab39 gui=undercurl term=undercurl
+lua << EOF
+-- Default options:
+require('kanagawa').setup({
+    compile = true,             -- enable compiling the colorscheme
+    undercurl = true,            -- enable undercurls
+    commentStyle = { italic = true },
+    functionStyle = {},
+    keywordStyle = { italic = true},
+    statementStyle = { bold = false },
+    typeStyle = {},
+    transparent = false,         -- do not set background color
+    dimInactive = false,         -- dim inactive window `:h hl-NormalNC`
+    terminalColors = true,       -- define vim.g.terminal_color_{0,17}
+    colors = {                   -- add/modify theme and palette colors
+        palette = {},
+        theme = { wave = {}, lotus = {}, dragon = {}, all = {} },
+    },
+    overrides = function(colors) -- add/modify highlights
+        return {}
+    end,
+})
+
+-- setup must be called before loading
+vim.cmd("colorscheme kanagawa")
+EOF
+
 
 "recommended by yats.vim
-set re=0
+" set re=0
 
 "lightline
 let g:lightline = {
@@ -275,8 +302,6 @@ endif
 set mousemodel=extend
 " set lcs=trail:.,tab:>\ 
 " set list
-
-" highlight StatusLine ctermfg=blue ctermbg=yellow
 
 "" fix the swapfile situation
 set noswapfile
@@ -376,14 +401,6 @@ noremap <silent> <M-k> :<C-U>TmuxNavigateUp<cr>
 noremap <silent> <M-l> :<C-U>TmuxNavigateRight<cr>
 noremap <silent> <M-/> :<C-U>TmuxNavigatePrevious<cr>
 
-" " deoplete 
-" let g:tern_request_timeout = 1
-" let g:tern#filetypes = [
-"                 \ 'jsx',
-"                 \ 'javascript.jsx',
-"                 \ 'javascript',
-"                 \ ]
-
 " spell check commits
 au BufNewFile,BufRead COMMIT_EDITMSG set spell
 
@@ -429,55 +446,22 @@ map g/ <Plug>(incsearch-stay)
 nnoremap <Leader>nm :Neomake<cr>
 nnoremap <Leader>af :Autoformat<cr>
 
-" some things for CoC
-nnoremap <silent> <leader>i :call CocActionAsync('doHover')<cr>
-nmap <silent> <leader>gd <Plug>(coc-definition)
-nmap <silent> <leader>gt <Plug>(coc-type-definition)
-nmap <silent> <leader>gi <Plug>(coc-implementation)
-nmap <silent> <leader>gr <Plug>(coc-references)
-nmap <silent> <leader>gg :call  CocAction('diagnosticToggle')<cr>
-nmap <silent> <leader>cs :call  CocAction('showIncomingCalls')<cr>
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
-nmap <leader>do <Plug>(coc-codeaction)
-nmap <leader>rn <Plug>(coc-rename)
-
 function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
-
-inoremap <silent><expr> <TAB>
-      \ coc#pum#visible() ? coc#pum#next(1):
-      \ CheckBackspace() ? "\<Tab>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
-
-inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
-                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-
-let g:coc_global_extensions = [
-  \ 'coc-tsserver',
-  \ 'coc-rust-analyzer',
-  \ 'coc-go',
-  \ 'coc-pyright',
-  \ 'coc-json',
-  \ 'coc-css',
-  \ ]
 
 " git
 nnoremap <Leader>gb :Git blame<cr>
 
 lua << EOF
 require('telescope').load_extension('fzy_native')
-require('telescope').load_extension('coc')
 EOF
 
 " Telescope
 nnoremap <C-b> <cmd>Telescope buffers<cr>
 nnoremap <C-p> <cmd>Telescope find_files<cr>
 nnoremap <C-f> <cmd>Telescope live_grep<cr>
-nnoremap <C-v> <cmd>Telescope coc workspace_symbols<cr>
 
 lua << EOF
 require"gitlinker".setup()
@@ -505,10 +489,122 @@ vmap <C-c><C-c> <Plug>SendSelectionToTmux
 nnoremap <Leader>tf :TestFile<cr>
 let test#strategy = "neovim"
 
-
+" Mason / LSP configuration
 lua <<EOF
-require('dark_notify').run()
+require('mason').setup()
+require("mason-lspconfig").setup()
+require("lspconfig").rust_analyzer.setup {}
+require("typescript-tools").setup({
+  on_attach = function(client)
+    client.server_capabilities.semanticTokensProvider = nil
+  end
+})
+
+vim.keymap.set('n', '[g', vim.diagnostic.goto_prev)
+vim.keymap.set('n', ']g', vim.diagnostic.goto_next)
+vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition)
+vim.keymap.set('n', '<leader>gt', vim.lsp.buf.type_definition)
+vim.keymap.set('n', '<leader>gt', vim.lsp.buf.implementation)
+vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename)
+vim.keymap.set('n', '<leader>do', vim.lsp.buf.code_action)
 EOF
+
+" trouble keybinds
+nnoremap <leader>gr <cmd>Trouble lsp_references<cr>
+nnoremap <leader>gg <cmd>Trouble document_diagnostics<cr>
+" nmap <silent> <leader>cs :call  CocAction('showIncomingCalls')<cr>
+
+" nvim-cmp setup
+lua <<EOF
+local cmp = require('cmp')
+cmp.setup({
+snippet = {
+  expand = function(args)
+    vim.fn["UltiSnips#Anon"](args.body)
+  end,
+},
+window = {
+  completion = cmp.config.window.bordered(),
+  documentation = cmp.config.window.bordered(),
+},
+mapping = cmp.mapping.preset.insert({
+  -- scroll docs up
+  ['<C-d>'] = cmp.mapping.scroll_docs(-4),
+  -- scroll docs down
+  ['<C-f>'] = cmp.mapping.scroll_docs(4),
+  ['<C-e>'] = cmp.mapping.abort(),
+  ['<CR>'] = cmp.mapping.confirm({ select = true }),
+  -- tab to select and insert next item in the list
+  ['<Tab>'] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
+  -- shift-tab to go backwards
+  ['<S-Tab>'] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
+}),
+sources = cmp.config.sources({
+  { name = 'nvim_lsp' },
+  { name = 'ultisnips' },
+  { name = 'nvim_lsp_signature_help' },
+}, {
+  { name = 'buffer' },
+})
+})
+
+-- Set configuration for specific filetype.
+cmp.setup.filetype('gitcommit', {
+  sources = cmp.config.sources({
+    { name = 'git' }, -- You can specify the `git` source if [you were installed it](https://github.com/petertriho/cmp-git).
+  }, {
+    { name = 'buffer' },
+  })
+})
+
+-- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
+cmp.setup.cmdline({ '/', '?' }, {
+  mapping = cmp.mapping.preset.cmdline(),
+  sources = {
+    { name = 'buffer' }
+  }
+})
+
+-- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
+cmp.setup.cmdline(':', {
+  mapping = cmp.mapping.preset.cmdline(),
+  sources = cmp.config.sources({
+    { name = 'path' }
+  }, {
+    { name = 'cmdline' }
+  })
+})
+EOF
+
+" hover.nvim setup
+" this is for showing a popup with LSP supplied info about a the symbol under
+" the keyword
+lua <<EOF
+require('hover').setup {
+   init = function()
+        require('hover.providers.lsp')
+        require('hover.providers.gh')
+    end,
+    preview_opts = {
+        border = 'single'
+    },
+    -- Whether the contents of a currently open hover window should be moved
+    -- to a :h preview-window when pressing the hover keymap.
+    preview_window = false,
+    title = true,
+    mouse_providers = {
+        'LSP'
+    },
+    mouse_delay = 1000
+}
+
+-- Setup keymaps
+vim.keymap.set("n", "<leader>i", require("hover").hover, {desc = "hover.nvim"})
+EOF
+
+" lua <<EOF
+" require('dark_notify').run()
+" EOF
 
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
