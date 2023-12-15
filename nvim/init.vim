@@ -102,7 +102,6 @@ Plug 'hrsh7th/cmp-nvim-lsp-signature-help'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 
 " file opening / search
-Plug 'haya14busa/incsearch.vim' "nice incremental search
 Plug 'rking/ag.vim' "wrapper for ag
 Plug 'justinmk/vim-sneak'
 Plug 'blarghmatey/split-expander'
@@ -281,7 +280,7 @@ autocmd WinLeave * setlocal nocursorline
 set incsearch
 set ignorecase
 set smartcase
-set hlsearch "highlight searches
+" set hlsearch "highlight searches
 set smartindent
 set backspace=indent,eol,start
 set tabstop=8
@@ -318,14 +317,11 @@ au BufEnter github.com_*.txt set filetype=markdown
 """""""""""""""""""""""""""""""""""""""""""""""""""
 let g:vim_json_syntax_conceal = 0
 let g:vim_jsx_pretty_colorful_config = 1
-let g:flow#autoclose = 1
-let g:flow#enable = 0
 let g:elm_format_autosave = 1
 let g:instant_markdown_slow = 1
 let g:sneak#streak = 1
 let g:jsx_ext_required = 0 " allow jsx syntax in normal js files
 let g:EclimCompletionEngine = 'omnifunc'
-let g:incsearch#auto_nohlsearch = 1
 "tmuxline.vim
 let g:tmuxline_preset = {
             \'a' : '#S',
@@ -428,13 +424,6 @@ map Q :qa<cr>
 nnoremap <Leader>q :q<cr> 
 imap <C-q> <esc>:q<cr> 
 nnoremap <C-q> <esc>:q<cr>
-
-" search
-let hlstate=0 
-nnoremap <F4> :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=1-hlstate<cr>
-map / <Plug>(incsearch-forward)
-map ? <Plug>(incsearch-backward)
-map g/ <Plug>(incsearch-stay)
 
 function! CheckBackspace() abort
   let col = col('.') - 1
