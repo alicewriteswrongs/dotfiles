@@ -13,7 +13,7 @@ alias c='cd ~/Code'
 alias ca='cd ~/ownCloud/Code'
 alias changebackground='feh --bg-max'
 alias chromesound='chromium --audio-buffer-size=2048'
-alias cjest='npx jest --clearCache && npx --node-options=--experimental-vm-modules jest --coverage=false'
+alias cjest='npx jest --clearCache && npx --node-options=--experimental-vm-modules jest --coverage=false --verbose=false'
 alias cleankernel='make mrproper' # remove previous compilation
 alias clip='xsel --clipboard'
 alias d3manage='docker-compose run web python3 manage.py'
