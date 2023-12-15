@@ -76,7 +76,9 @@ key[PageDown]=${terminfo[knp]}
 [[ -n "${key[Insert]}"   ]]  && bindkey  "${key[Insert]}"   overwrite-mode
 [[ -n "${key[Delete]}"   ]]  && bindkey  "${key[Delete]}"   delete-char
 [[ -n "${key[Up]}"       ]]  && bindkey  "${key[Up]}"       up-line-or-history
+bindkey  "^k"                                               up-line-or-history
 [[ -n "${key[Down]}"     ]]  && bindkey  "${key[Down]}"     down-line-or-history
+bindkey  "^j"                                               down-line-or-history
 [[ -n "${key[Left]}"     ]]  && bindkey  "${key[Left]}"     backward-char
 [[ -n "${key[Right]}"    ]]  && bindkey  "${key[Right]}"    forward-char
 #[[ -n "${key[PageUp]}"   ]]  && bindkey  "${key[PageUp]}"   beginning-of-buffer-or-history
