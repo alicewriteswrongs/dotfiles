@@ -126,7 +126,6 @@ Plug 'cespare/vim-toml'
 Plug 'PotatoesMaster/i3-vim-syntax'
 
 " neovim-specific
-Plug 'neomake/neomake'
 Plug 'neovim/node-host'
 
 " just
@@ -199,7 +198,6 @@ augroup myfiletypes
     " purescript
     autocmd FileType purescript setlocal shiftwidth=2
 augroup END
- autocmd! BufWritePost * Neomake
 
 "colorscheme
 set termguicolors
@@ -355,10 +353,6 @@ let g:go_highlight_interfaces = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 " let g:go_fmt_command = "goimports"
-let g:neomake_open_list = 2
-let g:neomake_javascript_enabled_makers = ['eslint_d']
-let g:neomake_jsx_enabled_makers = ['eslint_d']
-let g:neomake_scss_enabled_makers = []
 " let g:indentLine_char = ">"
 " let g:indentLine_first_char = ">"
 let g:indentLine_showFirstIndentLevel = 1
@@ -441,10 +435,6 @@ nnoremap <F4> :if (hlstate == 0) \| nohlsearch \| else \| set hlsearch \| endif 
 map / <Plug>(incsearch-forward)
 map ? <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
-
-" browsing docs, static analysis, etc
-nnoremap <Leader>nm :Neomake<cr>
-nnoremap <Leader>af :Autoformat<cr>
 
 function! CheckBackspace() abort
   let col = col('.') - 1
