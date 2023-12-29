@@ -132,6 +132,9 @@ Plug 'NoahTheDuke/vim-just'
 
 Plug 'wfxr/minimap.vim'
 
+" typst
+Plug 'kaarmu/typst.vim'
+
 call plug#end()
 
 filetype plugin indent on
@@ -473,6 +476,12 @@ lua <<EOF
 require('mason').setup()
 require("mason-lspconfig").setup()
 require("lspconfig").rust_analyzer.setup {}
+require'lspconfig'.typst_lsp.setup{
+	settings = {
+		exportPdf = "onType" -- Choose onType, onSave or never.
+        -- serverPath = "" -- Normally, there is no need to uncomment it.
+	}
+}
 require("typescript-tools").setup({
   on_attach = function(client)
     client.server_capabilities.semanticTokensProvider = nil
