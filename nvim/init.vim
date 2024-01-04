@@ -444,6 +444,7 @@ EOF
 nnoremap <C-b> <cmd>Telescope buffers<cr>
 nnoremap <C-p> <cmd>Telescope find_files<cr>
 nnoremap <C-f> <cmd>Telescope live_grep<cr>
+nnoremap <C-v> <cmd>Telescope lsp_dynamic_workspace_symbols<cr>
 
 lua << EOF
 require"gitlinker".setup()
