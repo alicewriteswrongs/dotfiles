@@ -1,6 +1,6 @@
 source ~/dotfiles/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=3'
-bindkey '^]' autosuggest-execute
+bindkey '^]' autosuggest-accept
 
 ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=("expand-or-complete")
 ZSH_DISABLE_COMPFIX="true"
