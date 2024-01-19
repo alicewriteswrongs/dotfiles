@@ -88,7 +88,6 @@ Plug 'nvim-tree/nvim-web-devicons'
 Plug 'MunifTanjim/nui.nvim'
 Plug 'github/copilot.vim'
 Plug 'williamboman/mason.nvim'
-Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'folke/trouble.nvim'
 Plug 'lewis6991/hover.nvim'
@@ -516,6 +515,7 @@ window = {
   completion = cmp.config.window.bordered(),
   documentation = cmp.config.window.bordered(),
 },
+preselect = cmp.PreselectMode.None,
 mapping = cmp.mapping.preset.insert({
   -- scroll docs up
   ['<C-d>'] = cmp.mapping.scroll_docs(-4),
