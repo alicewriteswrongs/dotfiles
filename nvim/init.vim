@@ -522,7 +522,7 @@ mapping = cmp.mapping.preset.insert({
   -- scroll docs down
   ['<C-f>'] = cmp.mapping.scroll_docs(4),
   ['<C-e>'] = cmp.mapping.abort(),
-  ['<CR>'] = cmp.mapping.confirm({ select = true }),
+  ['<CR>'] = cmp.mapping.confirm({ select = false }),
   -- tab to select and insert next item in the list
   ['<Tab>'] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
   -- shift-tab to go backwards
