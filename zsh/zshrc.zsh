@@ -1,6 +1,5 @@
 source ~/dotfiles/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=3'
-bindkey '^]' autosuggest-accept
 
 ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=("expand-or-complete")
 ZSH_DISABLE_COMPFIX="true"
@@ -86,6 +85,7 @@ bindkey "^j"                                                down-line-or-history
 
 [[ -n "${key[PageUp]}"   ]]  && bindkey  "${key[PageUp]}"   history-beginning-search-backward
 [[ -n "${key[PageDown]}" ]]  && bindkey  "${key[PageDown]}" history-beginning-search-forward
+bindkey '^]' autosuggest-accept
 
 # Finally, make sure the terminal is in application mode, when zle is
 # active. Only then are the values from $terminfo valid.
