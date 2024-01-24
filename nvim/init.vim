@@ -202,7 +202,7 @@ augroup END
 
 "colorscheme
 " set termguicolors
-" set background=light
+set background=light
 syntax off
 
 " lua << EOF
@@ -237,6 +237,7 @@ syntax off
 
 "lightline
 let g:lightline = {
+    \ 'colorscheme': 'solarized',
     \ 'active': {
     \   'left': [ [ 'mode', 'paste' ],
     \             [ 'fugitive', 'readonly', 'filename', 'modified' ]
