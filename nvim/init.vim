@@ -47,7 +47,7 @@ Plug 'Stautob/vim-fish'
 
 " colorschemes
 " Plug 'cormacrelf/dark-notify'
-" Plug 'rebelot/kanagawa.nvim'
+Plug 'rebelot/kanagawa.nvim'
 
 " statusline
 Plug 'itchyny/lightline.vim'
@@ -201,35 +201,34 @@ augroup myfiletypes
 augroup END
 
 "colorscheme
-" set termguicolors
-" set background=light
-syntax off
+set termguicolors
+set background=light
 
-" lua << EOF
-" -- Default options:
-" require('kanagawa').setup({
-"     compile = true,             -- enable compiling the colorscheme
-"     undercurl = true,            -- enable undercurls
-"     commentStyle = { italic = true },
-"     functionStyle = {},
-"     keywordStyle = { italic = true},
-"     statementStyle = { bold = false },
-"     typeStyle = {},
-"     transparent = false,         -- do not set background color
-"     dimInactive = false,         -- dim inactive window `:h hl-NormalNC`
-"     terminalColors = true,       -- define vim.g.terminal_color_{0,17}
-"     colors = {                   -- add/modify theme and palette colors
-"         palette = {},
-"         theme = { wave = {}, lotus = {}, dragon = {}, all = {} },
-"     },
-"     overrides = function(colors) -- add/modify highlights
-"         return {}
-"     end,
-" })
+lua << EOF
+-- Default options:
+require('kanagawa').setup({
+    compile = true,             -- enable compiling the colorscheme
+    undercurl = true,            -- enable undercurls
+    commentStyle = { italic = true },
+    functionStyle = {},
+    keywordStyle = { italic = true},
+    statementStyle = { bold = false },
+    typeStyle = {},
+    transparent = false,         -- do not set background color
+    dimInactive = false,         -- dim inactive window `:h hl-NormalNC`
+    terminalColors = true,       -- define vim.g.terminal_color_{0,17}
+    colors = {                   -- add/modify theme and palette colors
+        palette = {},
+        theme = { wave = {}, lotus = {}, dragon = {}, all = {} },
+    },
+    overrides = function(colors) -- add/modify highlights
+        return {}
+    end,
+})
 
-" -- setup must be called before loading
-" vim.cmd("colorscheme kanagawa")
-" EOF
+-- setup must be called before loading
+vim.cmd("colorscheme kanagawa")
+EOF
 
 
 "recommended by yats.vim
@@ -237,6 +236,7 @@ syntax off
 
 "lightline
 let g:lightline = {
+    \ 'colorscheme': 'solarized',
     \ 'active': {
     \   'left': [ [ 'mode', 'paste' ],
     \             [ 'fugitive', 'readonly', 'filename', 'modified' ]
@@ -310,8 +310,8 @@ set undodir=~/.config/nvim/undo//
 set undofile
 
 "" a few htings that are nice with JSX
-" autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
-" autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 au BufEnter github.com_*.txt set filetype=markdown
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
@@ -595,20 +595,20 @@ EOF
 " require('dark_notify').run()
 " EOF
 
-" lua <<EOF
-" require'nvim-treesitter.configs'.setup {
-"   ensure_installed = { "rust", "typescript", "tsx", "javascript", "python", "bash", "vim", "lua", "ocaml" },
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = { "rust", "typescript", "tsx", "javascript", "python", "bash", "vim", "lua", "ocaml" },
 
-"   highlight = {
-"     enable = true,
-"     -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
-"     -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
-"     -- Using this option may slow down your editor, and you may see some duplicate highlights.
-"     -- Instead of true it can also be a list of languages
-"     additional_vim_regex_highlighting = false,
-"   },
-" }
-" EOF
+  highlight = {
+    enable = true,
+    -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
+    -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
+    -- Using this option may slow down your editor, and you may see some duplicate highlights.
+    -- Instead of true it can also be a list of languages
+    additional_vim_regex_highlighting = false,
+  },
+}
+EOF
 
 lua <<EOF
 require("neo-tree").setup({
