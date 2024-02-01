@@ -8,3 +8,5 @@ nvim/undo
 nvim/backup/
 .DS_Store
 Brewfile.lock.json
+zed/embeddings/
+zed/.tmp*
