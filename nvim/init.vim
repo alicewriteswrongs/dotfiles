@@ -204,7 +204,7 @@ augroup END
 "colorscheme
 set termguicolors
 set background=light
-autocmd vimenter * ++nested colorscheme gruvbox
+colorscheme gruvbox
 
 " lua << EOF
 " -- Default options:
@@ -238,7 +238,7 @@ autocmd vimenter * ++nested colorscheme gruvbox
 
 "lightline
 let g:lightline = {
-    \ 'colorscheme': 'solarized',
+    \ 'colorscheme': 'gruvbox',
     \ 'active': {
     \   'left': [ [ 'mode', 'paste' ],
     \             [ 'fugitive', 'readonly', 'filename', 'modified' ]
