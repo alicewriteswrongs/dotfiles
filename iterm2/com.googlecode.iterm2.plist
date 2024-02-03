@@ -2447,9 +2447,9 @@
 				<real>1</real>
 			</dict>
 			<key>Brighten Bold Text (Dark)</key>
-			<true/>
+			<false/>
 			<key>Brighten Bold Text (Light)</key>
-			<true/>
+			<false/>
 			<key>Character Encoding</key>
 			<integer>4</integer>
 			<key>Close Sessions On End</key>
@@ -3092,9 +3092,9 @@
 			<key>Use Bright Bold</key>
 			<true/>
 			<key>Use Bright Bold (Dark)</key>
-			<true/>
+			<false/>
 			<key>Use Bright Bold (Light)</key>
-			<true/>
+			<false/>
 			<key>Use Cursor Guide (Dark)</key>
 			<false/>
 			<key>Use Cursor Guide (Light)</key>
