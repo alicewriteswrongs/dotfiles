@@ -429,6 +429,9 @@ nnoremap <Leader>q :q<cr>
 imap <C-q> <esc>:q<cr> 
 nnoremap <C-q> <esc>:q<cr>
 
+" search
+nnoremap <leader>nh :noh<cr>
+
 function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
