@@ -46,7 +46,7 @@ Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'Stautob/vim-fish'
 
 " colorschemes
-" Plug 'cormacrelf/dark-notify'
+Plug 'cormacrelf/dark-notify'
 Plug 'rebelot/kanagawa.nvim'
 Plug 'morhetz/gruvbox'
 
@@ -596,9 +596,9 @@ require('hover').setup {
 vim.keymap.set("n", "<leader>i", require("hover").hover, {desc = "hover.nvim"})
 EOF
 
-" lua <<EOF
-" require('dark_notify').run()
-" EOF
+lua <<EOF
+require('dark_notify').run()
+EOF
 
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
