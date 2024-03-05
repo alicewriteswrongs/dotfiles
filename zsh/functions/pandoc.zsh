@@ -3,6 +3,7 @@ function bigpdf() {
 
     pandoc \
         -V geometry:margin=1in \
+        --variable colorlinks=true \
         $1 \
         -o $pdfname
 }
