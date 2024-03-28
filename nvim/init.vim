@@ -130,7 +130,7 @@ Plug 'neovim/node-host'
 " just
 Plug 'NoahTheDuke/vim-just'
 
-Plug 'wfxr/minimap.vim'
+" Plug 'wfxr/minimap.vim'
 
 " typst
 Plug 'kaarmu/typst.vim'
