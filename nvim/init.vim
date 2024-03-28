@@ -203,7 +203,7 @@ augroup END
 
 "colorscheme
 set termguicolors
-set background=light
+set background=dark
 colorscheme gruvbox
 
 " lua << EOF
