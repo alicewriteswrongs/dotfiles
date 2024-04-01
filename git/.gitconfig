@@ -36,7 +36,7 @@
 [delta]
     features = line-numbers decorations
     whitespace-error-style = 22 reverse
-    syntax-theme = gruvbox-dark
+    syntax-theme = gruvbox-light
 
 ; [delta "decorations"]
 ;     commit-decoration-style = bold yellow box ul
