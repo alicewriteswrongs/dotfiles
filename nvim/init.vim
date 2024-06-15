@@ -481,6 +481,7 @@ lua <<EOF
 require('mason').setup()
 require("mason-lspconfig").setup()
 require("lspconfig").rust_analyzer.setup {}
+require("lspconfig").gopls.setup {}
 require'lspconfig'.typst_lsp.setup{
 	settings = {
 		exportPdf = "onType" -- Choose onType, onSave or never.
@@ -608,7 +609,7 @@ EOF
 
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "rust", "typescript", "tsx", "javascript", "python", "bash", "vim", "lua", "ocaml" },
+  ensure_installed = { "rust", "typescript", "tsx", "javascript", "python", "bash", "vim", "lua", "ocaml", "go" },
 
   highlight = {
     enable = true,

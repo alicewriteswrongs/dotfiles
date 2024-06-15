@@ -3,7 +3,7 @@
     "diagnostics": false,
     "metrics": false
   },
-  "theme": "Atelier Dune Light",
+  "theme": "Gruvbox Light",
   "vim_mode": true,
   "buffer_font_family": "Inconsolata",
   "show_copilot_suggestions": false
